@@ -48,6 +48,7 @@ export const parameters = {
           'Content Sections',
           'Hero',
         ],
+        'ASUCMS'
       ],
     },
   },
