@@ -151,10 +151,12 @@
     box-shadow: none !important;
   }
   .glide__arrow--left {
-    left: 2em;
+    // Glide 'peek' minus desired padding minus arrow width
+    left: calc(360px - 24px - 48px);
   }
   .glide__arrow--right {
-    right: 2em;
+    // Glide 'peek' minus desired padding minus Glide 'gap' minus arrow width
+    right: calc(360px - 24px - 24px - 48px);
   }
 
   @media (max-width: 1200px) {
