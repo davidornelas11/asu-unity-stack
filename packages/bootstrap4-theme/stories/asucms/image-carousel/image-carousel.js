@@ -47,11 +47,12 @@ export const initCarousel = () => {
   }
 
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-  const gap = 24;
-  let peek = 0;
+  let gap = 24;
+  let peek = 32;
   if(vw > 1200) {
     // We want slides to max-width at 1200px but we can only control the peek
     peek = 360; // (1920 - 1200) / 2;
+    gap = 16;
   }
   new Glide('#one-university-carousel', {
       type: "slider", // No wrap-around.

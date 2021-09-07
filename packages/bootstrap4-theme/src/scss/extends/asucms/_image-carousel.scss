@@ -13,7 +13,9 @@
 
   @media (max-width: $uds-breakpoint-xl) {
     .carousel-header-section {
-      margin-left: 5px;
+      // 32px to the first slide (Glide gap + Glide peek)
+      // + 4px as the highlight header extends left
+      margin-left: 36px;
     }
   }
 
