@@ -47,7 +47,7 @@ export const initCarousel = () => {
   }
 
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-  let gap = 24;
+  let gap = 16;
   let peek = 32;
   if(vw > 1200) {
     // We want slides to max-width at 1200px but we can only control the peek
