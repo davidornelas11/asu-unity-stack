@@ -1,6 +1,11 @@
-export default { title: 'ASUCMS/Rankings Carousel' };
+import React from 'react';
+import { createComponent, createStory } from '../../../helpers/wrapper.js';
+import { initCarousel } from './rankings-carousel';
 
-export const rankingsCarousel = () => `
+export default createComponent('Rankings Carousel', 'ASUCMS');
+
+
+export const rankingsCarousel = createStory(
   <div class="image-carousel">
     <div id="rankings-carousel" class="glide rankings-carousel">
       <div class="glide__track" data-glide-el="track">
@@ -9,35 +14,35 @@ export const rankingsCarousel = () => `
             <div class="asucms-image">
               <img
                 src="https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/210211-ASURankings-1Innovation%20(1).png"
-                alt="Replace with appropriate alt text">
+                alt="Replace with appropriate alt text" />
             </div>
           </li>
           <li class="glide__slide">
             <div class="asucms-image">
               <img
                 src="https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/210211-ASURankings-_BestBachelors.png"
-                alt="Replace with appropriate alt text">
+                alt="Replace with appropriate alt text" />
             </div>
           </li>
           <li class="glide__slide">
             <div class="asucms-image">
               <img
                 src="https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/210211-ASURankings-_Excellence.png"
-                alt="Replace with appropriate alt text">
+                alt="Replace with appropriate alt text" />
             </div>
           </li>
           <li class="glide__slide">
             <div class="asucms-image">
               <img
                 src="https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/210211-ASURankings-_Top10International.png"
-                alt="Replace with appropriate alt text">
+                alt="Replace with appropriate alt text" />
             </div>
           </li>
           <li class="glide__slide">
             <div class="asucms-image">
               <img
                 src="https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/210211-ASURankings-_Top25MBA.png"
-                alt="Replace with appropriate alt text">
+                alt="Replace with appropriate alt text" />
             </div>
           </li>
         </ul>
@@ -77,71 +82,9 @@ export const rankingsCarousel = () => `
         <a href="example.com">View all rankings</a>
       </div>
     </div>
-    <script src="https://unpkg.com/@glidejs/glide@3.4.1/dist/glide.js"></script>
-    <script>
-      var ArrowDisabler = function (Glide, Components, Events) {
-        return {
-          mount() {
-            // Only in effect when rewinding is disabled
-            if (Glide.settings.rewind) {
-              return
-            }
-
-            Glide.on(['mount.after', 'run'], () => {
-              // Filter out arrows_control
-              for (let controlItem of Components.Controls.items) {
-                if (controlItem.className !== 'glide__arrows') {
-                  continue
-                }
-
-                // Set left arrow state
-                var left = controlItem.querySelector('.glide__arrow--left')
-                if (left) {
-                  if (Glide.index === 0) {
-                    left.classList.add("glide__arrow--disabled");
-                    //left.setAttribute('disabled', '') // Disable on first slide
-                  } else {
-                    left.classList.remove("glide__arrow--disabled");
-                    //left.removeAttribute('disabled') // Enable on other slides
-                  }
-                }
-
-                // Set right arrow state
-                var right = controlItem.querySelector('.glide__arrow--right')
-                if (right) {
-                    if (Glide.index === Components.Sizes.length - Glide.settings.perView) {
-                      right.classList.add("glide__arrow--disabled");
-                      //right.setAttribute('disabled', '') // Disable on last slide
-                    } else {
-                      right.classList.remove("glide__arrow--disabled");
-                      //right.removeAttribute('disabled') // Disable on other slides
-                    }
-                }
-              }
-            })
-          }
-        }
-      }
-
-
-      new Glide('#rankings-carousel', {
-          type: "slider", // No wrap-around.
-          focusAt: 0,
-          bound: true, // Only if type slider with focusAt 0
-          rewind: false, // Only if type slider
-          keyboard: true, // Left/Right arrow key support for slides - true is default. Accessible?
-          startAt: 0,
-          swipeThreshold: 80, // Distance required for swipe to change slide.
-          dragThreshold: 120, // Distance for mouse drag to change slide.
-          perTouch: 1, // Number of slides that can be moved per each swipe/drag.
-          peek: 0,
-          gap: 0,
-          perView: 1,
-          autoplay: 5000, //Change this to change time between scroll. Time is in miliseconds(5 seconds on this example)
-      }).mount({ ArrowDisabler });
-    </script>
-  </div>
-`;
+  </div>,
+  initCarousel
+)
 
 
 
