@@ -1,6 +1,10 @@
-export default { title: 'ASUCMS/Animated Content Sections' };
+import React from 'react';
+import { createComponent, createStory } from '../../../helpers/wrapper.js';
+import { initGA } from './animated-content-sections';
 
-export const AnimatiedcontentSectionWithCTAs = () => `
+export default createComponent('Animated Content Sections', 'ASUCMS');
+
+export const animatiedcontentSectionWithCTAs = createStory(
   <div class="animated-content-section my-5 text-white">
     <div class="content-section my-2 section-1">
       <div class="image-holder"></div>
@@ -8,12 +12,21 @@ export const AnimatiedcontentSectionWithCTAs = () => `
         <h2>Experience world-class academics</h2>
         <div class="hidden-details">
           <div class="long-text mt-1 mb-3">
-            As a comprehensive public research university, ASU is committed to providing excellence in education through the Academic Enterprise, and enables the success of each unique student and increases access to higher education for all.
+            As a comprehensive public research university, ASU is committed to
+            providing excellence in education through the Academic Enterprise,
+            and enables the success of each unique student and increases access
+            to higher education for all.
           </div>
           <div class="button-area">
-            <!-- START INSERT: Button Component -->
-            <input class="btn btn-gold mb-2" type="submit" value="Learn More">
-            <!-- END INSERT: Button Component -->
+            {/* START INSERT: Button Component */}
+            <input
+              class="btn btn-gold mb-2"
+              type="submit"
+              value="Learn More"
+              data-ga-section="experience world-class academics"
+              data-ga="learn more"
+            />
+            {/* END INSERT: Button Component */}
           </div>
         </div>
       </div>
@@ -24,12 +37,21 @@ export const AnimatiedcontentSectionWithCTAs = () => `
         <h2>Discovery and innovation that serves the public</h2>
         <div class="hidden-details">
           <div class="long-text mt-1 mb-3">
-          As ASU focuses on research and discovery of public value, the Knowledge Enterprise advances research, innovation, strategic partnerships, entrepreneurship, technology transfer, and international development.
+            As ASU focuses on research and discovery of public value, the
+            Knowledge Enterprise advances research, innovation, strategic
+            partnerships, entrepreneurship, technology transfer, and
+            international development.
           </div>
           <div class="button-area">
-            <!-- START INSERT: Button Component -->
-            <input class="btn btn-gold mb-2" type="submit" value="Learn More">
-            <!-- END INSERT: Button Component -->
+            {/* START INSERT: Button Component */}
+            <input
+              class="btn btn-gold mb-2"
+              type="submit"
+              value="Learn More"
+              data-ga-section="discovery and innovation that serves the public"
+              data-ga="learn more"
+            />
+            {/* END INSERT: Button Component */}
           </div>
         </div>
       </div>
@@ -40,15 +62,25 @@ export const AnimatiedcontentSectionWithCTAs = () => `
         <h2>Serving all learners at every stage of life</h2>
         <div class="hidden-details">
           <div class="long-text mt-1 mb-3">
-          Assuming fundamental responsibility for the communities it serves, ASU's Learning Enterprise aims to serve all learners at every stage of life by providing high quality, accessible and affordable learning opportunities to everyone.
+            Assuming fundamental responsibility for the communities it serves,
+            ASU's Learning Enterprise aims to serve all learners at every stage
+            of life by providing high quality, accessible and affordable
+            learning opportunities to everyone.
           </div>
           <div class="button-area">
-            <!-- START INSERT: Button Component -->
-            <input class="btn btn-gold mb-2" type="submit" value="Learn More">
-            <!-- END INSERT: Button Component -->
+            {/* START INSERT: Button Component */}
+            <input
+              class="btn btn-gold mb-2"
+              type="submit"
+              value="Learn More"
+              data-ga-section="serving all learners at every stage of life"
+              data-ga="learn more"
+            />
+            {/* END INSERT: Button Component */}
           </div>
         </div>
       </div>
     </div>
-  </div>
-`;
+  </div>,
+  initGA
+);
