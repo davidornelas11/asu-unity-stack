@@ -56,9 +56,9 @@ export const rankingsCarousel = createStory(
         <button
           class="glide__arrow glide__arrow--left"
           data-glide-dir="<"
-          data-ga-event="select"
-          data-ga-type="carousel"
-          data-ga="left chevron"
+          data-ga-rankings-carousel-event="select"
+          data-ga-rankings-carousel-type="carousel"
+          data-ga-rankings-carousel="left chevron"
         >
           <svg
             aria-hidden="true"
@@ -81,9 +81,9 @@ export const rankingsCarousel = createStory(
         <button
           class="glide__arrow glide__arrow--right"
           data-glide-dir=">"
-          data-ga-event="select"
-          data-ga-type="carousel"
-          data-ga="right chevron"
+          data-ga-rankings-carousel-event="select"
+          data-ga-rankings-carousel-type="carousel"
+          data-ga-rankings-carousel="right chevron"
         >
           <svg
             aria-hidden="true"
@@ -107,9 +107,9 @@ export const rankingsCarousel = createStory(
       <div class="link-section">
         <a
           href="example.com"
-          data-ga-event="link"
-          data-ga-type="internal link"
-          data-ga="view all rankings"
+          data-ga-rankings-carousel-event="link"
+          data-ga-rankings-carousel-type="internal link"
+          data-ga-rankings-carousel="view all rankings"
         >
           View all rankings
         </a>

@@ -123,24 +123,24 @@ export const demoTwoImagesWithContentInPageOfSections = createStory(
         <button
           type="button"
           class="btn btn-maroon"
-          data-ga-section="carve your path"
-          data-ga="visit asu"
+          data-ga-image-parallax-section="carve your path"
+          data-ga-image-parallax="visit asu"
         >
           Visit ASU
         </button>
         <button
           type="button"
           class="btn btn-maroon"
-          data-ga-section="carve your path"
-          data-ga="request information"
+          data-ga-image-parallax-section="carve your path"
+          data-ga-image-parallax="request information"
         >
           Request information
         </button>
         <button
           type="button"
           class="btn btn-gold"
-          data-ga-section="carve your path"
-          data-ga="apply now"
+          data-ga-image-parallax-section="carve your path"
+          data-ga-image-parallax="apply now"
         >
           Apply now
         </button>
@@ -187,8 +187,8 @@ export const demoTwoImagesWithContentInPageOfSections = createStory(
           <button
             type="button"
             class="btn btn-maroon"
-            data-ga-section="reimagining education for everyone"
-            data-ga="learn more"
+            data-ga-image-parallax-section="reimagining education for everyone"
+            data-ga-image-parallax="learn more"
           >
             Learn more
           </button>

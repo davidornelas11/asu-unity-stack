@@ -1,18 +1,6 @@
 import Glide from '../image-carousel/glide-3-4-1';
 
 export const initCarousel = () => {
-  const pushGAEvent = (args) => {
-    const { dataLayer } = window;
-    const event = {
-      action: 'click',
-      name: 'onclick',
-      region: 'main content',
-      section: '#1 in the us for innovation',
-      ...args,
-    };
-    if (dataLayer) dataLayer.push(event);
-  };
-
   const arrowDisabler = (Glide, Components, Events) => {
     return {
       mount() {
@@ -60,15 +48,31 @@ export const initCarousel = () => {
     };
   };
 
-  const elements = document.querySelectorAll('[data-ga]');
+  const pushRankingsCarouselGAEvent = (args) => {
+    const { dataLayer } = window;
+    const event = {
+      action: 'click',
+      name: 'onclick',
+      region: 'main content',
+      section: '#1 in the us for innovation',
+      ...args,
+    };
+    if (dataLayer) dataLayer.push(event);
+  };
+
+  const elements = document.querySelectorAll('[data-ga-rankings-carousel]');
   elements.forEach((element) =>
     element.addEventListener('click', () => {
       const args = {
-        event: element.getAttribute('data-ga-event').toLowerCase(),
-        type: element.getAttribute('data-ga-type').toLowerCase(),
-        text: element.getAttribute('data-ga').toLowerCase(),
+        event: element
+          .getAttribute('data-ga-rankings-carousel-event')
+          .toLowerCase(),
+        type: element
+          .getAttribute('data-ga-rankings-carousel-type')
+          .toLowerCase(),
+        text: element.getAttribute('data-ga-rankings-carousel').toLowerCase(),
       };
-      pushGAEvent(args);
+      pushRankingsCarouselGAEvent(args);
     })
   );
 

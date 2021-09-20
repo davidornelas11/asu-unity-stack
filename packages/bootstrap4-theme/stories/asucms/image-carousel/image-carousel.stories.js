@@ -1,13 +1,18 @@
 import React from 'react';
 import { createComponent, createStory } from '../../../helpers/wrapper.js';
 import { initCarousel } from './image-carousel';
+
 export default createComponent('Image Carousel', 'ASUCMS');
 
-
 export const defaultCard = createStory(
-  <div class="asu-cms-image-carousel" style={{maxWidth: '1920px', margin: 'auto'}}>
+  <div
+    class="asu-cms-image-carousel"
+    style={{ maxWidth: '1920px', margin: 'auto' }}
+  >
     <div class="carousel-header-section">
-      <h2><span class="highlight-gold">One university, many places</span></h2>
+      <h2>
+        <span class="highlight-gold">One university, many places</span>
+      </h2>
     </div>
     <div class="image-carousel">
       <div id="one-university-carousel" class="glide">
@@ -17,10 +22,22 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Polytechnic campus" />
+                  alt="Polytechnic campus"
+                />
                 <div class="content-area">
-                  <div class="highlight-gray slide-header">Polytechnic campus</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <div class="highlight-gray slide-header">
+                    Polytechnic campus
+                  </div>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="polytechnic campus"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -28,10 +45,20 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Tempe campus" />
+                  alt="Tempe campus"
+                />
                 <div class="content-area">
                   <div class="highlight-gray slide-header">Tempe campus</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="tempe campus"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -39,10 +66,20 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="West campus" />
+                  alt="West campus"
+                />
                 <div class="content-area">
                   <div class="highlight-gray slide-header">West campus</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="west campus"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -50,10 +87,22 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Downtown Phoenix Campus" />
+                  alt="Downtown Phoenix Campus"
+                />
                 <div class="content-area">
-                  <div class="highlight-gray slide-header">Downtown Phoenix Campus</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <div class="highlight-gray slide-header">
+                    Downtown Phoenix Campus
+                  </div>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="downtown phoenix campus"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -61,10 +110,20 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Skysong" />
+                  alt="Skysong"
+                />
                 <div class="content-area">
                   <div class="highlight-gray slide-header">Skysong</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="skysong"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -72,10 +131,20 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Washington D.C." />
+                  alt="Washington D.C."
+                />
                 <div class="content-area">
                   <div class="highlight-gray slide-header">Washington D.C.</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="washington d.c."
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
@@ -83,17 +152,34 @@ export const defaultCard = createStory(
               <div class="asucms-image">
                 <img
                   src="https://source.unsplash.com/random/700x400"
-                  alt="Lake Havasu" />
+                  alt="Lake Havasu"
+                />
                 <div class="content-area">
                   <div class="highlight-gray slide-header">Lake Havasu</div>
-                  <input class="btn btn-gold" type="submit" value="Schedule a tour"></input>
+                  <input
+                    class="btn btn-gold"
+                    type="submit"
+                    value="Schedule a tour"
+                    data-ga-image-carousel-event="link"
+                    data-ga-image-carousel-type="internal link"
+                    data-ga-image-carousel-section="lake havasu"
+                    data-ga-image-carousel-component="one university, many places"
+                    data-ga-image-carousel="schedule a tour"
+                  ></input>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <button
+            class="glide__arrow glide__arrow--left"
+            data-glide-dir="<"
+            data-ga-image-carousel-event="select"
+            data-ga-image-carousel-type="carousel"
+            data-ga-image-carousel-section="one university, many places"
+            data-ga-image-carousel="left chevron"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -104,10 +190,22 @@ export const defaultCard = createStory(
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 100"
             >
-              <path fill="currentColor" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" class="arrow" transform="translate(15,0)"></path>
+              <path
+                fill="currentColor"
+                d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"
+                class="arrow"
+                transform="translate(15,0)"
+              ></path>
             </svg>
           </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <button
+            class="glide__arrow glide__arrow--right"
+            data-glide-dir=">"
+            data-ga-image-carousel-event="select"
+            data-ga-image-carousel-type="carousel"
+            data-ga-image-carousel-section="one university, many places"
+            data-ga-image-carousel="right chevron"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -118,7 +216,12 @@ export const defaultCard = createStory(
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 100"
             >
-              <path fill="currentColor" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" class="arrow" transform="translate(85,100) rotate(180)"></path>
+              <path
+                fill="currentColor"
+                d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"
+                class="arrow"
+                transform="translate(85,100) rotate(180)"
+              ></path>
             </svg>
           </button>
         </div>

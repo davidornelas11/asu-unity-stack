@@ -75,7 +75,7 @@ export const initImageParallax = () => {
     });
   };
 
-  const pushGAEvent = (args) => {
+  const pushImageParallaxGAEvent = (args) => {
     const { dataLayer } = window;
     const event = {
       event: 'link',
@@ -89,14 +89,16 @@ export const initImageParallax = () => {
   };
 
   // dataLayer elements focus event listener
-  const elements = document.querySelectorAll('[data-ga]');
+  const elements = document.querySelectorAll('[data-ga-image-parallax]');
   elements.forEach((element) =>
     element.addEventListener('focus', () => {
       const args = {
-        section: element.getAttribute('data-ga-section').toLowerCase(),
-        text: element.getAttribute('data-ga').toLowerCase(),
+        section: element
+          .getAttribute('data-ga-image-parallax-section')
+          .toLowerCase(),
+        text: element.getAttribute('data-ga-image-parallax').toLowerCase(),
       };
-      pushGAEvent(args);
+      pushImageParallaxGAEvent(args);
     })
   );
 

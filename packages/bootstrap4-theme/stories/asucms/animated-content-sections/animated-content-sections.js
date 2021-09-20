@@ -1,5 +1,5 @@
-export const initGA = () => {
-  const pushGAEvent = (args) => {
+export const initAnimatedContentSectionGA = () => {
+  const pushAnimatedContentSectionGAEvent = (args) => {
     const { dataLayer } = window;
     const event = {
       event: 'link',
@@ -12,14 +12,20 @@ export const initGA = () => {
     if (dataLayer) dataLayer.push(event);
   };
 
-  const elements = document.querySelectorAll('[data-ga]');
+  const elements = document.querySelectorAll(
+    '[data-ga-animated-content-section]'
+  );
   elements.forEach((element) =>
     element.addEventListener('focus', () => {
       const args = {
-        section: element.getAttribute('data-ga-section').toLowerCase(),
-        text: element.getAttribute('data-ga').toLowerCase(),
+        section: element
+          .getAttribute('data-ga-animated-content-section-section')
+          .toLowerCase(),
+        text: element
+          .getAttribute('data-ga-animated-content-section')
+          .toLowerCase(),
       };
-      pushGAEvent(args);
+      pushAnimatedContentSectionGAEvent(args);
     })
   );
 };

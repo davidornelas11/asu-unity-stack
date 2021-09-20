@@ -1,6 +1,6 @@
 import React from 'react';
 import { createComponent, createStory } from '../../../helpers/wrapper.js';
-import { initGA } from './animated-content-sections';
+import { initAnimatedContentSectionGA } from './animated-content-sections';
 
 export default createComponent('Animated Content Sections', 'ASUCMS');
 
@@ -23,8 +23,8 @@ export const animatiedcontentSectionWithCTAs = createStory(
               class="btn btn-gold mb-2"
               type="submit"
               value="Learn More"
-              data-ga-section="experience world-class academics"
-              data-ga="learn more"
+              data-ga-animated-content-section-section="experience world-class academics"
+              data-ga-animated-content-section="learn more"
             />
             {/* END INSERT: Button Component */}
           </div>
@@ -48,8 +48,8 @@ export const animatiedcontentSectionWithCTAs = createStory(
               class="btn btn-gold mb-2"
               type="submit"
               value="Learn More"
-              data-ga-section="discovery and innovation that serves the public"
-              data-ga="learn more"
+              data-ga-animated-content-section-section="discovery and innovation that serves the public"
+              data-ga-animated-content-section="learn more"
             />
             {/* END INSERT: Button Component */}
           </div>
@@ -73,8 +73,8 @@ export const animatiedcontentSectionWithCTAs = createStory(
               class="btn btn-gold mb-2"
               type="submit"
               value="Learn More"
-              data-ga-section="serving all learners at every stage of life"
-              data-ga="learn more"
+              data-ga-animated-content-section-section="serving all learners at every stage of life"
+              data-ga-animated-content-section="learn more"
             />
             {/* END INSERT: Button Component */}
           </div>
@@ -82,5 +82,5 @@ export const animatiedcontentSectionWithCTAs = createStory(
       </div>
     </div>
   </div>,
-  initGA
+  initAnimatedContentSectionGA
 );
