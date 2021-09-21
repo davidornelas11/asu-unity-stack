@@ -102,7 +102,7 @@ export const initCarousel = () => {
     peek: 360,
     perView: 1,
     breakpoints: {
-      1200: {
+      1260: {
         peek: 32,
       },
     },
