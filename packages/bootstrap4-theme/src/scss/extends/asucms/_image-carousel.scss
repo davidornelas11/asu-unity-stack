@@ -9,6 +9,7 @@
   }
   .carousel-header-section {
     margin-left: 365px; // See gap calc in JS, plus header padding
+    margin-bottom: $uds-size-spacing-4;
   }
 
   @media (max-width: $uds-breakpoint-xl) {
@@ -16,6 +17,7 @@
       // 32px to the first slide (Glide gap + Glide peek)
       // + 4px as the highlight header extends left
       margin-left: 36px;
+      margin-bottom: $uds-size-spacing-6;
     }
   }
 
@@ -27,6 +29,7 @@
 
       img {
         width: 100%;
+        min-height: 236px;
         height: 100%;
       }
       .content-area {
@@ -37,7 +40,7 @@
         .slide-header {
           font-size: 2.5rem;
           font-weight: bold;
-          margin-bottom: $uds-size-spacing-3;
+          margin-bottom: $uds-size-spacing-4;
           box-shadow: -0.15em 0 0 #f9f9f9, 0.15em 0 0 #f9f9f9;
           background: #f9f9f9;
         }
@@ -50,7 +53,6 @@
             font-size: 1.5rem;
             margin-bottom: $uds-size-spacing-2;
           }
-
           .btn {
             padding: 0.5rem 1rem;
           }
@@ -61,10 +63,6 @@
         .content-area {
           bottom: 16px;
           left: 16px;
-          .slide-header {
-            font-size: 1rem;
-            margin-bottom: $uds-size-spacing-2;
-          }
         }
       }
     }
@@ -135,10 +133,10 @@
     width: 48px;
     height: 48px;
     z-index: 2;
-    color: #191919;
+    color: $uds-color-background-dark;
     text-transform: uppercase;
     padding: 9px 12px;
-    background-color: #ffffff;
+    background-color: $uds-color-background-gray;
     border: 1px solid #d0d0d0;
     border-radius: 50%;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
