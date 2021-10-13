@@ -54,7 +54,7 @@ export const initCarousel = () => {
       action: 'click',
       name: 'onclick',
       region: 'main content',
-      section: '#1 in the us for innovation',
+      section: 'rankings',
       ...args,
     };
     if (dataLayer) dataLayer.push(event);
