@@ -9,7 +9,7 @@ export const defaultCard = createStory(
     class="asu-cms-image-carousel"
     style={{ maxWidth: '1920px', margin: 'auto' }}
   >
-    <div class="carousel-header-section">
+    <div class="carousel-header-section uds-content-align">
       <h2>
         <span class="highlight-gold">One university, many places</span>
       </h2>
@@ -229,5 +229,7 @@ export const defaultCard = createStory(
     </div>
     <script src="https://unpkg.com/@glidejs/glide@3.4.1/dist/glide.js"></script>
   </div>,
-  initCarousel
+  {
+    initFunc: initCarousel
+  }
 );

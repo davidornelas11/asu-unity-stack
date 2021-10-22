@@ -8,7 +8,6 @@
     padding-bottom: calc(48px + 32px);
   }
   .carousel-header-section {
-    margin-left: 365px; // See gap calc in JS, plus header padding
     margin-bottom: $uds-size-spacing-4;
   }
 
@@ -152,11 +151,11 @@
   }
   .glide__arrow--left {
     // Glide 'peek' minus desired padding minus arrow width
-    left: calc(360px - 24px - 48px);
+    left: calc(((100% - 1200px) / 2) - 48px - 24px);
   }
   .glide__arrow--right {
     // Glide 'peek' minus desired padding minus Glide 'gap' minus arrow width
-    right: calc(360px - 24px - 24px - 48px);
+    right: calc(((100% - 1200px) / 2) - 48px - 24px);
   }
 
   @media (max-width: $uds-breakpoint-xl) {
