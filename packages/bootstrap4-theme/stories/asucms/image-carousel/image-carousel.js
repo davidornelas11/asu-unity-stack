@@ -88,6 +88,9 @@ export const initCarousel = () => {
     })
   );
 
+  const viewPortWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  const headerGap = (viewPortWidth - 1200) / 2;
+  console.log({headerGap});
   new Glide('#one-university-carousel', {
     type: 'slider', // No wrap-around.
     focusAt: 0,
@@ -99,7 +102,7 @@ export const initCarousel = () => {
     swipeThreshold: 80, // Distance required for swipe to change slide.
     dragThreshold: 120, // Distance for mouse drag to change slide.
     perTouch: 1, // Number of slides that can be moved per each swipe/drag.
-    peek: 360,
+    peek: headerGap,
     perView: 1,
     breakpoints: {
       1260: {
