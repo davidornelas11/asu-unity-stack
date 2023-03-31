@@ -17,7 +17,8 @@
   "scripts": {
     "test": "node ./__tests__/@asu/unity-bootstrap-theme.test.js",
     "init-sb": "npx storybook init --type html",
-    "build": "webpack ./webpack.config.js",
+    "build": "rimraf ./dist && NODE_ENV=production webpack  --progress --bail && rimraf ./.tmp",
+    "build:dev": "rimraf ./dist && webpack  --progress --bail && rimraf ./.tmp",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -38,12 +39,16 @@
     "babel-loader": "^8.3.0",
     "bootstrap": "^5.2.3",
     "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "eslint-webpack-plugin": "^4.0.0",
     "image-minimizer-webpack-plugin": "^3.8.2",
+    "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.5",
+    "postcss-loader": "^7.1.0",
     "prettier": "^2.8.7",
     "react-syntax-highlighter": "^15.5.0",
+    "sass-loader": "^13.2.2",
     "sharp": "^0.32.0",
     "terser-webpack-plugin": "^5.3.7",
     "webpack-node-externals": "^3.0.0"
