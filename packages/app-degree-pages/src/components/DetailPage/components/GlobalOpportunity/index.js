@@ -21,6 +21,7 @@ const GlobalOpportunity = ({ contents, image }) => (
   <WrapperContainer
     id={progDetailSectionIds.globalOpportunity.targetIdName}
     data-testid="global-opportunity"
+    className="container"
   >
     <OverlapContentImage
       headingTag="H2"

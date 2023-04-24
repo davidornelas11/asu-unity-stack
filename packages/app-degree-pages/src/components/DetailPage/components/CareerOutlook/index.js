@@ -21,6 +21,7 @@ const CareerOutlook = ({ contents, image }) => (
   <WrapperContainer
     id={progDetailSectionIds.careerOutlook.targetIdName}
     data-testid="career-outlook"
+    className="center-container container"
   >
     <OverlapContentImage
       headingTag="H2"

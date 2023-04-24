@@ -20,7 +20,7 @@ function FlexibleDegreeOptions({ acceleratedLinks, concurrentLinks }) {
   return (
     <section
       id={progDetailSectionIds.flexibleDegreeOptions.targetIdName}
-      className="container"
+      className="center-container container"
       data-testid="flexible-degree-options"
     >
       <h2>

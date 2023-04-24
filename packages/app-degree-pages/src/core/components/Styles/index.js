@@ -13,9 +13,13 @@ const ThemeStyle = createGlobalStyle`
     }
   }
 
+  #degreeDetailPageContainer > .main-section > section > .row {
+    flex-direction: column;
+  }
+
   .element-focus:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #191919 !important;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #191919 !important;
   }
 
   div[class^=uds-hero] h1 {

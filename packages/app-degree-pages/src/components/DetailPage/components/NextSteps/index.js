@@ -17,7 +17,7 @@ import { progDetailSectionIds, cardPropShape } from "../../../../core/models";
 function NextSteps({ cards, defaultCards }) {
   return (
     <section
-      className="container"
+      className="center-container container"
       id={progDetailSectionIds.nextSteps.targetIdName}
       data-testid="next-steps"
     >

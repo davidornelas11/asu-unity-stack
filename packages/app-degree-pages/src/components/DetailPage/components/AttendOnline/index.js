@@ -23,12 +23,13 @@ ASU offers this program in an online format
 function AttendOnline({ image, learnMoreLink, contents }) {
   const backgroundImage =
     `linear-gradient(180deg, #19191900 0%, #191919c9 100%),` +
+    `max-width: 1224px,` +
     `url('${image.url}')`;
   const genId = idGenerator("attend-online-");
   return (
     <section
       id={progDetailSectionIds.attendOnline.targetIdName}
-      className="uds-card-and-image"
+      className="uds-card-and-image center-container"
       style={{
         backgroundImage,
       }}

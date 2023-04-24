@@ -128,9 +128,9 @@ const DetailPage = ({
         {loading ? (
           <Loader />
         ) : (
-          <section className="container mt-4 mb-0">
+          <section className="mt-4 mb-0">
             {introContent?.breadcrumbs ? (
-              <div className="row col-12">
+              <div className="container row col-12">
                 <Breadcrumbs
                   breadcrumbs={introContent.breadcrumbs}
                   section={hero ? hero.title.text : resolver.getMajorDesc()}
@@ -138,7 +138,7 @@ const DetailPage = ({
               </div>
             ) : null}
 
-            <div className="row flex-column-reverse flex-sm-row">
+            <div className="container row flex-column-reverse flex-sm-row">
               <div className="col col-sm-12 col-md-7 col-lg-7">
                 <section className="intro">
                   {!resolver.isValidActiveProgram() ? (
@@ -315,7 +315,7 @@ const DetailPage = ({
             </div>
 
             {!programContactInfo?.hide ? (
-              <div className="row">
+              <div className="container row">
                 <div className="col col-sm-12 col-md-6 col-lg-6 ">
                   <ProgramContactInfo
                     department={{
