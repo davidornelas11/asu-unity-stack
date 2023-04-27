@@ -6,9 +6,8 @@ on:
       - dev
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
