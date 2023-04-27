@@ -6,7 +6,7 @@ on:
       - dev
 
 env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
@@ -30,6 +30,8 @@ jobs:
         run: yarn build
       - name: Build Storybook files dry run
         run: yarn run  storybook-to-ghpages --out=storybook-static --packages packages --monorepo-index-generator server/storybook-index-generator.js --ci --dry-run
+      - name: Copy files
+        run: yarn gulp
       - name: Build Storybook
         run: yarn run  storybook-to-ghpages --out=storybook-static --packages packages --monorepo-index-generator server/storybook-index-generator.js --ci -existing-output-dir=build
       - name: Deploy Storybook to Staging Environment
