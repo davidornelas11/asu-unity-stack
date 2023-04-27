@@ -22,12 +22,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
-      - name: Install dependencies
-        run: yarn
       - name: Add GitHub Package Registry Token
         run: echo "//npm.pkg.github.com/:_authToken=\${NPM_TOKEN}" > .npmrc
+      - name: Install dependencies
+        run: yarn
+      - name: Build packages
+        run: yarn build
+      - name: Build Storybook files dry run
+        run: yarn run  storybook-to-ghpages --out=storybook-static --packages packages --monorepo-index-generator server/storybook-index-generator.js --ci --dry-run
       - name: Build Storybook
-        run: yarn run  storybook-to-ghpages --out=storybook-static --packages packages --monorepo-index-generator server/storybook-index-generator.js --ci
+        run: yarn run  storybook-to-ghpages --out=storybook-static --packages packages --monorepo-index-generator server/storybook-index-generator.js --ci -existing-output-dir=build
       - name: Deploy Storybook to Staging Environment
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
