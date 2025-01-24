@@ -1,4 +1,12 @@
 // @ts-check
+/**
+ *
+ *
+ * TODO: Does not work with Bootstrap Framework
+ * Requires functionality UDS-1664
+ *
+ *
+ */
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 
@@ -20,7 +28,7 @@ const calculateHeightNeeded = (content, width) => {
   const charactersPerLine = width / 6;
 
   const linesNeeded =
-    parseInt(content.length / charactersPerLine, 10) + brCount;
+    parseInt(`${content.length / charactersPerLine}`, 10) + brCount;
 
   return linesNeeded * 20;
 };
@@ -56,6 +64,7 @@ const sharedProps = {
  * @ignore
  */
 const htmlTemplate = ({ id, imageSource, imageAltText }) => ({
+  // @ts-ignore
   id,
   item: (
     <div className="uds-img">
@@ -83,6 +92,9 @@ const htmlTemplate = ({ id, imageSource, imageAltText }) => ({
  * @returns { JSX.Element }
  */
 const CustomNavComponent = ({ instanceName, imageItems, hasContent }) => {
+  if (!imageItems || imageItems.length === 0) {
+    return null;
+  }
   const ATTR_INDEX = "data-current-index";
   const [title, setTitle] = useState(imageItems[0].title);
 
@@ -95,6 +107,7 @@ const CustomNavComponent = ({ instanceName, imageItems, hasContent }) => {
   };
 
   useEffect(() => {
+    /** @type {HTMLElement} */
     const textArea = document.querySelector(
       `.image-gallery figcaption .uds-caption-text div`
     );
@@ -178,7 +191,7 @@ CustomNavComponent.propTypes = {
 const ImageGalleryCarousel = ({
   width,
   maxWidth,
-  imageItems,
+  imageItems = [],
   hasContent = false,
   imageAutoSize = true,
 }) => {
@@ -203,7 +216,6 @@ const ImageGalleryCarousel = ({
           instanceName={instanceName}
           hasContent={hasContent}
           imageItems={imageItems}
-          maxWidth={maxWidth}
         />
       )}
       removeSideBackground={imageItems.length <= 1}

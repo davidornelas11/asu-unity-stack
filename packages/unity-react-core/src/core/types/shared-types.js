@@ -3,7 +3,8 @@
 /**
  * @typedef {Object} ButtonProps
  * @property {string}   [label]
- * @property {string}   [cardTitle]
+ * @property {string}   [cardTitle] // @deprecated
+ * @property {import("../../components/GaEventWrapper/GaEventWrapper").GaEventType} [gaData]
  * @property {string}   [ariaLabel]
  * @property {boolean}  [block]
  * @property {boolean}  [disabled]
@@ -11,7 +12,7 @@
  * @property {string}   [href]
  * @property {string[]} [icon]
  * @property {any}      [innerRef]
- * @property {string[]} [classes]
+ * @property {string|string[]} [classes]
  * @property {function():void} [onClick]
  * @property {"default"|"small"|"xsmall"}   [size]
  * @property {"gold"|"maroon"|"gray"|"dark"} [color]
@@ -25,13 +26,16 @@
  * @property {React.RefObject} [innerRef]
  * @property {function():void} [onClick]
  * @property {"large"|"small"} [size]
- * @property {string}   [cardTitle]
+ * @property {string}   [cardTitle] // @deprecated
+ * @property {import("../../components/GaEventWrapper/GaEventWrapper").GaEventType} [gaData]
+ * @property {string}   [className]
  */
 
 /**
  * @typedef {Object} TagsProps
  * @property {string}  [label]
- * @property {string}   [cardTitle]
+ * @property {string}   [cardTitle] // @deprecated
+ * @property {import("../../components/GaEventWrapper/GaEventWrapper").GaEventType} [gaData]
  * @property {string}  [ariaLabel]
  * @property {string}  [color]
  * @property {boolean} [disabled]
@@ -84,7 +88,7 @@
  * @callback ReactMouseEvent
  * @param {React.MouseEvent<HTMLAnchorElement, MouseEvent>} event
  * @param {number} id
- * @param {string} [cardTitle]
+ * @param {string} [cardTitle] // @deprecated
  * @returns {void}
  */
 
@@ -94,6 +98,7 @@
  * @property {AccordionCard} item
  * @property {number} openCard
  * @property {ReactMouseEvent} onClick
+ * @property {import("../../components/GaEventWrapper/GaEventWrapper").GaEventType} [gaData]
  */
 
 /**
@@ -138,7 +143,7 @@
  * @property {boolean}  [ellipses]
  * @property {string} [dataId]
  * @property {function():void} [onClick]
- * @property {React.ReactNode} children
+ * @property {React.ReactNode} [children]
  * @property {string} [ariaLabel]
  * @property {boolean} [ariaDisabled]
  */

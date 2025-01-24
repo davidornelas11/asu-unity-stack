@@ -2,6 +2,7 @@
 // @ts-check
 import { render, cleanup } from "@testing-library/react";
 import React from "react";
+import { expect, describe, it, afterEach, beforeEach, test } from "vitest";
 
 import { Testimonial } from "./Testimonial";
 
@@ -15,6 +16,7 @@ const defaultArgs = {
     },
   },
   imageSource: "https://placeimg.com/400/400/any",
+  imageAltText: "describe the image",
 };
 
 const renderTestimonial = props => {
@@ -41,7 +43,7 @@ describe("#Testimonial", () => {
     [`Citation`, `testimonial-citation`],
   ];
 
-  test.each(elements)("should define %p element", (_, testId) =>
-    expect(component.queryByTestId(testId)).toBeInTheDocument()
-  );
+  test.each(elements)("should define %p element", (_, testId) => {
+    expect(component.queryByTestId(testId)).toBeInTheDocument();
+  });
 });

@@ -1,20 +1,78 @@
-# ASU Components Core
+# ASU Unity React Core
 
 ASU React Core Components.
 
-This component is the react implementation of some of the components of the Bootstrap 4 theme package.
+This component is the react implementation of some of the components of the Bootstrap 5 theme package.
 All of these components are listed [below](#examples---quick-links).
+
+## Importing Components
+
+### Using ES Modules (ESM)
+If you are importing components using ES modules, you can import only the components you need, this will reduce the size of the bundle drastically:
+
+```js
+import { <COMPONENT_NAME> } from 'dist/esm/components/<COMPONENT_NAME>';
+```
+
+For example, to import the `Accordion` component:
+
+```js
+import { Accordion } from '@asu/unity-react-core/dist/esm/components/Accordion';
+```
+
+#### Using UMD in the Browser
+
+If you prefer to initialize components directly in the browser using a script tag, you can use the following path for UMD module:
+
+```html
+<script src="@asu/components-core/dist/unityReactCore.umd.js"></script>
+<script>
+    unityReactCore.initAccordion({
+      targetSelector: "#accordion-component",
+      props: {
+        cards: [
+          {
+            content: {
+              header: "Accordion Card 1",
+              body:
+                "<h4>Quatrenary Headline</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p><h5>This is a level five headline. There's a fancy word for that too.</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>",
+            },
+          },
+          {
+            content: {
+              header: "Accordion Card 2",
+              body:
+                "<h4>Quatrenary Headline</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p><h5>This is a level five headline. There's a fancy word for that too.</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>",
+            },
+          },
+          {
+            content: {
+              header: "Accordion Card 3, opened card",
+              body:
+                "<h4>Quatrenary Headline</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p><h5>This is a level five headline. There's a fancy word for that too.</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>",
+            },
+          },
+        ],
+        openedCard: 3, // Prop based on card position on the screen
+      },
+    });
+  </script>
+```
+This init component function already contains the correct React initialization code, so you don't need to worry about rendering it yourself.
+
+1. **targetSelector** (string): The selector for the DOM element where you want to initialize the component.
+2. **props** (object): The props to be passed to the component.
 
 ## Architecture details
 
 As this package is intended to be the react core components package, each of these components are built in isolation, thats mean that, each component, was thougth to be used in different scenarios in the same way.
-For each component there is a `.js` file, that contains the code of that component, a `.test.js` file, that has the unit test within that component. For this last file, we use [React testing library](https://testing-library.com/docs/react-testing-library/intro), that is use in combination with [Jest](https://jestjs.io/). This provide us a nice way to test all the components in terms of what that component paints in the DOM and what user sees. There might be another file on some component folder that contains some specific styling for that component(`.styles.js`). As you may noticed, we are using css in js to code the styles. For this, we make use of [styled-components](https://styled-components.com/) that has a great integration and support in the react ecosystem. The last file included, for each component, is the `.stories.js` one, that one, has the configuration for all the stories that are shown in [Storybook](https://storybook.js.org/) page.
+For each component there is a `.js` file, that contains the code of that component, a `.test.js` file, that has the unit test within that component. For this last file, we use [React testing library](https://testing-library.com/docs/react-testing-library/intro), that is use in combination with [Vitest](https://vitest.dev/). This provide us a nice way to test all the components in terms of what that component paints in the DOM and what user sees. There might be another file on some component folder that contains some specific styling for that component(`.styles.js`). As you may noticed, we are using css in js to code the styles. For this, we make use of [styled-components](https://styled-components.com/) that has a great integration and support in the react ecosystem. The last file included, for each component, is the `.stories.js` one, that one, has the configuration for all the stories that are shown in [Storybook](https://storybook.js.org/) page.
 The initialization, for plain Javascript, of each component is the same as all the packages, so it can keep uniqueness between all of them. For this, we use two methods:
 
-- `createElement`: this is provided by React. It creates a new React element. Click to read more about [createElement](https://reactjs.org/docs/react-api.html#createelement) and [react without jsx](https://reactjs.org/docs/react-without-jsx.html).
-- `render`: this is provided by ReactDOM library. It is used to render the react element in the DOM. Click to read more about [render](https://reactjs.org/docs/react-dom.html).
+- `createElement`: this is provided by React. It creates a new React element. Click to read more about [createElement](https://react.dev/reference/react/createElement) and [react without jsx](https://react.dev/reference/react/createElement#creating-an-element-without-jsx).
+- `createRoot`: this is provided by ReactDOM library. It is used to render the react element in the DOM. Click to read more about [createRoot](https://react.dev/reference/react-dom/client/createRoot).
   The way it works is: when the initializer function is called, this creates the element with the props provided and the react component.Then it is rendered on the DOM.
-  We also have configured [Percy](https://percy.io/) to manage all the visual regression tests. The tests included can be found [here](./src/percyTests/testPage.percy.js). These tests runs on a test stage in the CI pipeline and then are pushed to the percy dashboard. More information about this integration can be found [here](../../tests/README.md#visual-regression-testing).
+
 
 ## Component props documentation
 
@@ -24,7 +82,7 @@ You can find a full list of props into the [docs/README.props.md](docs/README.pr
 
 ```bash
 # add component-carousel
-yarn add @asu/components-core
+yarn add @asu/unity-react-core
 
 # run storybook
 yarn storybook
@@ -41,12 +99,12 @@ yarn test
 
 1. Either make sure you are part of the ASU github organization and follow the instructions [here,](https://github.com/ASU/asu-unity-stack#-how-to-use-the-private-package-registry)or, if you already are, you can clone this repo and run `yarn install` and `yarn build` to build the package locally.
 2. Make sure to have included [FontAwesome](https://fontawesome.com/) on your project to allow icons to be shown
-3. `yarn add @asu/components-core`
+3. `yarn add @asu/unity-react-core`
 
 ## Use as a JS module in React app
 
 ```JAVASCRIPT
-    import { Card } from '@asu/components-core@dev'
+    import { Card } from '@asu/unity-react-core'
 
     // Build out the component, providing the options depending on the card you wanna
     // have.
@@ -107,7 +165,7 @@ yarn test
 <script src="/node_modules/@asu/component-carousel/dist/core.production.js"></script>
 <script>
   // Setup and initialize one card.
-  AsuWebCore.initCard({
+  unityReactCore.initCard({
     targetSelector: "#default-card",
     props: {
       type: "default",
@@ -137,7 +195,7 @@ yarn test
     },
   });
   // Setup and initialize second card.
-  AsuWebCore.initCard({
+  unityReactCore.initCard({
     targetSelector: "#icon-card",
     props: {
       type: "default",
@@ -160,42 +218,34 @@ yarn test
 
 ### Examples
 
-The folder [packages/components-core/examples](/packages/components-core/examples)
+The folder [packages/unity-react-core/examples](/packages/unity-react-core/examples)
 <br/>contains examples to use all the core components on static HTML pages
 
 #### Examples - quick links
 
-- [Accordion](/packages/components-core/examples/accordion.html)
-- [Anchor Menu](/packages/components-core/examples/anchorMenu.html)
-- [Article](/packages/components-core/examples/article.html)
-- [Article](/packages/components-core/examples/article.html)
-- [Button](/packages/components-core/examples/button.html)
-- [Button Icon Only](/packages/components-core/examples/buttonIconOnly.html)
-- [Button Tag](/packages/components-core/examples/buttonTag.html)
-- [Card](/packages/components-core/examples/card.html)
-- [Hero](/packages/components-core/examples/hero.html)
-- [Pagination](/packages/components-core/examples/pagination.html)
-- [Testimonial](/packages/components-core/examples/testimonial.html)
-- [Video](/packages/components-core/examples/video.html)
+- [Accordion](/packages/unity-react-core/examples/accordion.html)
+- [Anchor Menu](/packages/unity-react-core/examples/anchorMenu.html)
+- [Article](/packages/unity-react-core/examples/article.html)
+- [Article](/packages/unity-react-core/examples/article.html)
+- [Button](/packages/unity-react-core/examples/button.html)
+- [Button Icon Only](/packages/unity-react-core/examples/buttonIconOnly.html)
+- [Button Tag](/packages/unity-react-core/examples/buttonTag.html)
+- [Card](/packages/unity-react-core/examples/card.html)
+- [ComponentCarousel](/packages/unity-react-core/examples/componentCarousel.html)
+- [Hero](/packages/unity-react-core/examples/hero.html)
+- [Pagination](/packages/unity-react-core/examples/pagination.html)
+- [Testimonial](/packages/unity-react-core/examples/testimonial.html)
+- [Video](/packages/unity-react-core/examples/video.html)
 
 #### Examples - run and test
 
 If you want to test the examples files you need to install an application server <br />
-and run it into the folder `/packages/components-core/examples`. <br />
+and run it into the folder `/packages/unity-react-core/examples`. <br />
 For example, if you want to use the `npm` package `lite-server` follow these steps:
 
 - run `npm -g i lite-server` . MAC users may need to use `sudo npm -g i lite-server`
-- run `cd packages/components-core`
+- run `cd packages/unity-react-core`
 - run `lite-server`
 - open the broweser to the url `http://localhost:3000/examples/card.html`
   (port number may be different)
 
-## Future improvements
-
-All the requirements for this component were covered, so there is no need of any further enhancements at the moment this is being written.
-
-## Tools
-
-
-- [How to convert prop types to definition types](https://github.com/mskelton/ratchet)
-  - [Online tool](https://mskelton.dev/ratchet)

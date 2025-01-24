@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "jsx": "react",
+    "moduleResolution": "bundler",
+    "module": "ES2020",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "types": ["@vitest/browser/providers/playwright"],
+    "paths": {
+      "@shared": [ "./../../shared" ],
+      "@shared/*": [ "./../../shared/*" ],
+      "@asu/unity-bootstrap-theme": [ "./../unity-bootstrap-theme" ],
+      "@asu/unity-bootstrap-theme/*": [ "./../unity-bootstrap-theme/*" ],
+    }
+  },
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

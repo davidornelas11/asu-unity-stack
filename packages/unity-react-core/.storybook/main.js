@@ -1,5 +1,3 @@
-const path = require("path");
-
 export default {
   staticDirs: ['../dist'],
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -9,6 +7,7 @@ export default {
     "@whitespace/storybook-addon-html",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    '@storybook/addon-a11y',
     "storybook-css-modules-preset",
   ],
   core: {

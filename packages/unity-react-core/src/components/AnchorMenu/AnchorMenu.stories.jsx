@@ -5,21 +5,21 @@ import React from "react";
 import { AnchorMenu } from "./AnchorMenu";
 
 export default {
-  title: "UDS/AnchorMenu",
+  title: "Components/AnchorMenu",
   component: AnchorMenu,
   excludeStories: ["Containers"],
   parameters: {
     docs: {
       description: {
         component: `The Anchor Menu component can be used to generate a responsive anchor menu.
-        ## Usage
+## Usage
 
-        Anchor menu users are responsible to meet all UDS design guidelines with their menu,
-        including rules on the use of Call-to-Action buttons and tags.
+Anchor menu users are responsible to meet all UDS design guidelines with their menu,
+including rules on the use of Call-to-Action buttons and tags.
 
-        View component examples and source code below.
+View component examples and source code below.
 
-        This story includes another components for demostration purposes.
+This story includes another components for demostration purposes.
         `,
       },
     },

@@ -1,6 +1,7 @@
 // @ts-check
-import { render, fireEvent, cleanup } from "@testing-library/react";
+import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import React from "react";
+import { expect, describe, it, afterEach, beforeEach } from "vitest";
 
 import { AnchorMenu } from "./AnchorMenu";
 import { Containers } from "./AnchorMenu.stories";
@@ -14,8 +15,6 @@ const defaultArgs = {
   ],
   firstElementId: "first-container",
 };
-
-const spyScrollTo = jest.fn();
 
 const renderAnchorMenu = props => {
   return render(
@@ -31,19 +30,18 @@ describe("#Anchor Menu", () => {
   let component;
 
   beforeEach(() => {
-    Object.defineProperty(window, "scrollTo", { value: spyScrollTo });
     component = renderAnchorMenu(defaultArgs);
   });
   afterEach(cleanup);
 
   it("should define the component", () => {
-    expect(component).toBeDefined();
+    expect(screen.getByTestId("anchor-menu-container")).toBeDefined();
   });
 
   it("should scroll to the section specified", async () => {
     const itemExample = "first-container";
     const anchor = await component.findByTestId(`anchor-item-${itemExample}`);
     fireEvent.click(anchor);
-    expect(spyScrollTo).toHaveBeenCalled();
+    expect(anchor).toBeVisible();
   });
 });

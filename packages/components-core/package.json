@@ -1,6 +1,6 @@
 {
   "name": "@asu/components-core",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "main": "./dist/libCore.cjs.js",
   "browser": "./dist/libCore.umd.js",
   "module": "./dist/libCore.es.js",
@@ -36,7 +36,6 @@
     "postbuild": "cp ./types/main.d.ts ./dist/main.d.ts",
     "build:stats": "webpack -c webpack/webpack.prod.js --profile --json=compilation-stats.json",
     "storybook": "storybook dev -p 9100",
-    "percy": "build-storybook -c ./.storybook/percy -o ./percy-storybook && export PERCY_TOKEN=$PERCY_TOKEN_COMPONENTS_CORE && percy storybook ./percy-storybook",
     "build-storybook": "storybook build -o ../../build/$npm_package_name",
     "jsdoc": "jsdoc -c jsdoc.config.js",
     "predocs": "mkdir -p ./docs",
@@ -44,20 +43,18 @@
     "postdocs": "node ../../scripts/process-readme-props.js"
   },
   "devDependencies": {
-    "@asu/unity-bootstrap-theme": "^1.0.0",
+    "@asu/unity-bootstrap-theme": "workspace:^",
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.21.3",
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
-    "@percy/cli": "^1.28",
-    "@percy/storybook": "^4.3.4",
     "@storybook/addon-essentials": "^7.6.14",
     "@storybook/addon-interactions": "^7.6.14",
     "@storybook/addon-links": "^7.6.14",
     "@storybook/react": "^7.6.14",
     "@storybook/react-webpack5": "^7.6.14",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
+    "@testing-library/react": "^16.0.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
@@ -71,11 +68,11 @@
     "jest-transform-file": "^1.1.1",
     "jsdom-screenshot": "^4.0.0",
     "postcss": "^8.4.19",
-    "react": ">= 16.14.0 < 18",
-    "react-dom": ">= 16.14.0 < 18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.2.1",
     "react-share": "^4.4.0",
-    "reactstrap": "^8.9.0",
+    "reactstrap": "^9",
     "semantic-release": "^17.4.2",
     "semantic-release-monorepo": "^7.0.4",
     "storybook": "^7.6.14",
@@ -91,11 +88,11 @@
     "styled-components": "^5.3.0"
   },
   "peerDependencies": {
-    "react": ">= 16.14.0 < 18",
-    "react-dom": ">= 16.14.0 < 18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": ">= 5.2.0 < 7",
     "react-share": "^4.4.0",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^9"
   },
   "exports": {
     "./*": "./*",

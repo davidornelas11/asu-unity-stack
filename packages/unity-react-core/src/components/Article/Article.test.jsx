@@ -2,13 +2,15 @@
 // @ts-check
 import { render, cleanup } from "@testing-library/react";
 import React from "react";
+import { expect, describe, it, afterEach, beforeEach } from "vitest";
 
+import img from "../../../../../shared/assets/img/named/hero01.jpg";
 import { Article } from "./Article";
 
 const defaultArgs = {
   type: "news",
   articleUrl: "https://example.com",
-  headerImageUrl: "https://source.unsplash.com/random/1920x512",
+  headerImageUrl: img,
   title:
     "Clarisse Machanguana takes her skill set to the next level at ASU Thunderbird",
   publicationDate: "March 18, 2021",
@@ -57,9 +59,10 @@ describe("#Article", () => {
     [`Body`, `body`],
   ];
 
-  it.each(sections)("should define %p section", (_, testId) =>
-    expect(component.queryByTestId(testId)).toBeInTheDocument()
-  );
+  it.each(sections)("should define %p section", (_, testId) => {
+    const element = component.queryByTestId(testId);
+    expect(element).toBeInTheDocument();
+  });
 });
 
 describe("#News Article", () => {

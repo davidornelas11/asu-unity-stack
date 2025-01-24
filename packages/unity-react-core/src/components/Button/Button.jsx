@@ -4,7 +4,8 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import React from "react";
 
-import { trackGAEvent } from "../../../../../shared";
+import { gaDataType } from "../../core/models/shared-prop-types";
+import { GaEventWrapper } from "../GaEventWrapper/GaEventWrapper";
 
 const gaDefaultObject = {
   name: "onclick",
@@ -25,6 +26,7 @@ const gaDefaultObject = {
 export const Button = ({
   label,
   cardTitle,
+  gaData,
   ariaLabel,
   block,
   color,
@@ -52,25 +54,29 @@ export const Button = ({
     Tag = "a";
   }
 
-  const handleClick = text => {
-    trackGAEvent({ ...gaDefaultObject, text, section: cardTitle });
-    onClick?.();
-  };
-
   return (
-    <Tag
-      type={Tag === "button" && onClick ? "button" : undefined}
-      {...props}
-      className={classNames(classes) || btnClasses}
-      href={href}
-      ref={innerRef}
-      onClick={() => handleClick(label)}
-      aria-label={ariaLabel}
-      target={Tag === "a" ? target : null}
+    <GaEventWrapper
+      gaData={{
+        ...gaDefaultObject,
+        section: cardTitle, // @deprecated - remove at some point
+        ...gaData,
+        text: label,
+      }}
     >
-      {icon && <i className={`${icon?.[0]} fa-${icon?.[1]} me-1`} />}
-      {label}
-    </Tag>
+      <Tag
+        type={Tag === "button" && onClick ? "button" : undefined}
+        {...props}
+        className={classNames(classes) || btnClasses}
+        href={href}
+        ref={innerRef}
+        onClick={onClick}
+        aria-label={ariaLabel}
+        target={Tag === "a" ? target : null}
+      >
+        {icon && <i className={`${icon?.[0]} fa-${icon?.[1]} me-1`} />}
+        {label}
+      </Tag>
+    </GaEventWrapper>
   );
 };
 
@@ -80,9 +86,14 @@ Button.propTypes = {
    */
   label: PropTypes.string,
   /**
-   * Card title
+   * @deprecated
+   * Card title, use `gaData.section` instead
    */
   cardTitle: PropTypes.string,
+  /**
+   * Google Analytics event data
+   */
+  gaData: gaDataType,
   /**
     ARIA label for accessibility
   */

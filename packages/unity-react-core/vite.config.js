@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import path, { resolve } from "path";
 import { defineConfig } from "vite";
 
 import pkg from "./package.json";
@@ -22,11 +22,11 @@ export default defineConfig({
         },
       },
     },
-    minify: "terser",
-    cssCodeSplit: false,
+    minify: true,
+    cssCodeSplit: true,
   },
   esbuild: {
-    legalComments: "none",
+    legalComments: "eof",
     keepNames: false,
   },
   define: {
@@ -64,10 +64,22 @@ export default defineConfig({
               })();`;
             }
             // eslint-disable-next-line no-param-reassign
-            delete bundle[file.fileName];
+            // TODO: Check with Dave.
+            // Why was this here? At least during Storybook build,
+            // it was causing the CSS to be removed from the build.
+            // delete bundle[file.fileName];
           }
         });
       },
     },
   ],
+  resolve: {
+    alias: {
+      "@shared": path.resolve(__dirname, "./../../shared"),
+      "@asu/unity-bootstrap-theme": path.resolve(
+        __dirname,
+        "./../unity-bootstrap-theme"
+      ),
+    },
+  },
 });

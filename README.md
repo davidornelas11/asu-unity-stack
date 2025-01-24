@@ -1,6 +1,7 @@
 # ASU Unity Design System (UDS)
 
 ## Table of Contents
+
 - [ASU Unity Design System (UDS)](#asu-unity-design-system-uds)
   - [Table of Contents](#table-of-contents)
   - [Pre-requisites:](#pre-requisites)
@@ -22,7 +23,6 @@
   - [Structure](#structure)
   - [Building, Testing (from the package root at packages/\[package-name\])](#building-testing-from-the-package-root-at-packagespackage-name)
   - [Running end-to-end testing (from the Git project root)(currently disabled)](#running-end-to-end-testing-from-the-git-project-rootcurrently-disabled)
-  - [Visual Regression Testing](#visual-regression-testing)
   - [❯ CLI tools](#-cli-tools)
     - [check-element-changes](#check-element-changes)
     - [check-element-local-changes](#check-element-local-changes)
@@ -52,7 +52,7 @@ This workflow uses Volta version 1.1.1. Install that version using
 ```bash
 sh getvolta/getvolta.sh --version 1.1.1
 ```
-- Verify that a yarnrc.yml file is not in your home folder or any parent directory. Yarn4 will use that as default instead of the project's version of that file.
+- Verify that a yarnrc.yml file is not in your home folder or any parent directory. Yarn4+ will use that as default instead of the project's version of that file.
 
 
 ## Consuming Unity packages in your separate project:
@@ -79,13 +79,17 @@ The ASU Unity Design System packages are published to GitHub's package registry.
 3. Once you have access, there is a ```.env.yarn.example``` file in the root of this project with the correct environment variable name used in the ```.yarnrc.yml``` file. Make a copy and name it ```.env.yarn``` and replace the ```YOUR_AUTH_TOKEN_HERE``` with a [GitHub Personal Access Token](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages) to have a project-based configuration for adding Unity package dependencies to your project.
 4. The environment variable in the ```.env.yarn``` file is used in the ```.yarnrc.yml``` file to authenticate with the GitHub package registry. The ```.yarnrc.yml``` file is used by Yarn to configure the package registry.
 5. Test installing packages using yarn or npm inside of another NPM project:
-```yarn add @asu/design-tokens```
+```yarn add @asu/unity-bootstrap-theme```
 
 ### TROUBLESHOOTING ERRORS
 
 If you get errors having to do with yarn not being able to find a package on the registry, try running ```yarn config list``` at the project root and look for the ```registry:``` key under yarn config. If it is not set to ```https://registry.yarnpkg.com``` then run ```yarn config delete registry``` and recheck config.
 
-For custom compilation and sub-themes using the `unity-bootstrap-theme` package, make sure your bundling/compilation tool is compatible with the scss. For example, if you are using Gulp for scss compilation, you will need to handle the new module imports used in our Webpack configuration.
+We no longer use Gulp in our build process and have switched from webpack to vite. This shouldnt be an issue for most users.
+
+For custom compilation and sub-themes using the `unity-bootstrap-theme` package, make sure your bundling/compilation tool is compatible with the scss. For example, if you are using Gulp for scss compilation, you will need to handle the new module imports used in our Vite configuration.
+
+Verify that a yarnrc.yml file is not in your home folder or any parent directory. Yarn4+ will use that as default instead of the project's version of that file.
 
 In the old `bootstrap4-theme` package, we would import the Bootstrap scss with `@import "../../node_modules/bootstrap/scss/root";`
 In the new theme it is imported directly with  `@import "bootstrap/scss/functions";`
@@ -108,7 +112,7 @@ This repository contains multiple packages which are managed and published using
 9. [component-header](./packages/component-header/README.md) - standalone header component that doesn't require the ```unity-bootstrap-theme``` styles
 10. [component-news](./packages/component-news/README.md)
 11. [components-core](./packages/components-core/README.md)
-12. [unity-react-core](./packages/unity-react-core/README.md)
+12. [unity-react-core](./packages/unity-react-core/README.md) *Now includes the component carousel package*
 
 ## Deprecated packages
 
@@ -251,18 +255,6 @@ It's also possible to build a package from the git project root with a Yarn work
 yarn build # build the project
 yarn start & yarn test:e2e # start the testing server and run e2e tests
 yarn stop # stop the testing server
-```
-
-
-## Visual Regression Testing
-
-We use Percy for visual regression testing. Percy is a visual testing platform that allows us to take screenshots of our components and compare them to previous versions to ensure that changes to our components do not introduce visual regressions. Percy runs on every pull request against the main branch. If you are a contributor, you can view the Percy build approval link in the pull request template and approve the build if it looks good. To run tests locally in a dry-run mode, add the `--dry-run` flag in the `percy-test` script in the `scripts/percy-testing.js` file. This will allow you to see how many snapshots will be taken and whether the tests wil fail without uploading to percy cloud. Then run:
-
-```bash
-yarn build # build the project
-yarn build-storybook # build storybook
-export PERCY_PARALLEL_NONCE=RANDOM_STRING # set the PERCY_PARALLEL_NONCE environment variable to any random alphanumeric string.
-yarn percy-test # run percy tests
 ```
 
 

@@ -15,6 +15,12 @@ spec:
     command:
     - cat
     tty: true
+  - name: playwright
+    image: 'mcr.microsoft.com/playwright:v1.48.0-noble'
+    imagePullPolicy: Always
+    command:
+    - cat
+    tty: true
   - name: puppeteer
     image: 'ghcr.io/puppeteer/puppeteer:22'
     imagePullPolicy: Always
@@ -31,7 +37,6 @@ spec:
         RAW_GH_TOKEN = credentials('github-org-asu-pac')
         NPM_TOKEN = credentials('NPM_TOKEN')
         NODE_AUTH_TOKEN = credentials('github-org-asu-pac')
-        PERCY_TOKEN = credentials('PERCY_TOKEN')
     }
     options {
       buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
@@ -46,7 +51,6 @@ spec:
                 container('node20') {
                   script {
                     echo '## Configure env file for @asu registry...'
-                    writeFile file: '.env', text: 'GITHUB_AUTH_TOKEN=' + env.RAW_GH_TOKEN_PSW
                     echo '## Install and build Unity monorepo...'
                     sh 'yarn install --immutable'
                     sh 'yarn build'
@@ -64,9 +68,6 @@ spec:
                 container('node20') {
                   withEnv(["GITHUB_AUTH_TOKEN=${RAW_GH_TOKEN_PSW}"]) {
                     echo '## Install and build Unity monorepo...'
-                    sh 'yarn -v'
-                    sh 'node -v'
-                    sh 'npm -v'
                     sh 'yarn install'
                     sh 'yarn build'
                   }
@@ -75,30 +76,37 @@ spec:
         }
         stage('Test') {
             steps {
-                container('node20') {
+                container('playwright') {
                     echo '## Running jests tests...'
                     sh 'yarn test'
                 }
             }
         }
-        stage('Visual Regression Testing') {
+        stage('Security Check') {
           when {
-            allOf {
-              expression { env.CHANGE_TARGET == 'dev' }
-              expression { // Only run if there are changes in packages directory
-                sh(returnStatus: true, script: 'git diff origin/dev... --name-only | grep --quiet "^packages/.*"') == 0
-              }
-            }
+            expression { env.CHANGE_TARGET == 'dev' }
           }
           steps {
               container('node20') {
-                echo 'building storybook...'
-                sh 'yarn build-storybook'
-              }
-              container('puppeteer') {
-                  echo 'running percy tests...'
-                  sh 'yarn percy-test'
-              }
+                withEnv(["GITHUB_AUTH_TOKEN=${RAW_GH_TOKEN_PSW}"]) {
+                  echo '## Running security checks...'
+                  sh 'yarn install --immutable'
+                  sh 'yarn npm audit --all --severity critical'
+                  script {
+                  def result = sh(
+                      script: 'yarn npm audit --all --severity high',
+                      returnStatus: true
+                  )
+                  if (result != 0) {
+                    slackSend(
+                        channel: '#prd-uds',
+                        color: 'warning',
+                        message: "@uds-developers Action might be needed: ${env.RUN_DISPLAY_URL}"
+                    )
+                  }
+                  }
+                }
+            }
           }
         }
         stage('Publish') {

@@ -1,4 +1,12 @@
 // @ts-check
+/**
+ *
+ *
+ * TODO: Does not work with Bootstrap Framework
+ * Requires functionality UDS-1664
+ *
+ *
+ */
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -22,6 +30,7 @@ import { BaseCarousel } from "../../core/components/BaseCarousel";
  * @ignore
  */
 const htmlTemplate = ({ id, imageSource, imageAltText, title, content }) => ({
+  // @ts-ignore
   id,
   item: (
     <div className="uds-img">
@@ -62,13 +71,17 @@ const htmlTemplate = ({ id, imageSource, imageAltText, title, content }) => ({
  * @returns { JSX.Element }
  */
 const ImageCarousel = ({
-  perView,
-  imageItems,
+  perView: perViewProp = 0,
+  imageItems = [],
   width = undefined,
   maxWidth = undefined,
   imageAutoSize = true,
 }) => {
-  const carouselItems = imageItems.map(htmlTemplate);
+  if (!imageItems || imageItems.length === 0) {
+    return null;
+  }
+  const perView = parseInt(`${perViewProp}`, 10);
+  const carouselItems = imageItems.map(htmlTemplate) || [];
   const activateGlideActions = imageItems.length > perView;
 
   return (

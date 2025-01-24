@@ -2,7 +2,8 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { trackGAEvent } from "../../../../../shared";
+import { gaDataType } from "../../core/models/shared-prop-types";
+import { GaEventWrapper } from "../GaEventWrapper/GaEventWrapper";
 
 const gaDefaultObject = {
   name: "onclick",
@@ -27,24 +28,37 @@ export const ButtonIconOnly = ({
   onClick,
   size,
   cardTitle,
+  className,
+  gaData,
+  ...rest
 }) => {
-  const handleClick = text => {
-    trackGAEvent({ ...gaDefaultObject, text, section: cardTitle });
+  const handleClick = () => {
     onClick?.();
   };
 
   return (
-    <button
-      type="button"
-      className={`btn btn-circle btn-circle-alt-${color} ${
-        size === "large" && "btn-circle-large"
-      }`}
-      ref={innerRef}
-      onClick={() => handleClick(`${icon?.[1]} icon`)}
-      aria-label="Close"
+    <GaEventWrapper
+      gaData={{
+        ...gaDefaultObject,
+        section: cardTitle, // @deprecated - remove at some point
+        ...gaData,
+        text: `${icon?.[1]} icon`,
+      }}
     >
-      <i className={`${icon?.[0]} fa-${icon?.[1]}`} />
-    </button>
+      <button
+        type="button"
+        className={`btn btn-circle btn-circle-alt-${color} ${
+          size === "large" && "btn-circle-large"
+        } ${className}`}
+        ref={innerRef}
+        aria-label="Close"
+        onClick={handleClick}
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...rest}
+      >
+        <i className={`${icon?.[0]} fa-${icon?.[1]}`} />
+      </button>
+    </GaEventWrapper>
   );
 };
 
@@ -71,13 +85,19 @@ ButtonIconOnly.propTypes = {
   */
   onClick: PropTypes.func,
   /**
-   * Card title
+   * @deprecated
+   * Card title, use `gaData.section` instead
    */
   cardTitle: PropTypes.string,
+  /**
+   * Google Analytics event data
+   */
+  gaData: gaDataType,
   /**
     Button size
   */
   size: PropTypes.oneOf(["large", "small"]),
+  className: PropTypes.string,
 };
 
 ButtonIconOnly.defaultProps = {

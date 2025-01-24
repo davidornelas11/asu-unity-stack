@@ -1,4 +1,12 @@
 // @ts-check
+/**
+ *
+ *
+ * TODO: Does not work with Bootstrap Framework
+ * Requires functionality UDS-1664
+ *
+ *
+ */
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -31,6 +39,7 @@ const htmlTemplate = (
   { id, imageSource, imageAltText, quote },
   itemStyle = {}
 ) => ({
+  // @ts-ignore
   id,
   item: (
     <Testimonial
@@ -49,7 +58,7 @@ const htmlTemplate = (
 const TestimonialCarousel = ({
   width,
   maxWidth,
-  testimonialItems,
+  testimonialItems = [],
   itemStyle = {},
   hasNavButtons = false,
   hasPositionIndicators = false,

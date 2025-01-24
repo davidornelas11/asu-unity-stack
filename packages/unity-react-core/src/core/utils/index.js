@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import { Accordion } from "../../components/Accordion/Accordion";
 import { AnchorMenu } from "../../components/AnchorMenu/AnchorMenu";
@@ -15,12 +15,18 @@ import {
   initTestimonialCarousel,
   initImageCarousel,
   initImageGalleryCarousel,
-} from "../../components/ComponentCarousel";
+} from "../../components/ComponentCarousel/ComponentCarousel";
+import { Divider } from "../../components/Divider/Divider.tsx";
+import { GridLinks } from "../../components/GridLinks/GridLinks.tsx";
 import { Hero } from "../../components/Hero/Hero";
 import { Image } from "../../components/Image/Image";
+import { List } from "../../components/List/List.tsx";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { RankingCard } from "../../components/RankingCard/RankingCard";
+import { SystemAlert } from "../../components/SystemAlert/SystemAlert.tsx";
+import { TabbedPanels } from "../../components/TabbedPanels/TabbedPanels";
 import { Testimonial } from "../../components/Testimonial/Testimonial";
+import { Tooltip } from "../../components/Tooltip/Tooltip.tsx";
 import { Video } from "../../components/Video/Video";
 
 /**
@@ -35,7 +41,8 @@ import { Video } from "../../components/Video/Video";
  * @param {ComponentProps} props
  */
 const RenderReact = (component, props, target) => {
-  ReactDOM.render(React.createElement(component, props), target);
+  const root = createRoot(target);
+  root.render(React.createElement(component, props));
 };
 
 /**
@@ -83,6 +90,12 @@ export const initCard = ({ targetSelector, props }) =>
 /**
  * @param {ComponentProps} props
  */
+export const initGridLinks = ({ targetSelector, props }) =>
+  RenderReact(GridLinks, props, document.querySelector(targetSelector));
+
+/**
+ * @param {ComponentProps} props
+ */
 export const initHero = ({ targetSelector, props }) =>
   RenderReact(Hero, props, document.querySelector(targetSelector));
 
@@ -95,14 +108,20 @@ export const initImage = ({ targetSelector, props }) =>
 /**
  * @param {ComponentProps} props
  */
+export const initPagination = ({ targetSelector, props }) =>
+  RenderReact(Pagination, props, document.querySelector(targetSelector));
+
+/**
+ * @param {ComponentProps} props
+ */
 export const initRankingCard = ({ targetSelector, props }) =>
   RenderReact(RankingCard, props, document.querySelector(targetSelector));
 
 /**
  * @param {ComponentProps} props
  */
-export const initPagination = ({ targetSelector, props }) =>
-  RenderReact(Pagination, props, document.querySelector(targetSelector));
+export const initTabbedPanels = ({ targetSelector, props }) =>
+  RenderReact(TabbedPanels, props, document.querySelector(targetSelector));
 
 /**
  * @param {ComponentProps} props
@@ -115,3 +134,31 @@ export const initTestimonial = ({ targetSelector, props }) =>
  */
 export const initVideo = ({ targetSelector, props }) =>
   RenderReact(Video, props, document.querySelector(targetSelector));
+
+/**
+ * @param {ComponentProps} props
+ */
+export const initSystemAlert = ({ targetSelector, props }) =>
+  RenderReact(SystemAlert, props, document.querySelector(targetSelector));
+
+/**
+ * @param {ComponentProps} props
+ */
+export const initDivider = ({ targetSelector, props }) =>
+  RenderReact(Divider, props, document.querySelector(targetSelector));
+
+export {
+  initCardCarousel,
+  initTestimonialCarousel,
+  initImageCarousel,
+  initImageGalleryCarousel,
+};
+
+export const initTooltip = ({ targetSelector, props }) =>
+  RenderReact(Tooltip, props, document.querySelector(targetSelector));
+
+/**
+ * @param {ComponentProps} props
+ */
+export const initList = ({ targetSelector, props }) =>
+  RenderReact(List, props, document.querySelector(targetSelector));

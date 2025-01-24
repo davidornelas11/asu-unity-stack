@@ -2,6 +2,7 @@
 // @ts-check
 import { render, cleanup, fireEvent } from "@testing-library/react";
 import React from "react";
+import { expect, describe, it, afterEach, beforeEach } from "vitest";
 
 // eslint-disable-next-line jest/no-mocks-import
 import { imageGalleryCarouselProps } from "../../../../../__mocks__/data/props-mock";
@@ -52,18 +53,20 @@ describe("#Image Gallery Carousel", () => {
     expect(imageItems).toBe(renderedItems);
   });
 
-  it("should scroll the slider on arrow button click", () => {
+  it("should scroll the slider on arrow button click", async () => {
     const arrowButton = component
-      .queryByTestId("arrows-container")
-      .getElementsByClassName("glide__arrow--next")[0];
-    fireEvent.click(arrowButton);
-    setTimeout(() => {
-      const targetElement =
-        component.container.querySelectorAll("li.glide__slide")[1];
-      expect(targetElement.getAttribute("class")).toContain(
-        "glide__slide--active"
-      );
-    });
+      ?.queryByTestId("arrows-container")
+      ?.getElementsByClassName("glide__arrow--next")[0];
+    expect(arrowButton).not.toBeNull();
+    if (arrowButton) {
+      fireEvent.click(arrowButton);
+    }
+    await new Promise(resolve => setTimeout(resolve, 400));
+    const targetElement =
+      component.container.querySelectorAll("li.glide__slide")[1];
+    expect(targetElement.getAttribute("class")).toContain(
+      "glide__slide--active"
+    );
   });
 });
 
