@@ -1,0 +1,1 @@
+var f=Object.defineProperty;var o=(e,t)=>f(e,"name",{value:t,configurable:!0});var l={},d=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof l<"u"?l:typeof self<"u"?self:{};function a(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}o(a,"getDefaultExportFromCjs");export{d as c,a as g};
