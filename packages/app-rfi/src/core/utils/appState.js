@@ -87,6 +87,7 @@ export const useRfiState = props => {
   const [certMinorEmail, setCertMinorEmail] = useState("");
   const [degreeData, setDegreeData] = useState({});
   const [success, setSuccess] = useState();
+  const [rfiSubmitting, setRfiSubmitting] = useState(false);
 
   const goNext = values => {
     setSnapshot(values);
@@ -110,7 +111,11 @@ export const useRfiState = props => {
       await step.props.onSubmit(values, bag);
     }
     if (isLastStep) {
-      rfiSubmit(values, submissionUrl, test, () => setSuccess(true));
+      setRfiSubmitting(true);
+      rfiSubmit(values, submissionUrl, test, () => {
+        setRfiSubmitting(false);
+        setSuccess(true);
+      });
       return;
     }
     bag.setTouched({});
@@ -222,14 +227,23 @@ export const useRfiState = props => {
     setCampusProgramHasChoice,
     degreeDataList,
     degreeData,
+    showForm: true,
     showStepButtons: true,
     props,
     formik,
     handleBack,
+    rfiSubmitting,
     step,
     totalSteps,
     stepNumber,
   };
+
+  // ERFI-159 Do not render if a programOfInterest prop has rfiDisplay = false
+  // 'showForm' will allow the root '/AsuRfi/index.js` to exit before rendering
+  if (props.programOfInterest && degreeData.rfiDisplay === false) {
+    returnObject.showForm = false;
+    return returnObject;
+  }
 
   // ERFI-58 Always show CertInfo page if prop is true
   if (isCertMinor) {

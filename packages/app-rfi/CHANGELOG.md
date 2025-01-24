@@ -1,3 +1,23 @@
+# [@asu/app-rfi-v2.4.1](https://github.com/asu/asu-unity-stack/compare/@asu/app-rfi-v2.4.0...@asu/app-rfi-v2.4.1) (2024-10-04)
+
+
+### Bug Fixes
+
+* **app-rfi:** account for steps counting as submits ([24abdfd](https://github.com/asu/asu-unity-stack/commit/24abdfd02e83d493ce935509ae152124263bb27a))
+* **app-rfi:** get prop type right ([2192fd9](https://github.com/asu/asu-unity-stack/commit/2192fd95057792ce29e7ed930c1021d960cfab5b))
+* **app-rfi:** missing prop update ([57855a8](https://github.com/asu/asu-unity-stack/commit/57855a8b45b7e31a230e0ffd1ed6251a6cce149c))
+* **app-rfi:** remove timeout for testing. add prop definition. linting fixes ([ad7bd44](https://github.com/asu/asu-unity-stack/commit/ad7bd44ed0f49a4f7f78d638d897b1f0806cb7ca))
+* **app-rfi:** use submitCount to prevent dupes ([09274ae](https://github.com/asu/asu-unity-stack/commit/09274ae2634c1758ddff094e9552aa420fb298a9))
+
+# [@asu/app-rfi-v2.4.0](https://github.com/asu/asu-unity-stack/compare/@asu/app-rfi-v2.3.13...@asu/app-rfi-v2.4.0) (2024-09-25)
+
+
+### Features
+
+* **app-rfi:** only display plan if rfiDisplay true ([2527a58](https://github.com/asu/asu-unity-stack/commit/2527a58c7a2c9204044df013256d1a97321d6a65))
+* **app-rfi:** RFI form not displayed message ([0dfe49c](https://github.com/asu/asu-unity-stack/commit/0dfe49cfabbb9ca07290a5ccef6c47cd656d0b20))
+* **app-rfi:** rfiDisplay false renders blank ([9f1983a](https://github.com/asu/asu-unity-stack/commit/9f1983ad9db7dc62f94d8aa73e348b64490e9c79))
+
 # [@asu/app-rfi-v2.3.13](https://github.com/asu/asu-unity-stack/compare/@asu/app-rfi-v2.3.12...@asu/app-rfi-v2.3.13) (2024-09-11)
 
 

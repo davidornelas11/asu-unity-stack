@@ -33,6 +33,7 @@ const ButtonItem = ({ link, dropdownName, handleLinkEvent }) => (
       onClick={e => handleLinkEvent(e, link)}
       onKeyDown={handleLinkEvent}
       onFocus={() => trackGAEvent({ text: link.text, component: dropdownName })}
+      data-testid="submenu-item"
     />
   </li>
 );
@@ -55,6 +56,7 @@ const LinkItem = ({ link, dropdownName, handleLinkEvent }) => (
       onClick={e => handleLinkEvent(e, link)}
       onKeyDown={e => handleLinkEvent(e, link)}
       onFocus={() => trackGAEvent({ text: link.text, component: dropdownName })}
+      data-testid="submenu-item"
     >
       {link.text}
     </a>
@@ -210,12 +212,14 @@ const DropdownItem = ({
 DropdownItem.propTypes = {
   dropdownName: PropTypes.string,
   items: PropTypes.arrayOf(
+    PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string,
       selected: PropTypes.bool,
       onClick: PropTypes.func,
       href: PropTypes.string,
     })
+  )
   ),
   buttons: PropTypes.arrayOf(PropTypes.shape(ButtonPropTypes)),
   classes: PropTypes.string,
