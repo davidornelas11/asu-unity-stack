@@ -1,2 +1,8146 @@
-/*! For license information please see degreePages.es.js.LICENSE.txt */
-import*as e from"react";import*as t from"react-dom";var n={841:(e,t)=>{var n;!function(){var r={}.hasOwnProperty;function a(){for(var e=[],t=0;t<arguments.length;t++){var n=arguments[t];if(n){var o=typeof n;if("string"===o||"number"===o)e.push(n);else if(Array.isArray(n)){if(n.length){var l=a.apply(null,n);l&&e.push(l)}}else if("object"===o){if(n.toString!==Object.prototype.toString&&!n.toString.toString().includes("[native code]")){e.push(n.toString());continue}for(var i in n)r.call(n,i)&&n[i]&&e.push(i)}}}return e.join(" ")}e.exports?(a.default=a,e.exports=a):void 0===(n=function(){return a}.apply(t,[]))||(e.exports=n)}()},951:function(e){e.exports=function(){function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(e,n){return t=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e},t(e,n)}function n(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}function r(e,a,o){return r=n()?Reflect.construct:function(e,n,r){var a=[null];a.push.apply(a,n);var o=new(Function.bind.apply(e,a));return r&&t(o,r.prototype),o},r.apply(null,arguments)}function a(e){return function(e){if(Array.isArray(e))return o(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||function(e,t){if(e){if("string"==typeof e)return o(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?o(e,t):void 0}}(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function o(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var l=Object.hasOwnProperty,i=Object.setPrototypeOf,c=Object.isFrozen,s=Object.getPrototypeOf,u=Object.getOwnPropertyDescriptor,d=Object.freeze,f=Object.seal,m=Object.create,p="undefined"!=typeof Reflect&&Reflect,g=p.apply,h=p.construct;g||(g=function(e,t,n){return e.apply(t,n)}),d||(d=function(e){return e}),f||(f=function(e){return e}),h||(h=function(e,t){return r(e,a(t))});var v,b=P(Array.prototype.forEach),y=P(Array.prototype.pop),E=P(Array.prototype.push),w=P(String.prototype.toLowerCase),O=P(String.prototype.toString),x=P(String.prototype.match),k=P(String.prototype.replace),C=P(String.prototype.indexOf),S=P(String.prototype.trim),A=P(RegExp.prototype.test),N=(v=TypeError,function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return h(v,t)});function P(e){return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),a=1;a<n;a++)r[a-1]=arguments[a];return g(e,t,r)}}function j(e,t,n){n=n||w,i&&i(e,null);for(var r=t.length;r--;){var a=t[r];if("string"==typeof a){var o=n(a);o!==a&&(c(t)||(t[r]=o),a=o)}e[a]=!0}return e}function T(e){var t,n=m(null);for(t in e)g(l,e,[t])&&(n[t]=e[t]);return n}function D(e,t){for(;null!==e;){var n=u(e,t);if(n){if(n.get)return P(n.get);if("function"==typeof n.value)return P(n.value)}e=s(e)}return function(e){return console.warn("fallback value for",e),null}}var L=d(["a","abbr","acronym","address","area","article","aside","audio","b","bdi","bdo","big","blink","blockquote","body","br","button","canvas","caption","center","cite","code","col","colgroup","content","data","datalist","dd","decorator","del","details","dfn","dialog","dir","div","dl","dt","element","em","fieldset","figcaption","figure","font","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","img","input","ins","kbd","label","legend","li","main","map","mark","marquee","menu","menuitem","meter","nav","nobr","ol","optgroup","option","output","p","picture","pre","progress","q","rp","rt","ruby","s","samp","section","select","shadow","small","source","spacer","span","strike","strong","style","sub","summary","sup","table","tbody","td","template","textarea","tfoot","th","thead","time","tr","track","tt","u","ul","var","video","wbr"]),M=d(["svg","a","altglyph","altglyphdef","altglyphitem","animatecolor","animatemotion","animatetransform","circle","clippath","defs","desc","ellipse","filter","font","g","glyph","glyphref","hkern","image","line","lineargradient","marker","mask","metadata","mpath","path","pattern","polygon","polyline","radialgradient","rect","stop","style","switch","symbol","text","textpath","title","tref","tspan","view","vkern"]),I=d(["feBlend","feColorMatrix","feComponentTransfer","feComposite","feConvolveMatrix","feDiffuseLighting","feDisplacementMap","feDistantLight","feFlood","feFuncA","feFuncB","feFuncG","feFuncR","feGaussianBlur","feImage","feMerge","feMergeNode","feMorphology","feOffset","fePointLight","feSpecularLighting","feSpotLight","feTile","feTurbulence"]),R=d(["animate","color-profile","cursor","discard","fedropshadow","font-face","font-face-format","font-face-name","font-face-src","font-face-uri","foreignobject","hatch","hatchpath","mesh","meshgradient","meshpatch","meshrow","missing-glyph","script","set","solidcolor","unknown","use"]),U=d(["math","menclose","merror","mfenced","mfrac","mglyph","mi","mlabeledtr","mmultiscripts","mn","mo","mover","mpadded","mphantom","mroot","mrow","ms","mspace","msqrt","mstyle","msub","msup","msubsup","mtable","mtd","mtext","mtr","munder","munderover"]),_=d(["maction","maligngroup","malignmark","mlongdiv","mscarries","mscarry","msgroup","mstack","msline","msrow","semantics","annotation","annotation-xml","mprescripts","none"]),F=d(["#text"]),q=d(["accept","action","align","alt","autocapitalize","autocomplete","autopictureinpicture","autoplay","background","bgcolor","border","capture","cellpadding","cellspacing","checked","cite","class","clear","color","cols","colspan","controls","controlslist","coords","crossorigin","datetime","decoding","default","dir","disabled","disablepictureinpicture","disableremoteplayback","download","draggable","enctype","enterkeyhint","face","for","headers","height","hidden","high","href","hreflang","id","inputmode","integrity","ismap","kind","label","lang","list","loading","loop","low","max","maxlength","media","method","min","minlength","multiple","muted","name","nonce","noshade","novalidate","nowrap","open","optimum","pattern","placeholder","playsinline","poster","preload","pubdate","radiogroup","readonly","rel","required","rev","reversed","role","rows","rowspan","spellcheck","scope","selected","shape","size","sizes","span","srclang","start","src","srcset","step","style","summary","tabindex","title","translate","type","usemap","valign","value","width","xmlns","slot"]),z=d(["accent-height","accumulate","additive","alignment-baseline","ascent","attributename","attributetype","azimuth","basefrequency","baseline-shift","begin","bias","by","class","clip","clippathunits","clip-path","clip-rule","color","color-interpolation","color-interpolation-filters","color-profile","color-rendering","cx","cy","d","dx","dy","diffuseconstant","direction","display","divisor","dur","edgemode","elevation","end","fill","fill-opacity","fill-rule","filter","filterunits","flood-color","flood-opacity","font-family","font-size","font-size-adjust","font-stretch","font-style","font-variant","font-weight","fx","fy","g1","g2","glyph-name","glyphref","gradientunits","gradienttransform","height","href","id","image-rendering","in","in2","k","k1","k2","k3","k4","kerning","keypoints","keysplines","keytimes","lang","lengthadjust","letter-spacing","kernelmatrix","kernelunitlength","lighting-color","local","marker-end","marker-mid","marker-start","markerheight","markerunits","markerwidth","maskcontentunits","maskunits","max","mask","media","method","mode","min","name","numoctaves","offset","operator","opacity","order","orient","orientation","origin","overflow","paint-order","path","pathlength","patterncontentunits","patterntransform","patternunits","points","preservealpha","preserveaspectratio","primitiveunits","r","rx","ry","radius","refx","refy","repeatcount","repeatdur","restart","result","rotate","scale","seed","shape-rendering","specularconstant","specularexponent","spreadmethod","startoffset","stddeviation","stitchtiles","stop-color","stop-opacity","stroke-dasharray","stroke-dashoffset","stroke-linecap","stroke-linejoin","stroke-miterlimit","stroke-opacity","stroke","stroke-width","style","surfacescale","systemlanguage","tabindex","targetx","targety","transform","transform-origin","text-anchor","text-decoration","text-rendering","textlength","type","u1","u2","unicode","values","viewbox","visibility","version","vert-adv-y","vert-origin-x","vert-origin-y","width","word-spacing","wrap","writing-mode","xchannelselector","ychannelselector","x","x1","x2","xmlns","y","y1","y2","z","zoomandpan"]),B=d(["accent","accentunder","align","bevelled","close","columnsalign","columnlines","columnspan","denomalign","depth","dir","display","displaystyle","encoding","fence","frame","height","href","id","largeop","length","linethickness","lspace","lquote","mathbackground","mathcolor","mathsize","mathvariant","maxsize","minsize","movablelimits","notation","numalign","open","rowalign","rowlines","rowspacing","rowspan","rspace","rquote","scriptlevel","scriptminsize","scriptsizemultiplier","selection","separator","separators","stretchy","subscriptshift","supscriptshift","symmetric","voffset","width","xmlns"]),H=d(["xlink:href","xml:id","xlink:title","xml:space","xmlns:xlink"]),G=f(/\{\{[\w\W]*|[\w\W]*\}\}/gm),W=f(/<%[\w\W]*|[\w\W]*%>/gm),$=f(/\${[\w\W]*}/gm),Y=f(/^data-[\-\w.\u00B7-\uFFFF]/),V=f(/^aria-[\-\w]+$/),K=f(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),X=f(/^(?:\w+script|data):/i),Z=f(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),J=f(/^html$/i),Q=function(){return"undefined"==typeof window?null:window},ee=function(t,n){if("object"!==e(t)||"function"!=typeof t.createPolicy)return null;var r=null,a="data-tt-policy-suffix";n.currentScript&&n.currentScript.hasAttribute(a)&&(r=n.currentScript.getAttribute(a));var o="dompurify"+(r?"#"+r:"");try{return t.createPolicy(o,{createHTML:function(e){return e},createScriptURL:function(e){return e}})}catch(e){return console.warn("TrustedTypes policy "+o+" could not be created."),null}};return function t(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:Q(),r=function(e){return t(e)};if(r.version="2.4.1",r.removed=[],!n||!n.document||9!==n.document.nodeType)return r.isSupported=!1,r;var o=n.document,l=n.document,i=n.DocumentFragment,c=n.HTMLTemplateElement,s=n.Node,u=n.Element,f=n.NodeFilter,m=n.NamedNodeMap,p=void 0===m?n.NamedNodeMap||n.MozNamedAttrMap:m,g=n.HTMLFormElement,h=n.DOMParser,v=n.trustedTypes,P=u.prototype,te=D(P,"cloneNode"),ne=D(P,"nextSibling"),re=D(P,"childNodes"),ae=D(P,"parentNode");if("function"==typeof c){var oe=l.createElement("template");oe.content&&oe.content.ownerDocument&&(l=oe.content.ownerDocument)}var le=ee(v,o),ie=le?le.createHTML(""):"",ce=l,se=ce.implementation,ue=ce.createNodeIterator,de=ce.createDocumentFragment,fe=ce.getElementsByTagName,me=o.importNode,pe={};try{pe=T(l).documentMode?l.documentMode:{}}catch(e){}var ge={};r.isSupported="function"==typeof ae&&se&&void 0!==se.createHTMLDocument&&9!==pe;var he,ve,be=G,ye=W,Ee=$,we=Y,Oe=V,xe=X,ke=Z,Ce=K,Se=null,Ae=j({},[].concat(a(L),a(M),a(I),a(U),a(F))),Ne=null,Pe=j({},[].concat(a(q),a(z),a(B),a(H))),je=Object.seal(Object.create(null,{tagNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},attributeNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},allowCustomizedBuiltInElements:{writable:!0,configurable:!1,enumerable:!0,value:!1}})),Te=null,De=null,Le=!0,Me=!0,Ie=!1,Re=!1,Ue=!1,_e=!1,Fe=!1,qe=!1,ze=!1,Be=!1,He=!0,Ge=!1,We="user-content-",$e=!0,Ye=!1,Ve={},Ke=null,Xe=j({},["annotation-xml","audio","colgroup","desc","foreignobject","head","iframe","math","mi","mn","mo","ms","mtext","noembed","noframes","noscript","plaintext","script","style","svg","template","thead","title","video","xmp"]),Ze=null,Je=j({},["audio","video","img","source","image","track"]),Qe=null,et=j({},["alt","class","for","id","label","name","pattern","placeholder","role","summary","title","value","style","xmlns"]),tt="http://www.w3.org/1998/Math/MathML",nt="http://www.w3.org/2000/svg",rt="http://www.w3.org/1999/xhtml",at=rt,ot=!1,lt=null,it=j({},[tt,nt,rt],O),ct=["application/xhtml+xml","text/html"],st="text/html",ut=null,dt=l.createElement("form"),ft=function(e){return e instanceof RegExp||e instanceof Function},mt=function(t){ut&&ut===t||(t&&"object"===e(t)||(t={}),t=T(t),he=he=-1===ct.indexOf(t.PARSER_MEDIA_TYPE)?st:t.PARSER_MEDIA_TYPE,ve="application/xhtml+xml"===he?O:w,Se="ALLOWED_TAGS"in t?j({},t.ALLOWED_TAGS,ve):Ae,Ne="ALLOWED_ATTR"in t?j({},t.ALLOWED_ATTR,ve):Pe,lt="ALLOWED_NAMESPACES"in t?j({},t.ALLOWED_NAMESPACES,O):it,Qe="ADD_URI_SAFE_ATTR"in t?j(T(et),t.ADD_URI_SAFE_ATTR,ve):et,Ze="ADD_DATA_URI_TAGS"in t?j(T(Je),t.ADD_DATA_URI_TAGS,ve):Je,Ke="FORBID_CONTENTS"in t?j({},t.FORBID_CONTENTS,ve):Xe,Te="FORBID_TAGS"in t?j({},t.FORBID_TAGS,ve):{},De="FORBID_ATTR"in t?j({},t.FORBID_ATTR,ve):{},Ve="USE_PROFILES"in t&&t.USE_PROFILES,Le=!1!==t.ALLOW_ARIA_ATTR,Me=!1!==t.ALLOW_DATA_ATTR,Ie=t.ALLOW_UNKNOWN_PROTOCOLS||!1,Re=t.SAFE_FOR_TEMPLATES||!1,Ue=t.WHOLE_DOCUMENT||!1,qe=t.RETURN_DOM||!1,ze=t.RETURN_DOM_FRAGMENT||!1,Be=t.RETURN_TRUSTED_TYPE||!1,Fe=t.FORCE_BODY||!1,He=!1!==t.SANITIZE_DOM,Ge=t.SANITIZE_NAMED_PROPS||!1,$e=!1!==t.KEEP_CONTENT,Ye=t.IN_PLACE||!1,Ce=t.ALLOWED_URI_REGEXP||Ce,at=t.NAMESPACE||rt,t.CUSTOM_ELEMENT_HANDLING&&ft(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck)&&(je.tagNameCheck=t.CUSTOM_ELEMENT_HANDLING.tagNameCheck),t.CUSTOM_ELEMENT_HANDLING&&ft(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck)&&(je.attributeNameCheck=t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck),t.CUSTOM_ELEMENT_HANDLING&&"boolean"==typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements&&(je.allowCustomizedBuiltInElements=t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements),Re&&(Me=!1),ze&&(qe=!0),Ve&&(Se=j({},a(F)),Ne=[],!0===Ve.html&&(j(Se,L),j(Ne,q)),!0===Ve.svg&&(j(Se,M),j(Ne,z),j(Ne,H)),!0===Ve.svgFilters&&(j(Se,I),j(Ne,z),j(Ne,H)),!0===Ve.mathMl&&(j(Se,U),j(Ne,B),j(Ne,H))),t.ADD_TAGS&&(Se===Ae&&(Se=T(Se)),j(Se,t.ADD_TAGS,ve)),t.ADD_ATTR&&(Ne===Pe&&(Ne=T(Ne)),j(Ne,t.ADD_ATTR,ve)),t.ADD_URI_SAFE_ATTR&&j(Qe,t.ADD_URI_SAFE_ATTR,ve),t.FORBID_CONTENTS&&(Ke===Xe&&(Ke=T(Ke)),j(Ke,t.FORBID_CONTENTS,ve)),$e&&(Se["#text"]=!0),Ue&&j(Se,["html","head","body"]),Se.table&&(j(Se,["tbody"]),delete Te.tbody),d&&d(t),ut=t)},pt=j({},["mi","mo","mn","ms","mtext"]),gt=j({},["foreignobject","desc","title","annotation-xml"]),ht=j({},["title","style","font","a","script"]),vt=j({},M);j(vt,I),j(vt,R);var bt=j({},U);j(bt,_);var yt=function(e){var t=ae(e);t&&t.tagName||(t={namespaceURI:at,tagName:"template"});var n=w(e.tagName),r=w(t.tagName);return!!lt[e.namespaceURI]&&(e.namespaceURI===nt?t.namespaceURI===rt?"svg"===n:t.namespaceURI===tt?"svg"===n&&("annotation-xml"===r||pt[r]):Boolean(vt[n]):e.namespaceURI===tt?t.namespaceURI===rt?"math"===n:t.namespaceURI===nt?"math"===n&&gt[r]:Boolean(bt[n]):e.namespaceURI===rt?!(t.namespaceURI===nt&&!gt[r])&&!(t.namespaceURI===tt&&!pt[r])&&!bt[n]&&(ht[n]||!vt[n]):!("application/xhtml+xml"!==he||!lt[e.namespaceURI]))},Et=function(e){E(r.removed,{element:e});try{e.parentNode.removeChild(e)}catch(t){try{e.outerHTML=ie}catch(t){e.remove()}}},wt=function(e,t){try{E(r.removed,{attribute:t.getAttributeNode(e),from:t})}catch(e){E(r.removed,{attribute:null,from:t})}if(t.removeAttribute(e),"is"===e&&!Ne[e])if(qe||ze)try{Et(t)}catch(e){}else try{t.setAttribute(e,"")}catch(e){}},Ot=function(e){var t,n;if(Fe)e="<remove></remove>"+e;else{var r=x(e,/^[\r\n\t ]+/);n=r&&r[0]}"application/xhtml+xml"===he&&at===rt&&(e='<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>'+e+"</body></html>");var a=le?le.createHTML(e):e;if(at===rt)try{t=(new h).parseFromString(a,he)}catch(e){}if(!t||!t.documentElement){t=se.createDocument(at,"template",null);try{t.documentElement.innerHTML=ot?"":a}catch(e){}}var o=t.body||t.documentElement;return e&&n&&o.insertBefore(l.createTextNode(n),o.childNodes[0]||null),at===rt?fe.call(t,Ue?"html":"body")[0]:Ue?t.documentElement:o},xt=function(e){return ue.call(e.ownerDocument||e,e,f.SHOW_ELEMENT|f.SHOW_COMMENT|f.SHOW_TEXT,null,!1)},kt=function(e){return e instanceof g&&("string"!=typeof e.nodeName||"string"!=typeof e.textContent||"function"!=typeof e.removeChild||!(e.attributes instanceof p)||"function"!=typeof e.removeAttribute||"function"!=typeof e.setAttribute||"string"!=typeof e.namespaceURI||"function"!=typeof e.insertBefore||"function"!=typeof e.hasChildNodes)},Ct=function(t){return"object"===e(s)?t instanceof s:t&&"object"===e(t)&&"number"==typeof t.nodeType&&"string"==typeof t.nodeName},St=function(e,t,n){ge[e]&&b(ge[e],(function(e){e.call(r,t,n,ut)}))},At=function(e){var t;if(St("beforeSanitizeElements",e,null),kt(e))return Et(e),!0;if(A(/[\u0080-\uFFFF]/,e.nodeName))return Et(e),!0;var n=ve(e.nodeName);if(St("uponSanitizeElement",e,{tagName:n,allowedTags:Se}),e.hasChildNodes()&&!Ct(e.firstElementChild)&&(!Ct(e.content)||!Ct(e.content.firstElementChild))&&A(/<[/\w]/g,e.innerHTML)&&A(/<[/\w]/g,e.textContent))return Et(e),!0;if("select"===n&&A(/<template/i,e.innerHTML))return Et(e),!0;if(!Se[n]||Te[n]){if(!Te[n]&&Pt(n)){if(je.tagNameCheck instanceof RegExp&&A(je.tagNameCheck,n))return!1;if(je.tagNameCheck instanceof Function&&je.tagNameCheck(n))return!1}if($e&&!Ke[n]){var a=ae(e)||e.parentNode,o=re(e)||e.childNodes;if(o&&a)for(var l=o.length-1;l>=0;--l)a.insertBefore(te(o[l],!0),ne(e))}return Et(e),!0}return e instanceof u&&!yt(e)?(Et(e),!0):"noscript"!==n&&"noembed"!==n||!A(/<\/no(script|embed)/i,e.innerHTML)?(Re&&3===e.nodeType&&(t=e.textContent,t=k(t,be," "),t=k(t,ye," "),t=k(t,Ee," "),e.textContent!==t&&(E(r.removed,{element:e.cloneNode()}),e.textContent=t)),St("afterSanitizeElements",e,null),!1):(Et(e),!0)},Nt=function(e,t,n){if(He&&("id"===t||"name"===t)&&(n in l||n in dt))return!1;if(Me&&!De[t]&&A(we,t));else if(Le&&A(Oe,t));else if(!Ne[t]||De[t]){if(!(Pt(e)&&(je.tagNameCheck instanceof RegExp&&A(je.tagNameCheck,e)||je.tagNameCheck instanceof Function&&je.tagNameCheck(e))&&(je.attributeNameCheck instanceof RegExp&&A(je.attributeNameCheck,t)||je.attributeNameCheck instanceof Function&&je.attributeNameCheck(t))||"is"===t&&je.allowCustomizedBuiltInElements&&(je.tagNameCheck instanceof RegExp&&A(je.tagNameCheck,n)||je.tagNameCheck instanceof Function&&je.tagNameCheck(n))))return!1}else if(Qe[t]);else if(A(Ce,k(n,ke,"")));else if("src"!==t&&"xlink:href"!==t&&"href"!==t||"script"===e||0!==C(n,"data:")||!Ze[e])if(Ie&&!A(xe,k(n,ke,"")));else if(n)return!1;return!0},Pt=function(e){return e.indexOf("-")>0},jt=function(t){var n,a,o,l;St("beforeSanitizeAttributes",t,null);var i=t.attributes;if(i){var c={attrName:"",attrValue:"",keepAttr:!0,allowedAttributes:Ne};for(l=i.length;l--;){var s=n=i[l],u=s.name,d=s.namespaceURI;if(a="value"===u?n.value:S(n.value),o=ve(u),c.attrName=o,c.attrValue=a,c.keepAttr=!0,c.forceKeepAttr=void 0,St("uponSanitizeAttribute",t,c),a=c.attrValue,!c.forceKeepAttr&&(wt(u,t),c.keepAttr))if(A(/\/>/i,a))wt(u,t);else{Re&&(a=k(a,be," "),a=k(a,ye," "),a=k(a,Ee," "));var f=ve(t.nodeName);if(Nt(f,o,a)){if(!Ge||"id"!==o&&"name"!==o||(wt(u,t),a=We+a),le&&"object"===e(v)&&"function"==typeof v.getAttributeType)if(d);else switch(v.getAttributeType(f,o)){case"TrustedHTML":a=le.createHTML(a);break;case"TrustedScriptURL":a=le.createScriptURL(a)}try{d?t.setAttributeNS(d,u,a):t.setAttribute(u,a),y(r.removed)}catch(e){}}}}St("afterSanitizeAttributes",t,null)}},Tt=function e(t){var n,r=xt(t);for(St("beforeSanitizeShadowDOM",t,null);n=r.nextNode();)St("uponSanitizeShadowNode",n,null),At(n)||(n.content instanceof i&&e(n.content),jt(n));St("afterSanitizeShadowDOM",t,null)};return r.sanitize=function(t){var a,l,c,u,d,f=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};if((ot=!t)&&(t="\x3c!--\x3e"),"string"!=typeof t&&!Ct(t)){if("function"!=typeof t.toString)throw N("toString is not a function");if("string"!=typeof(t=t.toString()))throw N("dirty is not a string, aborting")}if(!r.isSupported){if("object"===e(n.toStaticHTML)||"function"==typeof n.toStaticHTML){if("string"==typeof t)return n.toStaticHTML(t);if(Ct(t))return n.toStaticHTML(t.outerHTML)}return t}if(_e||mt(f),r.removed=[],"string"==typeof t&&(Ye=!1),Ye){if(t.nodeName){var m=ve(t.nodeName);if(!Se[m]||Te[m])throw N("root node is forbidden and cannot be sanitized in-place")}}else if(t instanceof s)1===(l=(a=Ot("\x3c!----\x3e")).ownerDocument.importNode(t,!0)).nodeType&&"BODY"===l.nodeName||"HTML"===l.nodeName?a=l:a.appendChild(l);else{if(!qe&&!Re&&!Ue&&-1===t.indexOf("<"))return le&&Be?le.createHTML(t):t;if(!(a=Ot(t)))return qe?null:Be?ie:""}a&&Fe&&Et(a.firstChild);for(var p=xt(Ye?t:a);c=p.nextNode();)3===c.nodeType&&c===u||At(c)||(c.content instanceof i&&Tt(c.content),jt(c),u=c);if(u=null,Ye)return t;if(qe){if(ze)for(d=de.call(a.ownerDocument);a.firstChild;)d.appendChild(a.firstChild);else d=a;return Ne.shadowroot&&(d=me.call(o,d,!0)),d}var g=Ue?a.outerHTML:a.innerHTML;return Ue&&Se["!doctype"]&&a.ownerDocument&&a.ownerDocument.doctype&&a.ownerDocument.doctype.name&&A(J,a.ownerDocument.doctype.name)&&(g="<!DOCTYPE "+a.ownerDocument.doctype.name+">\n"+g),Re&&(g=k(g,be," "),g=k(g,ye," "),g=k(g,Ee," ")),le&&Be?le.createHTML(g):g},r.setConfig=function(e){mt(e),_e=!0},r.clearConfig=function(){ut=null,_e=!1},r.isValidAttribute=function(e,t,n){ut||mt({});var r=ve(e),a=ve(t);return Nt(r,a,n)},r.addHook=function(e,t){"function"==typeof t&&(ge[e]=ge[e]||[],E(ge[e],t))},r.removeHook=function(e){if(ge[e])return y(ge[e])},r.removeHooks=function(e){ge[e]&&(ge[e]=[])},r.removeAllHooks=function(){ge={}},r}()}()},58:(e,t,n)=>{var r=n(594),a={childContextTypes:!0,contextType:!0,contextTypes:!0,defaultProps:!0,displayName:!0,getDefaultProps:!0,getDerivedStateFromError:!0,getDerivedStateFromProps:!0,mixins:!0,propTypes:!0,type:!0},o={name:!0,length:!0,prototype:!0,caller:!0,callee:!0,arguments:!0,arity:!0},l={$$typeof:!0,compare:!0,defaultProps:!0,displayName:!0,propTypes:!0,type:!0},i={};function c(e){return r.isMemo(e)?l:i[e.$$typeof]||a}i[r.ForwardRef]={$$typeof:!0,render:!0,defaultProps:!0,displayName:!0,propTypes:!0},i[r.Memo]=l;var s=Object.defineProperty,u=Object.getOwnPropertyNames,d=Object.getOwnPropertySymbols,f=Object.getOwnPropertyDescriptor,m=Object.getPrototypeOf,p=Object.prototype;e.exports=function e(t,n,r){if("string"!=typeof n){if(p){var a=m(n);a&&a!==p&&e(t,a,r)}var l=u(n);d&&(l=l.concat(d(n)));for(var i=c(t),g=c(n),h=0;h<l.length;++h){var v=l[h];if(!(o[v]||r&&r[v]||g&&g[v]||i&&i[v])){var b=f(n,v);try{s(t,v,b)}catch(e){}}}}return t}},459:(e,t,n)=>{var r=n(704);function a(){}function o(){}o.resetWarningCache=a,e.exports=function(){function e(e,t,n,a,o,l){if(l!==r){var i=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw i.name="Invariant Violation",i}}function t(){return e}e.isRequired=e;var n={array:e,bigint:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:t,element:e,elementType:e,instanceOf:t,node:e,objectOf:t,oneOf:t,oneOfType:t,shape:t,exact:t,checkPropTypes:o,resetWarningCache:a};return n.PropTypes=n,n}},216:(e,t,n)=>{e.exports=n(459)()},704:e=>{e.exports="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"},697:(e,t)=>{var n="function"==typeof Symbol&&Symbol.for,r=n?Symbol.for("react.element"):60103,a=n?Symbol.for("react.portal"):60106,o=n?Symbol.for("react.fragment"):60107,l=n?Symbol.for("react.strict_mode"):60108,i=n?Symbol.for("react.profiler"):60114,c=n?Symbol.for("react.provider"):60109,s=n?Symbol.for("react.context"):60110,u=n?Symbol.for("react.async_mode"):60111,d=n?Symbol.for("react.concurrent_mode"):60111,f=n?Symbol.for("react.forward_ref"):60112,m=n?Symbol.for("react.suspense"):60113,p=n?Symbol.for("react.suspense_list"):60120,g=n?Symbol.for("react.memo"):60115,h=n?Symbol.for("react.lazy"):60116,v=n?Symbol.for("react.block"):60121,b=n?Symbol.for("react.fundamental"):60117,y=n?Symbol.for("react.responder"):60118,E=n?Symbol.for("react.scope"):60119;function w(e){if("object"==typeof e&&null!==e){var t=e.$$typeof;switch(t){case r:switch(e=e.type){case u:case d:case o:case i:case l:case m:return e;default:switch(e=e&&e.$$typeof){case s:case f:case h:case g:case c:return e;default:return t}}case a:return t}}}function O(e){return w(e)===d}t.AsyncMode=u,t.ConcurrentMode=d,t.ContextConsumer=s,t.ContextProvider=c,t.Element=r,t.ForwardRef=f,t.Fragment=o,t.Lazy=h,t.Memo=g,t.Portal=a,t.Profiler=i,t.StrictMode=l,t.Suspense=m,t.isAsyncMode=function(e){return O(e)||w(e)===u},t.isConcurrentMode=O,t.isContextConsumer=function(e){return w(e)===s},t.isContextProvider=function(e){return w(e)===c},t.isElement=function(e){return"object"==typeof e&&null!==e&&e.$$typeof===r},t.isForwardRef=function(e){return w(e)===f},t.isFragment=function(e){return w(e)===o},t.isLazy=function(e){return w(e)===h},t.isMemo=function(e){return w(e)===g},t.isPortal=function(e){return w(e)===a},t.isProfiler=function(e){return w(e)===i},t.isStrictMode=function(e){return w(e)===l},t.isSuspense=function(e){return w(e)===m},t.isValidElementType=function(e){return"string"==typeof e||"function"==typeof e||e===o||e===d||e===i||e===l||e===m||e===p||"object"==typeof e&&null!==e&&(e.$$typeof===h||e.$$typeof===g||e.$$typeof===c||e.$$typeof===s||e.$$typeof===f||e.$$typeof===b||e.$$typeof===y||e.$$typeof===E||e.$$typeof===v)},t.typeOf=w},594:(e,t,n)=>{e.exports=n(697)},7:e=>{e.exports=function(e,t,n,r){var a=n?n.call(r,e,t):void 0;if(void 0!==a)return!!a;if(e===t)return!0;if("object"!=typeof e||!e||"object"!=typeof t||!t)return!1;var o=Object.keys(e),l=Object.keys(t);if(o.length!==l.length)return!1;for(var i=Object.prototype.hasOwnProperty.bind(t),c=0;c<o.length;c++){var s=o[c];if(!i(s))return!1;var u=e[s],d=t[s];if(!1===(a=n?n.call(r,u,d,s):void 0)||void 0===a&&u!==d)return!1}return!0}},649:(e,t,n)=>{var r=n(114).default;function a(){e.exports=a=function(){return t},e.exports.__esModule=!0,e.exports.default=e.exports;var t={},n=Object.prototype,o=n.hasOwnProperty,l=Object.defineProperty||function(e,t,n){e[t]=n.value},i="function"==typeof Symbol?Symbol:{},c=i.iterator||"@@iterator",s=i.asyncIterator||"@@asyncIterator",u=i.toStringTag||"@@toStringTag";function d(e,t,n){return Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}),e[t]}try{d({},"")}catch(e){d=function(e,t,n){return e[t]=n}}function f(e,t,n,r){var a=t&&t.prototype instanceof g?t:g,o=Object.create(a.prototype),i=new N(r||[]);return l(o,"_invoke",{value:k(e,n,i)}),o}function m(e,t,n){try{return{type:"normal",arg:e.call(t,n)}}catch(e){return{type:"throw",arg:e}}}t.wrap=f;var p={};function g(){}function h(){}function v(){}var b={};d(b,c,(function(){return this}));var y=Object.getPrototypeOf,E=y&&y(y(P([])));E&&E!==n&&o.call(E,c)&&(b=E);var w=v.prototype=g.prototype=Object.create(b);function O(e){["next","throw","return"].forEach((function(t){d(e,t,(function(e){return this._invoke(t,e)}))}))}function x(e,t){function n(a,l,i,c){var s=m(e[a],e,l);if("throw"!==s.type){var u=s.arg,d=u.value;return d&&"object"==r(d)&&o.call(d,"__await")?t.resolve(d.__await).then((function(e){n("next",e,i,c)}),(function(e){n("throw",e,i,c)})):t.resolve(d).then((function(e){u.value=e,i(u)}),(function(e){return n("throw",e,i,c)}))}c(s.arg)}var a;l(this,"_invoke",{value:function(e,r){function o(){return new t((function(t,a){n(e,r,t,a)}))}return a=a?a.then(o,o):o()}})}function k(e,t,n){var r="suspendedStart";return function(a,o){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===a)throw o;return{value:void 0,done:!0}}for(n.method=a,n.arg=o;;){var l=n.delegate;if(l){var i=C(l,n);if(i){if(i===p)continue;return i}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var c=m(e,t,n);if("normal"===c.type){if(r=n.done?"completed":"suspendedYield",c.arg===p)continue;return{value:c.arg,done:n.done}}"throw"===c.type&&(r="completed",n.method="throw",n.arg=c.arg)}}}function C(e,t){var n=t.method,r=e.iterator[n];if(void 0===r)return t.delegate=null,"throw"===n&&e.iterator.return&&(t.method="return",t.arg=void 0,C(e,t),"throw"===t.method)||"return"!==n&&(t.method="throw",t.arg=new TypeError("The iterator does not provide a '"+n+"' method")),p;var a=m(r,e.iterator,t.arg);if("throw"===a.type)return t.method="throw",t.arg=a.arg,t.delegate=null,p;var o=a.arg;return o?o.done?(t[e.resultName]=o.value,t.next=e.nextLoc,"return"!==t.method&&(t.method="next",t.arg=void 0),t.delegate=null,p):o:(t.method="throw",t.arg=new TypeError("iterator result is not an object"),t.delegate=null,p)}function S(e){var t={tryLoc:e[0]};1 in e&&(t.catchLoc=e[1]),2 in e&&(t.finallyLoc=e[2],t.afterLoc=e[3]),this.tryEntries.push(t)}function A(e){var t=e.completion||{};t.type="normal",delete t.arg,e.completion=t}function N(e){this.tryEntries=[{tryLoc:"root"}],e.forEach(S,this),this.reset(!0)}function P(e){if(e){var t=e[c];if(t)return t.call(e);if("function"==typeof e.next)return e;if(!isNaN(e.length)){var n=-1,r=function t(){for(;++n<e.length;)if(o.call(e,n))return t.value=e[n],t.done=!1,t;return t.value=void 0,t.done=!0,t};return r.next=r}}return{next:j}}function j(){return{value:void 0,done:!0}}return h.prototype=v,l(w,"constructor",{value:v,configurable:!0}),l(v,"constructor",{value:h,configurable:!0}),h.displayName=d(v,u,"GeneratorFunction"),t.isGeneratorFunction=function(e){var t="function"==typeof e&&e.constructor;return!!t&&(t===h||"GeneratorFunction"===(t.displayName||t.name))},t.mark=function(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,v):(e.__proto__=v,d(e,u,"GeneratorFunction")),e.prototype=Object.create(w),e},t.awrap=function(e){return{__await:e}},O(x.prototype),d(x.prototype,s,(function(){return this})),t.AsyncIterator=x,t.async=function(e,n,r,a,o){void 0===o&&(o=Promise);var l=new x(f(e,n,r,a),o);return t.isGeneratorFunction(n)?l:l.next().then((function(e){return e.done?e.value:l.next()}))},O(w),d(w,u,"Generator"),d(w,c,(function(){return this})),d(w,"toString",(function(){return"[object Generator]"})),t.keys=function(e){var t=Object(e),n=[];for(var r in t)n.push(r);return n.reverse(),function e(){for(;n.length;){var r=n.pop();if(r in t)return e.value=r,e.done=!1,e}return e.done=!0,e}},t.values=P,N.prototype={constructor:N,reset:function(e){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(A),!e)for(var t in this)"t"===t.charAt(0)&&o.call(this,t)&&!isNaN(+t.slice(1))&&(this[t]=void 0)},stop:function(){this.done=!0;var e=this.tryEntries[0].completion;if("throw"===e.type)throw e.arg;return this.rval},dispatchException:function(e){if(this.done)throw e;var t=this;function n(n,r){return l.type="throw",l.arg=e,t.next=n,r&&(t.method="next",t.arg=void 0),!!r}for(var r=this.tryEntries.length-1;r>=0;--r){var a=this.tryEntries[r],l=a.completion;if("root"===a.tryLoc)return n("end");if(a.tryLoc<=this.prev){var i=o.call(a,"catchLoc"),c=o.call(a,"finallyLoc");if(i&&c){if(this.prev<a.catchLoc)return n(a.catchLoc,!0);if(this.prev<a.finallyLoc)return n(a.finallyLoc)}else if(i){if(this.prev<a.catchLoc)return n(a.catchLoc,!0)}else{if(!c)throw new Error("try statement without catch or finally");if(this.prev<a.finallyLoc)return n(a.finallyLoc)}}}},abrupt:function(e,t){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.tryLoc<=this.prev&&o.call(r,"finallyLoc")&&this.prev<r.finallyLoc){var a=r;break}}a&&("break"===e||"continue"===e)&&a.tryLoc<=t&&t<=a.finallyLoc&&(a=null);var l=a?a.completion:{};return l.type=e,l.arg=t,a?(this.method="next",this.next=a.finallyLoc,p):this.complete(l)},complete:function(e,t){if("throw"===e.type)throw e.arg;return"break"===e.type||"continue"===e.type?this.next=e.arg:"return"===e.type?(this.rval=this.arg=e.arg,this.method="return",this.next="end"):"normal"===e.type&&t&&(this.next=t),p},finish:function(e){for(var t=this.tryEntries.length-1;t>=0;--t){var n=this.tryEntries[t];if(n.finallyLoc===e)return this.complete(n.completion,n.afterLoc),A(n),p}},catch:function(e){for(var t=this.tryEntries.length-1;t>=0;--t){var n=this.tryEntries[t];if(n.tryLoc===e){var r=n.completion;if("throw"===r.type){var a=r.arg;A(n)}return a}}throw new Error("illegal catch attempt")},delegateYield:function(e,t,n){return this.delegate={iterator:P(e),resultName:t,nextLoc:n},"next"===this.method&&(this.arg=void 0),p}},t}e.exports=a,e.exports.__esModule=!0,e.exports.default=e.exports},114:e=>{function t(n){return e.exports=t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e.exports.__esModule=!0,e.exports.default=e.exports,t(n)}e.exports=t,e.exports.__esModule=!0,e.exports.default=e.exports},975:(e,t,n)=>{var r=n(649)();e.exports=r;try{regeneratorRuntime=r}catch(e){"object"==typeof globalThis?globalThis.regeneratorRuntime=r:Function("r","regeneratorRuntime = r")(r)}}},r={};function a(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e].call(o.exports,o,o.exports,a),o.exports}a.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return a.d(t,{a:t}),t},a.d=(e,t)=>{for(var n in t)a.o(t,n)&&!a.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},a.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a.nc=void 0;var o={};(()=>{function n(e,t,n,r,a,o,l){try{var i=e[o](l),c=i.value}catch(e){return void n(e)}i.done?t(c):Promise.resolve(c).then(r,a)}function r(e){return function(){var t=this,r=arguments;return new Promise((function(a,o){var l=e.apply(t,r);function i(e){n(l,a,o,i,c,"next",e)}function c(e){n(l,a,o,i,c,"throw",e)}i(void 0)}))}}function l(e){return l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},l(e)}function i(e,t,n){return(t=function(e){var t=function(e,t){if("object"!==l(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==l(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(e);return"symbol"===l(t)?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function c(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function s(e,t){if(e){if("string"==typeof e)return c(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?c(e,t):void 0}}function u(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,a,o,l,i=[],c=!0,s=!1;try{if(o=(n=n.call(e)).next,0===t){if(Object(n)!==n)return;c=!1}else for(;!(c=(r=o.call(n)).done)&&(i.push(r.value),i.length!==t);c=!0);}catch(e){s=!0,a=e}finally{try{if(!c&&null!=n.return&&(l=n.return(),Object(l)!==l))return}finally{if(s)throw a}}return i}}(e,t)||s(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function d(e,t){return t||(t=e.slice(0)),Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(t)}}))}a.d(o,{Hb:()=>Vo,Z9:()=>$a,CO:()=>Zo,uT:()=>Jo});var f=a(975),m=a.n(f),p=a(216),g=a.n(p);const h=(v={Fragment:()=>e.Fragment,createContext:()=>e.createContext,createElement:()=>e.createElement,createRef:()=>e.createRef,default:()=>e.default,useContext:()=>e.useContext,useEffect:()=>e.useEffect,useLayoutEffect:()=>e.useLayoutEffect,useMemo:()=>e.useMemo,useRef:()=>e.useRef,useState:()=>e.useState},b={},a.d(b,v),b);var v,b,y=a(594),E=a(7),w=a.n(E);const O=function(e){function t(e,r,c,s,f){for(var m,p,g,h,E,O=0,x=0,k=0,C=0,S=0,D=0,M=g=m=0,R=0,U=0,_=0,F=0,q=c.length,z=q-1,B="",H="",G="",W="";R<q;){if(p=c.charCodeAt(R),R===z&&0!==x+C+k+O&&(0!==x&&(p=47===x?10:47),C=k=O=0,q++,z++),0===x+C+k+O){if(R===z&&(0<U&&(B=B.replace(d,"")),0<B.trim().length)){switch(p){case 32:case 9:case 59:case 13:case 10:break;default:B+=c.charAt(R)}p=59}switch(p){case 123:for(m=(B=B.trim()).charCodeAt(0),g=1,F=++R;R<q;){switch(p=c.charCodeAt(R)){case 123:g++;break;case 125:g--;break;case 47:switch(p=c.charCodeAt(R+1)){case 42:case 47:e:{for(M=R+1;M<z;++M)switch(c.charCodeAt(M)){case 47:if(42===p&&42===c.charCodeAt(M-1)&&R+2!==M){R=M+1;break e}break;case 10:if(47===p){R=M+1;break e}}R=M}}break;case 91:p++;case 40:p++;case 34:case 39:for(;R++<z&&c.charCodeAt(R)!==p;);}if(0===g)break;R++}if(g=c.substring(F,R),0===m&&(m=(B=B.replace(u,"").trim()).charCodeAt(0)),64===m){switch(0<U&&(B=B.replace(d,"")),p=B.charCodeAt(1)){case 100:case 109:case 115:case 45:U=r;break;default:U=T}if(F=(g=t(r,U,g,p,f+1)).length,0<L&&(E=i(3,g,U=n(T,B,_),r,N,A,F,p,f,s),B=U.join(""),void 0!==E&&0===(F=(g=E.trim()).length)&&(p=0,g="")),0<F)switch(p){case 115:B=B.replace(w,l);case 100:case 109:case 45:g=B+"{"+g+"}";break;case 107:g=(B=B.replace(v,"$1 $2"))+"{"+g+"}",g=1===j||2===j&&o("@"+g,3)?"@-webkit-"+g+"@"+g:"@"+g;break;default:g=B+g,112===s&&(H+=g,g="")}else g=""}else g=t(r,n(r,B,_),g,s,f+1);G+=g,g=_=U=M=m=0,B="",p=c.charCodeAt(++R);break;case 125:case 59:if(1<(F=(B=(0<U?B.replace(d,""):B).trim()).length))switch(0===M&&(m=B.charCodeAt(0),45===m||96<m&&123>m)&&(F=(B=B.replace(" ",":")).length),0<L&&void 0!==(E=i(1,B,r,e,N,A,H.length,s,f,s))&&0===(F=(B=E.trim()).length)&&(B="\0\0"),m=B.charCodeAt(0),p=B.charCodeAt(1),m){case 0:break;case 64:if(105===p||99===p){W+=B+c.charAt(R);break}default:58!==B.charCodeAt(F-1)&&(H+=a(B,m,p,B.charCodeAt(2)))}_=U=M=m=0,B="",p=c.charCodeAt(++R)}}switch(p){case 13:case 10:47===x?x=0:0===1+m&&107!==s&&0<B.length&&(U=1,B+="\0"),0<L*I&&i(0,B,r,e,N,A,H.length,s,f,s),A=1,N++;break;case 59:case 125:if(0===x+C+k+O){A++;break}default:switch(A++,h=c.charAt(R),p){case 9:case 32:if(0===C+O+x)switch(S){case 44:case 58:case 9:case 32:h="";break;default:32!==p&&(h=" ")}break;case 0:h="\\0";break;case 12:h="\\f";break;case 11:h="\\v";break;case 38:0===C+x+O&&(U=_=1,h="\f"+h);break;case 108:if(0===C+x+O+P&&0<M)switch(R-M){case 2:112===S&&58===c.charCodeAt(R-3)&&(P=S);case 8:111===D&&(P=D)}break;case 58:0===C+x+O&&(M=R);break;case 44:0===x+k+C+O&&(U=1,h+="\r");break;case 34:case 39:0===x&&(C=C===p?0:0===C?p:C);break;case 91:0===C+x+k&&O++;break;case 93:0===C+x+k&&O--;break;case 41:0===C+x+O&&k--;break;case 40:0===C+x+O&&(0===m&&(2*S+3*D==533||(m=1)),k++);break;case 64:0===x+k+C+O+M+g&&(g=1);break;case 42:case 47:if(!(0<C+O+k))switch(x){case 0:switch(2*p+3*c.charCodeAt(R+1)){case 235:x=47;break;case 220:F=R,x=42}break;case 42:47===p&&42===S&&F+2!==R&&(33===c.charCodeAt(F+2)&&(H+=c.substring(F,R+1)),h="",x=0)}}0===x&&(B+=h)}D=S,S=p,R++}if(0<(F=H.length)){if(U=r,0<L&&void 0!==(E=i(2,H,U,e,N,A,F,s,f,s))&&0===(H=E).length)return W+H+G;if(H=U.join(",")+"{"+H+"}",0!=j*P){switch(2!==j||o(H,2)||(P=0),P){case 111:H=H.replace(y,":-moz-$1")+H;break;case 112:H=H.replace(b,"::-webkit-input-$1")+H.replace(b,"::-moz-$1")+H.replace(b,":-ms-input-$1")+H}P=0}}return W+H+G}function n(e,t,n){var a=t.trim().split(g);t=a;var o=a.length,l=e.length;switch(l){case 0:case 1:var i=0;for(e=0===l?"":e[0]+" ";i<o;++i)t[i]=r(e,t[i],n).trim();break;default:var c=i=0;for(t=[];i<o;++i)for(var s=0;s<l;++s)t[c++]=r(e[s]+" ",a[i],n).trim()}return t}function r(e,t,n){var r=t.charCodeAt(0);switch(33>r&&(r=(t=t.trim()).charCodeAt(0)),r){case 38:return t.replace(h,"$1"+e.trim());case 58:return e.trim()+t.replace(h,"$1"+e.trim());default:if(0<1*n&&0<t.indexOf("\f"))return t.replace(h,(58===e.charCodeAt(0)?"":"$1")+e.trim())}return e+t}function a(e,t,n,r){var l=e+";",i=2*t+3*n+4*r;if(944===i){e=l.indexOf(":",9)+1;var c=l.substring(e,l.length-1).trim();return c=l.substring(0,e).trim()+c+";",1===j||2===j&&o(c,1)?"-webkit-"+c+c:c}if(0===j||2===j&&!o(l,1))return l;switch(i){case 1015:return 97===l.charCodeAt(10)?"-webkit-"+l+l:l;case 951:return 116===l.charCodeAt(3)?"-webkit-"+l+l:l;case 963:return 110===l.charCodeAt(5)?"-webkit-"+l+l:l;case 1009:if(100!==l.charCodeAt(4))break;case 969:case 942:return"-webkit-"+l+l;case 978:return"-webkit-"+l+"-moz-"+l+l;case 1019:case 983:return"-webkit-"+l+"-moz-"+l+"-ms-"+l+l;case 883:if(45===l.charCodeAt(8))return"-webkit-"+l+l;if(0<l.indexOf("image-set(",11))return l.replace(S,"$1-webkit-$2")+l;break;case 932:if(45===l.charCodeAt(4))switch(l.charCodeAt(5)){case 103:return"-webkit-box-"+l.replace("-grow","")+"-webkit-"+l+"-ms-"+l.replace("grow","positive")+l;case 115:return"-webkit-"+l+"-ms-"+l.replace("shrink","negative")+l;case 98:return"-webkit-"+l+"-ms-"+l.replace("basis","preferred-size")+l}return"-webkit-"+l+"-ms-"+l+l;case 964:return"-webkit-"+l+"-ms-flex-"+l+l;case 1023:if(99!==l.charCodeAt(8))break;return"-webkit-box-pack"+(c=l.substring(l.indexOf(":",15)).replace("flex-","").replace("space-between","justify"))+"-webkit-"+l+"-ms-flex-pack"+c+l;case 1005:return m.test(l)?l.replace(f,":-webkit-")+l.replace(f,":-moz-")+l:l;case 1e3:switch(t=(c=l.substring(13).trim()).indexOf("-")+1,c.charCodeAt(0)+c.charCodeAt(t)){case 226:c=l.replace(E,"tb");break;case 232:c=l.replace(E,"tb-rl");break;case 220:c=l.replace(E,"lr");break;default:return l}return"-webkit-"+l+"-ms-"+c+l;case 1017:if(-1===l.indexOf("sticky",9))break;case 975:switch(t=(l=e).length-10,i=(c=(33===l.charCodeAt(t)?l.substring(0,t):l).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|c.charCodeAt(7))){case 203:if(111>c.charCodeAt(8))break;case 115:l=l.replace(c,"-webkit-"+c)+";"+l;break;case 207:case 102:l=l.replace(c,"-webkit-"+(102<i?"inline-":"")+"box")+";"+l.replace(c,"-webkit-"+c)+";"+l.replace(c,"-ms-"+c+"box")+";"+l}return l+";";case 938:if(45===l.charCodeAt(5))switch(l.charCodeAt(6)){case 105:return c=l.replace("-items",""),"-webkit-"+l+"-webkit-box-"+c+"-ms-flex-"+c+l;case 115:return"-webkit-"+l+"-ms-flex-item-"+l.replace(x,"")+l;default:return"-webkit-"+l+"-ms-flex-line-pack"+l.replace("align-content","").replace(x,"")+l}break;case 973:case 989:if(45!==l.charCodeAt(3)||122===l.charCodeAt(4))break;case 931:case 953:if(!0===C.test(e))return 115===(c=e.substring(e.indexOf(":")+1)).charCodeAt(0)?a(e.replace("stretch","fill-available"),t,n,r).replace(":fill-available",":stretch"):l.replace(c,"-webkit-"+c)+l.replace(c,"-moz-"+c.replace("fill-",""))+l;break;case 962:if(l="-webkit-"+l+(102===l.charCodeAt(5)?"-ms-"+l:"")+l,211===n+r&&105===l.charCodeAt(13)&&0<l.indexOf("transform",10))return l.substring(0,l.indexOf(";",27)+1).replace(p,"$1-webkit-$2")+l}return l}function o(e,t){var n=e.indexOf(1===t?":":"{"),r=e.substring(0,3!==t?n:10);return n=e.substring(n+1,e.length-1),M(2!==t?r:r.replace(k,"$1"),n,t)}function l(e,t){var n=a(t,t.charCodeAt(0),t.charCodeAt(1),t.charCodeAt(2));return n!==t+";"?n.replace(O," or ($1)").substring(4):"("+t+")"}function i(e,t,n,r,a,o,l,i,c,u){for(var d,f=0,m=t;f<L;++f)switch(d=D[f].call(s,e,m,n,r,a,o,l,i,c,u)){case void 0:case!1:case!0:case null:break;default:m=d}if(m!==t)return m}function c(e){return void 0!==(e=e.prefix)&&(M=null,e?"function"!=typeof e?j=1:(j=2,M=e):j=0),c}function s(e,n){var r=e;if(33>r.charCodeAt(0)&&(r=r.trim()),r=[r],0<L){var a=i(-1,n,r,r,N,A,0,0,0,0);void 0!==a&&"string"==typeof a&&(n=a)}var o=t(T,r,n,0,0);return 0<L&&void 0!==(a=i(-2,o,r,r,N,A,o.length,0,0,0))&&(o=a),P=0,A=N=1,o}var u=/^\0+/g,d=/[\0\r\f]/g,f=/: */g,m=/zoo|gra/,p=/([,: ])(transform)/g,g=/,\r+?/g,h=/([\t\r\n ])*\f?&/g,v=/@(k\w+)\s*(\S*)\s*/,b=/::(place)/g,y=/:(read-only)/g,E=/[svh]\w+-[tblr]{2}/,w=/\(\s*(.*)\s*\)/g,O=/([\s\S]*?);/g,x=/-self|flex-/g,k=/[^]*?(:[rp][el]a[\w-]+)[^]*/,C=/stretch|:\s*\w+\-(?:conte|avail)/,S=/([^-])(image-set\()/,A=1,N=1,P=0,j=1,T=[],D=[],L=0,M=null,I=0;return s.use=function e(t){switch(t){case void 0:case null:L=D.length=0;break;default:if("function"==typeof t)D[L++]=t;else if("object"==typeof t)for(var n=0,r=t.length;n<r;++n)e(t[n]);else I=0|!!t}return e},s.set=c,void 0!==e&&c(e),s},x={animationIterationCount:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,msGridRow:1,msGridRowSpan:1,msGridColumn:1,msGridColumnSpan:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1};var k=/^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;const C=function(e){var t=Object.create(null);return function(e){return void 0===t[e]&&(t[e]=(n=e,k.test(n)||111===n.charCodeAt(0)&&110===n.charCodeAt(1)&&n.charCodeAt(2)<91)),t[e];var n}}();var S=a(58),A=a.n(S);function N(){return(N=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}var P=function(e,t){for(var n=[e[0]],r=0,a=t.length;r<a;r+=1)n.push(t[r],e[r+1]);return n},j=function(e){return null!==e&&"object"==typeof e&&"[object Object]"===(e.toString?e.toString():Object.prototype.toString.call(e))&&!(0,y.typeOf)(e)},T=Object.freeze([]),D=Object.freeze({});function L(e){return"function"==typeof e}function M(e){return e.displayName||e.name||"Component"}function I(e){return e&&"string"==typeof e.styledComponentId}var R="undefined"!=typeof process&&(process.env.REACT_APP_SC_ATTR||process.env.SC_ATTR)||"data-styled",U="undefined"!=typeof window&&"HTMLElement"in window,_=Boolean("boolean"==typeof SC_DISABLE_SPEEDY?SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==process.env.REACT_APP_SC_DISABLE_SPEEDY&&""!==process.env.REACT_APP_SC_DISABLE_SPEEDY?"false"!==process.env.REACT_APP_SC_DISABLE_SPEEDY&&process.env.REACT_APP_SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==process.env.SC_DISABLE_SPEEDY&&""!==process.env.SC_DISABLE_SPEEDY&&"false"!==process.env.SC_DISABLE_SPEEDY&&process.env.SC_DISABLE_SPEEDY),F={};function q(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];throw new Error("An error occurred. See https://git.io/JUIaE#"+e+" for more information."+(n.length>0?" Args: "+n.join(", "):""))}var z=function(){function e(e){this.groupSizes=new Uint32Array(512),this.length=512,this.tag=e}var t=e.prototype;return t.indexOfGroup=function(e){for(var t=0,n=0;n<e;n++)t+=this.groupSizes[n];return t},t.insertRules=function(e,t){if(e>=this.groupSizes.length){for(var n=this.groupSizes,r=n.length,a=r;e>=a;)(a<<=1)<0&&q(16,""+e);this.groupSizes=new Uint32Array(a),this.groupSizes.set(n),this.length=a;for(var o=r;o<a;o++)this.groupSizes[o]=0}for(var l=this.indexOfGroup(e+1),i=0,c=t.length;i<c;i++)this.tag.insertRule(l,t[i])&&(this.groupSizes[e]++,l++)},t.clearGroup=function(e){if(e<this.length){var t=this.groupSizes[e],n=this.indexOfGroup(e),r=n+t;this.groupSizes[e]=0;for(var a=n;a<r;a++)this.tag.deleteRule(n)}},t.getGroup=function(e){var t="";if(e>=this.length||0===this.groupSizes[e])return t;for(var n=this.groupSizes[e],r=this.indexOfGroup(e),a=r+n,o=r;o<a;o++)t+=this.tag.getRule(o)+"/*!sc*/\n";return t},e}(),B=new Map,H=new Map,G=1,W=function(e){if(B.has(e))return B.get(e);for(;H.has(G);)G++;var t=G++;return B.set(e,t),H.set(t,e),t},$=function(e){return H.get(e)},Y=function(e,t){t>=G&&(G=t+1),B.set(e,t),H.set(t,e)},V="style["+R+'][data-styled-version="5.3.6"]',K=new RegExp("^"+R+'\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'),X=function(e,t,n){for(var r,a=n.split(","),o=0,l=a.length;o<l;o++)(r=a[o])&&e.registerName(t,r)},Z=function(e,t){for(var n=(t.textContent||"").split("/*!sc*/\n"),r=[],a=0,o=n.length;a<o;a++){var l=n[a].trim();if(l){var i=l.match(K);if(i){var c=0|parseInt(i[1],10),s=i[2];0!==c&&(Y(s,c),X(e,s,i[3]),e.getTag().insertRules(c,r)),r.length=0}else r.push(l)}}},J=function(){return a.nc},Q=function(e){var t=document.head,n=e||t,r=document.createElement("style"),a=function(e){for(var t=e.childNodes,n=t.length;n>=0;n--){var r=t[n];if(r&&1===r.nodeType&&r.hasAttribute(R))return r}}(n),o=void 0!==a?a.nextSibling:null;r.setAttribute(R,"active"),r.setAttribute("data-styled-version","5.3.6");var l=J();return l&&r.setAttribute("nonce",l),n.insertBefore(r,o),r},ee=function(){function e(e){var t=this.element=Q(e);t.appendChild(document.createTextNode("")),this.sheet=function(e){if(e.sheet)return e.sheet;for(var t=document.styleSheets,n=0,r=t.length;n<r;n++){var a=t[n];if(a.ownerNode===e)return a}q(17)}(t),this.length=0}var t=e.prototype;return t.insertRule=function(e,t){try{return this.sheet.insertRule(t,e),this.length++,!0}catch(e){return!1}},t.deleteRule=function(e){this.sheet.deleteRule(e),this.length--},t.getRule=function(e){var t=this.sheet.cssRules[e];return void 0!==t&&"string"==typeof t.cssText?t.cssText:""},e}(),te=function(){function e(e){var t=this.element=Q(e);this.nodes=t.childNodes,this.length=0}var t=e.prototype;return t.insertRule=function(e,t){if(e<=this.length&&e>=0){var n=document.createTextNode(t),r=this.nodes[e];return this.element.insertBefore(n,r||null),this.length++,!0}return!1},t.deleteRule=function(e){this.element.removeChild(this.nodes[e]),this.length--},t.getRule=function(e){return e<this.length?this.nodes[e].textContent:""},e}(),ne=function(){function e(e){this.rules=[],this.length=0}var t=e.prototype;return t.insertRule=function(e,t){return e<=this.length&&(this.rules.splice(e,0,t),this.length++,!0)},t.deleteRule=function(e){this.rules.splice(e,1),this.length--},t.getRule=function(e){return e<this.length?this.rules[e]:""},e}(),re=U,ae={isServer:!U,useCSSOMInjection:!_},oe=function(){function e(e,t,n){void 0===e&&(e=D),void 0===t&&(t={}),this.options=N({},ae,{},e),this.gs=t,this.names=new Map(n),this.server=!!e.isServer,!this.server&&U&&re&&(re=!1,function(e){for(var t=document.querySelectorAll(V),n=0,r=t.length;n<r;n++){var a=t[n];a&&"active"!==a.getAttribute(R)&&(Z(e,a),a.parentNode&&a.parentNode.removeChild(a))}}(this))}e.registerId=function(e){return W(e)};var t=e.prototype;return t.reconstructWithOptions=function(t,n){return void 0===n&&(n=!0),new e(N({},this.options,{},t),this.gs,n&&this.names||void 0)},t.allocateGSInstance=function(e){return this.gs[e]=(this.gs[e]||0)+1},t.getTag=function(){return this.tag||(this.tag=(n=(t=this.options).isServer,r=t.useCSSOMInjection,a=t.target,e=n?new ne(a):r?new ee(a):new te(a),new z(e)));var e,t,n,r,a},t.hasNameForId=function(e,t){return this.names.has(e)&&this.names.get(e).has(t)},t.registerName=function(e,t){if(W(e),this.names.has(e))this.names.get(e).add(t);else{var n=new Set;n.add(t),this.names.set(e,n)}},t.insertRules=function(e,t,n){this.registerName(e,t),this.getTag().insertRules(W(e),n)},t.clearNames=function(e){this.names.has(e)&&this.names.get(e).clear()},t.clearRules=function(e){this.getTag().clearGroup(W(e)),this.clearNames(e)},t.clearTag=function(){this.tag=void 0},t.toString=function(){return function(e){for(var t=e.getTag(),n=t.length,r="",a=0;a<n;a++){var o=$(a);if(void 0!==o){var l=e.names.get(o),i=t.getGroup(a);if(l&&i&&l.size){var c=R+".g"+a+'[id="'+o+'"]',s="";void 0!==l&&l.forEach((function(e){e.length>0&&(s+=e+",")})),r+=""+i+c+'{content:"'+s+'"}/*!sc*/\n'}}}return r}(this)},e}(),le=/(a)(d)/gi,ie=function(e){return String.fromCharCode(e+(e>25?39:97))};function ce(e){var t,n="";for(t=Math.abs(e);t>52;t=t/52|0)n=ie(t%52)+n;return(ie(t%52)+n).replace(le,"$1-$2")}var se=function(e,t){for(var n=t.length;n;)e=33*e^t.charCodeAt(--n);return e},ue=function(e){return se(5381,e)};function de(e){for(var t=0;t<e.length;t+=1){var n=e[t];if(L(n)&&!I(n))return!1}return!0}var fe=ue("5.3.6"),me=function(){function e(e,t,n){this.rules=e,this.staticRulesId="",this.isStatic=(void 0===n||n.isStatic)&&de(e),this.componentId=t,this.baseHash=se(fe,t),this.baseStyle=n,oe.registerId(t)}return e.prototype.generateAndInjectStyles=function(e,t,n){var r=this.componentId,a=[];if(this.baseStyle&&a.push(this.baseStyle.generateAndInjectStyles(e,t,n)),this.isStatic&&!n.hash)if(this.staticRulesId&&t.hasNameForId(r,this.staticRulesId))a.push(this.staticRulesId);else{var o=Te(this.rules,e,t,n).join(""),l=ce(se(this.baseHash,o)>>>0);if(!t.hasNameForId(r,l)){var i=n(o,"."+l,void 0,r);t.insertRules(r,l,i)}a.push(l),this.staticRulesId=l}else{for(var c=this.rules.length,s=se(this.baseHash,n.hash),u="",d=0;d<c;d++){var f=this.rules[d];if("string"==typeof f)u+=f;else if(f){var m=Te(f,e,t,n),p=Array.isArray(m)?m.join(""):m;s=se(s,p+d),u+=p}}if(u){var g=ce(s>>>0);if(!t.hasNameForId(r,g)){var h=n(u,"."+g,void 0,r);t.insertRules(r,g,h)}a.push(g)}}return a.join(" ")},e}(),pe=/^\s*\/\/.*$/gm,ge=[":","[",".","#"];function he(e){var t,n,r,a,o=void 0===e?D:e,l=o.options,i=void 0===l?D:l,c=o.plugins,s=void 0===c?T:c,u=new O(i),d=[],f=function(e){function t(t){if(t)try{e(t+"}")}catch(e){}}return function(n,r,a,o,l,i,c,s,u,d){switch(n){case 1:if(0===u&&64===r.charCodeAt(0))return e(r+";"),"";break;case 2:if(0===s)return r+"/*|*/";break;case 3:switch(s){case 102:case 112:return e(a[0]+r),"";default:return r+(0===d?"/*|*/":"")}case-2:r.split("/*|*/}").forEach(t)}}}((function(e){d.push(e)})),m=function(e,r,o){return 0===r&&-1!==ge.indexOf(o[n.length])||o.match(a)?e:"."+t};function p(e,o,l,i){void 0===i&&(i="&");var c=e.replace(pe,""),s=o&&l?l+" "+o+" { "+c+" }":c;return t=i,n=o,r=new RegExp("\\"+n+"\\b","g"),a=new RegExp("(\\"+n+"\\b){2,}"),u(l||!o?"":o,s)}return u.use([].concat(s,[function(e,t,a){2===e&&a.length&&a[0].lastIndexOf(n)>0&&(a[0]=a[0].replace(r,m))},f,function(e){if(-2===e){var t=d;return d=[],t}}])),p.hash=s.length?s.reduce((function(e,t){return t.name||q(15),se(e,t.name)}),5381).toString():"",p}var ve=h.default.createContext(),be=(ve.Consumer,h.default.createContext()),ye=(be.Consumer,new oe),Ee=he();function we(){return(0,h.useContext)(ve)||ye}function Oe(){return(0,h.useContext)(be)||Ee}function xe(e){var t=(0,h.useState)(e.stylisPlugins),n=t[0],r=t[1],a=we(),o=(0,h.useMemo)((function(){var t=a;return e.sheet?t=e.sheet:e.target&&(t=t.reconstructWithOptions({target:e.target},!1)),e.disableCSSOMInjection&&(t=t.reconstructWithOptions({useCSSOMInjection:!1})),t}),[e.disableCSSOMInjection,e.sheet,e.target]),l=(0,h.useMemo)((function(){return he({options:{prefix:!e.disableVendorPrefixes},plugins:n})}),[e.disableVendorPrefixes,n]);return(0,h.useEffect)((function(){w()(n,e.stylisPlugins)||r(e.stylisPlugins)}),[e.stylisPlugins]),h.default.createElement(ve.Provider,{value:o},h.default.createElement(be.Provider,{value:l},e.children))}var ke=function(){function e(e,t){var n=this;this.inject=function(e,t){void 0===t&&(t=Ee);var r=n.name+t.hash;e.hasNameForId(n.id,r)||e.insertRules(n.id,r,t(n.rules,r,"@keyframes"))},this.toString=function(){return q(12,String(n.name))},this.name=e,this.id="sc-keyframes-"+e,this.rules=t}return e.prototype.getName=function(e){return void 0===e&&(e=Ee),this.name+e.hash},e}(),Ce=/([A-Z])/,Se=/([A-Z])/g,Ae=/^ms-/,Ne=function(e){return"-"+e.toLowerCase()};function Pe(e){return Ce.test(e)?e.replace(Se,Ne).replace(Ae,"-ms-"):e}var je=function(e){return null==e||!1===e||""===e};function Te(e,t,n,r){if(Array.isArray(e)){for(var a,o=[],l=0,i=e.length;l<i;l+=1)""!==(a=Te(e[l],t,n,r))&&(Array.isArray(a)?o.push.apply(o,a):o.push(a));return o}return je(e)?"":I(e)?"."+e.styledComponentId:L(e)?"function"!=typeof(c=e)||c.prototype&&c.prototype.isReactComponent||!t?e:Te(e(t),t,n,r):e instanceof ke?n?(e.inject(n,r),e.getName(r)):e:j(e)?function e(t,n){var r,a,o=[];for(var l in t)t.hasOwnProperty(l)&&!je(t[l])&&(Array.isArray(t[l])&&t[l].isCss||L(t[l])?o.push(Pe(l)+":",t[l],";"):j(t[l])?o.push.apply(o,e(t[l],l)):o.push(Pe(l)+": "+(r=l,(null==(a=t[l])||"boolean"==typeof a||""===a?"":"number"!=typeof a||0===a||r in x?String(a).trim():a+"px")+";")));return n?[n+" {"].concat(o,["}"]):o}(e):e.toString();var c}var De=function(e){return Array.isArray(e)&&(e.isCss=!0),e};function Le(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return L(e)||j(e)?De(Te(P(T,[e].concat(n)))):0===n.length&&1===e.length&&"string"==typeof e[0]?e:De(Te(P(e,n)))}new Set;var Me=function(e,t,n){return void 0===n&&(n=D),e.theme!==n.theme&&e.theme||t||n.theme},Ie=/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,Re=/(^-|-$)/g;function Ue(e){return e.replace(Ie,"-").replace(Re,"")}var _e=function(e){return ce(ue(e)>>>0)};function Fe(e){return"string"==typeof e&&!0}var qe=function(e){return"function"==typeof e||"object"==typeof e&&null!==e&&!Array.isArray(e)},ze=function(e){return"__proto__"!==e&&"constructor"!==e&&"prototype"!==e};function Be(e,t,n){var r=e[n];qe(t)&&qe(r)?He(r,t):e[n]=t}function He(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];for(var a=0,o=n;a<o.length;a++){var l=o[a];if(qe(l))for(var i in l)ze(i)&&Be(e,l[i],i)}return e}var Ge=h.default.createContext();Ge.Consumer;var We={};function $e(e,t,n){var r=I(e),a=!Fe(e),o=t.attrs,l=void 0===o?T:o,i=t.componentId,c=void 0===i?function(e,t){var n="string"!=typeof e?"sc":Ue(e);We[n]=(We[n]||0)+1;var r=n+"-"+_e("5.3.6"+n+We[n]);return t?t+"-"+r:r}(t.displayName,t.parentComponentId):i,s=t.displayName,u=void 0===s?function(e){return Fe(e)?"styled."+e:"Styled("+M(e)+")"}(e):s,d=t.displayName&&t.componentId?Ue(t.displayName)+"-"+t.componentId:t.componentId||c,f=r&&e.attrs?Array.prototype.concat(e.attrs,l).filter(Boolean):l,m=t.shouldForwardProp;r&&e.shouldForwardProp&&(m=t.shouldForwardProp?function(n,r,a){return e.shouldForwardProp(n,r,a)&&t.shouldForwardProp(n,r,a)}:e.shouldForwardProp);var p,g=new me(n,d,r?e.componentStyle:void 0),v=g.isStatic&&0===l.length,b=function(e,t){return function(e,t,n,r){var a=e.attrs,o=e.componentStyle,l=e.defaultProps,i=e.foldedComponentIds,c=e.shouldForwardProp,s=e.styledComponentId,u=e.target,d=function(e,t,n){void 0===e&&(e=D);var r=N({},t,{theme:e}),a={};return n.forEach((function(e){var t,n,o,l=e;for(t in L(l)&&(l=l(r)),l)r[t]=a[t]="className"===t?(n=a[t],o=l[t],n&&o?n+" "+o:n||o):l[t]})),[r,a]}(Me(t,(0,h.useContext)(Ge),l)||D,t,a),f=d[0],m=d[1],p=function(e,t,n,r){var a=we(),o=Oe();return t?e.generateAndInjectStyles(D,a,o):e.generateAndInjectStyles(n,a,o)}(o,r,f),g=n,v=m.$as||t.$as||m.as||t.as||u,b=Fe(v),y=m!==t?N({},t,{},m):t,E={};for(var w in y)"$"!==w[0]&&"as"!==w&&("forwardedAs"===w?E.as=y[w]:(c?c(w,C,v):!b||C(w))&&(E[w]=y[w]));return t.style&&m.style!==t.style&&(E.style=N({},t.style,{},m.style)),E.className=Array.prototype.concat(i,s,p!==s?p:null,t.className,m.className).filter(Boolean).join(" "),E.ref=g,(0,h.createElement)(v,E)}(p,e,t,v)};return b.displayName=u,(p=h.default.forwardRef(b)).attrs=f,p.componentStyle=g,p.displayName=u,p.shouldForwardProp=m,p.foldedComponentIds=r?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):T,p.styledComponentId=d,p.target=r?e.target:e,p.withComponent=function(e){var r=t.componentId,a=function(e,t){if(null==e)return{};var n,r,a={},o=Object.keys(e);for(r=0;r<o.length;r++)n=o[r],t.indexOf(n)>=0||(a[n]=e[n]);return a}(t,["componentId"]),o=r&&r+"-"+(Fe(e)?e:Ue(M(e)));return $e(e,N({},a,{attrs:f,componentId:o}),n)},Object.defineProperty(p,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(t){this._foldedDefaultProps=r?He({},e.defaultProps,t):t}}),p.toString=function(){return"."+p.styledComponentId},a&&A()(p,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,shouldForwardProp:!0,styledComponentId:!0,target:!0,withComponent:!0}),p}var Ye=function(e){return function e(t,n,r){if(void 0===r&&(r=D),!(0,y.isValidElementType)(n))return q(1,String(n));var a=function(){return t(n,r,Le.apply(void 0,arguments))};return a.withConfig=function(a){return e(t,n,N({},r,{},a))},a.attrs=function(a){return e(t,n,N({},r,{attrs:Array.prototype.concat(r.attrs,a).filter(Boolean)}))},a}($e,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","textPath","tspan"].forEach((function(e){Ye[e]=Ye(e)}));var Ve,Ke=function(){function e(e,t){this.rules=e,this.componentId=t,this.isStatic=de(e),oe.registerId(this.componentId+1)}var t=e.prototype;return t.createStyles=function(e,t,n,r){var a=r(Te(this.rules,t,n,r).join(""),""),o=this.componentId+e;n.insertRules(o,o,a)},t.removeStyles=function(e,t){t.clearRules(this.componentId+e)},t.renderStyles=function(e,t,n,r){e>2&&oe.registerId(this.componentId+e),this.removeStyles(e,n),this.createStyles(e,t,n,r)},e}();function Xe(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var a=Le.apply(void 0,[e].concat(n)),o="sc-global-"+_e(JSON.stringify(a)),l=new Ke(a,o);function i(e){var t=we(),n=Oe(),r=(0,h.useContext)(Ge),a=(0,h.useRef)(t.allocateGSInstance(o)).current;return t.server&&c(a,e,t,r,n),(0,h.useLayoutEffect)((function(){if(!t.server)return c(a,e,t,r,n),function(){return l.removeStyles(a,t)}}),[a,e,t,r,n]),null}function c(e,t,n,r,a){if(l.isStatic)l.renderStyles(e,F,n,a);else{var o=N({},t,{theme:Me(t,r,i.defaultProps)});l.renderStyles(e,o,n,a)}}return h.default.memo(i)}(Ve=function(){var e=this;this._emitSheetCSS=function(){var t=e.instance.toString();if(!t)return"";var n=J();return"<style "+[n&&'nonce="'+n+'"',R+'="true"','data-styled-version="5.3.6"'].filter(Boolean).join(" ")+">"+t+"</style>"},this.getStyleTags=function(){return e.sealed?q(2):e._emitSheetCSS()},this.getStyleElement=function(){var t;if(e.sealed)return q(2);var n=((t={})[R]="",t["data-styled-version"]="5.3.6",t.dangerouslySetInnerHTML={__html:e.instance.toString()},t),r=J();return r&&(n.nonce=r),[h.default.createElement("style",N({},n,{key:"sc-0-0"}))]},this.seal=function(){e.sealed=!0},this.instance=new oe({isServer:!0}),this.sealed=!1}.prototype).collectStyles=function(e){return this.sealed?q(2):h.default.createElement(xe,{sheet:this.instance},e)},Ve.interleaveWithNodeStream=function(e){return q(3)};const Ze=Ye;var Je,Qe=a(841),et=a.n(Qe),tt=g().shape({url:g().string,altText:g().string,cssClass:g().arrayOf(g().string),size:g().oneOf(["small","medium","large"])}),nt=g().shape({text:g().string,maxWidth:g().string,cssClass:g().arrayOf(g().string),highlightColor:g().oneOf(["gold","black"])}),rt=g().shape({color:g().oneOf(["gold","maroon","gray","dark"]),content:g().shape({icon:g().string,header:g().string,body:g().string})}),at=Ze.img(Je||(Je=d(["\n  width: 100%;\n"]))),ot=function(e){var t=e.type||"heading-hero";return{"heading-hero":function(){return a=(t=e).image,o=t.subTitle,l=t.title,c=t.contents,s=t.contentsColor,u={gold:"highlight-gold",black:"highlight-black",white:"highlight-white",undefined:""},d={black:"text-dark",white:"text-white",undefined:""},h.default.createElement("div",{className:et()("uds-hero",i({},{small:"uds-hero-sm",medium:"uds-hero-md",large:"uds-hero-lg",undefined:""}[a.size],a.size))},h.default.createElement(at,{className:"hero",src:a.url,alt:a.altText,"data-testid":"hero-image"}),o&&h.default.createElement("div",{role:"doc-subtitle","data-testid":"hero-subtitle"},h.default.createElement("span",{className:et()((n={},i(n,d[o.color],o.color),i(n,u[o.highlightColor],o.highlightColor),n))},o.text)),l&&h.default.createElement("h1",{style:{maxWidth:l.maxWidth||""},"data-testid":"hero-title"},h.default.createElement("span",{className:et()((r={},i(r,d[l.color],l.color),i(r,u[l.highlightColor],l.highlightColor),r))},l.text)),c&&h.default.createElement("div",{"data-testid":"hero-content",className:et()("content",i({},d[s],s))},c.map((function(e,t){return h.default.createElement("p",{key:"content-".concat(t)},e.text)}))));var t,n,r,a,o,l,c,s,u,d},"story-hero":function(){return n=(t=e).image,r=t.title,a=t.contents,console.log({image:n,title:r,contents:a}),h.default.createElement("div",null,"TODO: to be implemented");var t,n,r,a},undefined:function(){return console.error("the type '".concat(t,"' is not supported by the 'Hero' component.")),null}}[t]()};ot.propTypes={type:g().oneOf(["heading-hero","story-hero"]),image:tt,title:nt,subTitle:nt,contents:g().arrayOf(nt),contentsColor:g().string};var lt=function(){var e=u((0,h.useState)(),2),t=e[0],n=e[1],r=u((0,h.useState)(!1),2),a=r[0],o=r[1],l=u((0,h.useState)(!1),2),i=l[0],c=l[1],s=u((0,h.useState)(""),2),d=s[0],f=s[1];return(0,h.useEffect)((function(){d&&function(){c(null),o(!0);try{fetch(d).then((function(e){return e.json()})).then((function(e){n(e),o(!1)})).catch((function(e){c(e),o(!1)}))}catch(e){c(e)}}()}),[d]),[{data:t,loading:a,error:i},f]};function it(){return it=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},it.apply(this,arguments)}function ct(e,t){if(null==e)return{};var n,r,a=function(e,t){if(null==e)return{};var n,r,a={},o=Object.keys(e);for(r=0;r<o.length;r++)n=o[r],t.indexOf(n)>=0||(a[n]=e[n]);return a}(e,t);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);for(r=0;r<o.length;r++)n=o[r],t.indexOf(n)>=0||Object.prototype.propertyIsEnumerable.call(e,n)&&(a[n]=e[n])}return a}var st=function(e){var t=e.event,n=void 0===t?"":t,r=e.action,a=void 0===r?"":r,o=e.name,l=void 0===o?"":o,i=e.type,c=void 0===i?"":i,s=e.section,u=void 0===s?"":s,d=e.text,f=void 0===d?"":d,m=e.region,p=void 0===m?"":m,g=e.component,h=void 0===g?"":g,v=window.dataLayer,b={event:n.toLowerCase(),action:a.toLowerCase(),name:l.toLowerCase(),type:c.toLowerCase(),region:p.toLowerCase(),section:u.toLowerCase(),text:f.toLowerCase(),component:h.toLowerCase()};v&&v.push(b)},ut=["label","cardTitle","ariaLabel","block","color","disabled","element","href","icon","innerRef","onClick","size","classes","target"];function dt(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function ft(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?dt(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):dt(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var mt={name:"onclick",event:"link",action:"click",type:"internal link",region:"main content"},pt=function(e){var t,n=e.label,r=e.cardTitle,a=e.ariaLabel,o=e.block,l=e.color,c=e.disabled,s=e.element,u=e.href,d=e.icon,f=e.innerRef,m=e.onClick,p=e.size,g=e.classes,v=e.target,b=ct(e,ut),y=et()("btn",(i(t={},"btn-".concat(l),!0),i(t,"btn-md","small"===p),i(t,"btn-sm","xsmall"===p),i(t,"btn-block",o),i(t,"disabled",c),t)),E=s;u&&"button"===s&&(E="a");return h.default.createElement(E,it({type:"button"===E&&m?"button":void 0},b,{className:et()(g)||y,href:u,ref:f,onClick:function(){return e=n,st(ft(ft({},mt),{},{text:e,section:r})),void(null==m||m());var e},"aria-label":a,target:"a"===E?v:null}),d&&h.default.createElement("i",{className:"".concat(null==d?void 0:d[0]," fa-").concat(null==d?void 0:d[1]," mr-1")}),n)};pt.propTypes={label:g().string,cardTitle:g().string,ariaLabel:g().string,block:g().bool,color:g().oneOf(["gold","maroon","gray","dark"]),disabled:g().bool,element:g().oneOfType([g().func,g().string,g().shape({$$typeof:g().symbol,render:g().func}),g().arrayOf(g().oneOfType([g().func,g().string,g().shape({$$typeof:g().symbol,render:g().func})]))]),href:g().string,icon:g().arrayOf(g().string),innerRef:g().oneOfType([g().object,g().func,g().string]),onClick:g().func,size:g().oneOf(["default","small","xsmall"]),classes:g().arrayOf(g().string),target:g().oneOf(["_blank","_self","_top","_parent"])},pt.defaultProps={label:"",cardTitle:"",ariaLabel:void 0,block:void 0,color:"gray",disabled:void 0,element:"button",href:void 0,icon:void 0,innerRef:void 0,onClick:void 0,size:"default",classes:void 0,target:"_self"};var gt,ht=function(e){var t=e.href,n=void 0===t?null:t;return h.default.createElement(pt,{label:"Apply now",ariaLabel:"Apply now",href:n,color:"gold"})};function vt(e){var t=e.message,n=e.type,r=u((0,h.useState)(""),2),a=r[0],o=r[1],l={error:{className:"alert-danger",icon:"fa-exclamation-triangle",ariaLabel:"Error"},info:{className:"alert-info",icon:"fa-info-circle",ariaLabel:"Information"}}[n];return h.default.createElement("div",{"data-testid":"message-alert",className:"alert ".concat(l.className),role:"alert",style:{display:a,position:"sticky",top:0,zIndex:100}},h.default.createElement("div",{className:"alert-icon"},h.default.createElement("span",{"aria-label":l.ariaLabel,className:"fa fa-icon ".concat(l.icon)})),h.default.createElement("div",{className:"alert-content"},t),h.default.createElement("div",{className:"alert-close"},h.default.createElement("button",{type:"button",className:"btn btn-circle btn-circle-alt-black close","aria-label":"Close",onClick:function(){return o("none")}},h.default.createElement("i",{className:"fas fa-times"}))))}function bt(e){var t=e.message;return h.default.createElement(vt,{message:t,type:"error"})}function yt(e){var t=e.message;return h.default.createElement(vt,{message:t,type:"info"})}ht.propTypes={href:g().string},g().string,vt.propTypes={type:g().oneOf(["error","info"]).isRequired,message:g().string.isRequired};var Et=Ze.div(gt||(gt=d(["\n  --width: 100px;\n  --color: red;\n\n  width: calc(var(--width) + 0px);\n  height: calc((var(--width) / 3) - 10px);\n  // position: absolute;\n  // top: 50%;\n  // left: 50%;\n  transform: translateX(-50%) translateY(-50%);\n\n  .ball-loader-ball {\n    will-change: transform;\n\n    height: calc((var(--width) / 3) - 10px);\n    width: calc((var(--width) / 3) - 10px);\n\n    border-radius: 50%;\n    background-color: lightBlue;\n    position: absolute;\n    -webkit-animation: grow 1s ease-in-out infinite alternate;\n    animation: grow 1s ease-in-out infinite alternate;\n\n    &.ball1 {\n      left: 0;\n      transform-origin: 100% 50%;\n    }\n    &.ball2 {\n      left: 50%;\n      transform: translateX(-50%) scale(1);\n      animation-delay: 0.33s;\n    }\n    &.ball3 {\n      right: 0;\n      animation-delay: 0.66s;\n    }\n  }\n\n  @keyframes grow {\n    to {\n      transform: translateX(-50%) scale(0);\n    }\n  }\n"])));function wt(){return h.default.createElement(Et,{"data-testid":"loader",className:"container ball-loader mt-4"},h.default.createElement("div",{className:"ball-loader-ball ball1"}),h.default.createElement("div",{className:"ball-loader-ball ball2"}),h.default.createElement("div",{className:"ball-loader-ball ball3"}))}var Ot,xt=a(951),kt=function(e){return{__html:(0,xt.sanitize)(e)}},Ct=Ze.div(Ot||(Ot=d(["\n  &.sticky {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    &.with-header {\n      top: ",";\n      @media (max-width: 992px) {\n        top: 110px;\n      }\n    }\n  }\n  .mobile-menu-toggler {\n    background-color: transparent;\n    border: none;\n    cursor: default;\n    h4 {\n      align-items: center;\n    }\n    i {\n      transition: all 0.3s;\n    }\n  }\n  .show-menu i {\n    transform: rotate(-180deg);\n  }\n  .nav-link {\n    border: none;\n    background-color: #ffffff;\n    i {\n      width: 2rem !important;\n      text-align: center !important;\n    }\n  }\n"])),(function(e){return e.requiresAltMenuSpacing?"112px":"142px"}));function St(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function At(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?St(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):St(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var Nt="On This Page",Pt={event:"collapse",name:"onclick",type:"click",text:Nt},jt=function(e){var t=e.items,n=e.firstElementId,r=e.focusFirstFocusableElement,a=void 0!==r&&r,o=(0,h.useRef)(null),l=u((0,h.useState)(!1),2),c=l[0],s=l[1],d=u((0,h.useState)(!1),2),f=d[0],m=d[1],p=u((0,h.useState)(""),2),g=p[0],v=p[1],b=u((0,h.useState)(!1),2),y=b[0],E=b[1],w=function(e){var t=u((0,h.useState)(!1),2),n=t[0],r=t[1];return(0,h.useEffect)((function(){var t=window.matchMedia(e);t.matches!==n&&r(t.matches);var a=function(){r(t.matches)};return t.addEventListener("change",a),function(){return t.removeEventListener("change",a)}}),[n,e]),n}("(max-width: 991px)"),O=w?110:142,x=function(){var e,r=window.scrollY;(null===(e=document.getElementById(n))||void 0===e?void 0:e.getBoundingClientRect().top)>=0&&(o.current.classList.remove("sticky"),v("")),r>o.current.getBoundingClientRect().top&&o.current.classList.add("sticky");var a="",l=c?O+103:103;null==t||t.forEach((function(e){var t=e.targetIdName,n=document.getElementById(t),r=(null==n?void 0:n.getBoundingClientRect().top)-l,o=(null==n?void 0:n.getBoundingClientRect().bottom)-l;r<0&&o>0&&(a=t)})),v(a)};(0,h.useEffect)((function(){var e;e=document.getElementById("asu-header")||document.getElementById("headerContainer")||document.getElementById("asuHeader"),s(!!e),document.getElementById("degreeDetailPageContainer")&&m(!0)}),[]),(0,h.useEffect)((function(){var e;return null===(e=window)||void 0===e||e.addEventListener("scroll",x),function(){return window.removeEventListener("scroll",x)}}),[c]);return h.default.createElement(Ct,{requiresAltMenuSpacing:f,ref:o,className:"uds-anchor-menu uds-anchor-menu-expanded-lg ".concat(c?"with-header ":"","mb-4"),style:y?{borderBottom:0}:{}},h.default.createElement("div",{className:"container-xl uds-anchor-menu-wrapper"},w?h.default.createElement("button",{className:"".concat(y?"show-menu ":"","mobile-menu-toggler"),type:"button",onClick:function(){st(At(At({},Pt),{},{action:y?"close":"open"})),E((function(e){return!e}))},"data-toggle":"collapse","data-target":"#collapseAnchorMenu","aria-controls":"collapseAnchorMenu"},h.default.createElement("h4",null,Nt,":",h.default.createElement("i",{className:"fas fa-chevron-down"}))):h.default.createElement("h4",null,Nt,":"),h.default.createElement("div",{"data-testid":"anchor-menu-container",id:"collapseAnchorMenu",className:et()("card","card-body","collapse",i({},"show",y))},h.default.createElement("nav",{"data-testid":"anchor-menu",className:"nav","aria-label":Nt},null==t?void 0:t.map((function(e){return h.default.createElement(pt,{"data-testid":"anchor-item-".concat(e.targetIdName),key:e.targetIdName,classes:["nav-link","".concat(g===e.targetIdName?"active":"")],ariaLabel:e.text,label:e.text,icon:e.icon,onClick:function(){return t=e.targetIdName,i=window.scrollY-(c?O+100:100),s=w?410:90,u=(null===(n=document.getElementById(t))||void 0===n?void 0:n.getBoundingClientRect().top)+i,o.current.classList.contains("sticky")||(u-=s),a&&(null===(r=((l="#".concat(t))?document.querySelector(l):document).querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))||void 0===r||r.focus()),void window.scrollTo({top:u,behavior:"smooth"});var t,n,r,l,i,s,u}})}))))))};function Tt(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Dt(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Tt(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Tt(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}jt.propTypes={items:g().arrayOf(g().shape({text:g().string.isRequired,targetIdName:g().string.isRequired,icon:g().arrayOf(g().string)})).isRequired,firstElementId:g().string.isRequired,focusFirstFocusableElement:g().bool},g().shape({color:g().oneOf(["gold","maroon","gray","dark"]),content:g().shape({icon:g().string,header:g().string,body:g().string})});var Lt,Mt=g().shape({ariaLabel:g().string,color:g().oneOf(["gold","maroon","gray","dark"]),icon:g().string,href:g().string,label:g().string,onClick:g().func,size:g().oneOf(["default","small","xsmall"])}),It={url:g().string,altText:g().string,cssClass:g().arrayOf(g().string)},Rt={text:g().string,cssClass:g().arrayOf(g().string)},Ut={type:g().oneOf(["video","youtube"]),url:g().string,altText:g().string,vttUrl:g().string,title:g().string},_t={url:g().string,text:g().string,isActive:g().bool},Ft=g().shape(Dt({},It)),qt=g().shape(Dt({},Rt)),zt=g().shape(Dt({},Ut)),Bt=g().shape(Dt({},_t)),Ht=g().shape({id:g().string,sourceType:g().oneOf(["api","shared-data-source","static-json"]),sharedDataSourceId:g().string,data:g().arrayOf(g().object),apiUrl:g().string}),Gt=g().shape({text:g().string,url:g().string}),Wt=g().shape({icon:g().arrayOf(g().string),title:g().string,content:g().string,buttonLink:Mt}),$t=g().arrayOf(g().shape({title:g().string,url:g().string})),Yt=g().shape({career:Bt,growth:g().oneOfType([g().number,g().string]),medianSalary:g().string,brightOutlook:g().bool,greenOccupation:g().bool}),Vt={hideCollegeSchool:g().bool,defaultView:g().oneOf(["list-view","grid-view"]),cardDefaultImage:Ft},Kt=g().shape(Dt({},Vt)),Xt={atAGlance:g().bool,applicationRequirements:g().bool,changeMajorRequirements:g().bool,nextSteps:g().bool,affordingCollege:g().bool,flexibleDegreeOptions:g().bool,careerOutlook:g().bool,exampleCareers:g().bool,customizeYourCollegeExperience:g().bool,globalOpportunity:g().bool,attendOnline:g().bool,whyChooseAsu:g().bool,programContactInfo:g().bool,externalAnchors:g().arrayOf(g().shape({targetIdName:g().string,text:g().string}))},Zt=g().shape({image:Ft,title:g().string,text:g().string,button:Mt}),Jt=g().shape({faculty:Zt,programs:Zt,research:Zt,inclusion:Zt,mentors:Zt,honors:Zt}),Qt={hide:g().bool,sectionIntroText:g().string,cards:Jt,defaultCards:Jt},en=(g().shape(Dt({},Xt)),g().shape({id:g().oneOfType([g().string,g().number]),value:g().string})),tn=g().shape({locations:g().arrayOf(en),asuLocals:g().arrayOf(en),acceleratedConcurrent:en}),nn=Object.values({h1:"h1",h2:"h2",h3:"h3",h4:"h4",h5:"h5",h6:"h6"}),rn={offeredBy:{icon:"university",title:"Offered by"},locations:{icon:"map-marker-alt",title:"Location"},firstRequirementMathCourse:{icon:"pencil-alt",title:"First Required math Course"},mathIntensity:{icon:"calculator",title:"Math intensity"},timeCommitment:{icon:"calendar-alt",title:"Time commitment"}},an="grid-view",on="list-view",ln="degree-list-programs",cn="Sorry, Something went wrong.",sn=(Lt=(document.currentScript&&document.currentScript.src||"").match(/(.*\/)/))&&Lt.length>0?Lt[0].substr(0,Lt[0].length-1):"/",un=function(e){if("string"==typeof e)return"Degrees";var t=e.program,n=e.cert;return"undergrad"===t&&"true"===n?"Undergraduate Minors and Certificates":"undergrad"===t?"Undergraduate Degrees":"graduate"===t&&"true"===n?"Graduate Degrees and Certificates":"graduate"===t?"Graduate Degrees":"Degrees"},dn=[{id:0,value:"DTPHX",text:"Downtown Phoenix campus"},{id:1,value:"POLY",text:"Polytechnic campus"},{id:2,value:"TEMPE",text:"Tempe campus"},{id:3,value:"WEST",text:"West campus"},{id:4,value:"ONLNE",text:"ASU Online"}],fn=dn[4],mn=[{id:0,value:"COCHS",text:"ASU@Cochise"},{id:1,value:"LOSAN",text:"ASU@Los Angeles"},{id:2,value:"NEAZ",text:"ASU@Northeastern Arizona"},{id:3,value:"PIMA",text:"ASU@Pima"},{id:4,value:"CAC",text:"ASU@Pinal"},{id:5,value:"EAC",text:"ASU@TheGilaValley"},{id:6,value:"TUCSN",text:"ASU@Tucson"},{id:7,value:"YAVAP",text:"ASU@Yavapai"},{id:8,value:"AWC",text:"ASU@Yuma"},{id:9,value:"MESACITYCR",text:"ASU@Mesa City Center"},{id:10,value:"CALHC",text:"Colleges at Lake Havasu City"}],pn=[{id:0,value:"all",text:"All"},{id:1,value:"accelerateDegrees",text:"Accelerated"},{id:2,value:"concurrentDegrees",text:"Concurrent"}],gn=pn[0],hn=function(e){return(null==e?void 0:e.value)&&"all"!==(null==e?void 0:e.value)},vn={atAGlance:{targetIdName:"at-a-glange",text:"At a glance"},applicationRequirements:{targetIdName:"application-requirements",text:"App. Requirements"},degreeRequirements:{targetIdName:"degree-requirements",text:"Degree Requirements"},changeMajorRequirements:{targetIdName:"change-major-requirements",text:"Change Major Requirement"},nextSteps:{targetIdName:"next-steps",text:"Next Steps"},affordingCollege:{targetIdName:"affording-college",text:"Affording College"},flexibleDegreeOptions:{targetIdName:"flexible-degree-options",text:"Flexible Degree Options",acceleratedId:"flexible-accelerated-options",concurrentId:"flexible-concurrent-options"},careerOutlook:{targetIdName:"career-outlook",text:"Career outlook"},exampleCareers:{targetIdName:"example-careers",text:"Example Careers"},globalOpportunity:{targetIdName:"global-opportunity",text:"Global opportunities"},attendOnline:{targetIdName:"attend-online",text:"Attend Online"},whyChooseAsu:{targetIdName:"why-choose-asu",text:"Why Choose ASU"},programContactInfo:{targetIdName:"program-contact-info",text:"Program Contact Information"}},bn={TEMPE:{text:"Tempe campus",url:"https://campus.asu.edu/tempe"},POLY:{text:"Polytechnic campus",url:"https://campus.asu.edu/polytechnic"},WEST:{text:"West campus",url:"https://campus.asu.edu/west"},DTPHX:{text:"Downtown Phoenix campus",url:"https://campus.asu.edu/downtown-phoenix"},EAC:{text:"",url:"https://admission.asu.edu/transfer/thegilavalley"},CAC:{text:"",url:"https://admission.asu.edu/transfer/pinal"},ONLNE:{text:"Online",url:"https://asuonline.asu.edu"},CALHC:{text:"Lake Havasu",url:"https://havasu.asu.edu"},COCHS:{text:"",url:"https://admission.asu.edu/transfer/asu-cochise"},WASHD:{text:"",url:"https://washingtondc.asu.edu"},YAVAP:{text:"",url:"https://admission.asu.edu/transfer/asuyavapai"},PIMA:{text:"",url:"https://admission.asu.edu/transfer/pima"},NEAZ:{text:"",url:"https://admission.asu.edu/transfer/asu-northeastern-arizona"},LOSAN:{text:"ASU@Los Angeles",url:"https://california.asu.edu"},"TUCSN-undergrad":{text:"",url:"https://transfer.asu.edu/tucson"},"TUCSN-graduate":{text:"",url:"https://admission.asu.edu/contact/graduate"},MXCTY:{text:"",url:"https://admission.asu.edu/contact/graduate"},"AWC-undergrad":{text:"",url:"https://admission.asu.edu/transfer/asu-yuma"},"AWC-graduate":{text:"",url:"https://admission.asu.edu/contact/graduate"}},yn=function(e,t){var n=e.toUpperCase(),r=["TUCSN","AWC"].includes(n)?"".concat(n,"-").concat(t):n;return bn[r]};function En(e){var t,n,r=e.anchorMenu,a=null==r||null===(t=r.externalAnchors)||void 0===t?void 0:t.map((function(e){var t=e.targetIdName,n=e.text;return{targetIdName:t.startsWith("#")?t.substring(1):t,text:n,icon:null}})),o=Object.keys(vn).filter((function(e){return r[e]})).map((function(e){return vn[e]})).concat(a||[]);return h.default.createElement(jt,{items:o,firstElementId:null===(n=o[0])||void 0===n?void 0:n.targetIdName,focusFirstFocusableElement:!0})}En.propTypes={anchorMenu:g().shape(Xt)};var wn={endpoint:"https://degrees.apps.asu.edu/t5/service",method:"findAllDegrees",init:"false",fields:"graduateApplyDates,planDeadlines,AsuDegSrchFlg,CollegeAcadOrg,CollegeAcadOrgJoint,DepartmentCode,Descr100,Institution,AcadPlan,Degree,DegreeDescr,DegreeDescrlong,concurrentDegreeMajorMaps,managedOnlineCampus,onlineMajorMapURL,AsuCritTrackUrl,AsuOfficeLoc,CampusStringArray,AcadPlan,accelerateDegrees,concurrentDegrees,CollegeDescr100,CollegeUrl,EmailAddr,DescrlongExtns,AsuProgramFee,AsuLangReqFlag,asuAcadpLrfText,asuMathReqFlag,additionalMathReqCourse,asuAcadpMrfText,MathIntensity,"},On={acadPlan:null,endpoint:"https://degrees.apps.asu.edu/t5/service",method:"findDegreeByAcadPlan",init:"false",fields:"graduateApplyDates,planDeadlines,AsuDegSrchFlg,AsuCustomText,Degree,marketText,DescrlongExtns,concurrentDegreeMajorMaps,onlineMajorMapURL,ChangeMajor,AsuCritTrackUrl,SubPlnMajorMaps,SubPln,Descr100,CollegeDescr100,CollegeUrl,AsuOfficeLoc,CampusStringArray,campusWue,MinMathReq,MathIntensity,degreeMajorMap,careerData,accelerateDegrees,accelerateDegreeMajorMaps,concurrentDegrees,concurrentDegreeMajorMaps,AsuCareerOpp,DepartmentName,PlanUrl,EmailAddr,Phone,CollegeDescr100,DescrlongExtn5,TransferAdmission,gradAdditionalRequirements,AdmissionsDegRequirements,AdmissionsDegRequirements,globalExp,CurriculumUrl,managedOnlineCampus,planCatDescr"},xn=function(e){return e.map((function(e){return{title:e.Descr,url:e.PlanUrl}}))},kn=["endpoint","fields"];function Cn(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Sn(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Cn(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Cn(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}function An(e,t){var n=Sn(Sn({},t),e);n.collegeAcadOrg&&(n.collegeOrg=n.collegeAcadOrg,delete n.collegeAcadOrg);var r=n.endpoint,a=n.fields,o=ct(n,kn),l=Object.keys(o).reduce((function(e,t){return"".concat(e,"&").concat(t,"=").concat(n[t])}),"");return"".concat(r,"?fields=").concat(a).concat(l)}function Nn(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"h2";return nn.includes(e.component)?e.component:t}function Pn(e){return null==e?void 0:e.replace(/\w\S*/g,(function(e){return e.charAt(0).toUpperCase()+e.substr(1).toLowerCase()}))}function jn(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Tn(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?jn(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):jn(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var Dn="AsuDevTools",Ln={isDebug:!1};window.__AsuDevTools={enableDebug:function(e){var t=JSON.stringify(Tn(Tn({},Ln),{},{isDebug:e}));localStorage.setItem(Dn,t)}};var Mn,In,Rn,Un=function(e){return(e||[]).join(" ")};function _n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"id-",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;return m().mark((function n(){var r;return m().wrap((function(n){for(;;)switch(n.prev=n.next){case 0:r=t;case 1:return r+=1,n.next=5,e+r;case 5:n.next=1;break;case 7:case"end":return n.stop()}}),n)}))()}function Fn(e){var t=e.contents,n=void 0===t?[]:t,r=_n("paragrap-");return h.default.createElement(h.default.Fragment,null,n.map((function(e){return t=e.text,/<\/?[a-z][\s\S]*>/i.test(t)?h.default.createElement("div",{key:r.next().value,dangerouslySetInnerHTML:kt(e.text)}):h.default.createElement("p",{key:r.next().value,className:"".concat(Un(e.cssClass))},e.text);var t})))}Fn.propTypes={contents:g().arrayOf(qt)};var qn,zn,Bn=Xe(Mn||(Mn=d(["\n  .uds-image-overlap {\n    padding-top: 0;\n    width: auto;\n    align-items: center;\n\n    &:after{\n      height: 100%;\n    }\n    @media (max-width: 768px) {\n      padding-top: 1.5rem !important;\n    }\n  }\n"]))),Hn=Ze.div(In||(In=d(["\n  .uds-image-overlap.content-right &.content-wrapper,\n  .uds-image-overlap.content-left &.content-wrapper {\n    height: fit-content;\n  }\n\n  @media (max-width: 768px) {\n    & {\n      font-size: 0.9rem;\n    }\n  }\n\n  @media (min-width: 992px) {\n    .uds-image-overlap.content-left &.content-wrapper {\n      padding-left: 0;\n    }\n\n    .uds-image-overlap.content-right &.content-wrapper {\n      padding: 2.5rem;\n\n      h2 {\n        margin-top: 0;\n      }\n    }\n  }\n"]))),Gn=Ze.img(Rn||(Rn=d(["\n  .uds-image-overlap & {\n    width: 100%;\n    height: 100%;\n    grid-row: 2/5;\n    object-fit: cover;\n  }\n\n  .uds-image-overlap.content-right & {\n    grid-row: 1 / span 3;\n  }\n"])));function Wn(e){var t=e.title,n=e.image,r=e.contentDirection,a=void 0===r?"left":r,o=e.contents,l=void 0===o?[]:o,i=e.contentChildren,c=void 0===i?null:i,s=e.headingTag,u=void 0===s?"H3":s,d=(0,h.useRef)(),f=(0,h.useRef)(),m=Nn(u);function p(){var e=d.current.offsetHeight;f.current.style.height="".concat(1.2*e,"px")}return(0,h.useEffect)((function(){var e;p();var t=function(){clearTimeout(e),e=setTimeout((function(){return p()}),150)};return window.addEventListener("resize",t),function(){return window.removeEventListener("resize",t)}}),[f,d]),h.default.createElement("div",{className:"uds-image-overlap content-".concat(a)},h.default.createElement(Bn,null),h.default.createElement(Gn,{ref:f,className:"img-fluid",src:null==n?void 0:n.url,alt:null==n?void 0:n.altText,onError:function(e){e.currentTarget.style.display="none"}}),h.default.createElement(Hn,{ref:d,className:"content-wrapper"},h.default.createElement(m,null,h.default.createElement("span",{className:"highlight-gold"},t)),h.default.createElement(Fn,{contents:l}),c))}Wn.propTypes={headingTag:g().string,title:g().string,contentDirection:g().oneOf(["left","right"]),contents:g().arrayOf(g().shape({text:g().string})),image:Ft,contentChildren:g().element};var $n,Yn=Xe(qn||(qn=d(["\n  :root {\n    --uds-dp-section-margin: 96px;\n  }\n\n  @media (max-width: 768px) {\n    :root {\n      --uds-dp-section-margin: 48px;\n    }\n  }\n\n  .element-focus:focus {\n    outline: none;\n    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #191919 !important;\n  }\n\n  div[class^=uds-hero] h1 {\n    margin-left: 0.15em;\n\n    span {\n      margin-left: 0;\n    }\n  }\n\n  h1 span.highlight-gold,\n  h2 span.highlight-gold{\n    margin-left: 0.15em;\n  }\n\n  .card > .card-buttons {\n    padding-bottom: 8px !important;\n  }\n"]))),Vn=Ze.main(zn||(zn=d(["\n  &.dg-margin-top {\n    margin-top: var(--uds-dp-section-margin);\n  }\n\n  &.main-section > section:not(.no-space),\n  & > section section:not(.no-space) {\n    margin-bottom: var(--uds-dp-section-margin);\n\n    & > * {\n      margin-top: 0;\n      padding-top: 0;\n    }\n\n    & h2 {\n      line-height: 1;\n    }\n  }\n"])));Ze.div($n||($n=d(['\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1070;\n  display: block;\n  max-width: 276px;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.3rem;\n  display: none;\n\n  &[data-width-auto="true"] {\n    max-width: none;\n  }\n\n  &[data-show="true"] {\n    display: block;\n  }\n\n  & .popover-header {\n    padding: 0.5rem 1rem;\n    margin-bottom: 0;\n    font-size: 1rem;\n    background-color: #f0f0f0;\n    border-bottom: 1px solid #d8d8d8;\n    border-top-left-radius: calc(0.3rem - 1px);\n    border-top-right-radius: calc(0.3rem - 1px);\n  }\n\n  & .popover-body {\n    padding: 1rem 1rem;\n    color: #212529;\n  }\n\n  #arrow,\n  #arrow::before {\n    position: absolute;\n    width: 8px;\n    height: 8px;\n    background: inherit;\n  }\n\n  #arrow {\n    visibility: hidden;\n  }\n\n  #arrow::before {\n    visibility: visible;\n    content: "";\n    transform: rotate(45deg);\n  }\n\n  &[data-popper-placement^="top"] > #arrow {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^="bottom"] > #arrow {\n    top: -4px;\n  }\n\n  &[data-popper-placement^="left"] > #arrow {\n    right: -4px;\n  }\n\n  &[data-popper-placement^="right"] > #arrow {\n    left: -4px;\n  }\n'])));var Kn=function(e){return h.default.createElement("span",null)},Xn=function(e){var t=e.onClick,n=void 0===t?function(){return null}:t,r=e.ariaLabel,a=e.ariaControls;return function(e){var t=e.baseIconClassName1,n=e.baseIconAriaLabel1,r=e.baseIconStyle1,a=e.baseIconAriaLabel2,o=e.baseIconClassName2,l=e.baseIconStyle2,i=e.ariaLabel,c=e.ariaControls,s=e.dataId,d=e.onClick,f=void 0===d?function(){return null}:d,m=u((0,h.useState)(!1),2),p=m[0],g=m[1],v=function(e,t,n,r){return h.default.createElement("span",{style:{cursor:"pointer",display:t}},h.default.createElement("i",{className:"".concat(e),"aria-label":n,title:n,style:r}))},b=function(){g(!p),f(!p)},y=h.default.createElement("span",{"data-testid":s,role:"button",className:"element-focus",tabIndex:0,onKeyDown:function(e){return"Enter"===e.key&&b()},onClick:b,"aria-label":i,"aria-expanded":p,"aria-controls":c},v(t,p?"":"none",n,r),v(o,p?"none":"",a,l));return(0,h.useMemo)((function(){return y}),[p])}({dataId:e.dataId,baseIconClassName1:"fas fa-chevron-up",baseIconClassName2:"fas fa-chevron-down",onClick:n,ariaLabel:r,ariaControls:a})},Zn=(0,h.createContext)(null),Jn=function(e){var t=e.listPageProps,n=e.detailPageProps,r=e.children,a=(0,h.useMemo)((function(){return e=(t||n).appPathFolder,a="".concat(r=e||sn,"/assets/img/detail-page"),o="".concat(r,"/assets/img/listing-page"),{detailPageDefault:{dataSource:void 0,introContent:{image:{url:"".concat(a,"/intro.jpg"),altText:"Detail Page Degree"}},hero:{image:{url:"".concat(a,"/hero.jpg"),altText:"Detail Page Degree",size:"medium"},title:{text:"Detail Page Degree",color:"black",highlightColor:"gold",maxWidth:"100%"}},nextSteps:{cards:{learnMore:{icon:["fas","info-circle"],title:"Learn more about our programs",content:"Tell us what type of student you are and we'll get you the information you need.",buttonLink:{label:"Request information",ariaLabel:"Request information",color:"maroon",href:"https://admission.asu.edu/contact/request-info"}},apply:{icon:["fas","file-alt"],title:"Apply to program",content:"Arizona State University invites first-year, transfer, international, graduate and online students to apply for admission using our online application.",buttonLink:{label:"Apply now",ariaLabel:"Apply now",color:"maroon",href:"https://admission.asu.edu/apply"}},visit:{icon:["fas","map-marker-alt"],title:"Visit our campus",content:"An Experience ASU visit includes a presentation on admissions, scholarships and financial aid, student housing, getting involved on campus and much more.You will also go on a student-led walking tour of campus.",buttonLink:{label:"Schedule a visit",ariaLabel:"Schedule a visit",color:"maroon",href:"https://visit.asu.edu/"}}}},whyChooseAsu:{sectionIntroText:"ASU offers students excellent academics and unique opportunities to customize your college experience and give you an edge, including undergraduate research, internships, access to state-of-the-art facilities, and opportunities to work with world-class faculty and scientists.",cards:{faculty:{image:{url:"".concat(a,"/customize-faculty-600.jpg"),altText:"World-class faculty"},title:"World-class faculty",text:"The ASU faculty is at the forefront nationally in advancing research and discovery. Our faculty members inspire new ways of thinking, innovating and solving problems socially, culturally and economically in our region and in the international community.",button:{label:"Faculty excellence",color:"maroon",href:"https://www.asu.edu/academics/faculty-excellence"}},programs:{image:{url:"".concat(a,"/customize-programs-600.jpg"),altText:"Highly ranked programs"},title:"Highly ranked programs",text:"A leading service ranking the excellence and innovation of the nation’s top universities, U.S. News & World Report rates many ASU programs among the top 25 in the country, including more than thirty programs ranked in the nation's top 10.",button:{label:"ASU rankings",color:"maroon",href:"https://www.asu.edu/rankings"}},research:{image:{url:"".concat(a,"/customize-research-600.jpg"),altText:"Research opportunities"},title:"Research opportunities",text:"Students have the opportunity to work with mentors who are experts in their fields and establish professional connections that may last a lifetime. Engage in meaningful research and gain experience that may make you more competitive in the job market.",button:{label:"Research opportunities",color:"maroon",href:"https://provost.asu.edu/uresearch"}},inclusion:{image:{url:"".concat(a,"/customize-inclusion-600.jpg"),altText:"An inclusive environment"},title:"An inclusive environment",text:"ASU defines our success not by whom we exclude, but by whom we include and how our students succeed. Our educational programs are designed to broaden access to a quality education and support our students’ success.",button:{label:"ASU Charter",color:"maroon",href:"https://www.asu.edu/about/charter-mission"}},mentors:{image:{url:"".concat(a,"/customize-mentor-600.jpg"),altText:"Mentor network"},title:"Mentor network",text:"Students have access to a powerful online network of diverse mentors. Engaging with the ASU Mentor Network can help to build connections with professionals, both locally and globally, who share career advice, networks, and their own success stories.",button:{label:"ASU Mentor network",color:"maroon",href:"https://mentorship.asu.edu"}},honors:{image:{url:"".concat(a,"/customize-honors-600.jpg"),altText:"Global education"},title:"Global education",text:"ASU offers more than 300 Global Education programs in over 65 different countries. Whether you are interested in studying abroad, internships, research or service learning, there's a program for you!",button:{label:"Explore",color:"maroon",href:"https://goglobal.asu.edu"}}}},globalOpportunity:{image:{url:"".concat(a,"/global-opportunity.jpg"),altText:"Global opportunity"}},careerOutlook:{image:{url:"".concat(a,"/career-outlook.jpg"),altText:"Career Outlook"}},attendOnline:{image:{url:"".concat(a,"/attend-online.jpg"),altText:"Attend online"}}},listingPageDefault:{actionUrls:{applyNowUrl:"https://admission.asu.edu/apply"},hero:{image:{url:"".concat(o,"/hero.jpg"),altText:"Listing Page Degree",size:"medium"}},programList:void 0}};var e,r,a,o}),[]),o={detailPageDefault:a.detailPageDefault,listingPageDefault:a.listingPageDefault},l={listPageProps:t,detailPageProps:n};return h.default.createElement(Zn.Provider,{value:{state:l,defaultState:o}},r)};Jn.propTypes={children:g().oneOfType([g().arrayOf(g().element),g().element]),listPageProps:g().shape({}),detailPageProps:g().shape({})};function Qn(e){return function(e){if(Array.isArray(e))return c(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||s(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function er(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}var tr={G:"General",M:"Moderate",S:"Substantial",undefined:""},nr=function(e){var t;return"B"===(null===(t=e.Degree)||void 0===t?void 0:t.charAt(0))},rr=function(e){return Object.keys(e.graduateApplyDates||{}).length>0},ar=function(e){return Object.keys(e.planDeadlines||{}).length>0},or=function(e){return!(Object.keys(e).length>0)||ar(e)||rr(e)};function lr(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return{getMajorDesc:function(){return e.Descr100},getInstitution:function(){return e.Institution},getAcadPlan:function(){return e.AcadPlan},getDegree:function(){return e.Degree},getDegreeMajorMap:function(){return e.degreeMajorMap},isUndergradProgram:function(){return nr(e)},isGradProgram:function(){return!nr(e)},isMinorOrCertificate:function(){return!("Minor"!==e.Degree&&"Certificate"!==e.Degree)},getProgramType:function(){return nr(e)?"undergrad":"graduate"},getDegreeDesc:function(){return e.DegreeDescr},getDegreeDescLong:function(){return e.DegreeDescrlong},getDescrLongExtented:function(){return e.DescrlongExtns},getCurriculumUrl:function(){var t;return null===(t=e.CurriculumUrl)||void 0===t?void 0:t.trim()},getDescrLongExtented5:function(){return e.DescrlongExtn5},getTransferAdmission:function(){return e.TransferAdmission},getGraduateRequirements:function(){var t=e.gradAdditionalRequirements,n="";if(!((null==t?void 0:t.length)>0))return n=e.degreeMajorMap,"".concat(n);var r=t.map((function(e){return null==e?void 0:e[1]})).join(", or<br />");n=r?"<p>".concat(r,"</p>"):"";var a=e.AdmissionsDegRequirements;return"".concat(n).concat(a)},isOnline:function(){return e.managedOnlineCampus},getOnlineMajorMapURL:function(){return e.onlineMajorMapURL},getAsuCritTrackUrl:function(){return e.AsuCritTrackUrl},hasCareerData:function(){var t;return!(null===(t=e.careerData)||void 0===t||!t.length)},getCareerData:function(){return e.careerData||[]},getCampusList:function(){return e.CampusStringArray||[]},hasConcurrentOrAccelerateDegrees:function(){var t,n;return!(null===(t=e.accelerateDegrees)||void 0===t||!t.length)||!(null===(n=e.concurrentDegrees)||void 0===n||!n.length)},getAccelerateDegrees:function(){return e.accelerateDegrees||[]},getConcurrentDegrees:function(){return e.concurrentDegrees||[]},getCollegeDesc:function(){var t=e.CollegeDescr100;return t?t.split(",").reverse().join(" ").trim():""},getCollegeUrl:function(){return e.CollegeUrl},getEmailAddress:function(){return e.EmailAddr},getPhone:function(){return e.Phone},getDepartmentName:function(){return e.DepartmentName},getPlanUrl:function(){return e.PlanUrl},getAsuProgramFee:function(){return e.AsuProgramFee},hasAsuProgramFee:function(){return"Y"===e.AsuProgramFee},getAsuLangReqFlag:function(){return e.AsuLangReqFlag},hasAsuLangReqFlag:function(){return"Y"===e.AsuLangReqFlag},getAcadPlanText:function(){return e.asuAcadpLrfText},getMathReqFlag:function(){return e.asuMathReqFlag},hasMathReqFlag:function(){return"Y"===e.asuMathReqFlag},getAdditionalMathReqCourse:function(){return e.additionalMathReqCourse},getOtherMathReqCourse:function(){return e.asuAcadpMrfText},getMathIntensity:function(){return tr[e.MathIntensity]},getMathIntensityRawValue:function(){return e.MathIntensity},getMinMathReq:function(){return e.MinMathReq||""},getMarketText:function(){var t;return null===(t=e.marketText)||void 0===t?void 0:t.trim()},getAsuOfficeLoc:function(){return e.AsuOfficeLoc||""},getCampusWue:function(){return e.campusWue||""},getConcurrentDegreeMajorMaps:function(){var t;return null===(t=e.concurrentDegreeMajorMaps)||void 0===t?void 0:t[0]},getChangeMajor:function(){return e.ChangeMajor},getAsuCareerOpportunity:function(){return e.AsuCareerOpp},getGlobalExp:function(){var t;return null===(t=e.globalExp)||void 0===t?void 0:t.trim()},getCollegeAcadOrg:function(){return e.CollegeAcadOrg},getCollegeAcadOrgJoint:function(){return e.CollegeAcadOrgJoint},getDepartmentCode:function(){return e.DepartmentCode},getGraduateApplyDates:function(){return e.graduateApplyDates},hasGraduateApplyDates:function(){return rr(e)},getPlanDeadlines:function(){return e.planDeadlines},hasPlanDeadlines:function(){return ar(e)},isValidActiveProgram:function(){return or(e)},getAsuDegSrchFlg:function(){return e.AsuDegSrchFlg},getAsuCustomText:function(){return e.AsuCustomText},getRequiredCoursesLabel:function(){return"Minor"===e.Degree?"Minor":"Certificate"===e.Degree?"Certificate":"Major"},getSubPlnMajorMaps:function(){return e.SubPlnMajorMaps},getSubPln:function(){return e.SubPln}}}function ir(e){var t=e.getProgramType(),n=[],r=function(e){return{text:e,url:""}},a=e.getCampusList();a.length>0&&n.push.apply(n,Qn(a.map((function(e){return yn(e,t)||r(e)}))));var o=e.getCampusWue();return o&&n.push(yn(o,t)||r(o)),n}function cr(e,t){var n=t||"";return n.replaceAll("{INSTITUTION_CODE}",e.getInstitution()).replaceAll("{ACAD_PLAN_CODE}",e.getAcadPlan())}function sr(e,t){var n=cr(e,t);return"".concat(n,"#").concat(vn.flexibleDegreeOptions.acceleratedId)}function ur(e){var t=e.programs,n=void 0===t?[]:t,r=e.filters,a=r.collegeAcadOrg,o=r.departmentCode,l=r.acceleratedConcurrent,i=r.locations,c=void 0===i?[]:i,s=r.keyword,u=r.showInactivePrograms,d=r.blacklistAcadPlans;return n.filter((function(e){var t=lr(e);return function(e){return!1!==JSON.parse(u)||e.isValidActiveProgram()}(t)&&function(e){return!a||e.getCollegeAcadOrgJoint().includes(a)}(t)&&function(e){return!o||e.getDepartmentCode().includes(o)}(t)&&function(e){var t;return!(c.length>0)||(null===(t=e.getCampusList())||void 0===t?void 0:t.some((function(e){return c.some((function(t){return t.value===e}))})))}(t)&&function(){var e,t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return!hn(l)||(null===(e=t[l.value])||void 0===e?void 0:e.length)>0}(e)&&function(e){var t,n;return!s||(null===(t=e.getDescrLongExtented())||void 0===t||null===(n=t.includes)||void 0===n?void 0:n.call(t,s))}(t)&&function(e){return!(null!=d&&d.includes(e.getAcadPlan()))}(t)}))}var dr,fr,mr=function(){return h.default.createElement("div",{className:"container","data-testid":"browse-title"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Browse degrees")))},pr=function(e){var t=e.event,n=void 0===t?"":t,r=e.action,a=void 0===r?"":r,o=e.name,l=void 0===o?"":o,i=e.type,c=void 0===i?"":i,s=e.section,u=void 0===s?"":s,d=e.text,f=void 0===d?"":d,m=e.region,p=void 0===m?"":m,g=e.component,h=void 0===g?"":g,v=window.dataLayer,b={event:n.toLowerCase(),action:a.toLowerCase(),name:l.toLowerCase(),type:c.toLowerCase(),region:p.toLowerCase(),section:u.toLowerCase(),text:f.toLowerCase(),component:h.toLowerCase()};v&&v.push(b)},gr=function(e){var t=e.id,n=e.label,r=e.selected,a=e.multiple,o=e.options,l=e.onChange;return h.default.createElement("div",{className:"form-group"},h.default.createElement("label",{htmlFor:t},n),h.default.createElement("select",{className:"form-control",id:t,"data-testid":t,multiple:a,onChange:function(e){return l(t,e)},value:r},null==o?void 0:o.map((function(e){return h.default.createElement("option",{key:e.id,id:e.id,value:e.value},e.text)}))))},hr=Ze.div(dr||(dr=d(["\n  .hint-container {\n    margin-top: -1.25rem;\n    margin-bottom: 2rem;\n  }\n\n  @media (max-width: 768px) {\n    .hint-container {\n      display: none;\n    }\n    .filter-action-buttons {\n      & {\n        * {\n          margin: 0;\n        }\n        .btn-link {\n          padding: 1rem;\n        }\n      }\n    }\n  }\n"]))),vr=Ze.button(fr||(fr=d(["\n  font-weight: 400;\n  text-decoration: underline;\n"])));function br(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function yr(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?br(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):br(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var Er={event:"select",action:"click",name:"onclick"},wr={event:"link",action:"click",name:"onclick",type:"internal link"},Or={isActive:!1,locations:[],asuLocals:[],acceleratedConcurrent:{value:"all",text:""},keyword:null,blacklistAcadPlans:[]},xr=function(e){return{id:e.id,value:e.value,text:e.text}},kr=function(e,t){pr(yr(yr({},Er),{},{type:e,text:t}))},Cr=function(e){pr(yr(yr({},wr),{},{text:e}))},Sr=function(e){var t=e.value,n=e.onChange,r=e.onApply,a=e.onClean,o=function(e,r){var a=r.target.selectedOptions,o=[],l=[],i=Array.from(a,xr),c=t.locations,s=t.asuLocals;({locationsRender:function(){o=i,l=s},asuLocalsRender:function(){l=i,o=c}})["".concat(e,"Render")](),n(yr(yr({},t),{},{locations:o,asuLocals:l})),kr({locations:"location or online",asuLocals:"as local"}[e],i.map((function(e){return e.text})).join(", "))};return h.default.createElement(hr,{className:"container","data-testid":"filters"},h.default.createElement("h4",null,"Filter your results"),h.default.createElement("form",{className:"mt-3 uds-form row"},h.default.createElement("div",{className:"col-lg-4 col-md-12"},h.default.createElement(gr,{multiple:!0,id:"locations",label:"Campuses or online",selected:t.locations.map((function(e){return e.value})),options:dn,onChange:o})),h.default.createElement("div",{className:"col-lg-4 col-md-12"},h.default.createElement(gr,{multiple:!0,id:"asuLocals",label:"ASU location, ASU Local",selected:t.asuLocals.map((function(e){return e.value})),options:mn,onChange:o})),h.default.createElement("div",{className:"col-lg-4 col-md-12"},h.default.createElement(gr,{id:"acceleratedConcurrent",label:"Accelerated, Concurrent",selected:t.acceleratedConcurrent.value,options:pn,onChange:function(e,r){var a=r.target.selectedOptions;n(yr(yr({},t),{},i({},e,xr(a[0])))),kr("accelerated/concurrent",xr(a[0]).text)}}))),h.default.createElement("div",{className:"hint-container"},h.default.createElement("p",null,h.default.createElement("small",null,"*CTRL + Click to select multiple"))),h.default.createElement("div",{className:"filter-action-buttons"},h.default.createElement(pt,{"data-testid":"btn-apply-filter",color:"maroon",label:"Apply filters",ariaLabel:"Apply filters",size:"default",onClick:function(){null==r||r(yr(yr({},t),{},{isActive:!0})),Cr("apply filters")}}),h.default.createElement(vr,{"data-testid":"btn-clear-filters",className:"btn btn-link",onClick:function(){n(Or),null==a||a(),Cr("clean filters")}},"Clear filters")))};function Ar(e){var t=e.value,n=void 0===t?{}:t,r=n.isActive,a=n.locations,o=n.asuLocals,l=n.acceleratedConcurrent,i=e.onRemove,c=_n("filter-"),s=(null==a?void 0:a.length)+(null==o?void 0:o.length)+(hn(l)?1:0),u=function(e,t){var n=t.text;return h.default.createElement("span",{key:c.next().value,tabIndex:-1,role:"button","aria-label":"Remove filter ".concat(n),"data-filter-id":e,onKeyDown:function(){return i(e,t)},onClick:function(){return i(e,t)},className:"btn btn-tag btn-tag-alt-white d-inline-flex align-items-center mr-2"},h.default.createElement("span",{className:"pr-1"},n),h.default.createElement("i",{className:"fas fa-times"}))};return h.default.createElement("div",{"data-testid":"filters-summary"},h.default.createElement("header",null,h.default.createElement("strong",null,"Applied filters")),h.default.createElement("div",{"data-testid":"summary-filter-tags"},r&&0!==s?h.default.createElement(h.default.Fragment,null,a.map((function(e){return u("locations",e)})),o.map((function(e){return u("asuLocals",e)})),(hn(l)?[l]:[]).map((function(e){return u("acceleratedConcurrent",e)}))):h.default.createElement("span",null,"No filters applied")))}function Nr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Pr(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Nr(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Nr(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Sr.propTypes={value:tn,onChange:g().func,onApply:g().func,onClean:g().func},Ar.propTypes={value:tn,onRemove:g().func};var jr,Tr,Dr={name:"onclick",event:"link",action:"click",type:"internal link",region:"main content",text:"play button"},Lr=function(e){var t=e.type,n=void 0===t?"video":t,r=e.url,a=void 0===r?"":r,o=e.vttUrl,l=void 0===o?null:o,i=e.title,c=void 0===i?"":i,s=e.caption,u=void 0===s?null:s,d=e.className,f=void 0===d?null:d,m=e.controls,p=void 0===m||m;return"youtube"===n?function(e){var t=e.title,n=void 0===t?"":t,r=e.caption,a=void 0===r?null:r,o=e.url,l=void 0===o?"":o,i=e.className;return h.default.createElement("div",{className:et()("uds-video-container ".concat(i),{"uds-video-with-caption":a})},h.default.createElement("div",{className:"uds-video-player youtube-video"},h.default.createElement("iframe",{title:n,src:l})),a&&h.default.createElement("figure",{"data-testid":"video-caption"},h.default.createElement("figcaption",null,a)))}({url:a,title:c,caption:u,className:f}):function(e){var t=e.url,n=void 0===t?"":t,r=e.vttUrl,a=e.caption,o=void 0===a?null:a,l=e.title,i=void 0===l?"":l,c=e.className,s=e.controls,u=void 0===s||s,d=(0,h.useRef)();return h.default.createElement("div",{className:et()("uds-video-container ".concat(c),{"uds-video-with-caption":o})},h.default.createElement("div",{className:"uds-video-player"},h.default.createElement("video",{ref:d,title:i,onClick:function(e){st(Pr(Pr({},Dr),{},{section:i}))},playsInline:!0,controls:u||!0},h.default.createElement("source",{src:n}),h.default.createElement("track",{src:r,kind:"captions",srcLang:"en",label:"english_captions"}))),o&&h.default.createElement("figure",{"data-testid":"video-caption"},h.default.createElement("figcaption",null,o)))}({url:a,vttUrl:l,title:c,caption:u,className:f,controls:p})};function Mr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Ir(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Mr(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Mr(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Lr.propTypes={type:g().oneOf(["video","youtube"]),url:g().string,vttUrl:g().string,title:g().string,className:g().string,caption:g().string,controls:g().bool};var Rr=Ze.div(jr||(jr=d(["\n  .photo-item {\n    padding-bottom: 1.25rem;\n  }\n"]))),Ur=Ze.section(Tr||(Tr=d(["\n  @media (max-width: 480px) {\n    .uds-img,\n    .uds-video-container {\n      margin: 0;\n    }\n  }\n"]))),_r=function(e){var t=e.applyNowUrl,n=e.type,r=e.title,a=e.contents,o=e.image,l=e.video,i=e.photoGrid,c={text:function(){return function(e){var t=e.applyNowUrl,n=e.title,r=e.contents,a=Nn(n);return h.default.createElement("section",{className:"container","data-type":"text","data-testid":"intro-content"},h.default.createElement("div",{className:"row"},h.default.createElement("div",{className:"col-sm-12 col-md-5"},h.default.createElement(a,{className:"mt-0"},h.default.createElement("span",{className:"".concat(Un(n.cssClass))},n.text))),h.default.createElement("div",{className:"col-sm-12 col-md-7"},h.default.createElement(Fn,{contents:r}),h.default.createElement(ht,{href:t}))))}({applyNowUrl:t,title:r,contents:a})},"text-media":function(){return function(e){var t=e.applyNowUrl,n=e.title,r=e.contents,a=e.image,o=e.video,l=Nn(n);return h.default.createElement(Ur,{className:"container","data-type":"text-media","data-testid":"intro-content"},h.default.createElement("div",{className:"row gy-3"},h.default.createElement("div",{className:"col-sm-12 col-md-5"},h.default.createElement(l,{className:"mt-0"},h.default.createElement("span",{className:"".concat(Un(n.cssClass))},n.text)),h.default.createElement(Fn,{contents:r}),h.default.createElement(ht,{href:t})),h.default.createElement("div",{className:"col-sm-12 col-md-7 mt-2 mt-sm-0"},o&&h.default.createElement(Lr,{type:o.type,url:o.url,vttUrl:o.vttUrl,title:o.title,className:"mt-0"}),a&&h.default.createElement("div",{className:"uds-img"},h.default.createElement("img",{src:a.url,className:"img-fluid",alt:a.altText})))))}({applyNowUrl:t,title:r,contents:a,image:o,video:l})},"text-image-overlay":function(){return function(e){var t=e.applyNowUrl,n=e.title,r=e.contents,a=e.image;return h.default.createElement("section",{className:"container","data-type":"text-image-overlay","data-testid":"intro-content"},h.default.createElement("div",{className:"row"},h.default.createElement("div",{className:"col-md-12"},h.default.createElement(Wn,{title:n.text,contents:r,image:a,contentDirection:"right",contentChildren:h.default.createElement("div",{className:"mt-2"},h.default.createElement(ht,{href:t}))}))))}({applyNowUrl:t,title:r,contents:a,image:o})},"text-photo-grid":function(){return function(e){var t=e.applyNowUrl,n=e.title,r=e.contents,a=e.photoGrid,o=Nn(n);return h.default.createElement("section",{className:"container","data-type":"text-photo-grid","data-testid":"intro-content"},h.default.createElement("div",{className:"row"},h.default.createElement("div",{className:"col-sm-12 col-md-5"},h.default.createElement(o,{className:"mt-0"},h.default.createElement("span",{className:"".concat(Un(n.cssClass))},n.text)),h.default.createElement(Fn,{contents:r}),h.default.createElement(ht,{href:t})),h.default.createElement("div",{className:"col-sm-12 col-md-7 d-none d-sm-none d-md-block"},h.default.createElement(Rr,{className:"row"},a.images.map((function(e,t){return h.default.createElement("div",{className:"photo-item col-sm-12 col-md-6 col-lg-6",key:"img-".concat(t+1)},h.default.createElement("img",{className:"mg-fluid ".concat(Un(e.cssClass)),src:e.url,alt:e.altText,style:{maxWidth:"100%"}}))}))))))}({applyNowUrl:t,title:r,contents:a,image:o,photoGrid:i})},undefined:function(){return console.error("the type '".concat(n,"' is not supported by the 'IntroContent' component.")),null}};return c[n]()};_r.propTypes={applyNowUrl:g().string,type:g().oneOf(["text","text-media","text-image-overlay","text-photo-grid"]).isRequired,video:g().shape(Ir({},Ut)),image:g().shape(Ir({},It)),header:qt,title:g().shape(Ir(Ir({},Rt),{},{component:g().oneOf(nn)})),contents:g().arrayOf(qt),photoGrid:g().shape({images:g().arrayOf(Ft)})};var Fr=function(e,t,n){return e?t:n},qr=function(e,t,n){for(var r=e,a=[];r<t;)r>0&&r<=n&&a.push(r),r+=1;return a},zr=function(e){var t,n=e.dataId,r=e.isClickeable,a=e.disabled,o=e.pageLinkIcon,l=e.selectedPage,c=e.onClick,s=e.ellipses,u=e.ariaLabel,d=e.children;return h.default.createElement("li",{className:et()("page-item",(t={},i(t,"disabled",a),i(t,"active",l),i(t,"elipses",s),t))},r?h.default.createElement("button",{"aria-label":u,className:et()("page-link",i({},"page-link-icon",o)),type:"button",onClick:c,"data-testid":"page-link","data-id":n},d,l&&h.default.createElement("span",{className:"sr-only"},"(current)")):h.default.createElement("span",{className:"page-link","data-testid":"page-link"},d))};zr.propTypes={isClickeable:g().bool,disabled:g().bool,pageLinkIcon:g().bool,selectedPage:g().bool,dataId:g().string,onClick:g().func,children:g().node,ellipses:g().bool,ariaLabel:g().string},zr.defaultProps={isClickeable:!1,disabled:!1,pageLinkIcon:!1,selectedPage:!1,onClick:function(){}};var Br=function(e){var t,n=e.type,r=e.background,a=e.currentPage,o=e.totalPages,l=(e.showFirstButton,e.showLastButton,e.totalNumbers),c=e.onChange,s=u((0,h.useState)(null),2),d=s[0],f=s[1],m=u((0,h.useState)(l),2),p=(m[0],m[1]),g=u((0,h.useState)(window.innerWidth<450),2),v=(g[0],g[1]),b=u((0,h.useState)(window.innerWidth<413),2),y=(b[0],b[1]),E=u((0,h.useState)(!0),2),w=E[0],O=E[1];(0,h.useEffect)((function(){f(a)}),[a]),window.matchMedia("(max-width: ".concat(450,"px)")).addEventListener("change",(function(e){e.matches?(p(3),v(!0),O(!0)):(p(l),v(!1),y(!1),O(!0))})),window.matchMedia("(max-width: ".concat(413,"px)")).addEventListener("change",(function(e){return y(e.matches)}));var x,k,C,S,A,N=function(e,t){var n,r=null!==(n={first:1,prev:d-1,next:d+1,last:o}[t])&&void 0!==n?n:t;f(r),null==c||c(e,r)};return h.default.createElement("nav",{"aria-label":"Pagination","data-testid":"pagination"},h.default.createElement("ul",{className:et()("pagination","justify-content-center","pt-2","pb-2",(t={},i(t,"border","bordered"===n),i(t,"uds-bg-gray1","gray1"===r),i(t,"uds-bg-gray","gray2"===r),i(t,"uds-bg-dark","gray7"===r),t))},h.default.createElement(zr,{dataId:"prev",isClickeable:!0,disabled:1===d,pageLinkIcon:w,onClick:function(e){return N(e,"prev")},ariaLabel:"Previous"}),(x=Fr(d===o-1,2,d===o?3:1),k=Fr(1===d,3,2===d?2:1),C=qr(d-x,d,o),S=qr(d,d+1+k,o),A=[].concat(Qn(C),Qn(S)),h.default.createElement(h.default.Fragment,null,1!==A[0]&&h.default.createElement(zr,{isClickeable:!0,selectedPage:1===d,onClick:function(e){return N(e,"first")}},"1"),A[0]>2&&h.default.createElement(zr,{ellipses:!0},"..."),A.map((function(e){return h.default.createElement(zr,{isClickeable:!0,key:e,selectedPage:d===e,onClick:function(t){return N(t,e)}},e)})),A[A.length-1]<o-1&&h.default.createElement(zr,{ellipses:!0},"..."),A[A.length-1]!==o&&h.default.createElement(zr,{ariaLabel:"Page ".concat(o," of ").concat(o),isClickeable:!0,selectedPage:d===o,onClick:function(e){return N(e,"last")}},o))),h.default.createElement(zr,{dataId:"next",isClickeable:!0,disabled:d===o,pageLinkIcon:w,onClick:function(e){return N(e,"next")},ariaLabel:"Next"})))};Br.propTypes={type:g().oneOf(["default","bordered"]).isRequired,background:g().oneOf(["white","gray1","gray2","gray7"]).isRequired,currentPage:g().number,totalPages:g().number,showFirstButton:g().bool,showLastButton:g().bool,totalNumbers:g().number,onChange:g().func.isRequired},Br.defaultProps={currentPage:1,totalPages:10,showFirstButton:!1,showLastButton:!1,totalNumbers:3};var Hr=function(e){var t,n,r,a=e.id,o=e.item,l=e.openCard,c=e.onClick;return h.default.createElement("div",{className:et()("card","card-foldable","mt-3",(t={},i(t,"card-".concat(o.color),o.color),i(t,"card-header-icon",o.content.icon),t))},h.default.createElement("div",{className:"card-header"},h.default.createElement("h4",null,h.default.createElement("a",{"data-testid":"accordion-opener",className:et()(i({},"collapsed",a!==l)),"data-toggle":"collapse",href:"#card-body-".concat(a),role:"button","aria-expanded":a===l,"aria-controls":"card-body-".concat(a),onClick:function(e){return c(e,a,o.content.header)}},o.content.icon?h.default.createElement("span",{className:"card-icon"},h.default.createElement("i",{className:"".concat(null===(n=o.content.icon)||void 0===n?void 0:n[0]," fa-").concat(null===(r=o.content.icon)||void 0===r?void 0:r[1]," mr-2")}),o.content.header):o.content.header,h.default.createElement("i",{className:"fas fa-chevron-up"})))),h.default.createElement("div",{id:"card-body-".concat(a),className:et()("collapse","card-body",i({},"show",a===l)),dangerouslySetInnerHTML:kt(o.content.body)}))};function Gr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Wr(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Gr(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Gr(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Hr.propTypes={id:g().number,item:rt,openCard:g().number,onClick:g().func};var $r={event:"collapse",name:"onclick",type:"click",region:"main content"},Yr=function(e){var t=e.cards,n=e.openedCard,r=u((0,h.useState)(n),2),a=r[0],o=r[1],l=function(e,t){st(Wr(Wr({},$r),{},{action:t,text:e}))},i=function(e,n,r){e.preventDefault(),(a===n||a)&&l(t[a-1].content.header,"close"),a!==n?(o(n),l(r,"open")):o(null)};return h.default.createElement("div",{className:"accordion"},null==t?void 0:t.map((function(e,t){return e.content.body&&e.content.header&&h.default.createElement(Hr,{key:t+1,id:t+1,item:e,openCard:a,onClick:i})})))};Yr.propTypes={cards:g().arrayOf(rt).isRequired,openedCard:g().number};var Vr,Kr={programs:g().arrayOf(g().object),totalRows:g().number,loading:g().bool,actionUrls:g().shape({applyNowUrl:g().string,majorInfoUrl:g().string,majorInfoOnlineUrl:g().string}),degreesPerPage:g().number};function Xr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}var Zr=Ze.div(Vr||(Vr=d(["\n  & {\n    ul {\n      margin-top: 1.5rem;\n      margin-bottom: 0;\n      list-style: none;\n      padding: 0;\n\n      li:not(:last-child) {\n        margin-bottom: 1rem;\n      }\n    }\n  }\n  .accordion .card.card-foldable {\n    border-bottom: 1px solid #d0d0d0;\n  }\n"]))),Jr=function(e){var t,n,r=e.programs,a=e.actionUrls,o=(0,h.useContext)(Zn).state,l=null==o||null===(t=o.listPageProps)||void 0===t||null===(n=t.programList)||void 0===n?void 0:n.settings,i=r.map((function(e){var t,n=lr(e);return{content:{header:n.getMajorDesc(),body:"<ul>\n        <li>\n          <strong>Major:</strong>\n          <br />\n            <a href=".concat(cr(n,a.majorInfoUrl),">\n              ").concat(n.getMajorDesc(),"\n            </a>\n        </li>\n        <li>\n          <strong>Degree:</strong>\n          <br />").concat(n.getDegree(),"\n        </li>\n        <li>\n          <strong>Required Courses:</strong>\n          <br />").concat((t=n.isOnline()?n.getOnlineMajorMapURL():n.getAsuCritTrackUrl(),"<a href=".concat(t,">").concat(n.getRequiredCoursesLabel()," Map</a>")),"\n        </li>\n        <li>\n          <strong>Campus or location:</strong>\n          <br />").concat(n.getCampusList().map(Pn).join(", "),"\n        </li>\n        <li>\n          <strong>Accelerated/Concurrent:</strong>\n          <br />").concat("<div>\n        ".concat(n.getConcurrentDegrees().lenght>0?"<div className='cell-container'>concurrent</div>":"","\n        ").concat(n.getAccelerateDegrees().length>0?'<div className="cell-container">\n                <a href='.concat(sr(n,a.majorInfoUrl),">\n                  4+1 years\n                </a>\n              </div>"):"","\n    </div>")||"-","\n        </li>\n        ").concat(null!=l&&l.hideCollegeSchool?"":" <li>\n                  <strong>College/School:</strong>\n                  <br />\n                  <a href=".concat(n.getCollegeUrl(),">\n                    ").concat(n.getCollegeDesc(),"\n                  </a>\n                </li>"),"\n      </ul>")}}}));return h.default.createElement(Zr,{"data-testid":"accordion-view"},h.default.createElement(Yr,{cards:i}))};Jr.propTypes=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Xr(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Xr(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},Kr);var Qr=["label","cardTitle","ariaLabel","color","disabled","element","innerRef","href","onClick"];function ea(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function ta(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?ea(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):ea(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var na,ra={name:"onclick",event:"link",action:"click",type:"internal link",region:"main content"},aa=function(e){var t,n=e.label,r=e.cardTitle,a=e.ariaLabel,o=e.color,l=e.disabled,c=e.element,s=e.innerRef,u=e.href,d=e.onClick,f=ct(e,Qr),m=et()("btn","btn-tag",(i(t={},"btn-tag-alt-white","white"===o),i(t,"btn-tag-alt-gray","gray"===o),i(t,"btn-tag-alt-dark","dark"===o),i(t,"disabled",l),t)),p=c;u&&"button"===c&&(p="a");return h.default.createElement(p,it({type:"button"===p&&d?"button":void 0},f,{className:m,href:u,ref:s,onClick:function(){return e=n,st(ta(ta({},ra),{},{text:e,section:r})),void(null==d||d());var e},"aria-label":a}),n)};aa.propTypes={label:g().string,cardTitle:g().string,ariaLabel:g().string,color:g().oneOf(["white","gray","dark"]),disabled:g().bool,element:g().oneOfType([g().func,g().string,g().shape({$$typeof:g().symbol,render:g().func}),g().arrayOf(g().oneOfType([g().func,g().string,g().shape({$$typeof:g().symbol,render:g().func})]))]),href:g().string,innerRef:g().oneOfType([g().object,g().func,g().string]),onClick:g().func},aa.defaultProps={label:"",cardTitle:"",ariaLabel:void 0,color:"gray",disabled:void 0,element:"button",href:void 0,innerRef:void 0,onClick:void 0};var oa=Ze.div(na||(na=d(["\n  &.cards-components a + &.cards-components a {\n    margin-left: 5px;\n  }\n  .card-button {\n    column-gap: 1rem;\n  }\n  .card-button .btn {\n    margin: 0;\n  }\n"])));function la(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function ia(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?la(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):la(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}var ca={name:"onclick",event:"link",action:"click",type:"internal link",region:"main content"},sa=function(e){var t=e.type,n=e.width,r=e.horizontal,a=e.image,o=e.imageAltText,l=e.title,i=e.icon,c=e.body,s=e.eventFormat,u=e.eventLocation,d=e.eventTime,f=e.buttons,m=e.linkLabel,p=e.linkUrl,g=e.tags,v=e.showBorders;return h.default.createElement(ua,{type:t,width:n,horizontal:r,image:a,imageAltText:o,title:l,icon:i,body:c,eventFormat:s,eventLocation:u,eventTime:d,buttons:f,linkLabel:m,linkUrl:p,tags:g,showBorders:v})};sa.propTypes={type:g().oneOf(["default","degree","event","news","story"]),width:g().oneOf(["25%","50%","75%","100%"]),horizontal:g().bool,title:g().string.isRequired,icon:g().arrayOf(g().string),body:g().string,eventFormat:g().oneOf(["stack","inline"]),eventLocation:g().string,eventTime:g().string,image:g().string,imageAltText:g().string,buttons:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["gold","maroon","gray","dark"]),icon:g().arrayOf(g().string),href:g().string,label:g().string,onClick:g().func,size:g().oneOf(["default","small","xsmall"]),target:g().oneOf(["_blank","_self","_top","_parent"])})),linkLabel:g().string,linkUrl:g().string,tags:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["white","gray","dark"]),href:g().string,label:g().string,onClick:g().func})),showBorders:g().bool},sa.defaultProps={type:"default",width:"100%",horizontal:!1,body:void 0,eventFormat:"stack",eventTime:void 0,eventLocation:void 0,icon:void 0,image:void 0,imageAltText:void 0,buttons:void 0,linkLabel:void 0,linkUrl:void 0,tags:void 0,showBorders:!0};var ua=function(e){var t,n=e.type,r=e.width,a=e.horizontal,o=e.image,l=e.imageAltText,c=e.title,s=e.icon,u=e.body,d=e.eventFormat,f=e.eventLocation,m=e.eventTime,p=e.buttons,g=e.linkLabel,v=e.linkUrl,b=e.tags,y=e.showBorders,E=et()("card","cards-components",(i(t={},"card-degree","degree"===n),i(t,"card-event","event"===n),i(t,"card-story","story"===n),i(t,"w-".concat(r.replace("%","")),"100%"!==r),i(t,"card-horizontal",a),i(t,"borderless",!y),t));return h.default.createElement(h.default.Fragment,null,h.default.createElement(oa,{className:E,"data-testid":"card-container"},!!o&&h.default.createElement("img",{className:"card-img-top",src:o,alt:l,"data-testid":"card-image",loading:"lazy",decoding:"async"}),!o&&s&&h.default.createElement("i",{className:"".concat(null==s?void 0:s[0]," fa-").concat(null==s?void 0:s[1]," fa-2x card-icon-top"),"data-testid":"card-icon"}),a?h.default.createElement("div",{className:"card-content-wrapper"},h.default.createElement(da,{type:n,body:u,eventFormat:d,eventLocation:f,eventTime:m,title:c,buttons:p,linkLabel:g,linkUrl:v,tags:b})):h.default.createElement(da,{type:n,body:u,eventFormat:d,eventLocation:f,eventTime:m,title:c,buttons:p,linkLabel:g,linkUrl:v,tags:b})))};ua.propTypes={type:g().oneOf(["default","degree","event","news","story"]),width:g().oneOf(["25%","50%","75%","100%"]),horizontal:g().bool,title:g().string.isRequired,icon:g().arrayOf(g().string),body:g().string,eventFormat:g().oneOf(["stack","inline"]),eventLocation:g().string,eventTime:g().string,image:g().string,imageAltText:g().string,buttons:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["gold","maroon","gray","dark"]),icon:g().arrayOf(g().string),href:g().string,label:g().string,onClick:g().func,size:g().oneOf(["default","small","xsmall"]),target:g().oneOf(["_blank","_self","_top","_parent"])})),linkLabel:g().string,linkUrl:g().string,tags:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["white","gray","dark"]),href:g().string,label:g().string,onClick:g().func})),showBorders:g().bool},ua.defaultProps={type:"default",width:"100%",horizontal:!1,body:"",eventFormat:"stack",eventTime:"",eventLocation:"",icon:void 0,image:"",imageAltText:"",buttons:void 0,linkLabel:void 0,linkUrl:void 0,tags:void 0,showBorders:!0};var da=function(e){var t,n=e.type,r=e.body,a=e.eventFormat,o=e.eventLocation,l=e.eventTime,i=e.title,c=e.buttons,s=e.linkLabel,u=e.linkUrl,d=e.tags;return h.default.createElement(h.default.Fragment,null,!!i&&h.default.createElement("div",{className:"card-header","data-testid":"card-title"},h.default.createElement("h3",{className:"card-title"},i)),!!r&&h.default.createElement("div",{className:"card-body","data-testid":"card-body"},h.default.createElement("div",{dangerouslySetInnerHTML:kt(r)})),"event"===n&&(l||o)&&h.default.createElement(ma,{eventFormat:a,eventTime:l,eventLocation:o}),c&&h.default.createElement("div",{className:"card-buttons"},c.map((function(e){return h.default.createElement("div",{className:"card-button","data-testid":"card-button",key:"".concat(e.label,"-").concat(e.href)},h.default.createElement(pt,{ariaLabel:e.ariaLabel,color:e.color,icon:e.icon,href:e.href,label:e.label,onClick:e.onClick,size:e.size,target:e.target,cardTitle:i}))}))),u&&s&&h.default.createElement("div",{className:"card-link","data-testid":"card-link"},h.default.createElement("a",{href:(t=u,t.startsWith("https://")||t.startsWith("http://")||!/^[A-Z0-9._+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(t)?t:"mailto:".concat(t)),onClick:function(){return st(ia(ia({},ca),{},{section:i,text:s}))}},s)),d&&h.default.createElement("div",{className:"card-tags","data-testid":"card-tags"},d.map((function(e){return h.default.createElement(aa,{key:"".concat(e.label,"-").concat(e.href),ariaLabel:e.ariaLabel,color:e.color,href:e.href,label:e.label,onClick:e.onClick,cardTitle:i})}))))};da.propTypes={type:g().oneOf(["default","degree","event","news","story"]),body:g().string,eventFormat:g().oneOf(["stack","inline"]),eventLocation:g().string,eventTime:g().string,title:g().string.isRequired,buttons:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["gold","maroon","gray","dark"]),icon:g().arrayOf(g().string),href:g().string,label:g().string,onClick:g().func,size:g().oneOf(["default","small","xsmall"]),target:g().oneOf(["_blank","_self","_top","_parent"])})),linkLabel:g().string,linkUrl:g().string,tags:g().arrayOf(g().shape({ariaLabel:g().string,color:g().oneOf(["white","gray","dark"]),href:g().string,label:g().string,onClick:g().func}))},da.defaultProps={type:"default",body:"",eventFormat:"stack",eventLocation:"",eventTime:"",buttons:void 0,linkLabel:void 0,linkUrl:void 0,tags:void 0};var fa,ma=function(e){var t=e.eventFormat,n=e.eventTime,r=e.eventLocation;return"inline"===t?h.default.createElement("div",{className:"card-event-details"},n&&h.default.createElement("div",{className:"card-event-icons"},h.default.createElement("div",null,h.default.createElement("i",{className:"far fa-calendar"})),h.default.createElement("div",{dangerouslySetInnerHTML:kt(n)})),r&&h.default.createElement("div",{className:"card-event-icons"},h.default.createElement("div",null,h.default.createElement("i",{className:"fas fa-map-marker-alt"})),h.default.createElement("div",{dangerouslySetInnerHTML:kt(r)}))):h.default.createElement(h.default.Fragment,null,n&&h.default.createElement("div",{className:"card-event-details"},h.default.createElement("div",{className:"card-event-icons"},h.default.createElement("div",null,h.default.createElement("i",{className:"far fa-calendar"})),h.default.createElement("div",{dangerouslySetInnerHTML:kt(n)}))),r&&h.default.createElement("div",{className:"card-event-details"},h.default.createElement("div",{className:"card-event-icons"},h.default.createElement("div",null,h.default.createElement("i",{className:"fas fa-map-marker-alt"})),h.default.createElement("span",null,h.default.createElement("div",{dangerouslySetInnerHTML:kt(r)})))))};ma.propTypes={eventFormat:g().oneOf(["stack","inline"]),eventLocation:g().string,eventTime:g().string},ma.defaultProps={eventFormat:"stack",eventLocation:"",eventTime:""};var pa=Ze.section(fa||(fa=d(["\n  margin: auto;\n\n  .card-buttons {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    flex-wrap: wrap;\n    gap: 1rem;\n    order: 3;\n    margin: 0 1rem 1rem;\n\n    .card-button {\n      column-gap: 0;\n      padding: 0;\n      width: fit-content;\n    }\n    .card-button .btn {\n      margin: 0;\n    }\n  }\n"])));function ga(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function ha(e){var t,n,r,a,o=e.programs,l=e.loading,i=e.actionUrls,c=(0,h.useContext)(Zn),s=c.defaultState,u=c.state,d=null==u||null===(t=u.listPageProps)||void 0===t||null===(n=t.programList)||void 0===n||null===(r=n.settings)||void 0===r||null===(a=r.cardDefaultImage)||void 0===a?void 0:a.url,f=s.detailPageDefault.hero.image.url,m=d||f;return h.default.createElement(pa,{id:ln,className:"container row","data-loading":l,"data-testid":"grid-view"},o.map((function(e){var t=lr(e);return h.default.createElement("div",{className:"col col-sm-12 col-md-4 col-lg-3 mb-2"},h.default.createElement(sa,{type:"degree",horizontal:!1,clickable:!1,image:m,imageAltText:"An example image",title:t.getMajorDesc(),linkLabel:"View Program Details",linkUrl:cr(t,i.majorInfoUrl),buttons:[{color:"maroon",size:"small",label:"Reqeuest Info",href:""},{color:"gold",size:"small",label:"Apply",href:i.applyNowUrl}]}))})))}ha.propTypes=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?ga(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):ga(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},Kr);var va,ba,ya=[{dataKey:"Major",label:"Major",className:"major",sortable:!0,contentTemplate:function(e){var t=e.resolver,n=e.rowIndex,r=e.actionUrls,a=e.onClick;return h.default.createElement("div",{className:"cell-container"},h.default.createElement("a",{href:cr(t,null==r?void 0:r.majorInfoUrl)},t.getMajorDesc()),h.default.createElement(Xn,{dataId:"show-row-detail",ariaLabel:"".concat(t.getMajorDesc()," arrow"),ariaControls:"row-info-".concat(n),onClick:function(e){return a(n,e)}}))}},{dataKey:"Degree",label:"Degree",className:"degree",contentTemplate:function(e){var t=e.resolver;return h.default.createElement("div",{className:"cell-container"},h.default.createElement("span",null,t.getDegree()),h.default.createElement(Kn,{popover:{title:t.getDegreeDesc(),body:t.getDegreeDescLong(),withAuto:!1}}))}},{dataKey:"RequiredCourses",label:"Required Courses",className:"required-course",contentTemplate:function(e){var t=e.resolver,n=t.isOnline()?t.getOnlineMajorMapURL():t.getAsuCritTrackUrl();return h.default.createElement("a",{href:n},t.getRequiredCoursesLabel()," Map")}},{dataKey:"Location",label:"Campus or location",className:"campus-location",sortable:!0,contentTemplate:function(e){var t=e.resolver,n=_n("campus-");return h.default.createElement("div",null,t.getCampusList().map((function(e,t,r){return h.default.createElement("div",{key:n.next().value,className:"cell-container"},h.default.createElement("span",{key:e},"".concat(Pn(e)).concat(t<r.length-1?", ":"")),h.default.createElement("span",null,h.default.createElement(Kn,{popover:{title:Pn(e),body:function(){return fetch("")},withAuto:!0}})))})))}},{dataKey:"AcceleratedConcurrent",label:"Accelerated/ Concurrent",className:"accelerated-concurrent",sortable:!0,contentTemplate:function(e){var t=e.resolver,n=e.actionUrls;return h.default.createElement("div",null,t.getConcurrentDegrees().lenght>0&&h.default.createElement("div",{className:"cell-container"},"concurrent"),t.getAccelerateDegrees().length>0&&h.default.createElement("div",{className:"cell-container"},h.default.createElement("a",{href:sr(t,n.majorInfoUrl)},"4+1 years"),h.default.createElement(Kn,{popover:{title:"4+1 years",body:function(){return fetch((t.getAcadPlan(),""))},withAuto:!1}})))}},{dataKey:"CollegeSchool",label:"College/School",className:"college",sortable:!0,contentTemplate:function(e){var t=e.resolver;return h.default.createElement("a",{href:t.getCollegeUrl()},t.getCollegeDesc())}}],Ea=Le(va||(va=d(['\n  @keyframes loading {\n    40% {\n      background-position: 100% 0;\n    }\n    100% {\n      background-position: 100% 0;\n    }\n  }\n\n  &[data-loading="true"] {\n    td {\n      position: relative;\n\n      .bar {\n        background-color: #e7e7e7;\n        height: 14px;\n        border-radius: 7px;\n        width: 80%;\n      }\n\n      &:after {\n        position: absolute;\n        transform: translateY(-50%);\n        top: 50%;\n        left: 0;\n        content: "";\n        display: block;\n        width: 100%;\n        height: 24px;\n        background-image: linear-gradient(\n          100deg,\n          rgba(255, 255, 255, 0),\n          rgba(255, 255, 255, 0.5) 60%,\n          rgba(255, 255, 255, 0) 80%\n        );\n        background-size: 200px 24px;\n        background-position: -100px 0;\n        background-repeat: no-repeat;\n        animation: loading 1s infinite;\n      }\n    }\n  }\n']))),wa=Ze.table(ba||(ba=d(["\n  ",'\n  --table-border-color: #e5e5e5;\n\n  background-color: #fafafa;\n  border: 1px solid var(--table-border-color);\n  border-collapse: collapse;\n  padding: 5px;\n\n  width: 100%;\n  margin: 0 auto;\n  clear: both;\n  border-spacing: 0;\n\n  a {\n    text-decoration: none;\n  }\n\n  thead {\n    background: #d0d0d0;\n    th {\n      outline: none;\n      :focus {\n        box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #191919 !important;\n      }\n    }\n  }\n\n  th,\n  td {\n    padding: 8px 12px;\n    // display: inline-block;\n  }\n\n  tr {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: baseline;\n    flex-wrap: wrap;\n\n    td {\n      vertical-align: top;\n    }\n\n    .major {\n      width: 250px;\n      a {\n        font-weight: 700;\n      }\n    }\n\n    .degree {\n      width: 75px;\n    }\n\n    .required-course {\n      width: 100px;\n    }\n\n    .campus-location {\n      width: 90px;\n      & > div {\n        width: fit-content;\n      }\n    }\n\n    .accelerated-concurrent {\n      width: 120px;\n    }\n\n    .college {\n      width: 210px;\n    }\n\n    .compare-fav {\n      // width: 180px;\n    }\n\n    .apply-info {\n      width: 168px;\n      & .btn {\n        width: fit-content;\n        :first-child {\n          margin-bottom: 0.5rem;\n        }\n      }\n    }\n  }\n\n  tbody {\n    tr {\n      border: 1px solid var(--table-border-color);\n      border-top: 0;\n\n      &:not(.row-info):hover {\n        background-color: #e8e8e8;\n      }\n\n      .info-apply .cell-container {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-end;\n        gap: 0.5rem;\n      }\n\n      td .cell-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n        gap: 0.5rem;\n      }\n    }\n\n    tr.row-info {\n      td > div {\n        position: relative;\n      }\n\n      input.togle-more-text {\n        opacity: 0;\n        position: absolute;\n        pointer-events: none;\n\n        &:checked + .desc-long {\n          max-height: fit-content;\n          overflow: auto;\n        }\n\n        &:not(:checked) + .desc-long::after {\n          content: " ";\n          height: 1rem;\n          background: #ffffff;\n          box-shadow: -1px -2px 20px 15px #f3f3f3;\n          width: 100%;\n          position: absolute;\n          bottom: 0;\n        }\n\n        &:checked + .desc-long + .label-more-less {\n          .label-more {\n            display: none;\n          }\n          .label-less {\n            display: inline;\n          }\n        }\n\n        &:not(:checked) + .desc-long + .label-more-less {\n          .label-more {\n            display: inline;\n          }\n          .label-less {\n            display: none;\n          }\n        }\n      }\n\n      .desc-long {\n        max-height: 200px;\n        overflow: hidden;\n        transform: max-width 0.6;\n        p:last-child {\n          margin-bottom: 0;\n        }\n      }\n\n      label.label-more-less {\n        cursor: pointer;\n        line-height: normal;\n        color: #8c1d40;\n        text-align: right;\n        border: 0;\n        margin: 0;\n        font-weight: 400;\n        display: inline;\n        position: absolute;\n        bottom: 0.2rem;\n        right: -2.5rem;\n      }\n    }\n\n    tr.row-info {\n      td:first-child {\n        flex-basis: 55%;\n      }\n\n      td:last-child {\n      }\n    }\n\n    tr:not([data-is-open="true"]) + tr.row-info {\n      overflow: hidden;\n      height: 0;\n    }\n\n    tr[data-is-open="true"] + tr.row-info {\n      height: auto;\n    }\n  }\n'])),Ea);function Oa(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}var xa,ka,Ca=_n("row-"),Sa=function(e){var t,n,r=e.programs,a=e.totalRows,o=e.loading,l=e.actionUrls,i=h.default.useRef(null),c=h.default.useRef(null),s=(0,h.useContext)(Zn).state,u=null==s||null===(t=s.listPageProps)||void 0===t||null===(n=t.programList)||void 0===n?void 0:n.settings,d=null!=u&&u.hideCollegeSchool?ya.filter((function(e){return"CollegeSchool"!==e.dataKey})):ya,f=function(e,t){var n=c.current.children;Array.prototype.forEach.call(n,(function(t,n){return n!==e&&t.setAttribute("data-is-open","false")})),c.current.children[e].setAttribute("data-is-open",String(t))};return h.default.createElement("section",{className:"container mb-4","data-testid":"list-view"},h.default.createElement(wa,{id:ln,ref:i,"data-loading":o,title:"".concat(a," program found")},h.default.createElement("thead",null,h.default.createElement("tr",{role:"row"},d.map((function(e){var t;return h.default.createElement("th",{key:e.dataKey,tabIndex:0,className:"".concat(e.className),scope:"col","aria-label":e.ariaLabel},(null===(t=e.headerTemplate)||void 0===t?void 0:t.call(e))||h.default.createElement("span",null,e.label))})))),h.default.createElement("tbody",{ref:c,"data-testid":"program-rows"},0===r.length?h.default.createElement("tr",{role:"presentation"},h.default.createElement("td",{colSpan:d.length,"aria-label":"No result found for the filters applied"}," ")):null,r.map((function(e,t){var n=Ca.next().value,r=2*t,a=lr(e);return h.default.createElement(h.Fragment,{key:n},h.default.createElement("tr",{key:n,role:"row"},d.map((function(t){var o;return h.default.createElement("td",{key:"".concat(n,"-").concat(t.dataKey),className:"".concat(t.className)},null===(o=t.contentTemplate)||void 0===o?void 0:o.call(t,{resolver:a,col:t,row:e,rowIndex:r,onClick:f,actionUrls:l}))}))),h.default.createElement("tr",{key:"".concat(n,"-row-info"),id:"row-info-".concat(r),className:"row-info"},h.default.createElement("td",{key:"".concat(n,"-info"),colSpan:3},function(e){var t=e.resolver,n=e.id,r=(0,h.createRef)();return h.default.createElement("div",null,h.default.createElement("header",null,h.default.createElement("strong",null,"Program Description:")),h.default.createElement("input",{className:"togle-more-text",type:"checkbox",id:"#".concat(n)}),h.default.createElement("div",{className:"desc-long",id:n,dangerouslySetInnerHTML:kt(t.getDescrLongExtented())}),h.default.createElement("label",{ref:r,className:"label-more-less element-focus",htmlFor:"#".concat(n),role:"button",tabIndex:0,onKeyDown:function(e){"Enter"===e.key&&(null==r||r.current.click())}},h.default.createElement("span",{"data-testid":"more-text",className:"label-more"},"[...more]"),h.default.createElement("span",{"data-testid":"less-text",className:"label-less"},"[...less]")))}({resolver:a,id:"".concat(n,"-more-text")})),h.default.createElement("td",{key:"".concat(n,"-extra-info"),colSpan:2},function(e){var t=e.resolver;return h.default.createElement("div",null,h.default.createElement("div",null,h.default.createElement("strong",null,"Additional Program Fee: "),t.hasAsuProgramFee()&&"Yes"),h.default.createElement("div",null,h.default.createElement("strong",null,"Second Language Requirement: "),t.hasAsuLangReqFlag()?t.getAcadPlanText()||"Yes":"No"),h.default.createElement("div",null,t.hasMathReqFlag()&&h.default.createElement("div",null,h.default.createElement("strong",null,"First Required Math Course:"),h.default.createElement("span",null,t.getAdditionalMathReqCourse()),t.getOtherMathReqCourse()&&h.default.createElement("span",{dangerouslySetInnerHTML:kt(t.getOtherMathReqCourse())}))),h.default.createElement("div",null,h.default.createElement("strong",null,"Math Intensity:"),t.getMathIntensity()))}({resolver:a}))))})))))};function Aa(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Na(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Aa(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Aa(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Sa.propTypes=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Oa(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Oa(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},Kr);var Pa,ja=Xe(xa||(xa=d(['\n\n  .mobile-view {\n    display: none;\n  }\n  [data-view-type="list-view"] {\n    @media (max-width: 768px) {\n      .desktop-view {\n        display: none;\n      }\n      .mobile-view {\n        display: block;\n        .card-foldable .card-header h4 a {\n          color: #8c1d40;\n        }\n      }\n    }\n  }\n']))),Ta=(i(ka={},an,ha),i(ka,on,Sa),ka);function Da(e){var t,n,r=e.dataViewComponent,a=e.loading,o=e.programs,l=e.actionUrls,i=e.degreesPerPage,c=i,s=(t=o.length,n=c,Math.floor(t/n)+(t%n>0?1:0)),d=Ta[r],f=u((0,h.useState)([]),2),m=f[0],p=f[1];return(0,h.useEffect)((function(){p(o.slice(0,c))}),[o]),h.default.createElement("section",{"data-testid":"program-list","data-view-type":r},h.default.createElement(ja,null),h.default.createElement("div",{className:"desktop-view"},h.default.createElement(d,{loading:a,programs:m,totalRows:null==o?void 0:o.length,actionUrls:l,degreesPerPage:i})),h.default.createElement("div",{className:"mobile-view mb-2"},h.default.createElement(Jr,{loading:a,programs:m,totalRows:null==o?void 0:o.length,actionUrls:l,degreesPerPage:i})),o.length>0?h.default.createElement(Br,{totalNumbers:7,type:"default",background:"white",totalPages:s,onChange:function(e,t){var n=(t-1)*c,r=n+c;p(o.slice(n,r))},showFirstButton:!0,showLastButton:!0}):h.default.createElement("section",{className:"container no-space"},h.default.createElement(yt,{message:"No result found for the filters applied"})))}Da.propTypes=Na(Na({dataViewComponent:g().string},Kr),{},{degreesPerPage:g().number}),Da.defaultProps={degreesPerPage:8};var La,Ma,Ia,Ra=Ze.div(Pa||(Pa=d(['\n  label[for="search-field"] {\n    margin-bottom: 0;\n  }\n\n  &[data-searching="true"] button {\n    transform: scale(1.05);\n    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #191919 !important;\n  }\n']))),Ua=function(e){var t,n=e.value,r=e.onChange,a=e.onSearch,o=u((0,h.useState)(!1),2),l=o[0],i=o[1];return(0,h.useEffect)((function(){return function(){return clearTimeout(t)}}),[]),h.default.createElement(Ra,{className:"container mt-5","data-searching":l,"data-testid":"search-bar"},h.default.createElement("form",{"data-testid":"search-bar-form",className:"uds-form p-0 col-md-6 col-sm-12",onSubmit:function(e){e.preventDefault(),a(),i(!0),t=setTimeout((function(){return i(!1)}),500),clearTimeout(t)}},h.default.createElement("div",{className:"form-group mb-0 mr-2"},h.default.createElement("label",{htmlFor:"search-field"},"Search"),h.default.createElement("div",{className:"d-flex row align-items-baseline g-3"},h.default.createElement("div",{className:"col-sm-12 col-md-6 align-self-end"},h.default.createElement("input",{"data-testid":"search-field",id:"search-field",value:n,type:"text",className:"form-control",placeholder:"Search degree programs",onChange:function(e){var t;r(e.target.value),t=e.target.value,pr({event:"search",action:"type",name:"onenter",type:"search degree programs",text:t})}})),h.default.createElement("div",{className:"col-sm-12 col-md-6 mt-2 mt-sm-0"},h.default.createElement(pt,{"data-testid":"search-button",color:"maroon",label:"Search now",ariaLabel:"Search now",size:"default",onClick:a}))))))};function _a(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Fa(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?_a(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):_a(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Ua.propTypes={value:g().string,onChange:g().func,onSearch:g().func};var qa=Ze(Vn)(La||(La=d(["\n  .filter-switch-container {\n    gap: 1rem;\n  }\n  @media (max-width: 768px) {\n    & {\n      font-size: 0.9rem;\n    }\n  }\n"]))),za=Xe(Ma||(Ma=d(["\n  @media (max-width: 480px) {\n      div[class^=uds-hero] {\n        grid-template-rows: 1fr auto auto 1.5rem auto;\n    }\n  }\n"]))),Ba=Ze.div.attrs({className:"container"})(Ia||(Ia=d(["\n  border-bottom: 1px solid #d0d0d0;\n  margin-bottom: calc(var(--uds-dp-section-margin) / 2);\n  padding-bottom: calc(var(--uds-dp-section-margin) / 2);\n"]))),Ha=function(e){e.appPathFolder;var t,n=e.actionUrls,a=e.hasSearchBar,o=void 0===a||a,l=e.hasFilters,c=void 0===l||l,s=e.hero,d=e.introContent,f=e.programList,p=e.degreesPerPage,g=u(lt(),2),v=g[0],b=v.data,y=v.loading,E=v.error,w=g[1],O=u((0,h.useState)(!1),2),x=O[0],k=O[1],C=u((0,h.useState)([]),2),S=C[0],A=C[1],N=u((0,h.useState)([]),2),P=N[0],j=N[1],T=u((0,h.useState)(""),2),D=T[0],L=T[1],M=null===(t=f.settings)||void 0===t?void 0:t.defaultView,I=[on,an].includes(M)?M:on,R=u((0,h.useState)(I),2),U=R[0],_=(R[1],An(f.dataSource,wn)),F=(0,h.useContext)(Zn).defaultState.listingPageDefault,q=f.dataSource,z=q.collegeAcadOrg,B=q.departmentCode,H=q.showInactivePrograms,G=q.blacklistAcadPlans,W=u((0,h.useState)(Fa({},Or)),2),$=W[0],Y=W[1],V=u((0,h.useState)(Fa({},Or)),2),K=V[0],X=V[1];(function(e){var t=e.dataSource,n=e.tableView,r=void 0===n?[]:n,a=e.programs,o=e.stateFilters,l=t.collegeAcadOrg,i=t.departmentCode;(0,h.useEffect)((function(){if(a&&(null==(e=JSON.parse(localStorage.getItem(Dn)))?void 0:e.isDebug)){var e,t="background:#eee; -webkit-text-stroke: 1px black; color: tomato; padding-left: 0.5rem;",n="font-size:24px;",c="font-size: 18px; margin-left: 0.5rem;";console.group("<< ASU Degree Page >>"),console.log("%c🏫 Listing Page Programs 📚",t+"font-size:30px;"),console.log("%cTotal programs found: ".concat(a.length),t+c),console.log("%cPrograms found",t+c),console.log(a),console.log("%cTotal programs loaded: ".concat(r.length),t+c),console.log("%cPrograms loaded",t+c),console.log(r),console.log("%cPage Filters",t+n),console.log("%c- collegeAcadOrg:".concat(l),t+c),console.log("%c- departmentCode:".concat(i),t+c),console.log("%cSearch Filters",t+n),console.log(o),console.groupEnd()}}))})({dataSource:f.dataSource,tableView:S,programs:null==b?void 0:b.programs,stateFilters:$}),(0,h.useEffect)((function(){w(_)}),[_]),(0,h.useEffect)((function(){var e=((null==b?void 0:b.programs)||[]).sort((function(e,t){return e.Descr100.localeCompare(t.Descr100)}));e=ur({programs:e,filters:{collegeAcadOrg:z,departmentCode:B,showInactivePrograms:null!=H&&H,blacklistAcadPlans:G}}),j(e),A(e)}),[b,p]);var Z=function(){var e=r(m().mark((function e(t){var n,r,a,o,l;return m().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return n=t.acceleratedConcurrent,r=t.locations,a=t.asuLocals,o=t.keyword,k(!0),e.next=4,w(_);case 4:l=ur({programs:P,filters:{collegeAcadOrg:z,departmentCode:B,acceleratedConcurrent:n,locations:a.length>0?r.concat(fn):r,keyword:o,showInactivePrograms:null!=H&&H,blacklistAcadPlans:G}}),Y(Fa({},t)),X(Fa({},t)),A(l),k(!1);case 9:case"end":return e.stop()}}),e)})));return function(t){return e.apply(this,arguments)}}(),J=function(){var e=r(m().mark((function e(){var t;return m().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:t=Fa(Fa({},K),{},{keyword:D}),Z(t);case 2:case"end":return e.stop()}}),e)})));return function(){return e.apply(this,arguments)}}(),Q=function(){var e=r(m().mark((function e(t){return m().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:Y(t);case 1:case"end":return e.stop()}}),e)})));return function(t){return e.apply(this,arguments)}}();return h.default.createElement(h.default.Fragment,null,h.default.createElement(Yn,null),h.default.createElement(za,null),E&&h.default.createElement(bt,{message:cn}),null!=s&&s.hide?null:h.default.createElement("section",{"data-testid":"hero"},h.default.createElement(ot,{image:(null==s?void 0:s.image)||F.hero.image,title:Fa(Fa({text:un(f.dataSource),highlightColor:"gold"},null==s?void 0:s.title),{},{maxWidth:"100%"}),contents:null==s?void 0:s.contents})),h.default.createElement(qa,{"data-is-loading":y,className:"main-section dg-margin-top"},d?h.default.createElement(_r,{applyNowUrl:(null==n?void 0:n.applyNowUrl)||F.actionUrls.applyNowUrl,type:d.type,header:d.header,title:d.title,contents:d.contents,image:d.image,video:d.video,photoGrid:d.photoGrid}):null,o||c?h.default.createElement("section",{className:"no-space"},h.default.createElement(mr,null),o?h.default.createElement(Ua,{value:D,onChange:L,onSearch:J}):null,c?h.default.createElement(Sr,{value:$,onChange:Q,onApply:function(e){y||x||Z(e)},onClean:function(){Y(Or),X(Or),A(P),L("")}}):null,h.default.createElement(Ba,null)):null,h.default.createElement("section",{className:"container"},h.default.createElement("div",{className:"d-flex justify-content-between filter-switch-container"},c?h.default.createElement(Ar,{value:K,onRemove:function(e,t){var n=t.value,r="acceleratedConcurrent"===e?gn:K[e].filter((function(e){return e.value!==n})),a=Fa(Fa({},K),{},i({},e,r));Z(a)}}):null)),y||x?h.default.createElement(wt,null):h.default.createElement(Da,{dataViewComponent:U,loading:y||x,programs:S,actionUrls:n,degreesPerPage:p})))};Ha.propTypes={appPathFolder:g().string,actionUrls:g().shape({applyNowUrl:g().string}),hasSearchBar:g().bool,hasFilters:g().bool,hero:g().shape(ot.propTypes),introContent:g().shape(_r.propTypes),programList:g().shape({dataSource:Ht,settings:Kt}),degreesPerPage:g().number};var Ga,Wa,$a=function(e){return h.default.createElement(Jn,{listPageProps:e},h.default.createElement(Ha,e))};$a.propTypes=Ha.propTypes;var Ya,Va=Ze.section(Ga||(Ga=d(["\n  position: relative;\n  padding-top: var(--uds-dp-section-margin);\n  padding-bottom: var(--uds-dp-section-margin);\n"]))),Ka=Ze.div(Wa||(Wa=d(['\n  background-image: url("https://asu.github.io/asu-unity-stack/@asu/bootstrap4-theme/static/media/TopoPatternWhite.529b0b3d.png");\n  background-position: center;\n  background-size: contain;\n  position: absolute;\n  width: 100vw;\n  height: 100%;\n  top: 0;\n  left: 50%;\n  right: 50%;\n  margin-left: -50vw;\n  margin-right: -50vw;\n  z-index: -1;\n'])));function Xa(){return h.default.createElement(Va,{className:"container",id:vn.affordingCollege.targetIdName,"data-testid":"affording-college"},h.default.createElement(Ka,null),h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Affording college")),h.default.createElement("div",{className:"mt-2 row"},h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:["fas","calculator"],title:"Tuition estimator",body:"The tuition estimator shows the tuition and fee breakdown for your particular major, campus and residency status without financial aid.",buttons:[{label:"Estimate tuition and fees",ariaLabel:"Estimate tuition and fees",color:"maroon",href:"https://tuition.asu.edu/cost-calculator/tuition"}]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:["fas","award"],title:"Scholarships",body:"Scholarships are a type of aid that does not need to be paid back. Some you apply for and some are automatic.",buttons:[{label:"Learn about scholarships",ariaLabel:"Learn about scholarships",color:"maroon",href:"https://scholarships.asu.edu/"}]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:["fas","hand-holding-usd"],title:"Financial aid",body:"There are many financial aid options available for students. In fact, more than 80 percent of all ASU students receive some form of financial assistance every year.",buttons:[{label:"Explore financial aid",ariaLabel:"Explore financial aid",color:"maroon",href:"https://tuition.asu.edu/financial-aid"}]}))))}var Za=Ze.ul(Ya||(Ya=d(["\n  display: inline-flex;\n  list-style: none;\n  padding: 0;\n  gap: 1rem;\n\n  @media (max-width: 768px) {\n    flex-direction: column;\n    .btn {\n      width: max-content;\n      margin-left: 0;\n      &:not(:first-child) {\n        margin-top: 1rem;\n      }\n    }\n  }\n"])));function Ja(e){var t,n=e.graduateRequirements,r=e.transferRequirements,a=e.isMinorOrCertificate,o=e.additionalRequirements;return t=n?a?"Program requirements":"Degree requirements":a?"Program requirements":"Admission requirements",h.default.createElement(h.default.Fragment,null,h.default.createElement("section",{id:vn.applicationRequirements.targetIdName,"data-testid":"application-requirements"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},t)),n?h.default.createElement("div",{dangerouslySetInnerHTML:kt(n)}):function(e){var t=e.transferRequirements,n=void 0===t?"":t,r=e.additionalRequirements,a=void 0===r?"":r,o=[];return a.trim()&&o.push({content:{header:"Additional Requirements",body:a}}),n.trim()&&o.push({content:{header:"Transfer Admission Requirements",body:n}}),h.default.createElement(h.default.Fragment,null,h.default.createElement("p",null,"All students are required to meet general university admission requirements"),h.default.createElement(Za,{className:et()("",{"mb-0":0===o.length})},[{label:"Freshman",href:"https://admission.asu.edu/freshman/apply"},{label:"Transfer",href:"https://admission.asu.edu/transfer/apply"},{label:"International",href:"https://admission.asu.edu/international/undergrad-apply"},{label:"Readmission",href:"https://admission.asu.edu/undergrad/readmission"}].map((function(e){var t=e.label,n=e.href;return h.default.createElement("li",{key:t},h.default.createElement(pt,{ariaLabel:t,color:"maroon",href:n,label:t,size:"small"}))}))),o.length>0&&h.default.createElement("div",{className:"mt-2 mb-4"},h.default.createElement(Yr,{cards:o,openedCard:1})))}({transferRequirements:r,additionalRequirements:o})),n?h.default.createElement("section",{id:vn.degreeRequirements.targetIdName,"data-testid":"degree-requirements"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Admission requirements")),h.default.createElement("div",{dangerouslySetInnerHTML:kt(o)})):null)}Ja.propTypes={graduateRequirements:g().string,transferRequirements:g().string,isMinorOrCertificate:g().bool,additionalRequirements:g().string};var Qa=function(e){var t=e.item,n=e.type,r=_n("glance-");return h.default.createElement("li",null,h.default.createElement("i",{className:"fas fa-".concat(rn[n].icon," fa-li")}),h.default.createElement("strong",null,rn[n].title,": "),"object"===l(t)?t.map((function(e,n){var a=["","#"].includes(e.url)?null:e.url,o="";return n>0&&n<t.length-1&&(o=", "),n===t.length-1&&t.length>1&&(o=" or "),h.default.createElement(h.Fragment,{key:r.next().value},o,h.default.createElement("a",{href:a,rel:"noreferrer",target:"_blank"},e.text))})):t)};Qa.propTypes={item:g().oneOfType([g().arrayOf(Gt),g().string]),type:g().string};var eo,to=function(e){var t=e.offeredBy,n=e.locations,r=e.firstRequirementMathCourse,a=e.mathIntensity,o=e.timeCommitment;return h.default.createElement("section",{id:vn.atAGlance.targetIdName,"data-testid":"at-aglance"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"At a glance: program details")),h.default.createElement("ul",{className:"uds-list fa-ul maroon pt-2 pb-0 pr-0"},t&&h.default.createElement(Qa,{item:[t],type:"offeredBy"}),n&&h.default.createElement(Qa,{item:n,type:"locations"}),r&&h.default.createElement(Qa,{item:r,type:"firstRequirementMathCourse"}),a&&h.default.createElement(Qa,{item:a,type:"mathIntensity"}),o&&h.default.createElement(Qa,{item:o,type:"timeCommitment"})))};function no(e){var t=e.image,n=e.learnMoreLink,r=e.contents,a="linear-gradient(180deg, #19191900 0%, #191919c9 100%),"+"url('".concat(t.url,"')"),o=_n("attend-online-");return h.default.createElement("section",{id:vn.attendOnline.targetIdName,className:"uds-card-and-image",style:{backgroundImage:a},"data-testid":"attend-online"},h.default.createElement("div",{className:"uds-card-and-image-container"},h.default.createElement("div",{className:"card card-centered"},h.default.createElement("i",{className:"fas fa-wifi fa-2x card-icon-top"}),h.default.createElement("div",{className:"card-header"},h.default.createElement("h3",{className:"card-title"},"Attend online")),h.default.createElement("div",{className:"card-body"},r?r.map((function(e){return h.default.createElement("p",{key:o.next().value},e)})):h.default.createElement("p",null,"\nASU offers this program in an online format\n with multiple enrollment sessions throughout\n  the year. Applicants may view the program\n   description and request more information.")),h.default.createElement("div",{className:"card-button"},h.default.createElement(pt,{label:"Learn about online options",ariaLabel:"Learn about online options",href:n,color:"maroon",size:"small"})))))}function ro(e){var t=e.breadcrumbs,n=e.section,r=_n("breadcrumb-");return t&&h.default.createElement("nav",{"aria-label":"breadcrumbs","data-testid":"breadcrumbs"},h.default.createElement("ol",{className:"breadcrumb bg-white"},t.map((function(e){return null!=e&&e.isActive?h.default.createElement("li",{key:r.next().value,className:"breadcrumb-item active","aria-current":"page"},h.default.createElement("a",{href:null==e?void 0:e.url,onClick:function(){return pr({event:"link",action:"click",name:"onclick",type:"internal link",region:"main content",section:n,text:e.text})}},e.text)):h.default.createElement("li",{key:r.next().value,className:"breadcrumb-item"},h.default.createElement("a",{href:null==e?void 0:e.url,onClick:function(){return pr({event:"link",action:"click",name:"onclick",type:"internal link",region:"main content",section:n,text:e.text})}},e.text))}))))}to.propTypes={offeredBy:Gt.isRequired,locations:g().arrayOf(Gt).isRequired,firstRequirementMathCourse:g().string.isRequired,mathIntensity:g().string,timeCommitment:g().string},no.propTypes={learnMoreLink:g().string,image:Ft,contents:g().arrayOf(g().shape({text:g().string}))},ro.propTypes={breadcrumbs:g().arrayOf(Bt),section:g().string};var ao,oo=Ze.section(eo||(eo=d(["\n  width: 100%;\n  & a {\n    word-break: break-word;\n  }\n"]))),lo=function(e){var t=e.contents,n=e.image;return h.default.createElement(oo,{id:vn.careerOutlook.targetIdName,"data-testid":"career-outlook"},h.default.createElement(Wn,{headingTag:"H2",title:vn.careerOutlook.text,contents:t,image:n}))};lo.propTypes=Wn.propTypes;var io,co,so=Ze.div(ao||(ao=d(["\n  & p:last-of-type {\n    margin-bottom: 0;\n  }\n\n  & a {\n    word-break: break-word;\n  }\n"])));function uo(e){var t=e.content;return h.default.createElement("section",{id:vn.changeMajorRequirements.targetIdName,className:"change-your-major","data-testid":"change-your-major"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Change your major requirements for current students")),h.default.createElement(so,{dangerouslySetInnerHTML:kt(t)}))}function fo(e){var t=e.content,n=void 0===t?"":t;return h.default.createElement("div",{"data-testid":"custom-text",className:"mt-3",dangerouslySetInnerHTML:kt(n)})}uo.propTypes={content:g().string},fo.propTypes={content:g().string};var mo,po="\n  width: unset !important;\n  min-width: unset !important;\n",go=Ze.i(io||(io=d(["\n  color: #fecc41;\n  font-size: 1.2rem;\n  ","\n"])),po),ho=Ze.i(co||(co=d(["\n  color: #78be21;\n  ","\n"])),po);function vo(e){var t=e.data;return h.default.createElement("div",{className:"uds-table mb-1"},h.default.createElement("table",null,h.default.createElement("thead",null,h.default.createElement("tr",null,h.default.createElement("th",{scope:"col"},"Career"),h.default.createElement("th",{scope:"col",className:"text-end"},"Growth*"),h.default.createElement("th",{scope:"col",className:"text-end"},"Median Salary*"))),h.default.createElement("tbody",null,null==t?void 0:t.map((function(e){return h.default.createElement("tr",{key:e.career.url},h.default.createElement("th",{scope:"row",style:{fontWeight:"normal"}},h.default.createElement("a",{href:e.career.url,target:"_blank",rel:"noreferrer"},e.career.text),e.greenOccupation&&h.default.createElement(ho,{className:"fas fa-leaf ml-1"}),e.brightOutlook&&h.default.createElement(go,{className:"fas fa-sun ml-1"})),h.default.createElement("td",{className:"text-end"},+e.growth,"%"),h.default.createElement("td",{className:"text-end"},e.medianSalary||0))})))))}function bo(e){var t=e.tableData;return h.default.createElement("section",{id:vn.exampleCareers.targetIdName,className:"container","data-testid":"example-careers"},h.default.createElement("h3",null,"Example careers"),h.default.createElement("p",null,"Students who complete this degree program may be prepared for the following careers. Advanced degrees or certifications may be required for academic or clincal positions. Career examples include but are not limited to:"),h.default.createElement("div",{className:"mt-4 mb-4"},h.default.createElement(vo,{data:t}),h.default.createElement("p",null,h.default.createElement("small",null,"* Data obtained from the Occupational Information Network (O*NET) under sponsorship of the U.S. Department of Labor/Employment and Training Administration (USDOL/ETA)."))),h.default.createElement("div",{className:"d-flex"},h.default.createElement("p",{className:"mr-3"},h.default.createElement(go,{className:"fas fa-sun mr-1"}),"Bright outlook"),h.default.createElement("p",null,h.default.createElement(ho,{className:"fas fa-leaf mr-1"}),"Green occupation")))}vo.propTypes={data:g().arrayOf(Yt)},bo.propTypes={tableData:g().arrayOf(Yt)};var yo,Eo=Ze.ul(mo||(mo=d(["\n  list-style-type: none;\n  padding-left: 0px;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  max-height: 320px;\n  li:not(:last-child) {\n    margin-bottom: 1rem;\n  }\n  @media (max-width: 767px) {\n    max-height: 100%;\n  }\n"]))),wo=function(e){var t=e.id,n=e.title,r=e.links;return h.default.createElement("div",{id:t,className:"mt-4"},h.default.createElement("h3",null,n),h.default.createElement("p",null,"This program allows students to obtain both a bachelor's and master's degree in as little as five years. It is offered as an accelerated bachelor's and master's degree with:"),h.default.createElement(Eo,{className:"mt-3 mb-3"},r.map((function(e){return h.default.createElement("li",{key:e.title},h.default.createElement("a",{href:e.url,target:"_blank",rel:"noreferrer"},e.title))}))),h.default.createElement("p",{className:"mb-0"},"Acceptance to the graduate program requires a separate application. During their junior year, eligible students will be advised by their academic departments to apply."))};function Oo(e){var t=e.acceleratedLinks,n=e.concurrentLinks;return h.default.createElement("section",{id:vn.flexibleDegreeOptions.targetIdName,className:"container","data-testid":"flexible-degree-options"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Flexible degree options")),!!t.length&&h.default.createElement(wo,{id:vn.flexibleDegreeOptions.acceleratedId,title:"Accelerated program options",links:t}),!!n.length&&h.default.createElement(wo,{id:vn.flexibleDegreeOptions.concurrentId,title:"Concurrent degree program",links:n}))}wo.propTypes={id:g().string,title:g().string,links:$t},Oo.propTypes={acceleratedLinks:$t,concurrentLinks:$t};var xo=Ze.section(yo||(yo=d(["\n  width: 100%;\n  & a {\n    word-break: break-word;\n  }\n"]))),ko=function(e){var t=e.contents,n=e.image;return h.default.createElement(xo,{id:vn.globalOpportunity.targetIdName,"data-testid":"global-opportunity"},h.default.createElement(Wn,{headingTag:"H2",title:vn.globalOpportunity.text,contents:t,image:n}))};function Co(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}ko.propTypes=Wn.propTypes;var So=function(e){var t=e.url,n=e.altText;return h.default.createElement("div",{className:"uds-img pt-3 pb-3","data-testid":"intro-image"},h.default.createElement("img",{src:t,className:"img-fluid",alt:n}))};So.propTypes=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Co(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Co(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},It);var Ao,No=function(e,t){if("youtube"!==e)return t;var n=t.match(/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/);return n&&11===n[7].length?"https://www.youtube.com/embed/".concat(n[7]):t};function Po(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}var jo,To=Ze.div(Ao||(Ao=d(["\n  .uds-video-container {\n    margin: 0;\n    margin-top: 1.5rem;\n    margin-bottom: 1.5rem;\n  }\n"]))),Do=function(e){var t=e.type,n=e.url,r=e.vttUrl,a=e.title;return h.default.createElement(To,{"data-testid":"intro-video"},h.default.createElement(Lr,{type:t,url:No(t,n),vttUrl:r,title:a,controls:!0}))};function Lo(e){var t=e.contents,n=void 0===t?[]:t;return h.default.createElement("div",{"data-testid":"market-text"},n.map((function(e,t){return h.default.createElement("div",{key:"content-".concat(t+1),className:"mt-3 ".concat(Un(e.cssClass)),dangerouslySetInnerHTML:kt(e.text)})})))}function Mo(e){var t,n,r,a,o,l,i,c,s,u,d,f,m,p,g,v,b,y,E,w,O,x,k,C,S=e.cards,A=e.defaultCards;return h.default.createElement("section",{className:"container",id:vn.nextSteps.targetIdName,"data-testid":"next-steps"},h.default.createElement("h2",null,"Next steps to attend ASU"),h.default.createElement("div",{className:"mt-2 row"},h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:null!==(t=null==S||null===(n=S.learnMore)||void 0===n?void 0:n.icon)&&void 0!==t?t:A.learnMore.icon,title:null!==(r=null==S||null===(a=S.learnMore)||void 0===a?void 0:a.title)&&void 0!==r?r:A.learnMore.title,body:null!==(o=null==S||null===(l=S.learnMore)||void 0===l?void 0:l.content)&&void 0!==o?o:A.learnMore.content,buttons:[null!==(i=null==S||null===(c=S.learnMore)||void 0===c?void 0:c.buttonLink)&&void 0!==i?i:A.learnMore.buttonLink]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:null!==(s=null==S||null===(u=S.apply)||void 0===u?void 0:u.icon)&&void 0!==s?s:A.apply.icon,title:null!==(d=null==S||null===(f=S.apply)||void 0===f?void 0:f.title)&&void 0!==d?d:A.apply.title,body:null!==(m=null==S||null===(p=S.apply)||void 0===p?void 0:p.content)&&void 0!==m?m:A.apply.content,buttons:[null!==(g=null==S||null===(v=S.apply)||void 0===v?void 0:v.buttonLink)&&void 0!==g?g:A.apply.buttonLink]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{icon:null!==(b=null==S||null===(y=S.visit)||void 0===y?void 0:y.icon)&&void 0!==b?b:A.visit.icon,title:null!==(E=null==S||null===(w=S.visit)||void 0===w?void 0:w.title)&&void 0!==E?E:A.visit.title,body:null!==(O=null==S||null===(x=S.visit)||void 0===x?void 0:x.content)&&void 0!==O?O:A.visit.content,buttons:[null!==(k=null==S||null===(C=S.visit)||void 0===C?void 0:C.buttonLink)&&void 0!==k?k:A.visit.buttonLink]}))))}function Io(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function Ro(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Io(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Io(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Do.propTypes=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Po(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Po(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},Ut),Lo.propTypes={contents:g().arrayOf(qt)},Mo.propTypes={cards:g().shape({learnMore:Wt,apply:Wt,visit:Wt}),defaultCards:g().shape({learnMore:Wt,apply:Wt,visit:Wt})};var Uo={event:"link",action:"click",name:"onclick",type:"internal link",region:"main content",section:"Program contact information"},_o=Ze.ul(jo||(jo=d(["\n  list-style: none;\n  margin-left: 0rem;\n  padding-left: 0rem;\n\n  & li {\n    display: flex;\n    align-items: center;\n    :not(:first-child) {\n      display: flex;\n      padding-bottom: 0.5rem;\n    }\n\n    :first-child div {\n      display: flex;\n    }\n\n    :nth-of-type(2) {\n      padding-bottom: 2rem;\n    }\n\n    > div {\n      display: flex;\n      align-items: center;\n    }\n\n    .c-icon,\n    i {\n      font-size: 1rem;\n      margin-right: 0.5rem;\n    }\n\n    .office-loc {\n      margin-left: 1.5rem;\n    }\n  }\n"])));function Fo(e){var t=e.department,n=e.asuOfficeLoc,r=e.email,a=e.phone;return h.default.createElement("section",{id:vn.programContactInfo.targetIdName,"data-testid":"program-contact-info"},h.default.createElement("h2",null,h.default.createElement("span",{className:"highlight-gold"},"Program contact information")),h.default.createElement("p",null,"If you have questions related to admission, please fill out the request information form above and an admission specialist will contact you directly. For questions regarding faculty or courses, please use the contact information below."),h.default.createElement(_o,{className:"text-maroon"},h.default.createElement("li",null,h.default.createElement("div",null,h.default.createElement("i",{className:"c-icon fas icon-small fa-map-marker-alt",title:"Department  Address"}),h.default.createElement("a",{href:t.url,onClick:function(){return pr(Ro(Ro({},Uo),{},{text:t.text}))}},t.text))),h.default.createElement("li",null,h.default.createElement("div",{className:"c-icon text-dark office-loc"},n)),h.default.createElement("li",null,h.default.createElement("i",{className:"c-icon fas icon-small fa-envelope",title:"Email"}),h.default.createElement("a",{href:"mailto:".concat(r.url||r.text),onClick:function(){return pr(Ro(Ro({},Uo),{},{text:r.text}))}},r.text)),h.default.createElement("li",null,h.default.createElement("i",{className:"c-icon fas icon-small fa-phone",title:"Phone"}),h.default.createElement("a",{href:"tel:".concat(a),onClick:function(){return pr(Ro(Ro({},Uo),{},{text:a}))}},a))))}function qo(e){var t=e.content;return h.default.createElement("div",{"data-testid":"program-description"},h.default.createElement("h2",null,"Program description"),h.default.createElement("div",{"data-testid":"program-description-body",dangerouslySetInnerHTML:kt(t)}))}Fo.propTypes={department:Bt,asuOfficeLoc:g().string,email:Bt,phone:g().string},qo.propTypes={content:g().string};var zo="View major map -",Bo="View major map";function Ho(e){var t=e.onlineMajorMapURL,n=void 0===t?"":t,r=e.majorMapOnCampusURL,a=void 0===r?"":r,o=e.subPlnMajorMaps,l=void 0===o?[]:o,i=e.subPln,c=void 0===i?[]:i,s=function(e){return c[e]||""},u=function(e,t,n){e&&n.push({href:e,text:t})},d=[],f=[];l.length>0&&l.forEach((function(e){if(e.SubPlnMajorMapUrl.includes("ONLINE")){var t=s(e.SubplnMajorMapSubplanCode),n="".concat(zo," ").concat(t);u(e.SubPlnMajorMapUrl,n,f)}else{var r=s(e.SubplnMajorMapSubplanCode),a="".concat(zo," ").concat(r);u(e.SubPlnMajorMapUrl,a,d)}})),a&&u(a,Bo,d),n&&u(n,Bo,f);var m=function(e,t){return h.default.createElement(h.default.Fragment,null,h.default.createElement("h5",null,e),h.default.createElement("ul",{className:"mb-3"},t.map((function(e){return h.default.createElement("li",{key:e.href},h.default.createElement("a",{href:e.href},e.text))}))))};return null!=l&&l.length||n||a?h.default.createElement("section",{className:"container pl-0","data-testid":"required-course"},h.default.createElement("h4",null,"Required courses (major map)"),d.length>0&&m("On-campus students",d),f.length>0&&m("Online students",f),h.default.createElement("div",{className:"mt-3"},h.default.createElement("strong",null,"What if:")," See how your courses can be applied to another major and find out how to ",h.default.createElement("a",{href:"https://changemajor.apps.asu.edu/"},"change your major"))):h.default.createElement("div",null)}Ho.propTypes={onlineMajorMapURL:g().string,majorMapOnCampusURL:g().string,subPlnMajorMaps:g().arrayOf(g().shape({SubplnMajorMapSubplanCode:g().string,SubPlnMajorMapUrl:g().string})),subPln:g().objectOf(g().string)};var Go=function(e){var t,n,r,a,o,l,i,c,s,u,d,f,m,p,g,v,b,y,E,w,O,x,k,C,S,A,N,P,j,T,D,L,M,I,R,U,_,F,q,z,B,H,G,W,$,Y,V,K,X,Z,J,Q,ee,te,ne,re,ae,oe,le,ie,ce,se,ue,de,fe,me,pe,ge,he,ve,be,ye,Ee=e.sectionIntroText,we=e.cards,Oe=e.defaultCards;return h.default.createElement("section",{id:vn.whyChooseAsu.targetIdName,className:"container","data-testid":"why-choose-asu"},h.default.createElement("h2",null,"Why choose ASU"),h.default.createElement("div",{dangerouslySetInnerHTML:kt(Ee)}),h.default.createElement("div",{className:"mt-2 row"},h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(t=null==we||null===(n=we.faculty)||void 0===n||null===(r=n.image)||void 0===r?void 0:r.url)&&void 0!==t?t:Oe.faculty.image.url,imageAltText:null!==(a=null==we||null===(o=we.faculty)||void 0===o||null===(l=o.image)||void 0===l?void 0:l.altText)&&void 0!==a?a:Oe.faculty.image.altText,title:null!==(i=null==we||null===(c=we.faculty)||void 0===c?void 0:c.title)&&void 0!==i?i:Oe.faculty.title,body:null!==(s=null==we||null===(u=we.faculty)||void 0===u?void 0:u.text)&&void 0!==s?s:Oe.faculty.text,buttons:[null!==(d=null==we||null===(f=we.faculty)||void 0===f?void 0:f.button)&&void 0!==d?d:Oe.faculty.button]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(m=null==we||null===(p=we.programs)||void 0===p||null===(g=p.image)||void 0===g?void 0:g.url)&&void 0!==m?m:Oe.programs.image.url,imageAltText:null!==(v=null==we||null===(b=we.programs)||void 0===b||null===(y=b.image)||void 0===y?void 0:y.altText)&&void 0!==v?v:Oe.programs.image.altText,title:null!==(E=null==we||null===(w=we.programs)||void 0===w?void 0:w.title)&&void 0!==E?E:Oe.programs.title,body:null!==(O=null==we||null===(x=we.programs)||void 0===x?void 0:x.text)&&void 0!==O?O:Oe.programs.text,buttons:[null!==(k=null==we||null===(C=we.programs)||void 0===C?void 0:C.button)&&void 0!==k?k:Oe.programs.button]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(S=null==we||null===(A=we.research)||void 0===A||null===(N=A.image)||void 0===N?void 0:N.url)&&void 0!==S?S:Oe.research.image.url,imageAltText:null!==(P=null==we||null===(j=we.research)||void 0===j||null===(T=j.image)||void 0===T?void 0:T.altText)&&void 0!==P?P:Oe.research.image.altText,title:null!==(D=null==we||null===(L=we.research)||void 0===L?void 0:L.title)&&void 0!==D?D:Oe.research.title,body:null!==(M=null==we||null===(I=we.research)||void 0===I?void 0:I.text)&&void 0!==M?M:Oe.research.text,buttons:[null!==(R=null==we||null===(U=we.research)||void 0===U?void 0:U.button)&&void 0!==R?R:Oe.research.button]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(_=null==we||null===(F=we.inclusion)||void 0===F||null===(q=F.image)||void 0===q?void 0:q.url)&&void 0!==_?_:Oe.inclusion.image.url,imageAltText:null!==(z=null==we||null===(B=we.inclusion)||void 0===B||null===(H=B.image)||void 0===H?void 0:H.altText)&&void 0!==z?z:Oe.inclusion.image.altText,title:null!==(G=null==we||null===(W=we.inclusion)||void 0===W?void 0:W.title)&&void 0!==G?G:Oe.inclusion.title,body:null!==($=null==we||null===(Y=we.inclusion)||void 0===Y?void 0:Y.text)&&void 0!==$?$:Oe.inclusion.text,buttons:[null!==(V=null==we||null===(K=we.inclusion)||void 0===K?void 0:K.button)&&void 0!==V?V:Oe.inclusion.button]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(X=null==we||null===(Z=we.mentors)||void 0===Z||null===(J=Z.image)||void 0===J?void 0:J.url)&&void 0!==X?X:Oe.mentors.image.url,imageAltText:null!==(Q=null==we||null===(ee=we.mentors)||void 0===ee||null===(te=ee.image)||void 0===te?void 0:te.altText)&&void 0!==Q?Q:Oe.mentors.image.altText,title:null!==(ne=null==we||null===(re=we.mentors)||void 0===re?void 0:re.title)&&void 0!==ne?ne:Oe.mentors.title,body:null!==(ae=null==we||null===(oe=we.mentors)||void 0===oe?void 0:oe.text)&&void 0!==ae?ae:Oe.mentors.text,buttons:[null!==(le=null==we||null===(ie=we.mentors)||void 0===ie?void 0:ie.button)&&void 0!==le?le:Oe.mentors.button]})),h.default.createElement("div",{className:"mt-2 col-12 col-md-4"},h.default.createElement(sa,{image:null!==(ce=null==we||null===(se=we.honors)||void 0===se||null===(ue=se.image)||void 0===ue?void 0:ue.url)&&void 0!==ce?ce:Oe.honors.image.url,imageAltText:null!==(de=null==we||null===(fe=we.honors)||void 0===fe||null===(me=fe.image)||void 0===me?void 0:me.altText)&&void 0!==de?de:Oe.honors.image.altText,title:null!==(pe=null==we||null===(ge=we.honors)||void 0===ge?void 0:ge.title)&&void 0!==pe?pe:Oe.honors.title,body:null!==(he=null==we||null===(ve=we.honors)||void 0===ve?void 0:ve.text)&&void 0!==he?he:Oe.honors.text,buttons:[null!==(be=null==we||null===(ye=we.honors)||void 0===ye?void 0:ye.button)&&void 0!==be?be:Oe.honors.button]}))))};function Wo(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function $o(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?Wo(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Wo(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}Go.propTypes=Qt;var Yo=function(e){e.appPathFolder;var t,n,r,a,o=e.dataSource,l=e.anchorMenu,c=e.hero,s=e.introContent,d=e.atAGlance,f=e.applicationRequirements,m=e.changeMajorRequirements,p=e.affordingCollege,g=e.flexibleDegreeOptions,v=e.careerOutlook,b=e.exampleCareers,y=e.globalOpportunity,E=e.attendOnline,w=e.programContactInfo,O=e.nextSteps,x=e.whyChooseAsu,k=u(lt(),2),C=k[0],S=C.data,A=C.loading,N=C.error,P=k[1],j=u((0,h.useState)(lr({})),2),T=j[0],D=j[1],L=An(o,On),M=(0,h.useContext)(Zn).defaultState.detailPageDefault;(0,h.useEffect)((function(){P(L)}),[L]),(0,h.useEffect)((function(){if(null!=S&&S.programs){var e=lr(null==S?void 0:S.programs[0]);D(e)}}),[null==S?void 0:S.programs]);var I,R=function(e,t){var n=function(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?er(Object(n),!0).forEach((function(t){i(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):er(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}({},e);return n.globalOpportunity&&!t.getGlobalExp()&&(n.globalOpportunity=!1),n.careerOutlook&&!t.getAsuCareerOpportunity()&&(n.careerOutlook=!1),n.attendOnline&&!t.getCurriculumUrl()&&(n.attendOnline=!1),n}(l,T);return h.default.createElement(h.default.Fragment,null,h.default.createElement(Yn,null),N&&h.default.createElement(bt,{message:cn}),null!=c&&c.hide?null:h.default.createElement("section",null,h.default.createElement(ot,{image:(null==c?void 0:c.image)||M.hero.image,title:$o($o({},M.hero.title),{},{text:T.getMajorDesc()},null==c?void 0:c.title),contents:null==c?void 0:c.contents})),!A&&function(e){var t;return Object.keys(e).filter((function(e){return"externalAnchors"!==e})).length>0||(null==e||null===(t=e.externalAnchors)||void 0===t?void 0:t.length)>0}(R)?h.default.createElement(En,{anchorMenu:R}):null,h.default.createElement(Vn,{as:"div","data-is-loading":A,className:"main-section"},A?h.default.createElement(wt,null):h.default.createElement("section",{className:"container mt-4 mb-0"},null!=s&&s.breadcrumbs?h.default.createElement("div",{className:"row col-12"},h.default.createElement(ro,{breadcrumbs:s.breadcrumbs,section:c?c.title.text:T.getMajorDesc()})):null,h.default.createElement("div",{className:"row flex-column-reverse flex-sm-row"},h.default.createElement("div",{className:"col col-sm-12 col-md-7 col-lg-7"},h.default.createElement("section",{className:"intro"},T.isValidActiveProgram()?null:h.default.createElement(fo,{content:T.getAsuCustomText()}),null!=s&&s.hideMarketText||!(null!=s&&s.contents||T.getMarketText())?null:h.default.createElement(Lo,{contents:(null==s?void 0:s.contents)||[{text:T.getMarketText()}]}),null!=s&&s.hideProgramDesc?null:h.default.createElement(qo,{content:T.getDescrLongExtented()})),null!=d&&d.hide?null:h.default.createElement(to,{offeredBy:(null==d?void 0:d.offeredBy)||{text:T.getCollegeDesc(),url:T.getCollegeUrl()},locations:(null==d?void 0:d.locations)||ir(T),firstRequirementMathCourse:(null==d?void 0:d.firstRequirementMathCourse)||T.getMinMathReq(),mathIntensity:(null==d?void 0:d.mathIntensity)||T.getMathIntensity()}),null!=s&&s.hideRequiredCourses||T.isMinorOrCertificate()?null:h.default.createElement(Ho,{onlineMajorMapURL:T.getOnlineMajorMapURL(),majorMapOnCampusURL:T.getAsuCritTrackUrl(),subPlnMajorMaps:T.getSubPlnMajorMaps(),subPln:T.getSubPln()}),null!=f&&f.hide?null:h.default.createElement(Ja,{graduateRequirements:T.isGradProgram()?T.getGraduateRequirements():null,isMinorOrCertificate:T.isMinorOrCertificate(),additionalRequirements:T.getDescrLongExtented5(),transferRequirements:T.getTransferAdmission()}),null!=m&&m.hide||T.isMinorOrCertificate()||T.isGradProgram()?null:h.default.createElement(uo,{content:T.getChangeMajor()})),h.default.createElement("div",{className:"col col-sm-12 col-md-5 col-lg-5"},(null==s?void 0:s.video)&&h.default.createElement(Do,{type:s.video.type,url:s.video.url,vttUrl:s.video.vttUrl,title:s.video.title}),!(null!=s&&s.video)&&h.default.createElement(So,{url:(null==s||null===(t=s.image)||void 0===t?void 0:t.url)||M.introContent.image.url,altText:(null==s||null===(n=s.image)||void 0===n?void 0:n.altText)||M.introContent.image.altText}))),h.default.createElement("div",{className:"row"},null!=O&&O.hide||T.isMinorOrCertificate()?null:h.default.createElement(Mo,{cards:null==O?void 0:O.cards,defaultCards:M.nextSteps.cards}),null!=p&&p.hide?null:h.default.createElement(Xa,null),!(null!=g&&g.hide)&&T.hasConcurrentOrAccelerateDegrees()&&h.default.createElement(Oo,{acceleratedLinks:xn(T.getAccelerateDegrees()),concurrentLinks:xn(T.getConcurrentDegrees())}),null!=v&&v.hide||!T.getAsuCareerOpportunity()?null:h.default.createElement(lo,{image:(null==v?void 0:v.image)||M.careerOutlook.image,contents:[{text:T.getAsuCareerOpportunity()}]}),!(null!=b&&b.hide)&&T.hasCareerData()&&h.default.createElement(bo,{tableData:(I=T.getCareerData(),null==I?void 0:I.map((function(e){return{career:{text:e.careerDataAlterOnetTitle,url:"".concat("https://degrees.apps.asu.edu","/career-details/").concat(e.careerDataOnetCode)},growth:e.careerDataGrowth,medianSalary:e.careerDataSalary,brightOutlook:!!e.careerDataBrightOutlook,greenOccupation:!!e.careerDataGreen}})))}),null!=y&&y.hide||!T.getGlobalExp()?null:h.default.createElement(ko,{contents:[{text:T.getGlobalExp()}],image:(null==y?void 0:y.image)||M.globalOpportunity.image}),null!=x&&x.hide?null:h.default.createElement(Go,{sectionIntroText:(null==x?void 0:x.sectionIntroText)||M.whyChooseAsu.sectionIntroText,cards:null==x?void 0:x.cards,defaultCards:M.whyChooseAsu.cards}),null!=E&&E.hide||!T.isOnline()?null:h.default.createElement(no,{learnMoreLink:T.getCurriculumUrl(),image:(null==E?void 0:E.image)||M.attendOnline.image})),null!=w&&w.hide?null:h.default.createElement("div",{className:"row"},h.default.createElement("div",{className:"col col-sm-12 col-md-6 col-lg-6 "},h.default.createElement(Fo,{department:{text:T.getDepartmentName(),url:(null==w||null===(r=w.department)||void 0===r?void 0:r.url)||T.getPlanUrl()},email:{text:T.getEmailAddress(),url:(null==w||null===(a=w.email)||void 0===a?void 0:a.url)||T.getEmailAddress()},asuOfficeLoc:T.getAsuOfficeLoc(),phone:T.getPhone()}))))))};Yo.propTypes={appPathFolder:g().string,dataSource:Ht,anchorMenu:g().shape(Xt),hero:g().shape(ot.propTypes),introContent:g().shape({hideMarketText:g().bool,hideProgramDesc:g().bool,hideRequiredCourses:g().bool,breadcrumbs:(0,p.arrayOf)(Bt),contents:(0,p.arrayOf)(g().object),video:zt,image:Ft}),atAGlance:g().shape({hide:g().bool,offeredBy:Bt,locations:(0,p.arrayOf)(Bt),firstRequirementMathCourse:g().string,mathIntensity:g().string,timeCommitment:g().string}),applicationRequirements:g().shape({hide:g().bool}),changeMajorRequirements:g().shape({hide:g().bool}),affordingCollege:g().shape({hide:g().bool}),flexibleDegreeOptions:g().shape({hide:g().bool}),careerOutlook:g().shape({hide:g().bool,image:Ft}),exampleCareers:g().shape({hide:g().bool}),globalOpportunity:g().shape({hide:g().bool,image:Ft}),attendOnline:g().shape({hide:g().bool,image:Ft}),programContactInfo:g().shape({hide:g().bool,department:g().string,email:g().string}),nextSteps:g().shape({hide:g().bool,cards:g().arrayOf(Wt)}),whyChooseAsu:g().shape(Qt)};var Vo=function(e){return h.default.createElement(Jn,{detailPageProps:e},h.default.createElement(Yo,e))};Vo.propTypes=Yo.propTypes;const Ko=(e=>{var t={};return a.d(t,e),t})({default:()=>t.default});var Xo=function(e,t,n){var r=document.querySelector(n);Ko.default.render(h.default.createElement(e,t),r)},Zo=function(e){var t=e.targetSelector,n=e.props;Xo($a,n,t)},Jo=function(e){var t=e.targetSelector,n=e.props;Xo(Vo,n,t)}})();var l=o.Hb,i=o.Z9,c=o.CO,s=o.uT;export{l as DetailPage,i as ListingPage,c as initListingPage,s as initProgramDetailPage};
+import * as ot from "react";
+import ht, { useContext as kt, useRef as hn, useLayoutEffect as _l, createElement as Pl, useState as Be, useEffect as mt, useMemo as Ri, createContext as Ll, Fragment as _i, createRef as Il } from "react";
+import * as Dl from "react-dom";
+import Ml from "react-dom";
+function Ua(e) {
+  return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
+}
+var Pi = { exports: {} }, Cr = {};
+var _o;
+function $l() {
+  if (_o) return Cr;
+  _o = 1;
+  var e = ht, t = Symbol.for("react.element"), r = Symbol.for("react.fragment"), n = Object.prototype.hasOwnProperty, a = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, o = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function s(c, d, p) {
+    var g, m = {}, f = null, E = null;
+    p !== void 0 && (f = "" + p), d.key !== void 0 && (f = "" + d.key), d.ref !== void 0 && (E = d.ref);
+    for (g in d) n.call(d, g) && !o.hasOwnProperty(g) && (m[g] = d[g]);
+    if (c && c.defaultProps) for (g in d = c.defaultProps, d) m[g] === void 0 && (m[g] = d[g]);
+    return { $$typeof: t, type: c, key: f, ref: E, props: m, _owner: a.current };
+  }
+  return Cr.Fragment = r, Cr.jsx = s, Cr.jsxs = s, Cr;
+}
+Pi.exports = $l();
+var i = Pi.exports, Ze = { env: { NODE_ENV: "production" } }, Fl = { 651: function(e) {
+  e.exports = function() {
+    function t(q) {
+      return t = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function($) {
+        return typeof $;
+      } : function($) {
+        return $ && typeof Symbol == "function" && $.constructor === Symbol && $ !== Symbol.prototype ? "symbol" : typeof $;
+      }, t(q);
+    }
+    function r(q, $) {
+      return r = Object.setPrototypeOf || function(Y, U) {
+        return Y.__proto__ = U, Y;
+      }, r(q, $);
+    }
+    function n(q, $, Y) {
+      return n = function() {
+        if (typeof Reflect > "u" || !Reflect.construct || Reflect.construct.sham) return !1;
+        if (typeof Proxy == "function") return !0;
+        try {
+          return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+          })), !0;
+        } catch {
+          return !1;
+        }
+      }() ? Reflect.construct : function(U, F, de) {
+        var Ae = [null];
+        Ae.push.apply(Ae, F);
+        var qe = new (Function.bind.apply(U, Ae))();
+        return de && r(qe, de.prototype), qe;
+      }, n.apply(null, arguments);
+    }
+    function a(q) {
+      return function($) {
+        if (Array.isArray($)) return o($);
+      }(q) || function($) {
+        if (typeof Symbol < "u" && $[Symbol.iterator] != null || $["@@iterator"] != null) return Array.from($);
+      }(q) || function($, Y) {
+        if ($) {
+          if (typeof $ == "string") return o($, Y);
+          var U = Object.prototype.toString.call($).slice(8, -1);
+          return U === "Object" && $.constructor && (U = $.constructor.name), U === "Map" || U === "Set" ? Array.from($) : U === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(U) ? o($, Y) : void 0;
+        }
+      }(q) || function() {
+        throw new TypeError(`Invalid attempt to spread non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
+      }();
+    }
+    function o(q, $) {
+      ($ == null || $ > q.length) && ($ = q.length);
+      for (var Y = 0, U = new Array($); Y < $; Y++) U[Y] = q[Y];
+      return U;
+    }
+    var s = Object.hasOwnProperty, c = Object.setPrototypeOf, d = Object.isFrozen, p = Object.getPrototypeOf, g = Object.getOwnPropertyDescriptor, m = Object.freeze, f = Object.seal, E = Object.create, S = typeof Reflect < "u" && Reflect, T = S.apply, k = S.construct;
+    T || (T = function(q, $, Y) {
+      return q.apply($, Y);
+    }), m || (m = function(q) {
+      return q;
+    }), f || (f = function(q) {
+      return q;
+    }), k || (k = function(q, $) {
+      return n(q, a($));
+    });
+    var N, A = ne(Array.prototype.forEach), D = ne(Array.prototype.pop), I = ne(Array.prototype.push), v = ne(String.prototype.toLowerCase), _ = ne(String.prototype.toString), j = ne(String.prototype.match), z = ne(String.prototype.replace), ie = ne(String.prototype.indexOf), he = ne(String.prototype.trim), ee = ne(RegExp.prototype.test), Z = (N = TypeError, function() {
+      for (var q = arguments.length, $ = new Array(q), Y = 0; Y < q; Y++) $[Y] = arguments[Y];
+      return k(N, $);
+    });
+    function ne(q) {
+      return function($) {
+        for (var Y = arguments.length, U = new Array(Y > 1 ? Y - 1 : 0), F = 1; F < Y; F++) U[F - 1] = arguments[F];
+        return T(q, $, U);
+      };
+    }
+    function G(q, $, Y) {
+      var U;
+      Y = (U = Y) !== null && U !== void 0 ? U : v, c && c(q, null);
+      for (var F = $.length; F--; ) {
+        var de = $[F];
+        if (typeof de == "string") {
+          var Ae = Y(de);
+          Ae !== de && (d($) || ($[F] = Ae), de = Ae);
+        }
+        q[de] = !0;
+      }
+      return q;
+    }
+    function ue(q) {
+      var $, Y = E(null);
+      for ($ in q) T(s, q, [$]) === !0 && (Y[$] = q[$]);
+      return Y;
+    }
+    function Se(q, $) {
+      for (; q !== null; ) {
+        var Y = g(q, $);
+        if (Y) {
+          if (Y.get) return ne(Y.get);
+          if (typeof Y.value == "function") return ne(Y.value);
+        }
+        q = p(q);
+      }
+      return function(U) {
+        return console.warn("fallback value for", U), null;
+      };
+    }
+    var se = m(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "shadow", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]), be = m(["svg", "a", "altglyph", "altglyphdef", "altglyphitem", "animatecolor", "animatemotion", "animatetransform", "circle", "clippath", "defs", "desc", "ellipse", "filter", "font", "g", "glyph", "glyphref", "hkern", "image", "line", "lineargradient", "marker", "mask", "metadata", "mpath", "path", "pattern", "polygon", "polyline", "radialgradient", "rect", "stop", "style", "switch", "symbol", "text", "textpath", "title", "tref", "tspan", "view", "vkern"]), Ee = m(["feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence"]), J = m(["animate", "color-profile", "cursor", "discard", "fedropshadow", "font-face", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "foreignobject", "hatch", "hatchpath", "mesh", "meshgradient", "meshpatch", "meshrow", "missing-glyph", "script", "set", "solidcolor", "unknown", "use"]), H = m(["math", "menclose", "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msup", "msubsup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover"]), R = m(["maction", "maligngroup", "malignmark", "mlongdiv", "mscarries", "mscarry", "msgroup", "mstack", "msline", "msrow", "semantics", "annotation", "annotation-xml", "mprescripts", "none"]), C = m(["#text"]), x = m(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "pattern", "placeholder", "playsinline", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "xmlns", "slot"]), P = m(["accent-height", "accumulate", "additive", "alignment-baseline", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]), y = m(["accent", "accentunder", "align", "bevelled", "close", "columnsalign", "columnlines", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lspace", "lquote", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]), L = m(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]), O = f(/\{\{[\w\W]*|[\w\W]*\}\}/gm), ae = f(/<%[\w\W]*|[\w\W]*%>/gm), re = f(/\${[\w\W]*}/gm), V = f(/^data-[\-\w.\u00B7-\uFFFF]/), K = f(/^aria-[\-\w]+$/), oe = f(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i), fe = f(/^(?:\w+script|data):/i), le = f(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g), ce = f(/^html$/i), Q = f(/^[a-z][.\w]*(-[.\w]+)+$/i), pe = function() {
+      return typeof window > "u" ? null : window;
+    }, $e = function q() {
+      var $ = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : pe(), Y = function(b) {
+        return q(b);
+      };
+      if (Y.version = "2.5.6", Y.removed = [], !$ || !$.document || $.document.nodeType !== 9) return Y.isSupported = !1, Y;
+      var U = $.document, F = $.document, de = $.DocumentFragment, Ae = $.HTMLTemplateElement, qe = $.Node, He = $.Element, Nt = $.NodeFilter, fr = $.NamedNodeMap, Hr = fr === void 0 ? $.NamedNodeMap || $.MozNamedAttrMap : fr, hr = $.HTMLFormElement, qr = $.DOMParser, gt = $.trustedTypes, yt = He.prototype, ut = Se(yt, "cloneNode"), Ct = Se(yt, "nextSibling"), gr = Se(yt, "childNodes"), $t = Se(yt, "parentNode");
+      if (typeof Ae == "function") {
+        var yr = F.createElement("template");
+        yr.content && yr.content.ownerDocument && (F = yr.content.ownerDocument);
+      }
+      var Ue = function(b, W) {
+        if (t(b) !== "object" || typeof b.createPolicy != "function") return null;
+        var X = null, ve = "data-tt-policy-suffix";
+        W.currentScript && W.currentScript.hasAttribute(ve) && (X = W.currentScript.getAttribute(ve));
+        var ze = "dompurify" + (X ? "#" + X : "");
+        try {
+          return b.createPolicy(ze, { createHTML: function(Re) {
+            return Re;
+          }, createScriptURL: function(Re) {
+            return Re;
+          } });
+        } catch {
+          return console.warn("TrustedTypes policy " + ze + " could not be created."), null;
+        }
+      }(gt, U), br = Ue ? Ue.createHTML("") : "", Jt = F, _e = Jt.implementation, Ot = Jt.createNodeIterator, Fn = Jt.createDocumentFragment, Wr = Jt.getElementsByTagName, vr = U.importNode, xr = {};
+      try {
+        xr = ue(F).documentMode ? F.documentMode : {};
+      } catch {
+      }
+      var Je = {};
+      Y.isSupported = typeof $t == "function" && _e && _e.createHTMLDocument !== void 0 && xr !== 9;
+      var jt, Ne, Ft = O, wr = ae, Ve = re, Qt = V, Gr = K, Br = fe, Sr = le, Ut = Q, Qe = oe, Le = null, Tr = G({}, [].concat(a(se), a(be), a(Ee), a(H), a(C))), Ie = null, Er = G({}, [].concat(a(x), a(P), a(y), a(L))), Ce = Object.seal(Object.create(null, { tagNameCheck: { writable: !0, configurable: !1, enumerable: !0, value: null }, attributeNameCheck: { writable: !0, configurable: !1, enumerable: !0, value: null }, allowCustomizedBuiltInElements: { writable: !0, configurable: !1, enumerable: !0, value: !1 } })), te = null, w = null, M = !0, B = !0, ge = !1, We = !0, Oe = !1, De = !0, Ye = !1, je = !1, zt = !1, bt = !1, kr = !1, Vr = !1, ho = !0, go = !1, Un = !0, Ar = !1, er = {}, tr = null, yo = G({}, ["annotation-xml", "audio", "colgroup", "desc", "foreignobject", "head", "iframe", "math", "mi", "mn", "mo", "ms", "mtext", "noembed", "noframes", "noscript", "plaintext", "script", "style", "svg", "template", "thead", "title", "video", "xmp"]), bo = null, vo = G({}, ["audio", "video", "img", "source", "image", "track"]), zn = null, xo = G({}, ["alt", "class", "for", "id", "label", "name", "pattern", "placeholder", "role", "summary", "title", "value", "style", "xmlns"]), Yr = "http://www.w3.org/1998/Math/MathML", Kr = "http://www.w3.org/2000/svg", vt = "http://www.w3.org/1999/xhtml", rr = vt, wo = !1, Hn = null, Nl = G({}, [Yr, Kr, vt], _), Cl = ["application/xhtml+xml", "text/html"], nr = null, Ol = F.createElement("form"), So = function(b) {
+        return b instanceof RegExp || b instanceof Function;
+      }, qn = function(b) {
+        nr && nr === b || (b && t(b) === "object" || (b = {}), b = ue(b), jt = jt = Cl.indexOf(b.PARSER_MEDIA_TYPE) === -1 ? "text/html" : b.PARSER_MEDIA_TYPE, Ne = jt === "application/xhtml+xml" ? _ : v, Le = "ALLOWED_TAGS" in b ? G({}, b.ALLOWED_TAGS, Ne) : Tr, Ie = "ALLOWED_ATTR" in b ? G({}, b.ALLOWED_ATTR, Ne) : Er, Hn = "ALLOWED_NAMESPACES" in b ? G({}, b.ALLOWED_NAMESPACES, _) : Nl, zn = "ADD_URI_SAFE_ATTR" in b ? G(ue(xo), b.ADD_URI_SAFE_ATTR, Ne) : xo, bo = "ADD_DATA_URI_TAGS" in b ? G(ue(vo), b.ADD_DATA_URI_TAGS, Ne) : vo, tr = "FORBID_CONTENTS" in b ? G({}, b.FORBID_CONTENTS, Ne) : yo, te = "FORBID_TAGS" in b ? G({}, b.FORBID_TAGS, Ne) : {}, w = "FORBID_ATTR" in b ? G({}, b.FORBID_ATTR, Ne) : {}, er = "USE_PROFILES" in b && b.USE_PROFILES, M = b.ALLOW_ARIA_ATTR !== !1, B = b.ALLOW_DATA_ATTR !== !1, ge = b.ALLOW_UNKNOWN_PROTOCOLS || !1, We = b.ALLOW_SELF_CLOSE_IN_ATTR !== !1, Oe = b.SAFE_FOR_TEMPLATES || !1, De = b.SAFE_FOR_XML !== !1, Ye = b.WHOLE_DOCUMENT || !1, bt = b.RETURN_DOM || !1, kr = b.RETURN_DOM_FRAGMENT || !1, Vr = b.RETURN_TRUSTED_TYPE || !1, zt = b.FORCE_BODY || !1, ho = b.SANITIZE_DOM !== !1, go = b.SANITIZE_NAMED_PROPS || !1, Un = b.KEEP_CONTENT !== !1, Ar = b.IN_PLACE || !1, Qe = b.ALLOWED_URI_REGEXP || Qe, rr = b.NAMESPACE || vt, Ce = b.CUSTOM_ELEMENT_HANDLING || {}, b.CUSTOM_ELEMENT_HANDLING && So(b.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Ce.tagNameCheck = b.CUSTOM_ELEMENT_HANDLING.tagNameCheck), b.CUSTOM_ELEMENT_HANDLING && So(b.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Ce.attributeNameCheck = b.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), b.CUSTOM_ELEMENT_HANDLING && typeof b.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements == "boolean" && (Ce.allowCustomizedBuiltInElements = b.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), Oe && (B = !1), kr && (bt = !0), er && (Le = G({}, a(C)), Ie = [], er.html === !0 && (G(Le, se), G(Ie, x)), er.svg === !0 && (G(Le, be), G(Ie, P), G(Ie, L)), er.svgFilters === !0 && (G(Le, Ee), G(Ie, P), G(Ie, L)), er.mathMl === !0 && (G(Le, H), G(Ie, y), G(Ie, L))), b.ADD_TAGS && (Le === Tr && (Le = ue(Le)), G(Le, b.ADD_TAGS, Ne)), b.ADD_ATTR && (Ie === Er && (Ie = ue(Ie)), G(Ie, b.ADD_ATTR, Ne)), b.ADD_URI_SAFE_ATTR && G(zn, b.ADD_URI_SAFE_ATTR, Ne), b.FORBID_CONTENTS && (tr === yo && (tr = ue(tr)), G(tr, b.FORBID_CONTENTS, Ne)), Un && (Le["#text"] = !0), Ye && G(Le, ["html", "head", "body"]), Le.table && (G(Le, ["tbody"]), delete te.tbody), m && m(b), nr = b);
+      }, To = G({}, ["mi", "mo", "mn", "ms", "mtext"]), Eo = G({}, ["foreignobject", "annotation-xml"]), jl = G({}, ["title", "style", "font", "a", "script"]), Xr = G({}, be);
+      G(Xr, Ee), G(Xr, J);
+      var Wn = G({}, H);
+      G(Wn, R);
+      var at = function(b) {
+        I(Y.removed, { element: b });
+        try {
+          b.parentNode.removeChild(b);
+        } catch {
+          try {
+            b.outerHTML = br;
+          } catch {
+            b.remove();
+          }
+        }
+      }, Zr = function(b, W) {
+        try {
+          I(Y.removed, { attribute: W.getAttributeNode(b), from: W });
+        } catch {
+          I(Y.removed, { attribute: null, from: W });
+        }
+        if (W.removeAttribute(b), b === "is" && !Ie[b]) if (bt || kr) try {
+          at(W);
+        } catch {
+        }
+        else try {
+          W.setAttribute(b, "");
+        } catch {
+        }
+      }, ko = function(b) {
+        var W, X;
+        if (zt) b = "<remove></remove>" + b;
+        else {
+          var ve = j(b, /^[\r\n\t ]+/);
+          X = ve && ve[0];
+        }
+        jt === "application/xhtml+xml" && rr === vt && (b = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + b + "</body></html>");
+        var ze = Ue ? Ue.createHTML(b) : b;
+        if (rr === vt) try {
+          W = new qr().parseFromString(ze, jt);
+        } catch {
+        }
+        if (!W || !W.documentElement) {
+          W = _e.createDocument(rr, "template", null);
+          try {
+            W.documentElement.innerHTML = wo ? br : ze;
+          } catch {
+          }
+        }
+        var Re = W.body || W.documentElement;
+        return b && X && Re.insertBefore(F.createTextNode(X), Re.childNodes[0] || null), rr === vt ? Wr.call(W, Ye ? "html" : "body")[0] : Ye ? W.documentElement : Re;
+      }, Ao = function(b) {
+        return Ot.call(b.ownerDocument || b, b, Nt.SHOW_ELEMENT | Nt.SHOW_COMMENT | Nt.SHOW_TEXT | Nt.SHOW_PROCESSING_INSTRUCTION | Nt.SHOW_CDATA_SECTION, null, !1);
+      }, No = function(b) {
+        return b instanceof hr && (typeof b.nodeName != "string" || typeof b.textContent != "string" || typeof b.removeChild != "function" || !(b.attributes instanceof Hr) || typeof b.removeAttribute != "function" || typeof b.setAttribute != "function" || typeof b.namespaceURI != "string" || typeof b.insertBefore != "function" || typeof b.hasChildNodes != "function");
+      }, Nr = function(b) {
+        return t(qe) === "object" ? b instanceof qe : b && t(b) === "object" && typeof b.nodeType == "number" && typeof b.nodeName == "string";
+      }, xt = function(b, W, X) {
+        Je[b] && A(Je[b], function(ve) {
+          ve.call(Y, W, X, nr);
+        });
+      }, Co = function(b) {
+        var W;
+        if (xt("beforeSanitizeElements", b, null), No(b) || ee(/[\u0080-\uFFFF]/, b.nodeName)) return at(b), !0;
+        var X = Ne(b.nodeName);
+        if (xt("uponSanitizeElement", b, { tagName: X, allowedTags: Le }), b.hasChildNodes() && !Nr(b.firstElementChild) && (!Nr(b.content) || !Nr(b.content.firstElementChild)) && ee(/<[/\w]/g, b.innerHTML) && ee(/<[/\w]/g, b.textContent) || X === "select" && ee(/<template/i, b.innerHTML) || b.nodeType === 7 || De && b.nodeType === 8 && ee(/<[/\w]/g, b.data)) return at(b), !0;
+        if (!Le[X] || te[X]) {
+          if (!te[X] && jo(X) && (Ce.tagNameCheck instanceof RegExp && ee(Ce.tagNameCheck, X) || Ce.tagNameCheck instanceof Function && Ce.tagNameCheck(X)))
+            return !1;
+          if (Un && !tr[X]) {
+            var ve = $t(b) || b.parentNode, ze = gr(b) || b.childNodes;
+            if (ze && ve) for (var Re = ze.length - 1; Re >= 0; --Re) {
+              var Ke = ut(ze[Re], !0);
+              Ke.__removalCount = (b.__removalCount || 0) + 1, ve.insertBefore(Ke, Ct(b));
+            }
+          }
+          return at(b), !0;
+        }
+        return b instanceof He && !function(et) {
+          var Me = $t(et);
+          Me && Me.tagName || (Me = { namespaceURI: rr, tagName: "template" });
+          var ke = v(et.tagName), Rt = v(Me.tagName);
+          return !!Hn[et.namespaceURI] && (et.namespaceURI === Kr ? Me.namespaceURI === vt ? ke === "svg" : Me.namespaceURI === Yr ? ke === "svg" && (Rt === "annotation-xml" || To[Rt]) : !!Xr[ke] : et.namespaceURI === Yr ? Me.namespaceURI === vt ? ke === "math" : Me.namespaceURI === Kr ? ke === "math" && Eo[Rt] : !!Wn[ke] : et.namespaceURI === vt ? !(Me.namespaceURI === Kr && !Eo[Rt]) && !(Me.namespaceURI === Yr && !To[Rt]) && !Wn[ke] && (jl[ke] || !Xr[ke]) : !(jt !== "application/xhtml+xml" || !Hn[et.namespaceURI]));
+        }(b) ? (at(b), !0) : X !== "noscript" && X !== "noembed" && X !== "noframes" || !ee(/<\/no(script|embed|frames)/i, b.innerHTML) ? (Oe && b.nodeType === 3 && (W = b.textContent, W = z(W, Ft, " "), W = z(W, wr, " "), W = z(W, Ve, " "), b.textContent !== W && (I(Y.removed, { element: b.cloneNode() }), b.textContent = W)), xt("afterSanitizeElements", b, null), !1) : (at(b), !0);
+      }, Oo = function(b, W, X) {
+        if (ho && (W === "id" || W === "name") && (X in F || X in Ol)) return !1;
+        if (!(B && !w[W] && ee(Qt, W))) {
+          if (!(M && ee(Gr, W))) {
+            if (!Ie[W] || w[W]) {
+              if (!(jo(b) && (Ce.tagNameCheck instanceof RegExp && ee(Ce.tagNameCheck, b) || Ce.tagNameCheck instanceof Function && Ce.tagNameCheck(b)) && (Ce.attributeNameCheck instanceof RegExp && ee(Ce.attributeNameCheck, W) || Ce.attributeNameCheck instanceof Function && Ce.attributeNameCheck(W)) || W === "is" && Ce.allowCustomizedBuiltInElements && (Ce.tagNameCheck instanceof RegExp && ee(Ce.tagNameCheck, X) || Ce.tagNameCheck instanceof Function && Ce.tagNameCheck(X)))) return !1;
+            } else if (!zn[W]) {
+              if (!ee(Qe, z(X, Sr, ""))) {
+                if ((W !== "src" && W !== "xlink:href" && W !== "href" || b === "script" || ie(X, "data:") !== 0 || !bo[b]) && !(ge && !ee(Br, z(X, Sr, "")))) {
+                  if (X) return !1;
+                }
+              }
+            }
+          }
+        }
+        return !0;
+      }, jo = function(b) {
+        return b !== "annotation-xml" && j(b, Ut);
+      }, Ro = function(b) {
+        var W, X, ve, ze;
+        xt("beforeSanitizeAttributes", b, null);
+        var Re = b.attributes;
+        if (Re) {
+          var Ke = { attrName: "", attrValue: "", keepAttr: !0, allowedAttributes: Ie };
+          for (ze = Re.length; ze--; ) {
+            var et = W = Re[ze], Me = et.name, ke = et.namespaceURI;
+            if (X = Me === "value" ? W.value : he(W.value), ve = Ne(Me), Ke.attrName = ve, Ke.attrValue = X, Ke.keepAttr = !0, Ke.forceKeepAttr = void 0, xt("uponSanitizeAttribute", b, Ke), X = Ke.attrValue, De && ee(/((--!?|])>)|<\/(style|title)/i, X)) Zr(Me, b);
+            else if (!Ke.forceKeepAttr && (Zr(Me, b), Ke.keepAttr)) if (We || !ee(/\/>/i, X)) {
+              Oe && (X = z(X, Ft, " "), X = z(X, wr, " "), X = z(X, Ve, " "));
+              var Rt = Ne(b.nodeName);
+              if (Oo(Rt, ve, X)) {
+                if (!go || ve !== "id" && ve !== "name" || (Zr(Me, b), X = "user-content-" + X), Ue && t(gt) === "object" && typeof gt.getAttributeType == "function" && !ke) switch (gt.getAttributeType(Rt, ve)) {
+                  case "TrustedHTML":
+                    X = Ue.createHTML(X);
+                    break;
+                  case "TrustedScriptURL":
+                    X = Ue.createScriptURL(X);
+                }
+                try {
+                  ke ? b.setAttributeNS(ke, Me, X) : b.setAttribute(Me, X), No(b) ? at(b) : D(Y.removed);
+                } catch {
+                }
+              }
+            } else Zr(Me, b);
+          }
+          xt("afterSanitizeAttributes", b, null);
+        }
+      }, Rl = function b(W) {
+        var X, ve = Ao(W);
+        for (xt("beforeSanitizeShadowDOM", W, null); X = ve.nextNode(); ) xt("uponSanitizeShadowNode", X, null), Co(X) || (X.content instanceof de && b(X.content), Ro(X));
+        xt("afterSanitizeShadowDOM", W, null);
+      };
+      return Y.sanitize = function(b) {
+        var W, X, ve, ze, Re, Ke = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+        if ((wo = !b) && (b = "<!-->"), typeof b != "string" && !Nr(b)) {
+          if (typeof b.toString != "function") throw Z("toString is not a function");
+          if (typeof (b = b.toString()) != "string") throw Z("dirty is not a string, aborting");
+        }
+        if (!Y.isSupported) {
+          if (t($.toStaticHTML) === "object" || typeof $.toStaticHTML == "function") {
+            if (typeof b == "string") return $.toStaticHTML(b);
+            if (Nr(b)) return $.toStaticHTML(b.outerHTML);
+          }
+          return b;
+        }
+        if (je || qn(Ke), Y.removed = [], typeof b == "string" && (Ar = !1), Ar) {
+          if (b.nodeName) {
+            var et = Ne(b.nodeName);
+            if (!Le[et] || te[et]) throw Z("root node is forbidden and cannot be sanitized in-place");
+          }
+        } else if (b instanceof qe) (X = (W = ko("<!---->")).ownerDocument.importNode(b, !0)).nodeType === 1 && X.nodeName === "BODY" || X.nodeName === "HTML" ? W = X : W.appendChild(X);
+        else {
+          if (!bt && !Oe && !Ye && b.indexOf("<") === -1) return Ue && Vr ? Ue.createHTML(b) : b;
+          if (!(W = ko(b))) return bt ? null : Vr ? br : "";
+        }
+        W && zt && at(W.firstChild);
+        for (var Me = Ao(Ar ? b : W); ve = Me.nextNode(); ) ve.nodeType === 3 && ve === ze || Co(ve) || (ve.content instanceof de && Rl(ve.content), Ro(ve), ze = ve);
+        if (ze = null, Ar) return b;
+        if (bt) {
+          if (kr) for (Re = Fn.call(W.ownerDocument); W.firstChild; ) Re.appendChild(W.firstChild);
+          else Re = W;
+          return (Ie.shadowroot || Ie.shadowrootmod) && (Re = vr.call(U, Re, !0)), Re;
+        }
+        var ke = Ye ? W.outerHTML : W.innerHTML;
+        return Ye && Le["!doctype"] && W.ownerDocument && W.ownerDocument.doctype && W.ownerDocument.doctype.name && ee(ce, W.ownerDocument.doctype.name) && (ke = "<!DOCTYPE " + W.ownerDocument.doctype.name + `>
+` + ke), Oe && (ke = z(ke, Ft, " "), ke = z(ke, wr, " "), ke = z(ke, Ve, " ")), Ue && Vr ? Ue.createHTML(ke) : ke;
+      }, Y.setConfig = function(b) {
+        qn(b), je = !0;
+      }, Y.clearConfig = function() {
+        nr = null, je = !1;
+      }, Y.isValidAttribute = function(b, W, X) {
+        nr || qn({});
+        var ve = Ne(b), ze = Ne(W);
+        return Oo(ve, ze, X);
+      }, Y.addHook = function(b, W) {
+        typeof W == "function" && (Je[b] = Je[b] || [], I(Je[b], W));
+      }, Y.removeHook = function(b) {
+        if (Je[b]) return D(Je[b]);
+      }, Y.removeHooks = function(b) {
+        Je[b] && (Je[b] = []);
+      }, Y.removeAllHooks = function() {
+        Je = {};
+      }, Y;
+    }();
+    return $e;
+  }();
+}, 985: (e, t, r) => {
+  var n = r(524), a = { childContextTypes: !0, contextType: !0, contextTypes: !0, defaultProps: !0, displayName: !0, getDefaultProps: !0, getDerivedStateFromError: !0, getDerivedStateFromProps: !0, mixins: !0, propTypes: !0, type: !0 }, o = { name: !0, length: !0, prototype: !0, caller: !0, callee: !0, arguments: !0, arity: !0 }, s = { $$typeof: !0, compare: !0, defaultProps: !0, displayName: !0, propTypes: !0, type: !0 }, c = {};
+  function d(T) {
+    return n.isMemo(T) ? s : c[T.$$typeof] || a;
+  }
+  c[n.ForwardRef] = { $$typeof: !0, render: !0, defaultProps: !0, displayName: !0, propTypes: !0 }, c[n.Memo] = s;
+  var p = Object.defineProperty, g = Object.getOwnPropertyNames, m = Object.getOwnPropertySymbols, f = Object.getOwnPropertyDescriptor, E = Object.getPrototypeOf, S = Object.prototype;
+  e.exports = function T(k, N, A) {
+    if (typeof N != "string") {
+      if (S) {
+        var D = E(N);
+        D && D !== S && T(k, D, A);
+      }
+      var I = g(N);
+      m && (I = I.concat(m(N)));
+      for (var v = d(k), _ = d(N), j = 0; j < I.length; ++j) {
+        var z = I[j];
+        if (!(o[z] || A && A[z] || _ && _[z] || v && v[z])) {
+          var ie = f(N, z);
+          try {
+            p(k, z, ie);
+          } catch {
+          }
+        }
+      }
+    }
+    return k;
+  };
+}, 999: (e, t, r) => {
+  var n = r(848);
+  function a() {
+  }
+  function o() {
+  }
+  o.resetWarningCache = a, e.exports = function() {
+    function s(p, g, m, f, E, S) {
+      if (S !== n) {
+        var T = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+        throw T.name = "Invariant Violation", T;
+      }
+    }
+    function c() {
+      return s;
+    }
+    s.isRequired = s;
+    var d = { array: s, bigint: s, bool: s, func: s, number: s, object: s, string: s, symbol: s, any: s, arrayOf: c, element: s, elementType: s, instanceOf: c, node: s, objectOf: c, oneOf: c, oneOfType: c, shape: c, exact: c, checkPropTypes: o, resetWarningCache: a };
+    return d.PropTypes = d, d;
+  };
+}, 67: (e, t, r) => {
+  e.exports = r(999)();
+}, 848: (e) => {
+  e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+}, 320: (e, t) => {
+  var r = typeof Symbol == "function" && Symbol.for, n = r ? Symbol.for("react.element") : 60103, a = r ? Symbol.for("react.portal") : 60106, o = r ? Symbol.for("react.fragment") : 60107, s = r ? Symbol.for("react.strict_mode") : 60108, c = r ? Symbol.for("react.profiler") : 60114, d = r ? Symbol.for("react.provider") : 60109, p = r ? Symbol.for("react.context") : 60110, g = r ? Symbol.for("react.async_mode") : 60111, m = r ? Symbol.for("react.concurrent_mode") : 60111, f = r ? Symbol.for("react.forward_ref") : 60112, E = r ? Symbol.for("react.suspense") : 60113, S = r ? Symbol.for("react.suspense_list") : 60120, T = r ? Symbol.for("react.memo") : 60115, k = r ? Symbol.for("react.lazy") : 60116, N = r ? Symbol.for("react.block") : 60121, A = r ? Symbol.for("react.fundamental") : 60117, D = r ? Symbol.for("react.responder") : 60118, I = r ? Symbol.for("react.scope") : 60119;
+  function v(j) {
+    if (typeof j == "object" && j !== null) {
+      var z = j.$$typeof;
+      switch (z) {
+        case n:
+          switch (j = j.type) {
+            case g:
+            case m:
+            case o:
+            case c:
+            case s:
+            case E:
+              return j;
+            default:
+              switch (j = j && j.$$typeof) {
+                case p:
+                case f:
+                case k:
+                case T:
+                case d:
+                  return j;
+                default:
+                  return z;
+              }
+          }
+        case a:
+          return z;
+      }
+    }
+  }
+  function _(j) {
+    return v(j) === m;
+  }
+  t.AsyncMode = g, t.ConcurrentMode = m, t.ContextConsumer = p, t.ContextProvider = d, t.Element = n, t.ForwardRef = f, t.Fragment = o, t.Lazy = k, t.Memo = T, t.Portal = a, t.Profiler = c, t.StrictMode = s, t.Suspense = E, t.isAsyncMode = function(j) {
+    return _(j) || v(j) === g;
+  }, t.isConcurrentMode = _, t.isContextConsumer = function(j) {
+    return v(j) === p;
+  }, t.isContextProvider = function(j) {
+    return v(j) === d;
+  }, t.isElement = function(j) {
+    return typeof j == "object" && j !== null && j.$$typeof === n;
+  }, t.isForwardRef = function(j) {
+    return v(j) === f;
+  }, t.isFragment = function(j) {
+    return v(j) === o;
+  }, t.isLazy = function(j) {
+    return v(j) === k;
+  }, t.isMemo = function(j) {
+    return v(j) === T;
+  }, t.isPortal = function(j) {
+    return v(j) === a;
+  }, t.isProfiler = function(j) {
+    return v(j) === c;
+  }, t.isStrictMode = function(j) {
+    return v(j) === s;
+  }, t.isSuspense = function(j) {
+    return v(j) === E;
+  }, t.isValidElementType = function(j) {
+    return typeof j == "string" || typeof j == "function" || j === o || j === m || j === c || j === s || j === E || j === S || typeof j == "object" && j !== null && (j.$$typeof === k || j.$$typeof === T || j.$$typeof === d || j.$$typeof === p || j.$$typeof === f || j.$$typeof === A || j.$$typeof === D || j.$$typeof === I || j.$$typeof === N);
+  }, t.typeOf = v;
+}, 524: (e, t, r) => {
+  e.exports = r(320);
+}, 146: (e) => {
+  e.exports = function(t, r, n, a) {
+    var o = n ? n.call(a, t, r) : void 0;
+    if (o !== void 0) return !!o;
+    if (t === r) return !0;
+    if (typeof t != "object" || !t || typeof r != "object" || !r) return !1;
+    var s = Object.keys(t), c = Object.keys(r);
+    if (s.length !== c.length) return !1;
+    for (var d = Object.prototype.hasOwnProperty.bind(r), p = 0; p < s.length; p++) {
+      var g = s[p];
+      if (!d(g)) return !1;
+      var m = t[g], f = r[g];
+      if ((o = n ? n.call(a, m, f, g) : void 0) === !1 || o === void 0 && m !== f) return !1;
+    }
+    return !0;
+  };
+}, 373: (e, t) => {
+  var r;
+  (function() {
+    var n = {}.hasOwnProperty;
+    function a() {
+      for (var c = "", d = 0; d < arguments.length; d++) {
+        var p = arguments[d];
+        p && (c = s(c, o(p)));
+      }
+      return c;
+    }
+    function o(c) {
+      if (typeof c == "string" || typeof c == "number") return c;
+      if (typeof c != "object") return "";
+      if (Array.isArray(c)) return a.apply(null, c);
+      if (c.toString !== Object.prototype.toString && !c.toString.toString().includes("[native code]")) return c.toString();
+      var d = "";
+      for (var p in c) n.call(c, p) && c[p] && (d = s(d, p));
+      return d;
+    }
+    function s(c, d) {
+      return d ? c ? c + " " + d : c + d : c;
+    }
+    e.exports ? (a.default = a, e.exports = a) : (r = (function() {
+      return a;
+    }).apply(t, [])) === void 0 || (e.exports = r);
+  })();
+} }, Po = {};
+function Pe(e) {
+  var t = Po[e];
+  if (t !== void 0) return t.exports;
+  var r = Po[e] = { exports: {} };
+  return Fl[e].call(r.exports, r, r.exports, Pe), r.exports;
+}
+Pe.n = (e) => {
+  var t = e && e.__esModule ? () => e.default : () => e;
+  return Pe.d(t, { a: t }), t;
+}, Pe.d = (e, t) => {
+  for (var r in t) Pe.o(t, r) && !Pe.o(e, r) && Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+}, Pe.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), Pe.nc = void 0;
+var Mt = {};
+Pe.d(Mt, { nD: () => za, n_: () => Wa, n9: () => xn, $n: () => Et, ef: () => wn, fy: () => Dr, Zp: () => Sn, TR: () => Zi, Pb: () => Vi, Ur: () => Bi, _Q: () => Xi, lq: () => Va, _V: () => Kt, dK: () => En, Fx: () => Ya, oz: () => ns, YT: () => as, Gm: () => Ka, Ce: () => Xa, qm: () => Qc, fh: () => Ki, Od: () => Ba, fZ: () => Yi, RE: () => Ga, hZ: () => iu, Nq: () => su, NJ: () => lu, bO: () => cu, oP: () => uu, jl: () => du, PP: () => pu, BB: () => mu, Q9: () => fu, vW: () => gu, VE: () => hu, _v: () => yu, uP: () => bu });
+var Ul = Pe(67), l = Pe.n(Ul);
+const u = (Lo = { Component: () => ot.Component, createContext: () => ot.createContext, createElement: () => ot.createElement, default: () => ot.default, forwardRef: () => ot.forwardRef, useCallback: () => ot.useCallback, useContext: () => ot.useContext, useEffect: () => ot.useEffect, useImperativeHandle: () => ot.useImperativeHandle, useMemo: () => ot.useMemo, useRef: () => ot.useRef, useState: () => ot.useState }, Gn = {}, Pe.d(Gn, Lo), Gn);
+var Lo, Gn;
+const Io = (e, t, r) => e ? t : r, ln = (e) => (e || []).join(" ");
+var zl = Pe(651);
+const it = (e) => ({ __html: (0, zl.sanitize)(e) }), Do = (e, t, r) => {
+  let n = e;
+  const a = [];
+  for (; n < t; ) n > 0 && n <= r && a.push(n), n += 1;
+  return a;
+};
+let Mo, Bn = !1;
+l().shape({ event: l().string, action: l().string, name: l().string, region: l().string, section: l().string, component: l().string, type: l().string, text: l().string });
+const rt = ({ event: e = "", action: t = "", name: r = "", type: n = "", section: a = "", text: o = "", region: s = "", component: c = "" }) => {
+  const { dataLayer: d } = window, p = { event: e.toLowerCase(), action: t.toLowerCase(), name: r.toLowerCase(), type: n.toLowerCase(), region: s.toLowerCase(), section: a.toLowerCase(), text: o.toLowerCase(), component: c.toLowerCase() };
+  d && d.push(p);
+}, Hl = l().shape({ url: l().string, altText: l().string, cssClass: l().arrayOf(l().string), size: l().oneOf(["small", "medium", "large"]) }), Vn = l().shape({ text: l().string, maxWidth: l().string, cssClass: l().arrayOf(l().string), highlightColor: l().oneOf(["gold", "black"]) }), Li = l().shape({ color: l().oneOf(["gold", "maroon", "gray", "dark"]), content: l().shape({ icon: l().string, header: l().string, body: l().string }) });
+var ql = Pe(373), we = Pe.n(ql);
+const Ii = ({ id: e, item: t, openCard: r, onClick: n }) => {
+  var a, o, s, c, d, p;
+  return u.default.createElement("div", { className: we()("accordion-item", "mt-3", { [`accordion-item-${t.color}`]: t.color, "accordion-header-icon": (a = t.content) == null ? void 0 : a.icon }) }, u.default.createElement("div", { className: "accordion-header" }, u.default.createElement("h4", null, u.default.createElement("a", { "data-testid": "accordion-opener", className: we()({ collapsed: e !== r }), "data-bs-toggle": "collapse", href: `#card-body-${e}`, role: "button", "aria-expanded": e === r, "aria-controls": `card-body-${e}`, onClick: (g) => {
+    var m;
+    return n(g, e, (m = t.content) == null ? void 0 : m.header);
+  } }, (o = t.content) != null && o.icon ? u.default.createElement("span", { className: "accordion-icon" }, u.default.createElement("i", { className: `${(s = t.content.icon) == null ? void 0 : s[0]} fa-${(c = t.content.icon) == null ? void 0 : c[1]} me-2` }), t.content.header) : (d = t.content) == null ? void 0 : d.header, u.default.createElement("i", { className: "fas fa-chevron-up" })))), ((p = t.content) == null ? void 0 : p.body) && u.default.createElement("div", { id: `card-body-${e}`, className: we()("collapse") }, u.default.createElement("div", { className: "accordion-body", dangerouslySetInnerHTML: it(t.content.body) })));
+};
+Ii.propTypes = { id: l().number, item: Li, openCard: l().number, onClick: l().func };
+const Wl = { event: "collapse", name: "onclick", type: "click", region: "main content" }, za = ({ cards: e, openedCard: t }) => {
+  const [r, n] = (0, u.useState)(t), a = (s, c) => {
+    rt({ ...Wl, action: c, text: s });
+  }, o = (s, c, d) => {
+    s.preventDefault(), (r === c || r) && a(e[r - 1].content.header, "close"), r !== c ? (n(c), a(d, "open")) : n(null);
+  };
+  return u.default.createElement("div", { className: "accordion" }, e == null ? void 0 : e.map((s, c) => s.content.body && s.content.header && u.default.createElement(Ii, { key: c + 1, id: c + 1, item: s, openCard: r, onClick: o })));
+};
+function Dt() {
+  return Dt = Object.assign ? Object.assign.bind() : function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = arguments[t];
+      for (var n in r) ({}).hasOwnProperty.call(r, n) && (e[n] = r[n]);
+    }
+    return e;
+  }, Dt.apply(null, arguments);
+}
+za.propTypes = { cards: l().arrayOf(Li).isRequired, openedCard: l().number };
+const Gl = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content" }, Et = ({ label: e, cardTitle: t, ariaLabel: r, block: n, color: a, disabled: o, element: s, href: c, icon: d, innerRef: p, onClick: g, size: m, classes: f, target: E, ...S }) => {
+  const T = we()("btn", { [`btn-${a}`]: !0, "btn-md": m === "small", "btn-sm": m === "xsmall", "btn-block": n, disabled: o });
+  let k = s;
+  return c && s === "button" && (k = "a"), u.default.createElement(k, Dt({ type: k === "button" && g ? "button" : void 0 }, S, { className: we()(f) || T, href: c, ref: p, onClick: () => (rt({ ...Gl, text: e, section: t }), void (g == null ? void 0 : g())), "aria-label": r, target: k === "a" ? E : null }), d && u.default.createElement("i", { className: `${d == null ? void 0 : d[0]} fa-${d == null ? void 0 : d[1]} me-1` }), e);
+};
+Et.propTypes = { label: l().string, cardTitle: l().string, ariaLabel: l().string, block: l().bool, color: l().oneOf(["gold", "maroon", "gray", "dark"]), disabled: l().bool, element: l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func }), l().arrayOf(l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func })]))]), href: l().string, icon: l().arrayOf(l().string), innerRef: l().oneOfType([l().object, l().func, l().string]), onClick: l().func, size: l().oneOf(["default", "small", "xsmall"]), classes: l().arrayOf(l().string), target: l().oneOf(["_blank", "_self", "_top", "_parent"]) }, Et.defaultProps = { label: "", cardTitle: "", ariaLabel: void 0, block: void 0, color: "gray", disabled: void 0, element: "button", href: void 0, icon: void 0, innerRef: void 0, onClick: void 0, size: "default", classes: void 0, target: "_self" };
+var Di = Pe(524), Bl = Pe(146);
+Pe.n(Bl);
+const Vl = function(e) {
+  function t(J, H, R, C, x) {
+    for (var P, y, L, O, ae, re = 0, V = 0, K = 0, oe = 0, fe = 0, le = 0, ce = L = P = 0, Q = 0, pe = 0, $e = 0, q = 0, $ = R.length, Y = $ - 1, U = "", F = "", de = "", Ae = ""; Q < $; ) {
+      if (y = R.charCodeAt(Q), Q === Y && V + oe + K + re !== 0 && (V !== 0 && (y = V === 47 ? 10 : 47), oe = K = re = 0, $++, Y++), V + oe + K + re === 0) {
+        if (Q === Y && (0 < pe && (U = U.replace(m, "")), 0 < U.trim().length)) {
+          switch (y) {
+            case 32:
+            case 9:
+            case 59:
+            case 13:
+            case 10:
+              break;
+            default:
+              U += R.charAt(Q);
+          }
+          y = 59;
+        }
+        switch (y) {
+          case 123:
+            for (P = (U = U.trim()).charCodeAt(0), L = 1, q = ++Q; Q < $; ) {
+              switch (y = R.charCodeAt(Q)) {
+                case 123:
+                  L++;
+                  break;
+                case 125:
+                  L--;
+                  break;
+                case 47:
+                  switch (y = R.charCodeAt(Q + 1)) {
+                    case 42:
+                    case 47:
+                      e: {
+                        for (ce = Q + 1; ce < Y; ++ce) switch (R.charCodeAt(ce)) {
+                          case 47:
+                            if (y === 42 && R.charCodeAt(ce - 1) === 42 && Q + 2 !== ce) {
+                              Q = ce + 1;
+                              break e;
+                            }
+                            break;
+                          case 10:
+                            if (y === 47) {
+                              Q = ce + 1;
+                              break e;
+                            }
+                        }
+                        Q = ce;
+                      }
+                  }
+                  break;
+                case 91:
+                  y++;
+                case 40:
+                  y++;
+                case 34:
+                case 39:
+                  for (; Q++ < Y && R.charCodeAt(Q) !== y; ) ;
+              }
+              if (L === 0) break;
+              Q++;
+            }
+            if (L = R.substring(q, Q), P === 0 && (P = (U = U.replace(g, "").trim()).charCodeAt(0)), P === 64) {
+              switch (0 < pe && (U = U.replace(m, "")), y = U.charCodeAt(1)) {
+                case 100:
+                case 109:
+                case 115:
+                case 45:
+                  pe = H;
+                  break;
+                default:
+                  pe = ue;
+              }
+              if (q = (L = t(H, pe, L, y, x + 1)).length, 0 < se && (ae = c(3, L, pe = r(ue, U, $e), H, Z, ee, q, y, x, C), U = pe.join(""), ae !== void 0 && (q = (L = ae.trim()).length) === 0 && (y = 0, L = "")), 0 < q) switch (y) {
+                case 115:
+                  U = U.replace(v, s);
+                case 100:
+                case 109:
+                case 45:
+                  L = U + "{" + L + "}";
+                  break;
+                case 107:
+                  L = (U = U.replace(N, "$1 $2")) + "{" + L + "}", L = G === 1 || G === 2 && o("@" + L, 3) ? "@-webkit-" + L + "@" + L : "@" + L;
+                  break;
+                default:
+                  L = U + L, C === 112 && (F += L, L = "");
+              }
+              else L = "";
+            } else L = t(H, r(H, U, $e), L, C, x + 1);
+            de += L, L = $e = pe = ce = P = 0, U = "", y = R.charCodeAt(++Q);
+            break;
+          case 125:
+          case 59:
+            if (1 < (q = (U = (0 < pe ? U.replace(m, "") : U).trim()).length)) switch (ce === 0 && (P = U.charCodeAt(0), P === 45 || 96 < P && 123 > P) && (q = (U = U.replace(" ", ":")).length), 0 < se && (ae = c(1, U, H, J, Z, ee, F.length, C, x, C)) !== void 0 && (q = (U = ae.trim()).length) === 0 && (U = "\0\0"), P = U.charCodeAt(0), y = U.charCodeAt(1), P) {
+              case 0:
+                break;
+              case 64:
+                if (y === 105 || y === 99) {
+                  Ae += U + R.charAt(Q);
+                  break;
+                }
+              default:
+                U.charCodeAt(q - 1) !== 58 && (F += a(U, P, y, U.charCodeAt(2)));
+            }
+            $e = pe = ce = P = 0, U = "", y = R.charCodeAt(++Q);
+        }
+      }
+      switch (y) {
+        case 13:
+        case 10:
+          V === 47 ? V = 0 : 1 + P === 0 && C !== 107 && 0 < U.length && (pe = 1, U += "\0"), 0 < se * Ee && c(0, U, H, J, Z, ee, F.length, C, x, C), ee = 1, Z++;
+          break;
+        case 59:
+        case 125:
+          if (V + oe + K + re === 0) {
+            ee++;
+            break;
+          }
+        default:
+          switch (ee++, O = R.charAt(Q), y) {
+            case 9:
+            case 32:
+              if (oe + re + V === 0) switch (fe) {
+                case 44:
+                case 58:
+                case 9:
+                case 32:
+                  O = "";
+                  break;
+                default:
+                  y !== 32 && (O = " ");
+              }
+              break;
+            case 0:
+              O = "\\0";
+              break;
+            case 12:
+              O = "\\f";
+              break;
+            case 11:
+              O = "\\v";
+              break;
+            case 38:
+              oe + V + re === 0 && (pe = $e = 1, O = "\f" + O);
+              break;
+            case 108:
+              if (oe + V + re + ne === 0 && 0 < ce) switch (Q - ce) {
+                case 2:
+                  fe === 112 && R.charCodeAt(Q - 3) === 58 && (ne = fe);
+                case 8:
+                  le === 111 && (ne = le);
+              }
+              break;
+            case 58:
+              oe + V + re === 0 && (ce = Q);
+              break;
+            case 44:
+              V + K + oe + re === 0 && (pe = 1, O += "\r");
+              break;
+            case 34:
+            case 39:
+              V === 0 && (oe = oe === y ? 0 : oe === 0 ? y : oe);
+              break;
+            case 91:
+              oe + V + K === 0 && re++;
+              break;
+            case 93:
+              oe + V + K === 0 && re--;
+              break;
+            case 41:
+              oe + V + re === 0 && K--;
+              break;
+            case 40:
+              oe + V + re === 0 && (P === 0 && (2 * fe + 3 * le == 533 || (P = 1)), K++);
+              break;
+            case 64:
+              V + K + oe + re + ce + L === 0 && (L = 1);
+              break;
+            case 42:
+            case 47:
+              if (!(0 < oe + re + K)) switch (V) {
+                case 0:
+                  switch (2 * y + 3 * R.charCodeAt(Q + 1)) {
+                    case 235:
+                      V = 47;
+                      break;
+                    case 220:
+                      q = Q, V = 42;
+                  }
+                  break;
+                case 42:
+                  y === 47 && fe === 42 && q + 2 !== Q && (R.charCodeAt(q + 2) === 33 && (F += R.substring(q, Q + 1)), O = "", V = 0);
+              }
+          }
+          V === 0 && (U += O);
+      }
+      le = fe, fe = y, Q++;
+    }
+    if (0 < (q = F.length)) {
+      if (pe = H, 0 < se && (ae = c(2, F, pe, J, Z, ee, q, C, x, C)) !== void 0 && (F = ae).length === 0) return Ae + F + de;
+      if (F = pe.join(",") + "{" + F + "}", G * ne != 0) {
+        switch (G !== 2 || o(F, 2) || (ne = 0), ne) {
+          case 111:
+            F = F.replace(D, ":-moz-$1") + F;
+            break;
+          case 112:
+            F = F.replace(A, "::-webkit-input-$1") + F.replace(A, "::-moz-$1") + F.replace(A, ":-ms-input-$1") + F;
+        }
+        ne = 0;
+      }
+    }
+    return Ae + F + de;
+  }
+  function r(J, H, R) {
+    var C = H.trim().split(T);
+    H = C;
+    var x = C.length, P = J.length;
+    switch (P) {
+      case 0:
+      case 1:
+        var y = 0;
+        for (J = P === 0 ? "" : J[0] + " "; y < x; ++y) H[y] = n(J, H[y], R).trim();
+        break;
+      default:
+        var L = y = 0;
+        for (H = []; y < x; ++y) for (var O = 0; O < P; ++O) H[L++] = n(J[O] + " ", C[y], R).trim();
+    }
+    return H;
+  }
+  function n(J, H, R) {
+    var C = H.charCodeAt(0);
+    switch (33 > C && (C = (H = H.trim()).charCodeAt(0)), C) {
+      case 38:
+        return H.replace(k, "$1" + J.trim());
+      case 58:
+        return J.trim() + H.replace(k, "$1" + J.trim());
+      default:
+        if (0 < 1 * R && 0 < H.indexOf("\f")) return H.replace(k, (J.charCodeAt(0) === 58 ? "" : "$1") + J.trim());
+    }
+    return J + H;
+  }
+  function a(J, H, R, C) {
+    var x = J + ";", P = 2 * H + 3 * R + 4 * C;
+    if (P === 944) {
+      J = x.indexOf(":", 9) + 1;
+      var y = x.substring(J, x.length - 1).trim();
+      return y = x.substring(0, J).trim() + y + ";", G === 1 || G === 2 && o(y, 1) ? "-webkit-" + y + y : y;
+    }
+    if (G === 0 || G === 2 && !o(x, 1)) return x;
+    switch (P) {
+      case 1015:
+        return x.charCodeAt(10) === 97 ? "-webkit-" + x + x : x;
+      case 951:
+        return x.charCodeAt(3) === 116 ? "-webkit-" + x + x : x;
+      case 963:
+        return x.charCodeAt(5) === 110 ? "-webkit-" + x + x : x;
+      case 1009:
+        if (x.charCodeAt(4) !== 100) break;
+      case 969:
+      case 942:
+        return "-webkit-" + x + x;
+      case 978:
+        return "-webkit-" + x + "-moz-" + x + x;
+      case 1019:
+      case 983:
+        return "-webkit-" + x + "-moz-" + x + "-ms-" + x + x;
+      case 883:
+        if (x.charCodeAt(8) === 45) return "-webkit-" + x + x;
+        if (0 < x.indexOf("image-set(", 11)) return x.replace(he, "$1-webkit-$2") + x;
+        break;
+      case 932:
+        if (x.charCodeAt(4) === 45) switch (x.charCodeAt(5)) {
+          case 103:
+            return "-webkit-box-" + x.replace("-grow", "") + "-webkit-" + x + "-ms-" + x.replace("grow", "positive") + x;
+          case 115:
+            return "-webkit-" + x + "-ms-" + x.replace("shrink", "negative") + x;
+          case 98:
+            return "-webkit-" + x + "-ms-" + x.replace("basis", "preferred-size") + x;
+        }
+        return "-webkit-" + x + "-ms-" + x + x;
+      case 964:
+        return "-webkit-" + x + "-ms-flex-" + x + x;
+      case 1023:
+        if (x.charCodeAt(8) !== 99) break;
+        return "-webkit-box-pack" + (y = x.substring(x.indexOf(":", 15)).replace("flex-", "").replace("space-between", "justify")) + "-webkit-" + x + "-ms-flex-pack" + y + x;
+      case 1005:
+        return E.test(x) ? x.replace(f, ":-webkit-") + x.replace(f, ":-moz-") + x : x;
+      case 1e3:
+        switch (H = (y = x.substring(13).trim()).indexOf("-") + 1, y.charCodeAt(0) + y.charCodeAt(H)) {
+          case 226:
+            y = x.replace(I, "tb");
+            break;
+          case 232:
+            y = x.replace(I, "tb-rl");
+            break;
+          case 220:
+            y = x.replace(I, "lr");
+            break;
+          default:
+            return x;
+        }
+        return "-webkit-" + x + "-ms-" + y + x;
+      case 1017:
+        if (x.indexOf("sticky", 9) === -1) break;
+      case 975:
+        switch (H = (x = J).length - 10, P = (y = (x.charCodeAt(H) === 33 ? x.substring(0, H) : x).substring(J.indexOf(":", 7) + 1).trim()).charCodeAt(0) + (0 | y.charCodeAt(7))) {
+          case 203:
+            if (111 > y.charCodeAt(8)) break;
+          case 115:
+            x = x.replace(y, "-webkit-" + y) + ";" + x;
+            break;
+          case 207:
+          case 102:
+            x = x.replace(y, "-webkit-" + (102 < P ? "inline-" : "") + "box") + ";" + x.replace(y, "-webkit-" + y) + ";" + x.replace(y, "-ms-" + y + "box") + ";" + x;
+        }
+        return x + ";";
+      case 938:
+        if (x.charCodeAt(5) === 45) switch (x.charCodeAt(6)) {
+          case 105:
+            return y = x.replace("-items", ""), "-webkit-" + x + "-webkit-box-" + y + "-ms-flex-" + y + x;
+          case 115:
+            return "-webkit-" + x + "-ms-flex-item-" + x.replace(j, "") + x;
+          default:
+            return "-webkit-" + x + "-ms-flex-line-pack" + x.replace("align-content", "").replace(j, "") + x;
+        }
+        break;
+      case 973:
+      case 989:
+        if (x.charCodeAt(3) !== 45 || x.charCodeAt(4) === 122) break;
+      case 931:
+      case 953:
+        if (ie.test(J) === !0) return (y = J.substring(J.indexOf(":") + 1)).charCodeAt(0) === 115 ? a(J.replace("stretch", "fill-available"), H, R, C).replace(":fill-available", ":stretch") : x.replace(y, "-webkit-" + y) + x.replace(y, "-moz-" + y.replace("fill-", "")) + x;
+        break;
+      case 962:
+        if (x = "-webkit-" + x + (x.charCodeAt(5) === 102 ? "-ms-" + x : "") + x, R + C === 211 && x.charCodeAt(13) === 105 && 0 < x.indexOf("transform", 10)) return x.substring(0, x.indexOf(";", 27) + 1).replace(S, "$1-webkit-$2") + x;
+    }
+    return x;
+  }
+  function o(J, H) {
+    var R = J.indexOf(H === 1 ? ":" : "{"), C = J.substring(0, H !== 3 ? R : 10);
+    return R = J.substring(R + 1, J.length - 1), be(H !== 2 ? C : C.replace(z, "$1"), R, H);
+  }
+  function s(J, H) {
+    var R = a(H, H.charCodeAt(0), H.charCodeAt(1), H.charCodeAt(2));
+    return R !== H + ";" ? R.replace(_, " or ($1)").substring(4) : "(" + H + ")";
+  }
+  function c(J, H, R, C, x, P, y, L, O, ae) {
+    for (var re, V = 0, K = H; V < se; ++V) switch (re = Se[V].call(p, J, K, R, C, x, P, y, L, O, ae)) {
+      case void 0:
+      case !1:
+      case !0:
+      case null:
+        break;
+      default:
+        K = re;
+    }
+    if (K !== H) return K;
+  }
+  function d(J) {
+    return (J = J.prefix) !== void 0 && (be = null, J ? typeof J != "function" ? G = 1 : (G = 2, be = J) : G = 0), d;
+  }
+  function p(J, H) {
+    var R = J;
+    if (33 > R.charCodeAt(0) && (R = R.trim()), R = [R], 0 < se) {
+      var C = c(-1, H, R, R, Z, ee, 0, 0, 0, 0);
+      C !== void 0 && typeof C == "string" && (H = C);
+    }
+    var x = t(ue, R, H, 0, 0);
+    return 0 < se && (C = c(-2, x, R, R, Z, ee, x.length, 0, 0, 0)) !== void 0 && (x = C), ne = 0, ee = Z = 1, x;
+  }
+  var g = /^\0+/g, m = /[\0\r\f]/g, f = /: */g, E = /zoo|gra/, S = /([,: ])(transform)/g, T = /,\r+?/g, k = /([\t\r\n ])*\f?&/g, N = /@(k\w+)\s*(\S*)\s*/, A = /::(place)/g, D = /:(read-only)/g, I = /[svh]\w+-[tblr]{2}/, v = /\(\s*(.*)\s*\)/g, _ = /([\s\S]*?);/g, j = /-self|flex-/g, z = /[^]*?(:[rp][el]a[\w-]+)[^]*/, ie = /stretch|:\s*\w+\-(?:conte|avail)/, he = /([^-])(image-set\()/, ee = 1, Z = 1, ne = 0, G = 1, ue = [], Se = [], se = 0, be = null, Ee = 0;
+  return p.use = function J(H) {
+    switch (H) {
+      case void 0:
+      case null:
+        se = Se.length = 0;
+        break;
+      default:
+        if (typeof H == "function") Se[se++] = H;
+        else if (typeof H == "object") for (var R = 0, C = H.length; R < C; ++R) J(H[R]);
+        else Ee = 0 | !!H;
+    }
+    return J;
+  }, p.set = d, e !== void 0 && d(e), p;
+}, Yl = { animationIterationCount: 1, borderImageOutset: 1, borderImageSlice: 1, borderImageWidth: 1, boxFlex: 1, boxFlexGroup: 1, boxOrdinalGroup: 1, columnCount: 1, columns: 1, flex: 1, flexGrow: 1, flexPositive: 1, flexShrink: 1, flexNegative: 1, flexOrder: 1, gridRow: 1, gridRowEnd: 1, gridRowSpan: 1, gridRowStart: 1, gridColumn: 1, gridColumnEnd: 1, gridColumnSpan: 1, gridColumnStart: 1, msGridRow: 1, msGridRowSpan: 1, msGridColumn: 1, msGridColumnSpan: 1, fontWeight: 1, lineHeight: 1, opacity: 1, order: 1, orphans: 1, tabSize: 1, widows: 1, zIndex: 1, zoom: 1, WebkitLineClamp: 1, fillOpacity: 1, floodOpacity: 1, stopOpacity: 1, strokeDasharray: 1, strokeDashoffset: 1, strokeMiterlimit: 1, strokeOpacity: 1, strokeWidth: 1 };
+function Kl(e) {
+  var t = /* @__PURE__ */ Object.create(null);
+  return function(r) {
+    return t[r] === void 0 && (t[r] = e(r)), t[r];
+  };
+}
+var Xl = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/, $o = Kl(function(e) {
+  return Xl.test(e) || e.charCodeAt(0) === 111 && e.charCodeAt(1) === 110 && e.charCodeAt(2) < 91;
+}), Zl = Pe(985), Jl = Pe.n(Zl);
+function St() {
+  return (St = Object.assign || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = arguments[t];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n]);
+    }
+    return e;
+  }).apply(this, arguments);
+}
+var Fo = function(e, t) {
+  for (var r = [e[0]], n = 0, a = t.length; n < a; n += 1) r.push(t[n], e[n + 1]);
+  return r;
+}, ma = function(e) {
+  return e !== null && typeof e == "object" && (e.toString ? e.toString() : Object.prototype.toString.call(e)) === "[object Object]" && !(0, Di.typeOf)(e);
+}, gn = Object.freeze([]), Pt = Object.freeze({});
+function Ir(e) {
+  return typeof e == "function";
+}
+function Uo(e) {
+  return e.displayName || e.name || "Component";
+}
+function Ha(e) {
+  return e && typeof e.styledComponentId == "string";
+}
+var sr = typeof Ze < "u" && Ze.env !== void 0 && (Ze.env.REACT_APP_SC_ATTR || Ze.env.SC_ATTR) || "data-styled", qa = typeof window < "u" && "HTMLElement" in window, Ql = !!(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof Ze < "u" && Ze.env !== void 0 && (Ze.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && Ze.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? Ze.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && Ze.env.REACT_APP_SC_DISABLE_SPEEDY : Ze.env.SC_DISABLE_SPEEDY !== void 0 && Ze.env.SC_DISABLE_SPEEDY !== "" && Ze.env.SC_DISABLE_SPEEDY !== "false" && Ze.env.SC_DISABLE_SPEEDY));
+function $r(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  throw new Error("An error occurred. See https://git.io/JUIaE#" + e + " for more information." + (r.length > 0 ? " Args: " + r.join(", ") : ""));
+}
+var ec = function() {
+  function e(r) {
+    this.groupSizes = new Uint32Array(512), this.length = 512, this.tag = r;
+  }
+  var t = e.prototype;
+  return t.indexOfGroup = function(r) {
+    for (var n = 0, a = 0; a < r; a++) n += this.groupSizes[a];
+    return n;
+  }, t.insertRules = function(r, n) {
+    if (r >= this.groupSizes.length) {
+      for (var a = this.groupSizes, o = a.length, s = o; r >= s; ) (s <<= 1) < 0 && $r(16, "" + r);
+      this.groupSizes = new Uint32Array(s), this.groupSizes.set(a), this.length = s;
+      for (var c = o; c < s; c++) this.groupSizes[c] = 0;
+    }
+    for (var d = this.indexOfGroup(r + 1), p = 0, g = n.length; p < g; p++) this.tag.insertRule(d, n[p]) && (this.groupSizes[r]++, d++);
+  }, t.clearGroup = function(r) {
+    if (r < this.length) {
+      var n = this.groupSizes[r], a = this.indexOfGroup(r), o = a + n;
+      this.groupSizes[r] = 0;
+      for (var s = a; s < o; s++) this.tag.deleteRule(a);
+    }
+  }, t.getGroup = function(r) {
+    var n = "";
+    if (r >= this.length || this.groupSizes[r] === 0) return n;
+    for (var a = this.groupSizes[r], o = this.indexOfGroup(r), s = o + a, c = o; c < s; c++) n += this.tag.getRule(c) + `/*!sc*/
+`;
+    return n;
+  }, e;
+}(), cn = /* @__PURE__ */ new Map(), yn = /* @__PURE__ */ new Map(), _r = 1, Jr = function(e) {
+  if (cn.has(e)) return cn.get(e);
+  for (; yn.has(_r); ) _r++;
+  var t = _r++;
+  return cn.set(e, t), yn.set(t, e), t;
+}, tc = function(e) {
+  return yn.get(e);
+}, rc = function(e, t) {
+  t >= _r && (_r = t + 1), cn.set(e, t), yn.set(t, e);
+}, nc = "style[" + sr + '][data-styled-version="5.3.11"]', ac = new RegExp("^" + sr + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'), oc = function(e, t, r) {
+  for (var n, a = r.split(","), o = 0, s = a.length; o < s; o++) (n = a[o]) && e.registerName(t, n);
+}, ic = function(e, t) {
+  for (var r = (t.textContent || "").split(`/*!sc*/
+`), n = [], a = 0, o = r.length; a < o; a++) {
+    var s = r[a].trim();
+    if (s) {
+      var c = s.match(ac);
+      if (c) {
+        var d = 0 | parseInt(c[1], 10), p = c[2];
+        d !== 0 && (rc(p, d), oc(e, p, c[3]), e.getTag().insertRules(d, n)), n.length = 0;
+      } else n.push(s);
+    }
+  }
+}, sc = function() {
+  return Pe.nc;
+}, Mi = function(e) {
+  var t = document.head, r = e || t, n = document.createElement("style"), a = function(c) {
+    for (var d = c.childNodes, p = d.length; p >= 0; p--) {
+      var g = d[p];
+      if (g && g.nodeType === 1 && g.hasAttribute(sr)) return g;
+    }
+  }(r), o = a !== void 0 ? a.nextSibling : null;
+  n.setAttribute(sr, "active"), n.setAttribute("data-styled-version", "5.3.11");
+  var s = sc();
+  return s && n.setAttribute("nonce", s), r.insertBefore(n, o), n;
+}, lc = function() {
+  function e(r) {
+    var n = this.element = Mi(r);
+    n.appendChild(document.createTextNode("")), this.sheet = function(a) {
+      if (a.sheet) return a.sheet;
+      for (var o = document.styleSheets, s = 0, c = o.length; s < c; s++) {
+        var d = o[s];
+        if (d.ownerNode === a) return d;
+      }
+      $r(17);
+    }(n), this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    try {
+      return this.sheet.insertRule(n, r), this.length++, !0;
+    } catch {
+      return !1;
+    }
+  }, t.deleteRule = function(r) {
+    this.sheet.deleteRule(r), this.length--;
+  }, t.getRule = function(r) {
+    var n = this.sheet.cssRules[r];
+    return n !== void 0 && typeof n.cssText == "string" ? n.cssText : "";
+  }, e;
+}(), cc = function() {
+  function e(r) {
+    var n = this.element = Mi(r);
+    this.nodes = n.childNodes, this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    if (r <= this.length && r >= 0) {
+      var a = document.createTextNode(n), o = this.nodes[r];
+      return this.element.insertBefore(a, o || null), this.length++, !0;
+    }
+    return !1;
+  }, t.deleteRule = function(r) {
+    this.element.removeChild(this.nodes[r]), this.length--;
+  }, t.getRule = function(r) {
+    return r < this.length ? this.nodes[r].textContent : "";
+  }, e;
+}(), uc = function() {
+  function e(r) {
+    this.rules = [], this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    return r <= this.length && (this.rules.splice(r, 0, n), this.length++, !0);
+  }, t.deleteRule = function(r) {
+    this.rules.splice(r, 1), this.length--;
+  }, t.getRule = function(r) {
+    return r < this.length ? this.rules[r] : "";
+  }, e;
+}(), zo = qa, dc = { isServer: !qa, useCSSOMInjection: !Ql }, bn = function() {
+  function e(r, n, a) {
+    r === void 0 && (r = Pt), n === void 0 && (n = {}), this.options = St({}, dc, {}, r), this.gs = n, this.names = new Map(a), this.server = !!r.isServer, !this.server && qa && zo && (zo = !1, function(o) {
+      for (var s = document.querySelectorAll(nc), c = 0, d = s.length; c < d; c++) {
+        var p = s[c];
+        p && p.getAttribute(sr) !== "active" && (ic(o, p), p.parentNode && p.parentNode.removeChild(p));
+      }
+    }(this));
+  }
+  e.registerId = function(r) {
+    return Jr(r);
+  };
+  var t = e.prototype;
+  return t.reconstructWithOptions = function(r, n) {
+    return n === void 0 && (n = !0), new e(St({}, this.options, {}, r), this.gs, n && this.names || void 0);
+  }, t.allocateGSInstance = function(r) {
+    return this.gs[r] = (this.gs[r] || 0) + 1;
+  }, t.getTag = function() {
+    return this.tag || (this.tag = (a = (n = this.options).isServer, o = n.useCSSOMInjection, s = n.target, r = a ? new uc(s) : o ? new lc(s) : new cc(s), new ec(r)));
+    var r, n, a, o, s;
+  }, t.hasNameForId = function(r, n) {
+    return this.names.has(r) && this.names.get(r).has(n);
+  }, t.registerName = function(r, n) {
+    if (Jr(r), this.names.has(r)) this.names.get(r).add(n);
+    else {
+      var a = /* @__PURE__ */ new Set();
+      a.add(n), this.names.set(r, a);
+    }
+  }, t.insertRules = function(r, n, a) {
+    this.registerName(r, n), this.getTag().insertRules(Jr(r), a);
+  }, t.clearNames = function(r) {
+    this.names.has(r) && this.names.get(r).clear();
+  }, t.clearRules = function(r) {
+    this.getTag().clearGroup(Jr(r)), this.clearNames(r);
+  }, t.clearTag = function() {
+    this.tag = void 0;
+  }, t.toString = function() {
+    return function(r) {
+      for (var n = r.getTag(), a = n.length, o = "", s = 0; s < a; s++) {
+        var c = tc(s);
+        if (c !== void 0) {
+          var d = r.names.get(c), p = n.getGroup(s);
+          if (d && p && d.size) {
+            var g = sr + ".g" + s + '[id="' + c + '"]', m = "";
+            d !== void 0 && d.forEach(function(f) {
+              f.length > 0 && (m += f + ",");
+            }), o += "" + p + g + '{content:"' + m + `"}/*!sc*/
+`;
+          }
+        }
+      }
+      return o;
+    }(this);
+  }, e;
+}(), pc = /(a)(d)/gi, Ho = function(e) {
+  return String.fromCharCode(e + (e > 25 ? 39 : 97));
+};
+function fa(e) {
+  var t, r = "";
+  for (t = Math.abs(e); t > 52; t = t / 52 | 0) r = Ho(t % 52) + r;
+  return (Ho(t % 52) + r).replace(pc, "$1-$2");
+}
+var ir = function(e, t) {
+  for (var r = t.length; r; ) e = 33 * e ^ t.charCodeAt(--r);
+  return e;
+}, $i = function(e) {
+  return ir(5381, e);
+};
+function Fi(e) {
+  for (var t = 0; t < e.length; t += 1) {
+    var r = e[t];
+    if (Ir(r) && !Ha(r)) return !1;
+  }
+  return !0;
+}
+var mc = $i("5.3.11"), fc = function() {
+  function e(t, r, n) {
+    this.rules = t, this.staticRulesId = "", this.isStatic = (n === void 0 || n.isStatic) && Fi(t), this.componentId = r, this.baseHash = ir(mc, r), this.baseStyle = n, bn.registerId(r);
+  }
+  return e.prototype.generateAndInjectStyles = function(t, r, n) {
+    var a = this.componentId, o = [];
+    if (this.baseStyle && o.push(this.baseStyle.generateAndInjectStyles(t, r, n)), this.isStatic && !n.hash) if (this.staticRulesId && r.hasNameForId(a, this.staticRulesId)) o.push(this.staticRulesId);
+    else {
+      var s = Yt(this.rules, t, r, n).join(""), c = fa(ir(this.baseHash, s) >>> 0);
+      if (!r.hasNameForId(a, c)) {
+        var d = n(s, "." + c, void 0, a);
+        r.insertRules(a, c, d);
+      }
+      o.push(c), this.staticRulesId = c;
+    }
+    else {
+      for (var p = this.rules.length, g = ir(this.baseHash, n.hash), m = "", f = 0; f < p; f++) {
+        var E = this.rules[f];
+        if (typeof E == "string") m += E;
+        else if (E) {
+          var S = Yt(E, t, r, n), T = Array.isArray(S) ? S.join("") : S;
+          g = ir(g, T + f), m += T;
+        }
+      }
+      if (m) {
+        var k = fa(g >>> 0);
+        if (!r.hasNameForId(a, k)) {
+          var N = n(m, "." + k, void 0, a);
+          r.insertRules(a, k, N);
+        }
+        o.push(k);
+      }
+    }
+    return o.join(" ");
+  }, e;
+}(), hc = /^\s*\/\/.*$/gm, gc = [":", "[", ".", "#"];
+function yc(e) {
+  var t, r, n, a, o = Pt, s = o.options, c = s === void 0 ? Pt : s, d = o.plugins, p = d === void 0 ? gn : d, g = new Vl(c), m = [], f = /* @__PURE__ */ function(T) {
+    function k(N) {
+      if (N) try {
+        T(N + "}");
+      } catch {
+      }
+    }
+    return function(N, A, D, I, v, _, j, z, ie, he) {
+      switch (N) {
+        case 1:
+          if (ie === 0 && A.charCodeAt(0) === 64) return T(A + ";"), "";
+          break;
+        case 2:
+          if (z === 0) return A + "/*|*/";
+          break;
+        case 3:
+          switch (z) {
+            case 102:
+            case 112:
+              return T(D[0] + A), "";
+            default:
+              return A + (he === 0 ? "/*|*/" : "");
+          }
+        case -2:
+          A.split("/*|*/}").forEach(k);
+      }
+    };
+  }(function(T) {
+    m.push(T);
+  }), E = function(T, k, N) {
+    return k === 0 && gc.indexOf(N[r.length]) !== -1 || N.match(a) ? T : "." + t;
+  };
+  function S(T, k, N, A) {
+    A === void 0 && (A = "&");
+    var D = T.replace(hc, ""), I = k && N ? N + " " + k + " { " + D + " }" : D;
+    return t = A, r = k, n = new RegExp("\\" + r + "\\b", "g"), a = new RegExp("(\\" + r + "\\b){2,}"), g(N || !k ? "" : k, I);
+  }
+  return g.use([].concat(p, [function(T, k, N) {
+    T === 2 && N.length && N[0].lastIndexOf(r) > 0 && (N[0] = N[0].replace(n, E));
+  }, f, function(T) {
+    if (T === -2) {
+      var k = m;
+      return m = [], k;
+    }
+  }])), S.hash = p.length ? p.reduce(function(T, k) {
+    return k.name || $r(15), ir(T, k.name);
+  }, 5381).toString() : "", S;
+}
+var Ui = u.default.createContext(), zi = (Ui.Consumer, u.default.createContext()), bc = (zi.Consumer, new bn()), ha = yc();
+function vc() {
+  return (0, u.useContext)(Ui) || bc;
+}
+var xc = function() {
+  function e(t, r) {
+    var n = this;
+    this.inject = function(a, o) {
+      o === void 0 && (o = ha);
+      var s = n.name + o.hash;
+      a.hasNameForId(n.id, s) || a.insertRules(n.id, s, o(n.rules, s, "@keyframes"));
+    }, this.toString = function() {
+      return $r(12, String(n.name));
+    }, this.name = t, this.id = "sc-keyframes-" + t, this.rules = r;
+  }
+  return e.prototype.getName = function(t) {
+    return t === void 0 && (t = ha), this.name + t.hash;
+  }, e;
+}(), wc = /([A-Z])/, Sc = /([A-Z])/g, Tc = /^ms-/, Ec = function(e) {
+  return "-" + e.toLowerCase();
+};
+function qo(e) {
+  return wc.test(e) ? e.replace(Sc, Ec).replace(Tc, "-ms-") : e;
+}
+var Wo = function(e) {
+  return e == null || e === !1 || e === "";
+};
+function Yt(e, t, r, n) {
+  if (Array.isArray(e)) {
+    for (var a, o = [], s = 0, c = e.length; s < c; s += 1) (a = Yt(e[s], t, r, n)) !== "" && (Array.isArray(a) ? o.push.apply(o, a) : o.push(a));
+    return o;
+  }
+  return Wo(e) ? "" : Ha(e) ? "." + e.styledComponentId : Ir(e) ? typeof (d = e) != "function" || d.prototype && d.prototype.isReactComponent || !t ? e : Yt(e(t), t, r, n) : e instanceof xc ? r ? (e.inject(r, n), e.getName(n)) : e : ma(e) ? function p(g, m) {
+    var f, E, S = [];
+    for (var T in g) g.hasOwnProperty(T) && !Wo(g[T]) && (Array.isArray(g[T]) && g[T].isCss || Ir(g[T]) ? S.push(qo(T) + ":", g[T], ";") : ma(g[T]) ? S.push.apply(S, p(g[T], T)) : S.push(qo(T) + ": " + (f = T, ((E = g[T]) == null || typeof E == "boolean" || E === "" ? "" : typeof E != "number" || E === 0 || f in Yl || f.startsWith("--") ? String(E).trim() : E + "px") + ";")));
+    return m ? [m + " {"].concat(S, ["}"]) : S;
+  }(e) : e.toString();
+  var d;
+}
+var Go = function(e) {
+  return Array.isArray(e) && (e.isCss = !0), e;
+};
+function kc(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  return Ir(e) || ma(e) ? Go(Yt(Fo(gn, [e].concat(r)))) : r.length === 0 && e.length === 1 && typeof e[0] == "string" ? e : Go(Yt(Fo(e, r)));
+}
+var Ac = /[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g, Nc = /(^-|-$)/g;
+function Yn(e) {
+  return e.replace(Ac, "-").replace(Nc, "");
+}
+function Qr(e) {
+  return typeof e == "string" && !0;
+}
+var ga = function(e) {
+  return typeof e == "function" || typeof e == "object" && e !== null && !Array.isArray(e);
+}, Cc = function(e) {
+  return e !== "__proto__" && e !== "constructor" && e !== "prototype";
+};
+function Oc(e, t, r) {
+  var n = e[r];
+  ga(t) && ga(n) ? Hi(n, t) : e[r] = t;
+}
+function Hi(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  for (var a = 0, o = r; a < o.length; a++) {
+    var s = o[a];
+    if (ga(s)) for (var c in s) Cc(c) && Oc(e, s[c], c);
+  }
+  return e;
+}
+var qi = u.default.createContext();
+qi.Consumer;
+var Kn = {};
+function Wi(e, t, r) {
+  var n = Ha(e), a = !Qr(e), o = t.attrs, s = o === void 0 ? gn : o, c = t.componentId, d = c === void 0 ? function(A, D) {
+    var I = typeof A != "string" ? "sc" : Yn(A);
+    Kn[I] = (Kn[I] || 0) + 1;
+    var v = I + "-" + function(_) {
+      return fa($i(_) >>> 0);
+    }("5.3.11" + I + Kn[I]);
+    return D ? D + "-" + v : v;
+  }(t.displayName, t.parentComponentId) : c, p = t.displayName, g = p === void 0 ? function(A) {
+    return Qr(A) ? "styled." + A : "Styled(" + Uo(A) + ")";
+  }(e) : p, m = t.displayName && t.componentId ? Yn(t.displayName) + "-" + t.componentId : t.componentId || d, f = n && e.attrs ? Array.prototype.concat(e.attrs, s).filter(Boolean) : s, E = t.shouldForwardProp;
+  n && e.shouldForwardProp && (E = t.shouldForwardProp ? function(A, D, I) {
+    return e.shouldForwardProp(A, D, I) && t.shouldForwardProp(A, D, I);
+  } : e.shouldForwardProp);
+  var S, T = new fc(r, m, n ? e.componentStyle : void 0), k = T.isStatic && s.length === 0, N = function(A, D) {
+    return function(I, v, _, j) {
+      var z = I.attrs, ie = I.componentStyle, he = I.defaultProps, ee = I.foldedComponentIds, Z = I.shouldForwardProp, ne = I.styledComponentId, G = I.target, ue = function(P, y, L) {
+        P === void 0 && (P = Pt);
+        var O = St({}, y, { theme: P }), ae = {};
+        return L.forEach(function(re) {
+          var V, K, oe, fe = re;
+          for (V in Ir(fe) && (fe = fe(O)), fe) O[V] = ae[V] = V === "className" ? (K = ae[V], oe = fe[V], K && oe ? K + " " + oe : K || oe) : fe[V];
+        }), [O, ae];
+      }(function(P, y, L) {
+        return L === void 0 && (L = Pt), P.theme !== L.theme && P.theme || y || L.theme;
+      }(v, (0, u.useContext)(qi), he) || Pt, v, z), Se = ue[0], se = ue[1], be = function(P, y, L) {
+        var O = vc(), ae = (0, u.useContext)(zi) || ha;
+        return y ? P.generateAndInjectStyles(Pt, O, ae) : P.generateAndInjectStyles(L, O, ae);
+      }(ie, j, Se), Ee = _, J = se.$as || v.$as || se.as || v.as || G, H = Qr(J), R = se !== v ? St({}, v, {}, se) : v, C = {};
+      for (var x in R) x[0] !== "$" && x !== "as" && (x === "forwardedAs" ? C.as = R[x] : (Z ? Z(x, $o, J) : !H || $o(x)) && (C[x] = R[x]));
+      return v.style && se.style !== v.style && (C.style = St({}, v.style, {}, se.style)), C.className = Array.prototype.concat(ee, ne, be !== ne ? be : null, v.className, se.className).filter(Boolean).join(" "), C.ref = Ee, (0, u.createElement)(J, C);
+    }(S, A, D, k);
+  };
+  return N.displayName = g, (S = u.default.forwardRef(N)).attrs = f, S.componentStyle = T, S.displayName = g, S.shouldForwardProp = E, S.foldedComponentIds = n ? Array.prototype.concat(e.foldedComponentIds, e.styledComponentId) : gn, S.styledComponentId = m, S.target = n ? e.target : e, S.withComponent = function(A) {
+    var D = t.componentId, I = function(_, j) {
+      if (_ == null) return {};
+      var z, ie, he = {}, ee = Object.keys(_);
+      for (ie = 0; ie < ee.length; ie++) z = ee[ie], j.indexOf(z) >= 0 || (he[z] = _[z]);
+      return he;
+    }(t, ["componentId"]), v = D && D + "-" + (Qr(A) ? A : Yn(Uo(A)));
+    return Wi(A, St({}, I, { attrs: f, componentId: v }), r);
+  }, Object.defineProperty(S, "defaultProps", { get: function() {
+    return this._foldedDefaultProps;
+  }, set: function(A) {
+    this._foldedDefaultProps = n ? Hi({}, e.defaultProps, A) : A;
+  } }), Object.defineProperty(S, "toString", { value: function() {
+    return "." + S.styledComponentId;
+  } }), a && Jl()(S, e, { attrs: !0, componentStyle: !0, displayName: !0, foldedComponentIds: !0, shouldForwardProp: !0, styledComponentId: !0, target: !0, withComponent: !0 }), S;
+}
+var Xn, ya = function(e) {
+  return function t(r, n, a) {
+    if (a === void 0 && (a = Pt), !(0, Di.isValidElementType)(n)) return $r(1, String(n));
+    var o = function() {
+      return r(n, a, kc.apply(void 0, arguments));
+    };
+    return o.withConfig = function(s) {
+      return t(r, n, St({}, a, {}, s));
+    }, o.attrs = function(s) {
+      return t(r, n, St({}, a, { attrs: Array.prototype.concat(a.attrs, s).filter(Boolean) }));
+    }, o;
+  }(Wi, e);
+};
+["a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", "big", "blockquote", "body", "br", "button", "canvas", "caption", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "keygen", "label", "legend", "li", "link", "main", "map", "mark", "marquee", "menu", "menuitem", "meta", "meter", "nav", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr", "circle", "clipPath", "defs", "ellipse", "foreignObject", "g", "image", "line", "linearGradient", "marker", "mask", "path", "pattern", "polygon", "polyline", "radialGradient", "rect", "stop", "svg", "text", "textPath", "tspan"].forEach(function(e) {
+  ya[e] = ya(e);
+}), (Xn = (function(e, t) {
+  this.rules = e, this.componentId = t, this.isStatic = Fi(e), bn.registerId(this.componentId + 1);
+}).prototype).createStyles = function(e, t, r, n) {
+  var a = n(Yt(this.rules, t, r, n).join(""), ""), o = this.componentId + e;
+  r.insertRules(o, o, a);
+}, Xn.removeStyles = function(e, t) {
+  t.clearRules(this.componentId + e);
+}, Xn.renderStyles = function(e, t, r, n) {
+  e > 2 && bn.registerId(this.componentId + e), this.removeStyles(e, r), this.createStyles(e, t, r, n);
+};
+const At = ya, jc = At.div`
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &.with-header {
+      top: ${({ requiresAltMenuSpacing: e }) => e ? "112px" : "142px"};
+      @media (max-width: 992px) {
+        top: 110px;
+      }
+    }
+  }
+  .mobile-menu-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+    h4 {
+      align-items: center;
+    }
+    i {
+      transition: all 0.3s;
+    }
+  }
+  .show-menu i {
+    transform: rotate(-180deg);
+  }
+  .nav-link {
+    border: none;
+    background-color: #ffffff;
+    i {
+      width: 2rem !important;
+      text-align: center !important;
+    }
+  }
+`, un = "On This Page", Rc = { event: "collapse", name: "onclick", type: "click", text: un }, Wa = ({ items: e, firstElementId: t, focusFirstFocusableElement: r = !1 }) => {
+  const n = (0, u.useRef)(null), a = function(m) {
+    const [f, E] = (0, u.useState)(!1);
+    return (0, u.useEffect)(() => {
+      const S = window.matchMedia(m);
+      S.matches !== f && E(S.matches);
+      const T = () => {
+        E(S.matches);
+      };
+      return S.addEventListener("change", T), () => S.removeEventListener("change", T);
+    }, [f, m]), f;
+  }("(max-width: 991px)"), [o, s] = (0, u.useState)({ hasHeader: !1, hasAltMenuSpacing: !1, containerClass: "container-xl", activeContainer: "", showMenu: !1, sticky: !1 }), c = a ? 110 : 142, d = () => {
+    var T;
+    const m = {}, f = window.scrollY;
+    ((T = document.getElementById(t)) == null ? void 0 : T.getBoundingClientRect().top) >= 0 && (m.sticky = !1, m.activeContainer = ""), f > n.current.getBoundingClientRect().top && (m.sticky = !0);
+    const S = o.hasHeader ? c + 103 : 103;
+    e == null || e.forEach(({ targetIdName: k }) => {
+      const N = document.getElementById(k), A = (N == null ? void 0 : N.getBoundingClientRect().top) - S, D = (N == null ? void 0 : N.getBoundingClientRect().bottom) - S;
+      A < 0 && D > 0 && (m.activeContainer = k);
+    }), s((k) => ({ ...k, ...m }));
+  }, p = () => {
+    var m;
+    m = d, Bn || (Bn = !0, setTimeout(() => {
+      m(), Bn = !1;
+    }, 150)), ((f) => {
+      window.clearTimeout(Mo), Mo = window.setTimeout(f, 150);
+    })(d);
+  };
+  function g(m = null) {
+    if (m === null) return o.containerClass;
+    const f = Object.values(m.classList).filter((E) => ["container-sm", "container-md", "container", "container-lg", "container-xl", "container-fluid"].includes(E));
+    return f.length > 0 ? f.join(" ") : g(m.parentElement);
+  }
+  return (0, u.useEffect)(() => {
+    const m = document.getElementById(t) || null, f = { hasHeader: !!(document.getElementById("asu-header") || document.getElementById("headerContainer") || document.getElementById("asuHeader")), hasAltMenuSpacing: !!document.getElementById("degreeDetailPageContainer"), containerClass: g(m) };
+    s((E) => ({ ...E, ...f }));
+  }, []), (0, u.useEffect)(() => (window == null || window.addEventListener("scroll", p), () => window.removeEventListener("scroll", p)), [o.hasHeader]), (e == null ? void 0 : e.length) > 0 && u.default.createElement(jc, { requiresAltMenuSpacing: o.hasAltMenuSpacing, ref: n, className: we()("uds-anchor-menu", "uds-anchor-menu-expanded-lg", "mb-4", { sticky: o.sticky, "with-header": o.hasHeader }), style: o.showMenu ? { borderBottom: 0 } : {} }, u.default.createElement("div", { className: `${o.containerClass} uds-anchor-menu-wrapper` }, a ? u.default.createElement("button", { className: we()("mobile-menu-toggler", { "show-menu": o.showMenu }), type: "button", onClick: () => {
+    rt({ ...Rc, action: o.showMenu ? "close" : "open" }), s((m) => ({ ...m, showMenu: !m.showMenu }));
+  }, "data-bs-toggle": "collapse", "data-bs-target": "#collapseAnchorMenu", "aria-controls": "collapseAnchorMenu" }, u.default.createElement("h4", null, un, ":", u.default.createElement("i", { className: "fas fa-chevron-down" }))) : u.default.createElement("h4", null, un, ":"), u.default.createElement("div", { "data-testid": "anchor-menu-container", id: "collapseAnchorMenu", className: we()("card", "card-body", "collapse", { show: o.showMenu }) }, u.default.createElement("nav", { "data-testid": "anchor-menu", className: "nav", "aria-label": un }, e == null ? void 0 : e.map((m) => u.default.createElement(Et, { "data-testid": `anchor-item-${m.targetIdName}`, key: m.targetIdName, classes: we()("nav-link", { active: o.activeContainer === m.targetIdName }).split(" "), ariaLabel: m.text, label: m.text, icon: m.icon, onClick: () => ((f) => {
+    var N, A;
+    const E = window.scrollY - (o.hasHeader ? c + 100 : 100), S = a ? 410 : 90;
+    let T = ((N = document.getElementById(f)) == null ? void 0 : N.getBoundingClientRect().top) + E;
+    var k;
+    n.current.classList.contains("sticky") || (T -= S), r && ((A = (k = `#${f}`, (k ? document.querySelector(k) : document).querySelector('button, [href], input, select, textarea, [tabIndex]:not([tabIndex="-1"])'))) == null || A.focus()), window.scrollTo({ top: T, behavior: "smooth" });
+  })(m.targetIdName) }))))));
+};
+Wa.propTypes = { items: l().arrayOf(l().shape({ text: l().string.isRequired, targetIdName: l().string.isRequired, icon: l().arrayOf(l().string) })).isRequired, firstElementId: l().string.isRequired, focusFirstFocusableElement: l().bool };
+var en, _c = (en = function(e, t) {
+  return en = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(r, n) {
+    r.__proto__ = n;
+  } || function(r, n) {
+    for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (r[a] = n[a]);
+  }, en(e, t);
+}, function(e, t) {
+  if (typeof t != "function" && t !== null) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
+  function r() {
+    this.constructor = e;
+  }
+  en(e, t), e.prototype = t === null ? Object.create(t) : (r.prototype = t.prototype, new r());
+}), Pc = function(e) {
+  function t(r) {
+    var n = e.call(this, r) || this;
+    return n.name = "AssertionError", n;
+  }
+  return _c(t, e), t;
+}(Error);
+function Pr(e, t) {
+  if (!e) throw new Pc(t);
+}
+function jn(e) {
+  var t = Object.entries(e).filter(function(r) {
+    return r[1] != null;
+  }).map(function(r) {
+    var n = r[0], a = r[1];
+    return "".concat(encodeURIComponent(n), "=").concat(encodeURIComponent(String(a)));
+  });
+  return t.length > 0 ? "?".concat(t.join("&")) : "";
+}
+var Lc = /* @__PURE__ */ function() {
+  var e = function(t, r) {
+    return e = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(n, a) {
+      n.__proto__ = a;
+    } || function(n, a) {
+      for (var o in a) Object.prototype.hasOwnProperty.call(a, o) && (n[o] = a[o]);
+    }, e(t, r);
+  };
+  return function(t, r) {
+    if (typeof r != "function" && r !== null) throw new TypeError("Class extends value " + String(r) + " is not a constructor or null");
+    function n() {
+      this.constructor = t;
+    }
+    e(t, r), t.prototype = r === null ? Object.create(r) : (n.prototype = r.prototype, new n());
+  };
+}(), Wt = function() {
+  return Wt = Object.assign || function(e) {
+    for (var t, r = 1, n = arguments.length; r < n; r++) for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
+    return e;
+  }, Wt.apply(this, arguments);
+}, Bo = function(e, t) {
+  var r = {};
+  for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
+  if (e != null && typeof Object.getOwnPropertySymbols == "function") {
+    var a = 0;
+    for (n = Object.getOwnPropertySymbols(e); a < n.length; a++) t.indexOf(n[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[a]) && (r[n[a]] = e[n[a]]);
+  }
+  return r;
+};
+const Ic = function(e) {
+  function t() {
+    var r = e !== null && e.apply(this, arguments) || this;
+    return r.openShareDialog = function(n) {
+      var a, o, s = r.props, c = s.onShareWindowClose, d = s.windowHeight, p = d === void 0 ? 400 : d, g = s.windowPosition, m = g === void 0 ? "windowCenter" : g, f = s.windowWidth, E = f === void 0 ? 550 : f;
+      (function(S, T, k) {
+        var N = T.height, A = T.width, D = Bo(T, ["height", "width"]), I = Wt({ height: N, width: A, location: "no", toolbar: "no", status: "no", directories: "no", menubar: "no", scrollbars: "yes", resizable: "no", centerscreen: "yes", chrome: "yes" }, D), v = window.open(S, "", Object.keys(I).map(function(j) {
+          return "".concat(j, "=").concat(I[j]);
+        }).join(", "));
+        if (k) var _ = window.setInterval(function() {
+          try {
+            (v === null || v.closed) && (window.clearInterval(_), k(v));
+          } catch (j) {
+            console.error(j);
+          }
+        }, 1e3);
+      })(n, Wt({ height: p, width: E }, m === "windowCenter" ? (a = E, o = p, { left: window.outerWidth / 2 + (window.screenX || window.screenLeft || 0) - a / 2, top: window.outerHeight / 2 + (window.screenY || window.screenTop || 0) - o / 2 }) : function(S, T) {
+        return { top: (window.screen.height - T) / 2, left: (window.screen.width - S) / 2 };
+      }(E, p)), c);
+    }, r.handleClick = function(n) {
+      return a = r, o = void 0, c = function() {
+        var d, p, g, m, f, E, S, T, k, N;
+        return function(A, D) {
+          var I, v, _, j, z = { label: 0, sent: function() {
+            if (1 & _[0]) throw _[1];
+            return _[1];
+          }, trys: [], ops: [] };
+          return j = { next: ie(0), throw: ie(1), return: ie(2) }, typeof Symbol == "function" && (j[Symbol.iterator] = function() {
+            return this;
+          }), j;
+          function ie(he) {
+            return function(ee) {
+              return function(Z) {
+                if (I) throw new TypeError("Generator is already executing.");
+                for (; z; ) try {
+                  if (I = 1, v && (_ = 2 & Z[0] ? v.return : Z[0] ? v.throw || ((_ = v.return) && _.call(v), 0) : v.next) && !(_ = _.call(v, Z[1])).done) return _;
+                  switch (v = 0, _ && (Z = [2 & Z[0], _.value]), Z[0]) {
+                    case 0:
+                    case 1:
+                      _ = Z;
+                      break;
+                    case 4:
+                      return z.label++, { value: Z[1], done: !1 };
+                    case 5:
+                      z.label++, v = Z[1], Z = [0];
+                      continue;
+                    case 7:
+                      Z = z.ops.pop(), z.trys.pop();
+                      continue;
+                    default:
+                      if (!((_ = (_ = z.trys).length > 0 && _[_.length - 1]) || Z[0] !== 6 && Z[0] !== 2)) {
+                        z = 0;
+                        continue;
+                      }
+                      if (Z[0] === 3 && (!_ || Z[1] > _[0] && Z[1] < _[3])) {
+                        z.label = Z[1];
+                        break;
+                      }
+                      if (Z[0] === 6 && z.label < _[1]) {
+                        z.label = _[1], _ = Z;
+                        break;
+                      }
+                      if (_ && z.label < _[2]) {
+                        z.label = _[2], z.ops.push(Z);
+                        break;
+                      }
+                      _[2] && z.ops.pop(), z.trys.pop();
+                      continue;
+                  }
+                  Z = D.call(A, z);
+                } catch (ne) {
+                  Z = [6, ne], v = 0;
+                } finally {
+                  I = _ = 0;
+                }
+                if (5 & Z[0]) throw Z[1];
+                return { value: Z[0] ? Z[1] : void 0, done: !0 };
+              }([he, ee]);
+            };
+          }
+        }(this, function(A) {
+          switch (A.label) {
+            case 0:
+              return d = this.props, p = d.beforeOnClick, g = d.disabled, m = d.networkLink, f = d.onClick, E = d.url, S = d.openShareDialogOnClick, T = d.opts, k = m(E, T), g ? [2] : (n.preventDefault(), p ? !(D = N = p()) || typeof D != "object" && typeof D != "function" || typeof D.then != "function" ? [3, 2] : [4, N] : [3, 2]);
+            case 1:
+              A.sent(), A.label = 2;
+            case 2:
+              return S && this.openShareDialog(k), f && f(n, k), [2];
+          }
+          var D;
+        });
+      }, new ((s = void 0) || (s = Promise))(function(d, p) {
+        function g(E) {
+          try {
+            f(c.next(E));
+          } catch (S) {
+            p(S);
+          }
+        }
+        function m(E) {
+          try {
+            f(c.throw(E));
+          } catch (S) {
+            p(S);
+          }
+        }
+        function f(E) {
+          var S;
+          E.done ? d(E.value) : (S = E.value, S instanceof s ? S : new s(function(T) {
+            T(S);
+          })).then(g, m);
+        }
+        f((c = c.apply(a, o || [])).next());
+      });
+      var a, o, s, c;
+    }, r;
+  }
+  return Lc(t, e), t.prototype.render = function() {
+    var r = this.props, n = (r.beforeOnClick, r.children), a = r.className, o = r.disabled, s = r.disabledStyle, c = r.forwardedRef, d = (r.networkLink, r.networkName), p = (r.onShareWindowClose, r.openShareDialogOnClick, r.opts, r.resetButtonStyle), g = r.style, m = (r.url, r.windowHeight, r.windowPosition, r.windowWidth, Bo(r, ["beforeOnClick", "children", "className", "disabled", "disabledStyle", "forwardedRef", "networkLink", "networkName", "onShareWindowClose", "openShareDialogOnClick", "opts", "resetButtonStyle", "style", "url", "windowHeight", "windowPosition", "windowWidth"])), f = we()("react-share__ShareButton", { "react-share__ShareButton--disabled": !!o, disabled: !!o }, a), E = Wt(Wt(p ? { backgroundColor: "transparent", border: "none", padding: 0, font: "inherit", color: "inherit", cursor: "pointer" } : {}, g), o && s);
+    return u.default.createElement("button", Wt({}, m, { "aria-label": m["aria-label"] || d, className: f, onClick: this.handleClick, ref: c, style: E }), n);
+  }, t.defaultProps = { disabledStyle: { opacity: 0.6 }, openShareDialogOnClick: !0, resetButtonStyle: !0 }, t;
+}(u.Component);
+var vn = function() {
+  return vn = Object.assign || function(e) {
+    for (var t, r = 1, n = arguments.length; r < n; r++) for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
+    return e;
+  }, vn.apply(this, arguments);
+};
+const Rn = function(e, t, r, n) {
+  function a(o, s) {
+    var c = r(o), d = vn({}, o);
+    return Object.keys(c).forEach(function(p) {
+      delete d[p];
+    }), u.default.createElement(Ic, vn({}, n, d, { forwardedRef: s, networkName: e, networkLink: t, opts: r(o) }));
+  }
+  return a.displayName = "ShareButton-".concat(e), (0, u.forwardRef)(a);
+}, Vo = Rn("facebook", function(e, t) {
+  var r = t.quote, n = t.hashtag;
+  return Pr(e, "facebook.url"), "https://www.facebook.com/sharer/sharer.php" + jn({ u: e, quote: r, hashtag: n });
+}, function(e) {
+  return { quote: e.quote, hashtag: e.hashtag };
+}, { windowWidth: 550, windowHeight: 400 });
+var ba = function() {
+  return ba = Object.assign || function(e) {
+    for (var t, r = 1, n = arguments.length; r < n; r++) for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
+    return e;
+  }, ba.apply(this, arguments);
+};
+function _n(e) {
+  var t = function(r) {
+    var n = r.bgStyle, a = r.borderRadius, o = r.iconFillColor, s = r.round, c = r.size, d = function(p, g) {
+      var m = {};
+      for (var f in p) Object.prototype.hasOwnProperty.call(p, f) && g.indexOf(f) < 0 && (m[f] = p[f]);
+      if (p != null && typeof Object.getOwnPropertySymbols == "function") {
+        var E = 0;
+        for (f = Object.getOwnPropertySymbols(p); E < f.length; E++) g.indexOf(f[E]) < 0 && Object.prototype.propertyIsEnumerable.call(p, f[E]) && (m[f[E]] = p[f[E]]);
+      }
+      return m;
+    }(r, ["bgStyle", "borderRadius", "iconFillColor", "round", "size"]);
+    return u.default.createElement("svg", ba({ viewBox: "0 0 64 64", width: c, height: c }, d), s ? u.default.createElement("circle", { cx: "32", cy: "32", r: "31", fill: e.color, style: n }) : u.default.createElement("rect", { width: "64", height: "64", rx: a, ry: a, fill: e.color, style: n }), u.default.createElement("path", { d: e.path, fill: o }));
+  };
+  return t.defaultProps = { bgStyle: {}, borderRadius: 0, iconFillColor: "white", size: 64 }, t;
+}
+const Yo = _n({ color: "#3b5998", networkName: "facebook", path: "M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" }), Ko = Rn("twitter", function(e, t) {
+  var r = t.title, n = t.via, a = t.hashtags, o = a === void 0 ? [] : a, s = t.related, c = s === void 0 ? [] : s;
+  return Pr(e, "twitter.url"), Pr(Array.isArray(o), "twitter.hashtags is not an array"), Pr(Array.isArray(c), "twitter.related is not an array"), "https://twitter.com/share" + jn({ url: e, text: r, via: n, hashtags: o.length > 0 ? o.join(",") : void 0, related: c.length > 0 ? c.join(",") : void 0 });
+}, function(e) {
+  return { hashtags: e.hashtags, title: e.title, via: e.via, related: e.related };
+}, { windowWidth: 550, windowHeight: 400 }), Xo = _n({ color: "#00aced", networkName: "twitter", path: "M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" }), Dc = Rn("email", function(e, t) {
+  var r = t.subject, n = t.body, a = t.separator;
+  return "mailto:" + jn({ subject: r, body: n ? n + a + e : e });
+}, function(e) {
+  return { subject: e.subject, body: e.body, separator: e.separator || " " };
+}, { openShareDialogOnClick: !1, onClick: function(e, t) {
+  window.location.href = t;
+} }), Mc = _n({ color: "#7f7f7f", networkName: "email", path: "M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z" }), Zo = Rn("linkedin", function(e, t) {
+  var r = t.title, n = t.summary, a = t.source;
+  return Pr(e, "linkedin.url"), "https://linkedin.com/shareArticle" + jn({ url: e, mini: "true", title: r, summary: n, source: a });
+}, function(e) {
+  return { title: e.title, summary: e.summary, source: e.source };
+}, { windowWidth: 750, windowHeight: 600 }), Jo = _n({ color: "#007fb1", networkName: "linkedin", path: "M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" });
+function Gi(e, t) {
+  if (e == null) return {};
+  var r = {};
+  for (var n in e) if ({}.hasOwnProperty.call(e, n)) {
+    if (t.includes(n)) continue;
+    r[n] = e[n];
+  }
+  return r;
+}
+function va(e, t) {
+  return e === void 0 && (e = ""), t === void 0 && (t = void 0), t ? e.split(" ").map(function(r) {
+    return t[r] || r;
+  }).join(" ") : e;
+}
+var $c = typeof window == "object" && window.Element || function() {
+};
+l().oneOfType([l().string, l().func, function(e, t, r) {
+  if (!(e[t] instanceof $c)) return new Error("Invalid prop `" + t + "` supplied to `" + r + "`. Expected prop to be an instance of Element. Validation failed.");
+}, l().shape({ current: l().any })]);
+var xa = l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func }), l().arrayOf(l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func })]))]), Fc = ["className", "cssModule", "active", "tag"], Uc = { tag: xa, active: l().bool, className: l().string, cssModule: l().object }, wa = function(e) {
+  var t = e.className, r = e.cssModule, n = e.active, a = e.tag, o = Gi(e, Fc), s = va(we()(t, !!n && "active", "breadcrumb-item"), r);
+  return u.default.createElement(a, Dt({}, o, { className: s, "aria-current": n ? "page" : void 0 }));
+};
+wa.propTypes = Uc, wa.defaultProps = { tag: "li" };
+const tn = wa;
+var zc = ["className", "listClassName", "cssModule", "children", "tag", "listTag", "aria-label"], Hc = { tag: xa, listTag: xa, className: l().string, listClassName: l().string, cssModule: l().object, children: l().node, "aria-label": l().string }, Sa = function(e) {
+  var t = e.className, r = e.listClassName, n = e.cssModule, a = e.children, o = e.tag, s = e.listTag, c = e["aria-label"], d = Gi(e, zc), p = va(we()(t), n), g = va(we()("breadcrumb", r), n);
+  return u.default.createElement(o, Dt({}, d, { className: p, "aria-label": c }), u.default.createElement(s, { className: g }, a));
+};
+Sa.propTypes = Hc, Sa.defaultProps = { tag: "nav", listTag: "ol", "aria-label": "breadcrumb" };
+const qc = Sa, Wc = At.div`
+  &.news-container h2 {
+    font-size: 48px;
+  }
+
+  &.event-container h2 {
+    font-size: 40px;
+  }
+
+  &.news-container img,
+  &.event-container img {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  &.wrapper-container h4 {
+    margin-top: 0;
+  }
+
+  &.wrapper-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+
+  &.event-container.wrapper-container {
+    max-width: 1500px;
+  }
+
+  &.news-container {
+    background: #fff;
+  }
+
+  ol.breadcrumb {
+    padding: 0;
+    margin: 0;
+  }
+
+  ol.breadcrumb > li {
+    margin-bottom: 0;
+  }
+
+  .article-social-media {
+    margin-bottom: 24px;
+  }
+
+  .react-share__ShareButton {
+    margin-right: 12px;
+  }
+
+  i.news-date {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  .highlight-gold {
+    box-shadow: -0.15em 0 0 #ffc627, 0.15em 0 0 #ffc627;
+    background: #ffc627;
+  }
+
+  .author {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: -7px;
+    padding: 0 6px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .icon-bg {
+    display: inline-block;
+    position: relative;
+    padding: 1px 3.5px;
+    background-color: maroon;
+    margin-right: 4px;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.65rem;
+  }
+
+  .uds-button {
+    margin-top: 17px;
+    padding: 0;
+  }
+
+  .author-title {
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+    font-size: 16px;
+  }
+
+  .author-contact {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  ol.breadcrumb a {
+    text-decoration: none;
+  }
+
+  i.fa-calendar,
+  i.fa-map-marker-alt {
+    font-size: 1.17rem;
+    margin-right: 8px;
+  }
+
+  .event-author {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .event-author-title {
+    margin-top: 4px;
+  }
+
+  .event-author-info {
+    margin-top: 24px;
+  }
+`, Gc = At.div`
+  border-top: 1px solid black;
+  h4 {
+    margin-top: 0;
+  }
+  .react-share__ShareButton {
+    margin-right: 24px;
+  }
+`, xn = ({ type: e, articleUrl: t, publicationDate: r, title: n, body: a, authorEmail: o, authorName: s, authorPhone: c, authorTitle: d, breadcrumbs: p, calendarUrl: g, eventLocation: m, eventTime: f, headerImageUrl: E, registrationUrl: S, zoomUrl: T }) => {
+  const k = we()("col", "col-12", { "col-lg-8": e === "event" && (S || T || g) });
+  return u.default.createElement(u.default.Fragment, null, E && e !== "event" && u.default.createElement("div", { "data-testid": "uds-hero", className: "uds-hero uds-hero-md", style: { backgroundImage: `linear-gradient(180deg, #19191900 0%, #191919c9 100%), url(${E})` } }), u.default.createElement(Wc, { className: `container ${e}-container wrapper-container` }, p && u.default.createElement("div", { className: "row pt-4", "data-testid": "breadcrumbs" }, u.default.createElement("div", { className: "col col-12" }, u.default.createElement(qc, { listClassName: "breadcrumb" }, p.map((N) => ((A) => A.active ? u.default.createElement(tn, { active: !0, tag: "li", className: "breadcrumb-item" }, u.default.createElement(tn, { tag: "a", href: A.url }, A.title)) : u.default.createElement(tn, { tag: "li", className: "breadcrumb-item" }, u.default.createElement(tn, { tag: "a", href: A.url }, A.title)))(N))))), u.default.createElement("div", { className: "row pb-2 pt-3" }, u.default.createElement("div", { className: k }, u.default.createElement("h2", { "data-testid": "title" }, n)), e === "event" && u.default.createElement("div", { className: "col col-lg-4 col-xs-12" }, (S || T) && (S ? u.default.createElement("div", { className: "card-button uds-button" }, u.default.createElement(Et, { color: "maroon", href: S, label: "Register" })) : u.default.createElement("div", { className: "card-button uds-button" }, u.default.createElement(Et, { color: "maroon", href: T, label: "Attend on Zoom" }))), g && u.default.createElement("div", { className: "card-button uds-button" }, u.default.createElement(Et, { color: "gray", size: "small", href: g, label: "Add to calendar" })))), e === "event" ? u.default.createElement("div", { className: "row row-spaced pt-3 mb-2" }, f && u.default.createElement("div", { className: "col col-lg-4 col-md-6 col-sm-12" }, u.default.createElement("h4", null, u.default.createElement("i", { className: "far fa-calendar" }), "Date and time:"), u.default.createElement("div", { dangerouslySetInnerHTML: it(f) })), (S && T || m) && u.default.createElement("div", { className: "col col-12 col-lg-4 col-md-6" }, u.default.createElement("h4", null, u.default.createElement("i", { className: "fas fa-map-marker-alt" }), "Location:"), u.default.createElement("div", { dangerouslySetInnerHTML: it(m) }), S && T && u.default.createElement("a", { href: T }, "Attend on Zoom"))) : u.default.createElement("div", { className: "row row-spaced pt-2" }, u.default.createElement("div", { className: "col col-12" }, u.default.createElement("div", { className: "article-social-media" }, u.default.createElement(Vo, { url: t, quote: n }, u.default.createElement(Yo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })), u.default.createElement(Ko, { url: t, quote: n }, u.default.createElement(Xo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })), u.default.createElement(Zo, { url: t, quote: n }, u.default.createElement(Jo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } }))), r && u.default.createElement("i", { className: "news-date" }, r))), u.default.createElement("div", { className: "row" }, u.default.createElement("div", { className: "col col-12", dangerouslySetInnerHTML: it(a), "data-testid": "body" })), e === "news" && u.default.createElement("div", { className: "row pb-2", "data-testid": "author-info" }, u.default.createElement("div", { className: "col col-12" }, u.default.createElement("div", { className: "author highlight-gold" }, s), d && u.default.createElement("div", { className: "author-title" }, d), o && u.default.createElement("div", { className: "author-contact" }, u.default.createElement("span", { className: "icon-bg" }, u.default.createElement("i", { className: "fas fa-envelope" })), u.default.createElement("a", { href: `mailto: ${o}` }, o)), c && u.default.createElement("div", { className: "author-contact" }, u.default.createElement("span", { className: "icon-bg" }, u.default.createElement("i", { className: "fas fa-phone" })), u.default.createElement("a", { href: `tel: ${c}` }, c)))), e === "event" && u.default.createElement(Gc, { className: "row row-spaced mt-3 pt-6 pb-2 event-info", "data-testid": "event-info" }, u.default.createElement("div", { className: "col col-lg-4 col-md-6 col-12" }, u.default.createElement("h4", null, "For more information contact:"), u.default.createElement("div", { className: "event-author" }, s), u.default.createElement("div", { className: "event-author-title" }, d), (o || c) && u.default.createElement("div", { className: "event-author-info" }, o && u.default.createElement("div", null, u.default.createElement("a", { href: `mailto: ${o}` }, o)), c && u.default.createElement("div", null, u.default.createElement("a", { href: `tel: ${c}` }, c)))), u.default.createElement("div", { className: "col col-lg-4 col-md-6 col-12" }, u.default.createElement("h4", null, "Share this event:"), u.default.createElement("div", { className: "article-social-media" }, u.default.createElement(Vo, { url: t, quote: n }, u.default.createElement(Yo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })), u.default.createElement(Ko, { url: t, quote: n }, u.default.createElement(Xo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })), u.default.createElement(Dc, { url: o, quote: n }, u.default.createElement(Mc, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })), u.default.createElement(Zo, { url: t, quote: n }, u.default.createElement(Jo, { size: 28, borderRadius: 4, bgStyle: { fill: "maroon" } })))))));
+};
+xn.propTypes = { type: l().oneOf(["event", "news"]), articleUrl: l().string.isRequired, publicationDate: l().string.isRequired, title: l().string.isRequired, body: l().string.isRequired, authorEmail: l().string, authorName: l().string.isRequired, authorPhone: l().string, authorTitle: l().string, breadcrumbs: l().arrayOf(l().shape({ title: l().string, url: l().string, active: l().bool })), calendarUrl: l().string, headerImageUrl: l().string, eventLocation: l().string, eventTime: l().string, registrationUrl: l().string, zoomUrl: l().string }, xn.defaultProps = { type: "news", authorEmail: void 0, authorPhone: void 0, authorTitle: void 0, breadcrumbs: void 0, calendarUrl: void 0, headerImageUrl: void 0, eventLocation: void 0, eventTime: void 0, registrationUrl: void 0, zoomUrl: void 0 };
+const Bc = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content" }, wn = ({ color: e, icon: t, innerRef: r, onClick: n, size: a, cardTitle: o }) => u.default.createElement("button", { type: "button", className: `btn btn-circle btn-circle-alt-${e} ${a === "large" && "btn-circle-large"}`, ref: r, onClick: () => (rt({ ...Bc, text: `${t == null ? void 0 : t[1]} icon`, section: o }), void (n == null ? void 0 : n())), "aria-label": "Close" }, u.default.createElement("i", { className: `${t == null ? void 0 : t[0]} fa-${t == null ? void 0 : t[1]}` }));
+wn.propTypes = { color: l().oneOf(["white", "gray", "black"]), icon: l().arrayOf(l().string), innerRef: l().oneOfType([l().object, l().func, l().string]), onClick: l().func, cardTitle: l().string, size: l().oneOf(["large", "small"]) }, wn.defaultProps = { color: "gray", icon: void 0, innerRef: void 0, onClick: void 0, size: "small", cardTitle: "" };
+const Vc = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content" }, Dr = ({ label: e, cardTitle: t, ariaLabel: r, color: n, disabled: a, element: o, innerRef: s, href: c, onClick: d, ...p }) => {
+  const g = we()("btn", "btn-tag", { "btn-tag-alt-white": n === "white", "btn-tag-alt-gray": n === "gray", "btn-tag-alt-dark": n === "dark", disabled: a });
+  let m = o;
+  return c && o === "button" && (m = "a"), u.default.createElement(m, Dt({ type: m === "button" && d ? "button" : void 0 }, p, { className: g, href: c, ref: s, onClick: () => (rt({ ...Vc, text: e, section: t }), void (d == null ? void 0 : d())), "aria-label": r }), e);
+};
+Dr.propTypes = { label: l().string, cardTitle: l().string, ariaLabel: l().string, color: l().oneOf(["white", "gray", "dark"]), disabled: l().bool, element: l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func }), l().arrayOf(l().oneOfType([l().func, l().string, l().shape({ $$typeof: l().symbol, render: l().func })]))]), href: l().string, innerRef: l().oneOfType([l().object, l().func, l().string]), onClick: l().func }, Dr.defaultProps = { label: "", cardTitle: "", ariaLabel: void 0, color: "gray", disabled: void 0, element: "button", href: void 0, innerRef: void 0, onClick: void 0 };
+const Kt = ({ src: e, alt: t, cssClasses: r, loading: n = "lazy", decoding: a = "async", dataTestId: o, fetchPriority: s = "auto", width: c, height: d, cardLink: p, title: g, caption: m, captionTitle: f, border: E, dropShadow: S }) => {
+  const T = { src: e, alt: t, loading: n, decoding: a, fetchpriority: s, ...(r == null ? void 0 : r.length) > 0 && { className: ln(r) }, ...o && { "data-testid": o }, ...c && { width: c }, ...d && { height: d } }, k = we()("uds-img", { borderless: !E, "uds-img-drop-shadow": S }), N = (A) => {
+    const D = A ? `${T.className} ${A}` : T.className;
+    return p ? u.default.createElement("a", { href: p }, u.default.createElement("img", Dt({}, T, { className: D })), u.default.createElement("span", { className: "visually-hidden" }, g)) : u.default.createElement("img", Dt({}, T, { className: D }));
+  };
+  return u.default.createElement(u.default.Fragment, null, m ? u.default.createElement("div", { className: k }, u.default.createElement("figure", { className: "figure uds-figure" }, N(), m && u.default.createElement("figcaption", { className: "figure-caption uds-figure-caption" }, f && u.default.createElement("h3", null, f), u.default.createElement("span", { className: "uds-caption-text", dangerouslySetInnerHTML: it(m) })))) : N(k));
+};
+Kt.propTypes = { src: l().string.isRequired, alt: l().string.isRequired, cssClasses: l().arrayOf(l().string), loading: l().oneOf(["lazy", "eager"]), decoding: l().oneOf(["sync", "async", "auto"]), fetchPriority: l().oneOf(["auto", "high", "low"]), width: l().string, height: l().string, dataTestId: l().string, cardLink: l().string, title: l().string, caption: l().string, captionTitle: l().string, border: l().bool, dropShadow: l().bool };
+const Yc = At.div`
+  &.cards-components a + &.cards-components a {
+    margin-left: 5px;
+  }
+  .card-button {
+    column-gap: 1rem;
+  }
+  .card-button .btn {
+    margin: 0;
+  }
+`, Kc = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content" }, Sn = ({ type: e, width: t, horizontal: r, image: n, imageAltText: a, title: o, icon: s, body: c, eventFormat: d, eventLocation: p, eventTime: g, buttons: m, linkLabel: f, linkUrl: E, tags: S, showBorders: T, cardLink: k }) => u.default.createElement(Ta, { type: e, width: t, horizontal: r, image: n, imageAltText: a, title: o, icon: s, body: c, eventFormat: d, eventLocation: p, eventTime: g, buttons: m, linkLabel: f, linkUrl: E, tags: S, showBorders: T, cardLink: k });
+Sn.propTypes = { type: l().oneOf(["default", "degree", "event", "news", "story"]), width: l().oneOf(["25%", "50%", "75%", "100%"]), horizontal: l().bool, title: l().string.isRequired, icon: l().arrayOf(l().string), body: l().string, eventFormat: l().oneOf(["stack", "inline"]), eventLocation: l().string, eventTime: l().string, image: l().string, imageAltText: l().string, buttons: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["gold", "maroon", "gray", "dark"]), icon: l().arrayOf(l().string), href: l().string, label: l().string, onClick: l().func, size: l().oneOf(["default", "small", "xsmall"]), target: l().oneOf(["_blank", "_self", "_top", "_parent"]) })), linkLabel: l().string, linkUrl: l().string, tags: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["white", "gray", "dark"]), href: l().string, label: l().string, onClick: l().func })), showBorders: l().bool, cardLink: l().string }, Sn.defaultProps = { type: "default", width: "100%", horizontal: !1, body: void 0, eventFormat: "stack", eventTime: void 0, eventLocation: void 0, icon: void 0, image: void 0, imageAltText: void 0, buttons: void 0, linkLabel: void 0, linkUrl: void 0, tags: void 0, showBorders: !0 };
+const Ta = ({ type: e, width: t, horizontal: r, image: n, imageAltText: a, title: o, icon: s, body: c, eventFormat: d, eventLocation: p, eventTime: g, buttons: m, linkLabel: f, linkUrl: E, tags: S, showBorders: T, cardLink: k }) => {
+  const N = we()("card", "cards-components", { "card-degree": e === "degree", "card-event": e === "event", "card-story": e === "story", [`w-${t.replace("%", "")}`]: t !== "100%", "card-horizontal": r, borderless: !T });
+  return u.default.createElement(u.default.Fragment, null, u.default.createElement(Yc, { className: N, "data-testid": "card-container" }, !!n && u.default.createElement(Kt, { src: n, alt: a, dataTestId: "card-image", cssClasses: ["card-img-top"], cardLink: k, title: o }), !n && s && u.default.createElement("i", { className: `${s == null ? void 0 : s[0]} fa-${s == null ? void 0 : s[1]} fa-2x card-icon-top`, "data-testid": "card-icon" }), r ? u.default.createElement("div", { className: "card-content-wrapper" }, u.default.createElement(Tn, { type: e, body: c, eventFormat: d, eventLocation: p, eventTime: g, title: o, buttons: m, linkLabel: f, linkUrl: E, tags: S, cardLink: k })) : u.default.createElement(Tn, { type: e, body: c, eventFormat: d, eventLocation: p, eventTime: g, title: o, buttons: m, linkLabel: f, linkUrl: E, tags: S, cardLink: k })));
+};
+Ta.propTypes = { type: l().oneOf(["default", "degree", "event", "news", "story"]), width: l().oneOf(["25%", "50%", "75%", "100%"]), horizontal: l().bool, title: l().string.isRequired, icon: l().arrayOf(l().string), body: l().string, eventFormat: l().oneOf(["stack", "inline"]), eventLocation: l().string, eventTime: l().string, image: l().string, imageAltText: l().string, buttons: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["gold", "maroon", "gray", "dark"]), icon: l().arrayOf(l().string), href: l().string, label: l().string, onClick: l().func, size: l().oneOf(["default", "small", "xsmall"]), target: l().oneOf(["_blank", "_self", "_top", "_parent"]) })), linkLabel: l().string, linkUrl: l().string, tags: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["white", "gray", "dark"]), href: l().string, label: l().string, onClick: l().func })), showBorders: l().bool, cardLink: l().string }, Ta.defaultProps = { type: "default", width: "100%", horizontal: !1, body: "", eventFormat: "stack", eventTime: "", eventLocation: "", icon: void 0, image: "", imageAltText: "", buttons: void 0, linkLabel: void 0, linkUrl: void 0, tags: void 0, showBorders: !0 };
+const Tn = ({ type: e, body: t, eventFormat: r, eventLocation: n, eventTime: a, title: o, buttons: s, linkLabel: c, linkUrl: d, tags: p, cardLink: g }) => {
+  return u.default.createElement(u.default.Fragment, null, !!o && u.default.createElement("div", { className: "card-header", "data-testid": "card-title" }, u.default.createElement("h3", { className: "card-title" }, g ? u.default.createElement("a", { href: g }, o) : o)), !!t && u.default.createElement("div", { className: "card-body", "data-testid": "card-body" }, u.default.createElement("div", { dangerouslySetInnerHTML: it(t) })), e === "event" && (a || n) && u.default.createElement(Ea, { eventFormat: r, eventTime: a, eventLocation: n }), s && u.default.createElement("div", { className: "card-buttons" }, s.map((f) => u.default.createElement("div", { className: "card-button", "data-testid": "card-button", key: `${f.label}-${f.href}` }, u.default.createElement(Et, { ariaLabel: f.ariaLabel, color: f.color, icon: f.icon, href: f.href, label: f.label, onClick: f.onClick, size: f.size, target: f.target, cardTitle: o })))), d && c && u.default.createElement("div", { className: "card-link", "data-testid": "card-link" }, u.default.createElement("a", { href: (m = d, m.startsWith("https://") || m.startsWith("http://") || !/^[A-Z0-9._+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(m) ? m : `mailto:${m}`), onClick: () => rt({ ...Kc, section: o, text: c }) }, c)), p && u.default.createElement("div", { className: "card-tags", "data-testid": "card-tags" }, p.map((f) => u.default.createElement(Dr, { key: `${f.label}-${f.href}`, ariaLabel: f.ariaLabel, color: f.color, href: f.href, label: f.label, onClick: f.onClick, cardTitle: o }))));
+  var m;
+};
+Tn.propTypes = { type: l().oneOf(["default", "degree", "event", "news", "story"]), body: l().string, eventFormat: l().oneOf(["stack", "inline"]), eventLocation: l().string, eventTime: l().string, title: l().string.isRequired, buttons: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["gold", "maroon", "gray", "dark"]), icon: l().arrayOf(l().string), href: l().string, label: l().string, onClick: l().func, size: l().oneOf(["default", "small", "xsmall"]), target: l().oneOf(["_blank", "_self", "_top", "_parent"]) })), linkLabel: l().string, linkUrl: l().string, tags: l().arrayOf(l().shape({ ariaLabel: l().string, color: l().oneOf(["white", "gray", "dark"]), href: l().string, label: l().string, onClick: l().func })), cardLink: l().string }, Tn.defaultProps = { type: "default", body: "", eventFormat: "stack", eventLocation: "", eventTime: "", buttons: void 0, linkLabel: void 0, linkUrl: void 0, tags: void 0 };
+const Ea = ({ eventFormat: e, eventTime: t, eventLocation: r }) => e === "inline" ? u.default.createElement("div", { className: "card-event-details" }, t && u.default.createElement("div", { className: "card-event-icons" }, u.default.createElement("div", null, u.default.createElement("i", { className: "far fa-calendar" })), u.default.createElement("div", { dangerouslySetInnerHTML: it(t) })), r && u.default.createElement("div", { className: "card-event-icons" }, u.default.createElement("div", null, u.default.createElement("i", { className: "fas fa-map-marker-alt" })), u.default.createElement("div", { dangerouslySetInnerHTML: it(r) }))) : u.default.createElement(u.default.Fragment, null, t && u.default.createElement("div", { className: "card-event-details" }, u.default.createElement("div", { className: "card-event-icons" }, u.default.createElement("div", null, u.default.createElement("i", { className: "far fa-calendar" })), u.default.createElement("div", { dangerouslySetInnerHTML: it(t) }))), r && u.default.createElement("div", { className: "card-event-details" }, u.default.createElement("div", { className: "card-event-icons" }, u.default.createElement("div", null, u.default.createElement("i", { className: "fas fa-map-marker-alt" })), u.default.createElement("span", null, u.default.createElement("div", { dangerouslySetInnerHTML: it(r) })))));
+Ea.propTypes = { eventFormat: l().oneOf(["stack", "inline"]), eventLocation: l().string, eventTime: l().string }, Ea.defaultProps = { eventFormat: "stack", eventLocation: "", eventTime: "" };
+const Xc = At.div`
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    border: 3px solid #1b1b1b;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #1b1b1b transparent transparent transparent;
+  }
+  div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`, Zc = () => u.default.createElement(Xc, null, u.default.createElement("div", null), u.default.createElement("div", null), u.default.createElement("div", null), u.default.createElement("div", null)), Jc = At.section``, Bi = (0, u.createContext)(null), Vi = ({ defaultProps: e, dataSource: t, noFeedText: r, renderHeader: n, renderBody: a, dataTransformer: o = (d) => d, dataFilter: s = (d) => d, maxItems: c }) => {
+  const [{ data: d, loading: p, error: g }, m] = (() => {
+    const [T, k] = (0, u.useState)(), [N, A] = (0, u.useState)(!1), [D, I] = (0, u.useState)(!1), [v, _] = (0, u.useState)("");
+    return (0, u.useEffect)(() => {
+      v && (() => {
+        I(null), A(!0);
+        try {
+          fetch(v).then((j) => j.json()).then((j) => {
+            k(j), A(!1);
+          }).catch((j) => {
+            I(j), A(!1);
+          });
+        } catch (j) {
+          I(j);
+        }
+      })();
+    }, [v]), [{ data: T, loading: N, error: D }, _];
+  })(), [f, E] = (0, u.useState)([]), S = { ...e.dataSource, ...t };
+  return (0, u.useEffect)(() => {
+    m(S == null ? void 0 : S.url);
+  }, [S == null ? void 0 : S.url]), (0, u.useEffect)(() => {
+    const T = d == null ? void 0 : d.nodes.map(o), k = T == null ? void 0 : T.filter((N) => s(N, t == null ? void 0 : t.filters));
+    E(c ? k == null ? void 0 : k.slice(0, c) : k);
+  }, [d]), u.default.createElement(Bi.Provider, { value: { feeds: f } }, u.default.createElement(Jc, null, n, g ? u.default.createElement("span", null, "Error, try again!") : u.default.createElement(u.default.Fragment, null, p && !(f != null && f.length) && u.default.createElement("div", { className: "text-center mt-4" }, u.default.createElement(Zc, null)), f != null && f.length ? a : !p && u.default.createElement("p", { className: "text-center" }, r))));
+};
+Vi.propTypes = { renderHeader: l().element, renderBody: l().element, maxItems: l().number, dataTransformer: l().func, dataFilter: l().func, noFeedText: l().string };
+const Ga = l().shape({ color: l().oneOf(["white", "dark"]), text: l().string }), Ba = l().shape({ color: l().oneOf(["gold", "maroon", "gray", "dark"]), text: l().string }), Qc = l().shape({ color: l().oneOf(["gold", "maroon", "gray", "dark"]), text: l().string, size: l().string }), Yi = l().shape({ url: l().string, filters: l().string }), Ki = l().shape({ header: Ga, ctaButton: Ba, dataSource: Yi, maxItems: l().number }), eu = At.div`
+  @media screen and (min-width: 768px) {
+    & {
+      display: inline-flex;
+      justify-content: flex-end;
+    }
+  }
+`, Xi = ({ defaultProps: e, header: t, ctaButton: r }) => {
+  const n = { ...e.header, ...t }, a = { ...e.ctaButton, ...r };
+  return u.default.createElement("div", { className: "row justify-content-between align-items-center pb-6", "data-testid": "feed-header" }, u.default.createElement("div", { className: "col-sm-12 col-md-9" }, u.default.createElement("h2", { className: `text-${n.color}` }, n.text)), u.default.createElement(eu, { className: "col-sm-12 col-md-3" }, u.default.createElement("a", { className: `btn btn-${a.color}`, href: a.url, onClick: () => rt({ event: "link", action: "click", name: "onclick", type: "internal link", region: "main content", section: n.text, text: a.text }) }, a.text)));
+};
+Xi.propTypes = { defaultProps: Ki, header: Ga, ctaButton: Ba };
+const Zi = ({ children: e }) => u.default.createElement("div", { className: "row", "data-testid": "feed-body" }, u.default.createElement("div", { className: "col" }, e));
+Zi.propTypes = { children: l().element };
+const tu = At.img`
+  width: 100%;
+`, Va = (e) => {
+  const t = e.type || "heading-hero";
+  return { "heading-hero": () => function({ image: r, subTitle: n, title: a, contents: o, contentsColor: s }) {
+    const c = { gold: "highlight-gold", black: "highlight-black", white: "highlight-white", none: "text-white", undefined: "" }, d = { black: "text-dark", white: "text-white", undefined: "" };
+    let p = u.default.createElement(u.default.Fragment, null);
+    return a && (p = u.default.createElement("h1", { style: { maxWidth: a.maxWidth || "" }, "data-testid": "hero-title" }, u.default.createElement("span", { className: we()({ [d[a.color]]: a.color, [c[a.highlightColor]]: a.highlightColor }) }, a.text))), a && n && (p = u.default.createElement("header", null, u.default.createElement("p", { className: "hero-subtitle", "data-testid": "hero-subtitle" }, u.default.createElement("span", { className: we()({ [d[n.color]]: n.color, [c[n.highlightColor]]: n.highlightColor }) }, n.text)), p)), u.default.createElement("div", { className: we()("uds-hero", { [{ small: "uds-hero-sm", medium: "uds-hero-md", large: "uds-hero-lg", undefined: "" }[r == null ? void 0 : r.size]]: r == null ? void 0 : r.size }) }, u.default.createElement("div", { className: "hero-overlay" }), u.default.createElement(tu, { className: "hero", src: r == null ? void 0 : r.url, alt: r == null ? void 0 : r.altText, "data-testid": "hero-image" }), p, o && u.default.createElement("div", { "data-testid": "hero-content", className: we()("content", { [d[s]]: s }) }, o.map((g, m) => u.default.createElement("p", { key: `content-${m}` }, g.text))));
+  }(e), "story-hero": () => function({ image: r, title: n, contents: a }) {
+    return console.log({ image: r, title: n, contents: a }), u.default.createElement("div", null, "TODO: to be implemented");
+  }(e), undefined: () => (console.error(`the type '${t}' is not supported by the 'Hero' component.`), null) }[t]();
+};
+Va.propTypes = { type: l().oneOf(["heading-hero", "story-hero"]), image: Hl, title: Vn, subTitle: Vn, contents: l().arrayOf(Vn), contentsColor: l().string };
+const wt = ({ dataId: e, isClickeable: t, disabled: r, pageLinkIcon: n, selectedPage: a, onClick: o, ellipses: s, ariaLabel: c, children: d, ariaDisabled: p }) => u.default.createElement("li", { className: we()("page-item", { disabled: r, active: a, elipses: s }) }, t ? u.default.createElement("button", { type: "button", "aria-label": c, className: we()("page-link", { "page-link-icon": n }), onClick: o, "data-testid": "page-link", "data-id": e, "aria-current": a ? "page" : null, "aria-disabled": p }, d, a && u.default.createElement("span", { className: "visually-hidden" }, "(current)")) : u.default.createElement("span", { className: "page-link", "data-testid": "page-link" }, d));
+wt.propTypes = { isClickeable: l().bool, disabled: l().bool, pageLinkIcon: l().bool, selectedPage: l().bool, dataId: l().string, onClick: l().func, children: l().node, ellipses: l().bool, ariaLabel: l().string, ariaDisabled: l().bool }, wt.defaultProps = { isClickeable: !1, disabled: !1, pageLinkIcon: !1, selectedPage: !1, onClick: () => {
+} };
+const ru = { event: "select", action: "click", name: "onclick", type: "pagination", region: "main content" }, En = ({ type: e, background: t, currentPage: r, totalPages: n, onChange: a }) => {
+  const [o, s] = (0, u.useState)(null);
+  (0, u.useEffect)(() => {
+    s(r);
+  }, [r]);
+  const c = (d, p) => {
+    const g = { first: 1, prev: o === 1 ? 1 : o - 1, next: o === n ? n : o + 1, last: n }[p] ?? p;
+    s(g), ((m) => {
+      rt({ ...ru, text: `page ${m}` });
+    })(g), a == null || a(d, g);
+  };
+  return u.default.createElement("nav", { "aria-label": "Pagination", "data-testid": "pagination" }, u.default.createElement("ul", { className: we()("pagination", "justify-content-center", "pt-2", "pb-2", { border: e === "bordered", "uds-bg-gray1": t === "gray1", "uds-bg-gray": t === "gray2", "uds-bg-dark": t === "gray7" }) }, u.default.createElement(wt, { dataId: "prev", isClickeable: !0, disabled: o === 1, pageLinkIcon: !0, onClick: (d) => c(d, "prev"), ariaDisabled: o === 1, ariaLabel: "Previous Page" }), (() => {
+    const d = Io(o === n - 1, 2, o === n ? 3 : 1), p = Io(o === 1, 3, o === 2 ? 2 : 1), g = [...Do(o - d, o, n), ...Do(o, o + 1 + p, n)];
+    return u.default.createElement(u.default.Fragment, null, g[0] !== 1 && u.default.createElement(wt, { ariaLabel: `Page 1 of ${n}`, isClickeable: !0, selectedPage: o === 1, onClick: (m) => c(m, "first") }, "1"), g[0] > 2 && u.default.createElement(wt, { ellipses: !0 }, "..."), g.map((m) => u.default.createElement(wt, { ariaLabel: `Page ${m} of ${n}`, isClickeable: !0, key: m, selectedPage: o === m, onClick: (f) => c(f, m) }, m)), g[g.length - 1] < n - 1 && u.default.createElement(wt, { ellipses: !0 }, "..."), g[g.length - 1] !== n && u.default.createElement(wt, { isClickeable: !0, ariaLabel: `Page ${n} of ${n}`, selectedPage: o === n, onClick: (m) => c(m, "last") }, n));
+  })(), u.default.createElement(wt, { dataId: "next", isClickeable: !0, ariaDisabled: o === n, disabled: o === n, pageLinkIcon: !0, onClick: (d) => c(d, "next"), ariaLabel: "Next Page" })));
+};
+En.propTypes = { type: l().oneOf(["default", "bordered"]).isRequired, background: l().oneOf(["white", "gray1", "gray2", "gray7"]).isRequired, currentPage: l().number, totalPages: l().number, onChange: l().func.isRequired }, En.defaultProps = { currentPage: 1, totalPages: 10 };
+const Qo = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content" }, Gt = (e) => e === "small", Ji = ({ size: e, image: t, imageAlt: r }) => Gt(e) ? u.default.createElement("div", { className: "image-wrapper" }, u.default.createElement(Kt, { src: t, alt: r, fetchPriority: "high" })) : u.default.createElement(Kt, { src: t, alt: r, fetchPriority: "high" });
+Ji.propTypes = { size: l().oneOf(["small", "large"]), image: l().string.isRequired, imageAlt: l().string.isRequired };
+const Qi = ({ heading: e, citation: t }) => u.default.createElement("div", { className: "citation" }, u.default.createElement("h4", null, e), u.default.createElement("p", null, "— ", t));
+Qi.propTypes = { heading: l().string.isRequired, citation: l().string.isRequired };
+const es = ({ imageSize: e, body: t, heading: r, readMoreLink: n }) => {
+  const [a, o] = (0, u.useState)(!1), s = `info-layer-${Math.floor(1e5 * Math.random())}`, c = (d) => {
+    d.type !== "click" && d.key !== "Enter" && d.key !== " " || (o(!a), rt({ ...Qo, text: "Expand ranking", action: a ? "open" : "close", section: r }));
+  };
+  return u.default.createElement("div", { className: we()("info-layer", { active: a }), "data-testid": "info-layer", id: s }, u.default.createElement("div", { className: "content" }, u.default.createElement("div", { className: we()("header", { closed: Gt(e) && !a }) }, Gt(e) && u.default.createElement("p", { dangerouslySetInnerHTML: it(t) }), !Gt(e) && u.default.createElement(u.default.Fragment, null, u.default.createElement("button", { onClick: c, className: "btn-expand", "aria-label": "Expand ranking", type: "button", "aria-expanded": a, "aria-controls": s }, u.default.createElement("h4", null, r), u.default.createElement("i", { className: "fas fa-chevron-up" }))), Gt(e) && u.default.createElement(u.default.Fragment, null, u.default.createElement("button", { onClick: c, className: "btn btn-expand", "aria-label": "Expand ranking", type: "button", "aria-expanded": a, "aria-controls": s }, u.default.createElement("i", { className: "fas fa-chevron-up" })))), !Gt(e) && u.default.createElement("p", { dangerouslySetInnerHTML: it(t) }), n && u.default.createElement("a", { href: n, "aria-label": "Read more", className: "read-more", onClick: () => {
+    rt({ ...Qo, section: r, text: "read more" });
+  } }, "Read more ", u.default.createElement("span", { className: "visually-hidden" }, r), u.default.createElement("span", { className: "fas icon-small fa-arrow-right", "aria-hidden": "true" }))));
+};
+es.propTypes = { imageSize: l().oneOf(["small", "large"]), body: l().string.isRequired, heading: l().string.isRequired, readMoreLink: l().string };
+const Ya = ({ imageSize: e = "large", image: t, imageAlt: r, heading: n, body: a, readMoreLink: o = "", citation: s }) => u.default.createElement("div", { className: we()("card-ranking", { "large-image": e === "large", "small-image": e === "small" }) }, u.default.createElement(Ji, { size: e, image: t, imageAlt: r }), Gt(e) && u.default.createElement(Qi, { heading: n, citation: s }), u.default.createElement(es, { imageSize: e, body: a, heading: n, readMoreLink: o }));
+Ya.propTypes = { imageSize: l().oneOf(["small", "large"]).isRequired, image: l().string.isRequired, imageAlt: l().string.isRequired, heading: l().string.isRequired, body: l().string.isRequired, readMoreLink: l().string, citation: l().string };
+const nu = At.div`
+  button {
+    padding: 16px 0;
+    border: none;
+    outline: none;
+  }
+`, ts = ({ hidePrev: e, hideNext: t, clickPrev: r, clickNext: n }) => u.default.createElement(nu, null, !e && u.default.createElement("button", { className: "scroll-control-prev", type: "button", onClick: r, tabIndex: -1 }, u.default.createElement("span", { className: "carousel-control-prev-icon", "aria-hidden": "true" }), u.default.createElement("span", { className: "visually-hidden" }, "Previous")), !t && u.default.createElement("button", { className: "scroll-control-next", type: "button", onClick: n, tabIndex: -1 }, u.default.createElement("span", { className: "carousel-control-next-icon", "aria-hidden": "true" }), u.default.createElement("span", { className: "visually-hidden" }, "Next")));
+ts.propTypes = { hidePrev: l().bool, hideNext: l().bool, clickPrev: l().func.isRequired, clickNext: l().func.isRequired };
+const rs = (0, u.forwardRef)(function(e, t) {
+  const { id: r, selected: n, title: a, selectTab: o, leftKeyPressed: s, rightKeyPressed: c, icon: d } = e, p = (0, u.useRef)(null);
+  return (0, u.useImperativeHandle)(t, () => ({ focus() {
+    p.current.focus();
+  }, scrollIntoView() {
+    var f, E, S, T, k, N, A;
+    const g = ((f = p.current) == null ? void 0 : f.offsetWidth) / 2 + p.current.offsetLeft, m = ((S = (E = p.current) == null ? void 0 : E.offsetParent) == null ? void 0 : S.scrollLeft) + ((k = (T = p.current) == null ? void 0 : T.offsetParent) == null ? void 0 : k.offsetWidth) / 2;
+    (A = (N = p.current) == null ? void 0 : N.offsetParent) == null || A.scrollBy({ left: g - m });
+  } }), []), u.default.createElement("a", { ref: p, className: "nav-item nav-link " + (n ? "active" : ""), id: r, href: `#nav-${r}`, role: "tab", "aria-controls": `nav-${r}`, "aria-selected": n, onClick: (g) => o(g, r, a), onKeyDown: (g) => {
+    g.keyCode === 37 ? (g.preventDefault(), s()) : g.keyCode === 39 && (g.preventDefault(), c());
+  }, tabIndex: n ? "" : "-1" }, a, " ", d && u.default.createElement("i", { className: `${d == null ? void 0 : d[0]} fa-${d == null ? void 0 : d[1]} me-1` }));
+});
+rs.propTypes = { id: l().string.isRequired, selected: l().bool.isRequired, title: l().string.isRequired, selectTab: l().func.isRequired, leftKeyPressed: l().func.isRequired, rightKeyPressed: l().func.isRequired, icon: l().arrayOf(l().string) };
+const ns = ({ id: e, bgColor: t, selected: r, children: n }) => r && u.default.createElement("div", { className: `tab-pane fade show ${r ? "show active" : ""} ${t === "bg-dark" ? "text-white" : ""}`, id: `nav-${e}`, role: "tabpanel", "aria-labelledby": `nav-${e}-tab` }, n);
+ns.propTypes = { id: l().string.isRequired, bgColor: l().string, selected: l().bool, children: l().oneOfType([l().array, l().element]) };
+const as = ({ initialTab: e = "", children: t, bgColor: r = "", onTabChange: n = () => {
+} }) => {
+  const a = u.default.Children.toArray(t), o = (0, u.useRef)(!1), [s, c] = (0, u.useState)(e && e !== "null" ? e : a[0].props.id), d = (0, u.useRef)(null), [p, g] = function() {
+    const _ = (0, u.useRef)({}), j = (0, u.useCallback)((z) => (ie) => {
+      _.current[z] = ie;
+    }, []);
+    return [_, j];
+  }(), m = (_) => {
+    var j;
+    n(_), (j = p.current[_]) == null || j.focus(), c(_);
+  }, [f, E] = (0, u.useState)(0), [S, T] = (0, u.useState)();
+  (0, u.useEffect)(() => {
+    const _ = () => {
+      E(d.current.scrollLeft);
+    };
+    return d.current.addEventListener("scroll", _), _(), () => {
+      d.current && d.current.removeEventListener("scroll", _);
+    };
+  }, [S]), (0, u.useEffect)(() => {
+    const _ = () => {
+      T(d.current.scrollWidth - d.current.offsetWidth);
+    };
+    return window.addEventListener("resize", _), _(), () => {
+      d.current && window.removeEventListener("resize", _);
+    };
+  }, []), (0, u.useEffect)(() => {
+    var _;
+    (_ = p.current[s]) == null || _.scrollIntoView();
+  }, [s]), (0, u.useEffect)(() => {
+    o.current && e && e !== "null" && s !== e && c(e);
+  }, [e]), (0, u.useEffect)(() => {
+    o.current = !0;
+  }, []);
+  const k = (_) => {
+    rt({ event: "select", action: "click", name: "onclick", type: "carousel", region: "main content", text: _ });
+  }, N = a.map((_) => u.default.cloneElement(_, { bgColor: r, selected: s === _.props.id })), A = (_) => {
+    const j = d.current, z = j.scrollWidth - j.clientWidth;
+    let ie = j.scrollLeft + 200 * _;
+    ie = Math.max(0, Math.min(z, ie)), j.scrollTo({ left: ie, behavior: "smooth" });
+  }, D = (_, j, z) => {
+    rt({ event: "link", action: "click", name: "onclick", type: "internal link", text: z }), _.preventDefault(), m(j);
+  }, I = (_ = !0) => {
+    const j = a.length, z = _ ? 1 : -1, ie = a.findIndex((ee) => ee.props.id === s), he = a[(j + ie + z) % j].props.id;
+    m(he);
+  };
+  let v = "uds-tabbed-panels";
+  return r === "bg-dark" && (v += " uds-tabbed-panels-dark"), u.default.createElement("div", { className: r }, u.default.createElement("nav", { className: v }, u.default.createElement("div", { className: "nav nav-tabs", role: "tablist", ref: d }, a.map((_, j) => u.default.createElement(rs, { ref: g(_.props.id), id: _.props.id, title: _.props.title, selected: s === _.props.id, selectTab: D, key: _.props.id, leftKeyPressed: () => I(!1), rightKeyPressed: () => I(), icon: _.props.icon, index: j }))), u.default.createElement(ts, { hidePrev: f <= 0, hideNext: f >= S, clickPrev: () => {
+    A(-1), k("left chevron");
+  }, clickNext: () => {
+    A(1), k("right chevron");
+  } })), u.default.createElement("div", { className: "tab-content", tabIndex: 0, role: "tabpanel", id: "nav-tabContent" }, N));
+};
+as.propTypes = { initialTab: l().string, children: l().arrayOf(l().element).isRequired, bgColor: l().string, onTabChange: l().func };
+const Ka = ({ imageSource: e, imageAltText: t, quote: r, itemStyle: n = {} }) => {
+  var a, o;
+  return u.default.createElement("div", { className: `uds-blockquote uds-testimonial ${e ? "with-image" : ""} ${ln(n.containerCssClass)}` }, e && u.default.createElement(Kt, { src: e, alt: t, dataTestId: "testimonial-image", fetchPriority: "high" }), u.default.createElement("svg", { role: "presentation", viewBox: "0 0 302.87 245.82" }, u.default.createElement("path", { d: "M113.61,245.82H0V164.56q0-49.34,8.69-77.83T40.84,35.58Q64.29,12.95,100.67,0l22.24,46.9q-34,11.33-48.72,31.54T58.63,132.21h55Zm180,0H180V164.56q0-49.74,8.7-78T221,35.58Q244.65,12.95,280.63,0l22.24,46.9q-34,11.33-48.72,31.54t-15.57,53.77h55Z" })), u.default.createElement("blockquote", { style: { paddingLeft: 0 } }, r.title && u.default.createElement("h3", { className: "text-center", "data-testid": "testimonial-title" }, u.default.createElement("span", { className: ln(n.titleCssClass) }, r.title)), r.content && u.default.createElement("p", { className: ln(n.contentCssClass), "data-testid": "testimonial-content" }, r.content), (!!((a = r.cite) != null && a.name) || !!((o = r.cite) != null && o.description)) && u.default.createElement("div", { className: "citation", "data-testid": "testimonial-citation" }, u.default.createElement("cite", { className: "name" }, r.cite.name), r.cite && u.default.createElement("cite", { className: "description" }, r.cite.description))));
+};
+Ka.propTypes = { quote: l().shape({ title: l().string, content: l().string, cite: l().shape({ name: l().string, description: l().string }) }).isRequired, imageSource: l().string, imageAltText: l().string, itemStyle: l().shape({ containerCssClass: l().arrayOf(l().string), titleCssClass: l().arrayOf(l().string), contentCssClass: l().arrayOf(l().string) }) };
+const au = { name: "onclick", event: "link", action: "click", type: "internal link", region: "main content", text: "play button" }, Xa = (e) => {
+  const { type: t = "video", url: r = "", vttUrl: n, title: a = "", caption: o, className: s, controls: c = !0 } = e;
+  return t === "youtube" ? (({ title: d = "", caption: p, url: g = "", className: m }) => u.default.createElement("div", { className: we()(`uds-video-container ${m}`, { "uds-video-with-caption": p }) }, u.default.createElement("div", { className: "uds-video-player youtube-video" }, u.default.createElement("iframe", { title: d, src: g })), p && u.default.createElement("figure", { "data-testid": "video-caption" }, u.default.createElement("figcaption", null, p))))({ url: r, title: a, caption: o, className: s }) : (({ url: d = "", vttUrl: p, caption: g, title: m = "", className: f, controls: E = !0 }) => {
+    const S = (0, u.useRef)(null);
+    return u.default.createElement("div", { className: we()(`uds-video-container ${f}`, { "uds-video-with-caption": g }) }, u.default.createElement("div", { className: "uds-video-player" }, u.default.createElement("video", { ref: S, title: m, onClick: () => {
+      rt({ ...au, section: m });
+    }, playsInline: !0, controls: E || !0 }, u.default.createElement("source", { src: d }), u.default.createElement("track", { src: p, kind: "captions", srcLang: "en", label: "english_captions" }))), g && u.default.createElement("figure", { "data-testid": "video-caption" }, u.default.createElement("figcaption", null, g)));
+  })({ url: r, vttUrl: n, title: a, caption: o, className: s, controls: c });
+};
+Xa.propTypes = { type: l().oneOf(["video", "youtube"]), url: l().string, vttUrl: l().string, title: l().string, className: l().string, caption: l().string, controls: l().bool };
+const ou = ((e) => {
+  var t = {};
+  return Pe.d(t, e), t;
+})({ default: () => Dl.default }), nt = (e, t, r) => {
+  ou.default.render(u.default.createElement(e, t), r);
+}, iu = ({ targetSelector: e, props: t }) => nt(za, t, document.querySelector(e)), su = ({ targetSelector: e, props: t }) => nt(Wa, t, document.querySelector(e)), lu = ({ targetSelector: e, props: t }) => nt(xn, t, document.querySelector(e)), cu = ({ targetSelector: e, props: t }) => nt(Et, t, document.querySelector(e)), uu = ({ targetSelector: e, props: t }) => nt(wn, t, document.querySelector(e)), du = ({ targetSelector: e, props: t }) => nt(Dr, t, document.querySelector(e)), pu = ({ targetSelector: e, props: t }) => nt(Sn, t, document.querySelector(e)), mu = ({ targetSelector: e, props: t }) => nt(Va, t, document.querySelector(e)), fu = ({ targetSelector: e, props: t }) => nt(Kt, t, document.querySelector(e)), hu = ({ targetSelector: e, props: t }) => nt(Ya, t, document.querySelector(e)), gu = ({ targetSelector: e, props: t }) => nt(En, t, document.querySelector(e)), yu = ({ targetSelector: e, props: t }) => nt(Ka, t, document.querySelector(e)), bu = ({ targetSelector: e, props: t }) => nt(Xa, t, document.querySelector(e));
+var os = Mt.nD, vu = Mt.n_, Fr = Mt.$n, tt = Mt.Zp, Pn = Mt.lq, xu = Mt.dK, is = Mt.Ce, ss = { exports: {} }, ls = { exports: {} }, xe = {};
+var ei;
+function wu() {
+  if (ei) return xe;
+  ei = 1;
+  var e = typeof Symbol == "function" && Symbol.for, t = e ? Symbol.for("react.element") : 60103, r = e ? Symbol.for("react.portal") : 60106, n = e ? Symbol.for("react.fragment") : 60107, a = e ? Symbol.for("react.strict_mode") : 60108, o = e ? Symbol.for("react.profiler") : 60114, s = e ? Symbol.for("react.provider") : 60109, c = e ? Symbol.for("react.context") : 60110, d = e ? Symbol.for("react.async_mode") : 60111, p = e ? Symbol.for("react.concurrent_mode") : 60111, g = e ? Symbol.for("react.forward_ref") : 60112, m = e ? Symbol.for("react.suspense") : 60113, f = e ? Symbol.for("react.suspense_list") : 60120, E = e ? Symbol.for("react.memo") : 60115, S = e ? Symbol.for("react.lazy") : 60116, T = e ? Symbol.for("react.block") : 60121, k = e ? Symbol.for("react.fundamental") : 60117, N = e ? Symbol.for("react.responder") : 60118, A = e ? Symbol.for("react.scope") : 60119;
+  function D(v) {
+    if (typeof v == "object" && v !== null) {
+      var _ = v.$$typeof;
+      switch (_) {
+        case t:
+          switch (v = v.type, v) {
+            case d:
+            case p:
+            case n:
+            case o:
+            case a:
+            case m:
+              return v;
+            default:
+              switch (v = v && v.$$typeof, v) {
+                case c:
+                case g:
+                case S:
+                case E:
+                case s:
+                  return v;
+                default:
+                  return _;
+              }
+          }
+        case r:
+          return _;
+      }
+    }
+  }
+  function I(v) {
+    return D(v) === p;
+  }
+  return xe.AsyncMode = d, xe.ConcurrentMode = p, xe.ContextConsumer = c, xe.ContextProvider = s, xe.Element = t, xe.ForwardRef = g, xe.Fragment = n, xe.Lazy = S, xe.Memo = E, xe.Portal = r, xe.Profiler = o, xe.StrictMode = a, xe.Suspense = m, xe.isAsyncMode = function(v) {
+    return I(v) || D(v) === d;
+  }, xe.isConcurrentMode = I, xe.isContextConsumer = function(v) {
+    return D(v) === c;
+  }, xe.isContextProvider = function(v) {
+    return D(v) === s;
+  }, xe.isElement = function(v) {
+    return typeof v == "object" && v !== null && v.$$typeof === t;
+  }, xe.isForwardRef = function(v) {
+    return D(v) === g;
+  }, xe.isFragment = function(v) {
+    return D(v) === n;
+  }, xe.isLazy = function(v) {
+    return D(v) === S;
+  }, xe.isMemo = function(v) {
+    return D(v) === E;
+  }, xe.isPortal = function(v) {
+    return D(v) === r;
+  }, xe.isProfiler = function(v) {
+    return D(v) === o;
+  }, xe.isStrictMode = function(v) {
+    return D(v) === a;
+  }, xe.isSuspense = function(v) {
+    return D(v) === m;
+  }, xe.isValidElementType = function(v) {
+    return typeof v == "string" || typeof v == "function" || v === n || v === p || v === o || v === a || v === m || v === f || typeof v == "object" && v !== null && (v.$$typeof === S || v.$$typeof === E || v.$$typeof === s || v.$$typeof === c || v.$$typeof === g || v.$$typeof === k || v.$$typeof === N || v.$$typeof === A || v.$$typeof === T);
+  }, xe.typeOf = D, xe;
+}
+ls.exports = wu();
+var Ln = ls.exports, Zn, ti;
+function Su() {
+  if (ti) return Zn;
+  ti = 1;
+  var e = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+  return Zn = e, Zn;
+}
+var Jn, ri;
+function Tu() {
+  if (ri) return Jn;
+  ri = 1;
+  var e = Su();
+  function t() {
+  }
+  function r() {
+  }
+  return r.resetWarningCache = t, Jn = function() {
+    function n(s, c, d, p, g, m) {
+      if (m !== e) {
+        var f = new Error(
+          "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types"
+        );
+        throw f.name = "Invariant Violation", f;
+      }
+    }
+    n.isRequired = n;
+    function a() {
+      return n;
+    }
+    var o = {
+      array: n,
+      bigint: n,
+      bool: n,
+      func: n,
+      number: n,
+      object: n,
+      string: n,
+      symbol: n,
+      any: n,
+      arrayOf: a,
+      element: n,
+      elementType: n,
+      instanceOf: a,
+      node: n,
+      objectOf: a,
+      oneOf: a,
+      oneOfType: a,
+      shape: a,
+      exact: a,
+      checkPropTypes: r,
+      resetWarningCache: t
+    };
+    return o.PropTypes = o, o;
+  }, Jn;
+}
+ss.exports = Tu()();
+var dn = ss.exports;
+const h = /* @__PURE__ */ Ua(dn);
+function Eu(e) {
+  function t(R, C, x, P, y) {
+    for (var L = 0, O = 0, ae = 0, re = 0, V, K, oe = 0, fe = 0, le, ce = le = V = 0, Q = 0, pe = 0, $e = 0, q = 0, $ = x.length, Y = $ - 1, U, F = "", de = "", Ae = "", qe = "", He; Q < $; ) {
+      if (K = x.charCodeAt(Q), Q === Y && O + re + ae + L !== 0 && (O !== 0 && (K = O === 47 ? 10 : 47), re = ae = L = 0, $++, Y++), O + re + ae + L === 0) {
+        if (Q === Y && (0 < pe && (F = F.replace(f, "")), 0 < F.trim().length)) {
+          switch (K) {
+            case 32:
+            case 9:
+            case 59:
+            case 13:
+            case 10:
+              break;
+            default:
+              F += x.charAt(Q);
+          }
+          K = 59;
+        }
+        switch (K) {
+          case 123:
+            for (F = F.trim(), V = F.charCodeAt(0), le = 1, q = ++Q; Q < $; ) {
+              switch (K = x.charCodeAt(Q)) {
+                case 123:
+                  le++;
+                  break;
+                case 125:
+                  le--;
+                  break;
+                case 47:
+                  switch (K = x.charCodeAt(Q + 1)) {
+                    case 42:
+                    case 47:
+                      e: {
+                        for (ce = Q + 1; ce < Y; ++ce)
+                          switch (x.charCodeAt(ce)) {
+                            case 47:
+                              if (K === 42 && x.charCodeAt(ce - 1) === 42 && Q + 2 !== ce) {
+                                Q = ce + 1;
+                                break e;
+                              }
+                              break;
+                            case 10:
+                              if (K === 47) {
+                                Q = ce + 1;
+                                break e;
+                              }
+                          }
+                        Q = ce;
+                      }
+                  }
+                  break;
+                case 91:
+                  K++;
+                case 40:
+                  K++;
+                case 34:
+                case 39:
+                  for (; Q++ < Y && x.charCodeAt(Q) !== K; )
+                    ;
+              }
+              if (le === 0) break;
+              Q++;
+            }
+            switch (le = x.substring(q, Q), V === 0 && (V = (F = F.replace(m, "").trim()).charCodeAt(0)), V) {
+              case 64:
+                switch (0 < pe && (F = F.replace(f, "")), K = F.charCodeAt(1), K) {
+                  case 100:
+                  case 109:
+                  case 115:
+                  case 45:
+                    pe = C;
+                    break;
+                  default:
+                    pe = Se;
+                }
+                if (le = t(C, pe, le, K, y + 1), q = le.length, 0 < be && (pe = r(Se, F, $e), He = c(3, le, pe, C, ne, Z, q, K, y, P), F = pe.join(""), He !== void 0 && (q = (le = He.trim()).length) === 0 && (K = 0, le = "")), 0 < q) switch (K) {
+                  case 115:
+                    F = F.replace(_, s);
+                  case 100:
+                  case 109:
+                  case 45:
+                    le = F + "{" + le + "}";
+                    break;
+                  case 107:
+                    F = F.replace(A, "$1 $2"), le = F + "{" + le + "}", le = ue === 1 || ue === 2 && o("@" + le, 3) ? "@-webkit-" + le + "@" + le : "@" + le;
+                    break;
+                  default:
+                    le = F + le, P === 112 && (le = (de += le, ""));
+                }
+                else le = "";
+                break;
+              default:
+                le = t(C, r(C, F, $e), le, P, y + 1);
+            }
+            Ae += le, le = $e = pe = ce = V = 0, F = "", K = x.charCodeAt(++Q);
+            break;
+          case 125:
+          case 59:
+            if (F = (0 < pe ? F.replace(f, "") : F).trim(), 1 < (q = F.length)) switch (ce === 0 && (V = F.charCodeAt(0), V === 45 || 96 < V && 123 > V) && (q = (F = F.replace(" ", ":")).length), 0 < be && (He = c(1, F, C, R, ne, Z, de.length, P, y, P)) !== void 0 && (q = (F = He.trim()).length) === 0 && (F = "\0\0"), V = F.charCodeAt(0), K = F.charCodeAt(1), V) {
+              case 0:
+                break;
+              case 64:
+                if (K === 105 || K === 99) {
+                  qe += F + x.charAt(Q);
+                  break;
+                }
+              default:
+                F.charCodeAt(q - 1) !== 58 && (de += a(F, V, K, F.charCodeAt(2)));
+            }
+            $e = pe = ce = V = 0, F = "", K = x.charCodeAt(++Q);
+        }
+      }
+      switch (K) {
+        case 13:
+        case 10:
+          O === 47 ? O = 0 : 1 + V === 0 && P !== 107 && 0 < F.length && (pe = 1, F += "\0"), 0 < be * J && c(0, F, C, R, ne, Z, de.length, P, y, P), Z = 1, ne++;
+          break;
+        case 59:
+        case 125:
+          if (O + re + ae + L === 0) {
+            Z++;
+            break;
+          }
+        default:
+          switch (Z++, U = x.charAt(Q), K) {
+            case 9:
+            case 32:
+              if (re + L + O === 0) switch (oe) {
+                case 44:
+                case 58:
+                case 9:
+                case 32:
+                  U = "";
+                  break;
+                default:
+                  K !== 32 && (U = " ");
+              }
+              break;
+            case 0:
+              U = "\\0";
+              break;
+            case 12:
+              U = "\\f";
+              break;
+            case 11:
+              U = "\\v";
+              break;
+            case 38:
+              re + O + L === 0 && (pe = $e = 1, U = "\f" + U);
+              break;
+            case 108:
+              if (re + O + L + G === 0 && 0 < ce) switch (Q - ce) {
+                case 2:
+                  oe === 112 && x.charCodeAt(Q - 3) === 58 && (G = oe);
+                case 8:
+                  fe === 111 && (G = fe);
+              }
+              break;
+            case 58:
+              re + O + L === 0 && (ce = Q);
+              break;
+            case 44:
+              O + ae + re + L === 0 && (pe = 1, U += "\r");
+              break;
+            case 34:
+            case 39:
+              O === 0 && (re = re === K ? 0 : re === 0 ? K : re);
+              break;
+            case 91:
+              re + O + ae === 0 && L++;
+              break;
+            case 93:
+              re + O + ae === 0 && L--;
+              break;
+            case 41:
+              re + O + L === 0 && ae--;
+              break;
+            case 40:
+              if (re + O + L === 0) {
+                if (V === 0) switch (2 * oe + 3 * fe) {
+                  case 533:
+                    break;
+                  default:
+                    V = 1;
+                }
+                ae++;
+              }
+              break;
+            case 64:
+              O + ae + re + L + ce + le === 0 && (le = 1);
+              break;
+            case 42:
+            case 47:
+              if (!(0 < re + L + ae)) switch (O) {
+                case 0:
+                  switch (2 * K + 3 * x.charCodeAt(Q + 1)) {
+                    case 235:
+                      O = 47;
+                      break;
+                    case 220:
+                      q = Q, O = 42;
+                  }
+                  break;
+                case 42:
+                  K === 47 && oe === 42 && q + 2 !== Q && (x.charCodeAt(q + 2) === 33 && (de += x.substring(q, Q + 1)), U = "", O = 0);
+              }
+          }
+          O === 0 && (F += U);
+      }
+      fe = oe, oe = K, Q++;
+    }
+    if (q = de.length, 0 < q) {
+      if (pe = C, 0 < be && (He = c(2, de, pe, R, ne, Z, q, P, y, P), He !== void 0 && (de = He).length === 0)) return qe + de + Ae;
+      if (de = pe.join(",") + "{" + de + "}", ue * G !== 0) {
+        switch (ue !== 2 || o(de, 2) || (G = 0), G) {
+          case 111:
+            de = de.replace(I, ":-moz-$1") + de;
+            break;
+          case 112:
+            de = de.replace(D, "::-webkit-input-$1") + de.replace(D, "::-moz-$1") + de.replace(D, ":-ms-input-$1") + de;
+        }
+        G = 0;
+      }
+    }
+    return qe + de + Ae;
+  }
+  function r(R, C, x) {
+    var P = C.trim().split(k);
+    C = P;
+    var y = P.length, L = R.length;
+    switch (L) {
+      case 0:
+      case 1:
+        var O = 0;
+        for (R = L === 0 ? "" : R[0] + " "; O < y; ++O)
+          C[O] = n(R, C[O], x).trim();
+        break;
+      default:
+        var ae = O = 0;
+        for (C = []; O < y; ++O)
+          for (var re = 0; re < L; ++re)
+            C[ae++] = n(R[re] + " ", P[O], x).trim();
+    }
+    return C;
+  }
+  function n(R, C, x) {
+    var P = C.charCodeAt(0);
+    switch (33 > P && (P = (C = C.trim()).charCodeAt(0)), P) {
+      case 38:
+        return C.replace(N, "$1" + R.trim());
+      case 58:
+        return R.trim() + C.replace(N, "$1" + R.trim());
+      default:
+        if (0 < 1 * x && 0 < C.indexOf("\f")) return C.replace(N, (R.charCodeAt(0) === 58 ? "" : "$1") + R.trim());
+    }
+    return R + C;
+  }
+  function a(R, C, x, P) {
+    var y = R + ";", L = 2 * C + 3 * x + 4 * P;
+    if (L === 944) {
+      R = y.indexOf(":", 9) + 1;
+      var O = y.substring(R, y.length - 1).trim();
+      return O = y.substring(0, R).trim() + O + ";", ue === 1 || ue === 2 && o(O, 1) ? "-webkit-" + O + O : O;
+    }
+    if (ue === 0 || ue === 2 && !o(y, 1)) return y;
+    switch (L) {
+      case 1015:
+        return y.charCodeAt(10) === 97 ? "-webkit-" + y + y : y;
+      case 951:
+        return y.charCodeAt(3) === 116 ? "-webkit-" + y + y : y;
+      case 963:
+        return y.charCodeAt(5) === 110 ? "-webkit-" + y + y : y;
+      case 1009:
+        if (y.charCodeAt(4) !== 100) break;
+      case 969:
+      case 942:
+        return "-webkit-" + y + y;
+      case 978:
+        return "-webkit-" + y + "-moz-" + y + y;
+      case 1019:
+      case 983:
+        return "-webkit-" + y + "-moz-" + y + "-ms-" + y + y;
+      case 883:
+        if (y.charCodeAt(8) === 45) return "-webkit-" + y + y;
+        if (0 < y.indexOf("image-set(", 11)) return y.replace(ee, "$1-webkit-$2") + y;
+        break;
+      case 932:
+        if (y.charCodeAt(4) === 45) switch (y.charCodeAt(5)) {
+          case 103:
+            return "-webkit-box-" + y.replace("-grow", "") + "-webkit-" + y + "-ms-" + y.replace("grow", "positive") + y;
+          case 115:
+            return "-webkit-" + y + "-ms-" + y.replace("shrink", "negative") + y;
+          case 98:
+            return "-webkit-" + y + "-ms-" + y.replace("basis", "preferred-size") + y;
+        }
+        return "-webkit-" + y + "-ms-" + y + y;
+      case 964:
+        return "-webkit-" + y + "-ms-flex-" + y + y;
+      case 1023:
+        if (y.charCodeAt(8) !== 99) break;
+        return O = y.substring(y.indexOf(":", 15)).replace("flex-", "").replace("space-between", "justify"), "-webkit-box-pack" + O + "-webkit-" + y + "-ms-flex-pack" + O + y;
+      case 1005:
+        return S.test(y) ? y.replace(E, ":-webkit-") + y.replace(E, ":-moz-") + y : y;
+      case 1e3:
+        switch (O = y.substring(13).trim(), C = O.indexOf("-") + 1, O.charCodeAt(0) + O.charCodeAt(C)) {
+          case 226:
+            O = y.replace(v, "tb");
+            break;
+          case 232:
+            O = y.replace(v, "tb-rl");
+            break;
+          case 220:
+            O = y.replace(v, "lr");
+            break;
+          default:
+            return y;
+        }
+        return "-webkit-" + y + "-ms-" + O + y;
+      case 1017:
+        if (y.indexOf("sticky", 9) === -1) break;
+      case 975:
+        switch (C = (y = R).length - 10, O = (y.charCodeAt(C) === 33 ? y.substring(0, C) : y).substring(R.indexOf(":", 7) + 1).trim(), L = O.charCodeAt(0) + (O.charCodeAt(7) | 0)) {
+          case 203:
+            if (111 > O.charCodeAt(8)) break;
+          case 115:
+            y = y.replace(O, "-webkit-" + O) + ";" + y;
+            break;
+          case 207:
+          case 102:
+            y = y.replace(O, "-webkit-" + (102 < L ? "inline-" : "") + "box") + ";" + y.replace(O, "-webkit-" + O) + ";" + y.replace(O, "-ms-" + O + "box") + ";" + y;
+        }
+        return y + ";";
+      case 938:
+        if (y.charCodeAt(5) === 45) switch (y.charCodeAt(6)) {
+          case 105:
+            return O = y.replace("-items", ""), "-webkit-" + y + "-webkit-box-" + O + "-ms-flex-" + O + y;
+          case 115:
+            return "-webkit-" + y + "-ms-flex-item-" + y.replace(z, "") + y;
+          default:
+            return "-webkit-" + y + "-ms-flex-line-pack" + y.replace("align-content", "").replace(z, "") + y;
+        }
+        break;
+      case 973:
+      case 989:
+        if (y.charCodeAt(3) !== 45 || y.charCodeAt(4) === 122) break;
+      case 931:
+      case 953:
+        if (he.test(R) === !0) return (O = R.substring(R.indexOf(":") + 1)).charCodeAt(0) === 115 ? a(R.replace("stretch", "fill-available"), C, x, P).replace(":fill-available", ":stretch") : y.replace(O, "-webkit-" + O) + y.replace(O, "-moz-" + O.replace("fill-", "")) + y;
+        break;
+      case 962:
+        if (y = "-webkit-" + y + (y.charCodeAt(5) === 102 ? "-ms-" + y : "") + y, x + P === 211 && y.charCodeAt(13) === 105 && 0 < y.indexOf("transform", 10)) return y.substring(0, y.indexOf(";", 27) + 1).replace(T, "$1-webkit-$2") + y;
+    }
+    return y;
+  }
+  function o(R, C) {
+    var x = R.indexOf(C === 1 ? ":" : "{"), P = R.substring(0, C !== 3 ? x : 10);
+    return x = R.substring(x + 1, R.length - 1), Ee(C !== 2 ? P : P.replace(ie, "$1"), x, C);
+  }
+  function s(R, C) {
+    var x = a(C, C.charCodeAt(0), C.charCodeAt(1), C.charCodeAt(2));
+    return x !== C + ";" ? x.replace(j, " or ($1)").substring(4) : "(" + C + ")";
+  }
+  function c(R, C, x, P, y, L, O, ae, re, V) {
+    for (var K = 0, oe = C, fe; K < be; ++K)
+      switch (fe = se[K].call(g, R, oe, x, P, y, L, O, ae, re, V)) {
+        case void 0:
+        case !1:
+        case !0:
+        case null:
+          break;
+        default:
+          oe = fe;
+      }
+    if (oe !== C) return oe;
+  }
+  function d(R) {
+    switch (R) {
+      case void 0:
+      case null:
+        be = se.length = 0;
+        break;
+      default:
+        if (typeof R == "function") se[be++] = R;
+        else if (typeof R == "object") for (var C = 0, x = R.length; C < x; ++C)
+          d(R[C]);
+        else J = !!R | 0;
+    }
+    return d;
+  }
+  function p(R) {
+    return R = R.prefix, R !== void 0 && (Ee = null, R ? typeof R != "function" ? ue = 1 : (ue = 2, Ee = R) : ue = 0), p;
+  }
+  function g(R, C) {
+    var x = R;
+    if (33 > x.charCodeAt(0) && (x = x.trim()), H = x, x = [H], 0 < be) {
+      var P = c(-1, C, x, x, ne, Z, 0, 0, 0, 0);
+      P !== void 0 && typeof P == "string" && (C = P);
+    }
+    var y = t(Se, x, C, 0, 0);
+    return 0 < be && (P = c(-2, y, x, x, ne, Z, y.length, 0, 0, 0), P !== void 0 && (y = P)), H = "", G = 0, Z = ne = 1, y;
+  }
+  var m = /^\0+/g, f = /[\0\r\f]/g, E = /: */g, S = /zoo|gra/, T = /([,: ])(transform)/g, k = /,\r+?/g, N = /([\t\r\n ])*\f?&/g, A = /@(k\w+)\s*(\S*)\s*/, D = /::(place)/g, I = /:(read-only)/g, v = /[svh]\w+-[tblr]{2}/, _ = /\(\s*(.*)\s*\)/g, j = /([\s\S]*?);/g, z = /-self|flex-/g, ie = /[^]*?(:[rp][el]a[\w-]+)[^]*/, he = /stretch|:\s*\w+\-(?:conte|avail)/, ee = /([^-])(image-set\()/, Z = 1, ne = 1, G = 0, ue = 1, Se = [], se = [], be = 0, Ee = null, J = 0, H = "";
+  return g.use = d, g.set = p, e !== void 0 && p(e), g;
+}
+var ku = {
+  animationIterationCount: 1,
+  borderImageOutset: 1,
+  borderImageSlice: 1,
+  borderImageWidth: 1,
+  boxFlex: 1,
+  boxFlexGroup: 1,
+  boxOrdinalGroup: 1,
+  columnCount: 1,
+  columns: 1,
+  flex: 1,
+  flexGrow: 1,
+  flexPositive: 1,
+  flexShrink: 1,
+  flexNegative: 1,
+  flexOrder: 1,
+  gridRow: 1,
+  gridRowEnd: 1,
+  gridRowSpan: 1,
+  gridRowStart: 1,
+  gridColumn: 1,
+  gridColumnEnd: 1,
+  gridColumnSpan: 1,
+  gridColumnStart: 1,
+  msGridRow: 1,
+  msGridRowSpan: 1,
+  msGridColumn: 1,
+  msGridColumnSpan: 1,
+  fontWeight: 1,
+  lineHeight: 1,
+  opacity: 1,
+  order: 1,
+  orphans: 1,
+  tabSize: 1,
+  widows: 1,
+  zIndex: 1,
+  zoom: 1,
+  WebkitLineClamp: 1,
+  // SVG-related properties
+  fillOpacity: 1,
+  floodOpacity: 1,
+  stopOpacity: 1,
+  strokeDasharray: 1,
+  strokeDashoffset: 1,
+  strokeMiterlimit: 1,
+  strokeOpacity: 1,
+  strokeWidth: 1
+};
+function Au(e) {
+  var t = /* @__PURE__ */ Object.create(null);
+  return function(r) {
+    return t[r] === void 0 && (t[r] = e(r)), t[r];
+  };
+}
+var Nu = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|fetchpriority|fetchPriority|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/, ni = /* @__PURE__ */ Au(
+  function(e) {
+    return Nu.test(e) || e.charCodeAt(0) === 111 && e.charCodeAt(1) === 110 && e.charCodeAt(2) < 91;
+  }
+  /* Z+1 */
+), Za = Ln, Cu = {
+  childContextTypes: !0,
+  contextType: !0,
+  contextTypes: !0,
+  defaultProps: !0,
+  displayName: !0,
+  getDefaultProps: !0,
+  getDerivedStateFromError: !0,
+  getDerivedStateFromProps: !0,
+  mixins: !0,
+  propTypes: !0,
+  type: !0
+}, Ou = {
+  name: !0,
+  length: !0,
+  prototype: !0,
+  caller: !0,
+  callee: !0,
+  arguments: !0,
+  arity: !0
+}, ju = {
+  $$typeof: !0,
+  render: !0,
+  defaultProps: !0,
+  displayName: !0,
+  propTypes: !0
+}, cs = {
+  $$typeof: !0,
+  compare: !0,
+  defaultProps: !0,
+  displayName: !0,
+  propTypes: !0,
+  type: !0
+}, Ja = {};
+Ja[Za.ForwardRef] = ju;
+Ja[Za.Memo] = cs;
+function ai(e) {
+  return Za.isMemo(e) ? cs : Ja[e.$$typeof] || Cu;
+}
+var Ru = Object.defineProperty, _u = Object.getOwnPropertyNames, oi = Object.getOwnPropertySymbols, Pu = Object.getOwnPropertyDescriptor, Lu = Object.getPrototypeOf, ii = Object.prototype;
+function us(e, t, r) {
+  if (typeof t != "string") {
+    if (ii) {
+      var n = Lu(t);
+      n && n !== ii && us(e, n, r);
+    }
+    var a = _u(t);
+    oi && (a = a.concat(oi(t)));
+    for (var o = ai(e), s = ai(t), c = 0; c < a.length; ++c) {
+      var d = a[c];
+      if (!Ou[d] && !(r && r[d]) && !(s && s[d]) && !(o && o[d])) {
+        var p = Pu(t, d);
+        try {
+          Ru(e, d, p);
+        } catch {
+        }
+      }
+    }
+  }
+  return e;
+}
+var Iu = us;
+const Du = /* @__PURE__ */ Ua(Iu);
+var ye = { env: { NODE_ENV: "production" } };
+function ft() {
+  return (ft = Object.assign || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = arguments[t];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n]);
+    }
+    return e;
+  }).apply(this, arguments);
+}
+var si = function(e, t) {
+  for (var r = [e[0]], n = 0, a = t.length; n < a; n += 1) r.push(t[n], e[n + 1]);
+  return r;
+}, ka = function(e) {
+  return e !== null && typeof e == "object" && (e.toString ? e.toString() : Object.prototype.toString.call(e)) === "[object Object]" && !Ln.typeOf(e);
+}, kn = Object.freeze([]), Lt = Object.freeze({});
+function Mr(e) {
+  return typeof e == "function";
+}
+function Aa(e) {
+  return ye.env.NODE_ENV !== "production" && typeof e == "string" && e || e.displayName || e.name || "Component";
+}
+function Qa(e) {
+  return e && typeof e.styledComponentId == "string";
+}
+var lr = typeof ye < "u" && ye.env !== void 0 && (ye.env.REACT_APP_SC_ATTR || ye.env.SC_ATTR) || "data-styled", eo = typeof window < "u" && "HTMLElement" in window, Mu = !!(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof ye < "u" && ye.env !== void 0 && (ye.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && ye.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? ye.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && ye.env.REACT_APP_SC_DISABLE_SPEEDY : ye.env.SC_DISABLE_SPEEDY !== void 0 && ye.env.SC_DISABLE_SPEEDY !== "" ? ye.env.SC_DISABLE_SPEEDY !== "false" && ye.env.SC_DISABLE_SPEEDY : ye.env.NODE_ENV !== "production")), $u = {}, Fu = ye.env.NODE_ENV !== "production" ? { 1: `Cannot create styled-component for component: %s.
+
+`, 2: `Can't collect styles once you've consumed a \`ServerStyleSheet\`'s styles! \`ServerStyleSheet\` is a one off instance for each server-side render cycle.
+
+- Are you trying to reuse it across renders?
+- Are you accidentally calling collectStyles twice?
+
+`, 3: `Streaming SSR is only supported in a Node.js environment; Please do not try to call this method in the browser.
+
+`, 4: `The \`StyleSheetManager\` expects a valid target or sheet prop!
+
+- Does this error occur on the client and is your target falsy?
+- Does this error occur on the server and is the sheet falsy?
+
+`, 5: `The clone method cannot be used on the client!
+
+- Are you running in a client-like environment on the server?
+- Are you trying to run SSR on the client?
+
+`, 6: `Trying to insert a new style tag, but the given Node is unmounted!
+
+- Are you using a custom target that isn't mounted?
+- Does your document not have a valid head element?
+- Have you accidentally removed a style tag manually?
+
+`, 7: 'ThemeProvider: Please return an object from your "theme" prop function, e.g.\n\n```js\ntheme={() => ({})}\n```\n\n', 8: `ThemeProvider: Please make your "theme" prop an object.
+
+`, 9: "Missing document `<head>`\n\n", 10: `Cannot find a StyleSheet instance. Usually this happens if there are multiple copies of styled-components loaded at once. Check out this issue for how to troubleshoot and fix the common cases where this situation can happen: https://github.com/styled-components/styled-components/issues/1941#issuecomment-417862021
+
+`, 11: `_This error was replaced with a dev-time warning, it will be deleted for v4 final._ [createGlobalStyle] received children which will not be rendered. Please use the component without passing children elements.
+
+`, 12: "It seems you are interpolating a keyframe declaration (%s) into an untagged string. This was supported in styled-components v3, but is not longer supported in v4 as keyframes are now injected on-demand. Please wrap your string in the css\\`\\` helper which ensures the styles are injected correctly. See https://www.styled-components.com/docs/api#css\n\n", 13: `%s is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.
+
+`, 14: `ThemeProvider: "theme" prop is required.
+
+`, 15: "A stylis plugin has been supplied that is not named. We need a name for each plugin to be able to prevent styling collisions between different stylis configurations within the same app. Before you pass your plugin to `<StyleSheetManager stylisPlugins={[]}>`, please make sure each plugin is uniquely-named, e.g.\n\n```js\nObject.defineProperty(importedPlugin, 'name', { value: 'some-unique-name' });\n```\n\n", 16: `Reached the limit of how many styled components may be created at group %s.
+You may only create up to 1,073,741,824 components. If you're creating components dynamically,
+as for instance in your render method then you may be running into this limitation.
+
+`, 17: `CSSStyleSheet could not be found on HTMLStyleElement.
+Has styled-components' style tag been unmounted or altered by another script?
+` } : {};
+function Uu() {
+  for (var e = arguments.length <= 0 ? void 0 : arguments[0], t = [], r = 1, n = arguments.length; r < n; r += 1) t.push(r < 0 || arguments.length <= r ? void 0 : arguments[r]);
+  return t.forEach(function(a) {
+    e = e.replace(/%[a-z]/, a);
+  }), e;
+}
+function dr(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  throw ye.env.NODE_ENV === "production" ? new Error("An error occurred. See https://git.io/JUIaE#" + e + " for more information." + (r.length > 0 ? " Args: " + r.join(", ") : "")) : new Error(Uu.apply(void 0, [Fu[e]].concat(r)).trim());
+}
+var zu = function() {
+  function e(r) {
+    this.groupSizes = new Uint32Array(512), this.length = 512, this.tag = r;
+  }
+  var t = e.prototype;
+  return t.indexOfGroup = function(r) {
+    for (var n = 0, a = 0; a < r; a++) n += this.groupSizes[a];
+    return n;
+  }, t.insertRules = function(r, n) {
+    if (r >= this.groupSizes.length) {
+      for (var a = this.groupSizes, o = a.length, s = o; r >= s; ) (s <<= 1) < 0 && dr(16, "" + r);
+      this.groupSizes = new Uint32Array(s), this.groupSizes.set(a), this.length = s;
+      for (var c = o; c < s; c++) this.groupSizes[c] = 0;
+    }
+    for (var d = this.indexOfGroup(r + 1), p = 0, g = n.length; p < g; p++) this.tag.insertRule(d, n[p]) && (this.groupSizes[r]++, d++);
+  }, t.clearGroup = function(r) {
+    if (r < this.length) {
+      var n = this.groupSizes[r], a = this.indexOfGroup(r), o = a + n;
+      this.groupSizes[r] = 0;
+      for (var s = a; s < o; s++) this.tag.deleteRule(a);
+    }
+  }, t.getGroup = function(r) {
+    var n = "";
+    if (r >= this.length || this.groupSizes[r] === 0) return n;
+    for (var a = this.groupSizes[r], o = this.indexOfGroup(r), s = o + a, c = o; c < s; c++) n += this.tag.getRule(c) + `/*!sc*/
+`;
+    return n;
+  }, e;
+}(), pn = /* @__PURE__ */ new Map(), An = /* @__PURE__ */ new Map(), Lr = 1, rn = function(e) {
+  if (pn.has(e)) return pn.get(e);
+  for (; An.has(Lr); ) Lr++;
+  var t = Lr++;
+  return ye.env.NODE_ENV !== "production" && ((0 | t) < 0 || t > 1 << 30) && dr(16, "" + t), pn.set(e, t), An.set(t, e), t;
+}, Hu = function(e) {
+  return An.get(e);
+}, qu = function(e, t) {
+  t >= Lr && (Lr = t + 1), pn.set(e, t), An.set(t, e);
+}, Wu = "style[" + lr + '][data-styled-version="5.3.11"]', Gu = new RegExp("^" + lr + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'), Bu = function(e, t, r) {
+  for (var n, a = r.split(","), o = 0, s = a.length; o < s; o++) (n = a[o]) && e.registerName(t, n);
+}, Vu = function(e, t) {
+  for (var r = (t.textContent || "").split(`/*!sc*/
+`), n = [], a = 0, o = r.length; a < o; a++) {
+    var s = r[a].trim();
+    if (s) {
+      var c = s.match(Gu);
+      if (c) {
+        var d = 0 | parseInt(c[1], 10), p = c[2];
+        d !== 0 && (qu(p, d), Bu(e, p, c[3]), e.getTag().insertRules(d, n)), n.length = 0;
+      } else n.push(s);
+    }
+  }
+}, Yu = function() {
+  return typeof __webpack_nonce__ < "u" ? __webpack_nonce__ : null;
+}, ds = function(e) {
+  var t = document.head, r = e || t, n = document.createElement("style"), a = function(c) {
+    for (var d = c.childNodes, p = d.length; p >= 0; p--) {
+      var g = d[p];
+      if (g && g.nodeType === 1 && g.hasAttribute(lr)) return g;
+    }
+  }(r), o = a !== void 0 ? a.nextSibling : null;
+  n.setAttribute(lr, "active"), n.setAttribute("data-styled-version", "5.3.11");
+  var s = Yu();
+  return s && n.setAttribute("nonce", s), r.insertBefore(n, o), n;
+}, Ku = function() {
+  function e(r) {
+    var n = this.element = ds(r);
+    n.appendChild(document.createTextNode("")), this.sheet = function(a) {
+      if (a.sheet) return a.sheet;
+      for (var o = document.styleSheets, s = 0, c = o.length; s < c; s++) {
+        var d = o[s];
+        if (d.ownerNode === a) return d;
+      }
+      dr(17);
+    }(n), this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    try {
+      return this.sheet.insertRule(n, r), this.length++, !0;
+    } catch {
+      return !1;
+    }
+  }, t.deleteRule = function(r) {
+    this.sheet.deleteRule(r), this.length--;
+  }, t.getRule = function(r) {
+    var n = this.sheet.cssRules[r];
+    return n !== void 0 && typeof n.cssText == "string" ? n.cssText : "";
+  }, e;
+}(), Xu = function() {
+  function e(r) {
+    var n = this.element = ds(r);
+    this.nodes = n.childNodes, this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    if (r <= this.length && r >= 0) {
+      var a = document.createTextNode(n), o = this.nodes[r];
+      return this.element.insertBefore(a, o || null), this.length++, !0;
+    }
+    return !1;
+  }, t.deleteRule = function(r) {
+    this.element.removeChild(this.nodes[r]), this.length--;
+  }, t.getRule = function(r) {
+    return r < this.length ? this.nodes[r].textContent : "";
+  }, e;
+}(), Zu = function() {
+  function e(r) {
+    this.rules = [], this.length = 0;
+  }
+  var t = e.prototype;
+  return t.insertRule = function(r, n) {
+    return r <= this.length && (this.rules.splice(r, 0, n), this.length++, !0);
+  }, t.deleteRule = function(r) {
+    this.rules.splice(r, 1), this.length--;
+  }, t.getRule = function(r) {
+    return r < this.length ? this.rules[r] : "";
+  }, e;
+}(), li = eo, Ju = { isServer: !eo, useCSSOMInjection: !Mu }, Nn = function() {
+  function e(r, n, a) {
+    r === void 0 && (r = Lt), n === void 0 && (n = {}), this.options = ft({}, Ju, {}, r), this.gs = n, this.names = new Map(a), this.server = !!r.isServer, !this.server && eo && li && (li = !1, function(o) {
+      for (var s = document.querySelectorAll(Wu), c = 0, d = s.length; c < d; c++) {
+        var p = s[c];
+        p && p.getAttribute(lr) !== "active" && (Vu(o, p), p.parentNode && p.parentNode.removeChild(p));
+      }
+    }(this));
+  }
+  e.registerId = function(r) {
+    return rn(r);
+  };
+  var t = e.prototype;
+  return t.reconstructWithOptions = function(r, n) {
+    return n === void 0 && (n = !0), new e(ft({}, this.options, {}, r), this.gs, n && this.names || void 0);
+  }, t.allocateGSInstance = function(r) {
+    return this.gs[r] = (this.gs[r] || 0) + 1;
+  }, t.getTag = function() {
+    return this.tag || (this.tag = (a = (n = this.options).isServer, o = n.useCSSOMInjection, s = n.target, r = a ? new Zu(s) : o ? new Ku(s) : new Xu(s), new zu(r)));
+    var r, n, a, o, s;
+  }, t.hasNameForId = function(r, n) {
+    return this.names.has(r) && this.names.get(r).has(n);
+  }, t.registerName = function(r, n) {
+    if (rn(r), this.names.has(r)) this.names.get(r).add(n);
+    else {
+      var a = /* @__PURE__ */ new Set();
+      a.add(n), this.names.set(r, a);
+    }
+  }, t.insertRules = function(r, n, a) {
+    this.registerName(r, n), this.getTag().insertRules(rn(r), a);
+  }, t.clearNames = function(r) {
+    this.names.has(r) && this.names.get(r).clear();
+  }, t.clearRules = function(r) {
+    this.getTag().clearGroup(rn(r)), this.clearNames(r);
+  }, t.clearTag = function() {
+    this.tag = void 0;
+  }, t.toString = function() {
+    return function(r) {
+      for (var n = r.getTag(), a = n.length, o = "", s = 0; s < a; s++) {
+        var c = Hu(s);
+        if (c !== void 0) {
+          var d = r.names.get(c), p = n.getGroup(s);
+          if (d && p && d.size) {
+            var g = lr + ".g" + s + '[id="' + c + '"]', m = "";
+            d !== void 0 && d.forEach(function(f) {
+              f.length > 0 && (m += f + ",");
+            }), o += "" + p + g + '{content:"' + m + `"}/*!sc*/
+`;
+          }
+        }
+      }
+      return o;
+    }(this);
+  }, e;
+}(), Qu = /(a)(d)/gi, ci = function(e) {
+  return String.fromCharCode(e + (e > 25 ? 39 : 97));
+};
+function Na(e) {
+  var t, r = "";
+  for (t = Math.abs(e); t > 52; t = t / 52 | 0) r = ci(t % 52) + r;
+  return (ci(t % 52) + r).replace(Qu, "$1-$2");
+}
+var Bt = function(e, t) {
+  for (var r = t.length; r; ) e = 33 * e ^ t.charCodeAt(--r);
+  return e;
+}, ps = function(e) {
+  return Bt(5381, e);
+};
+function ms(e) {
+  for (var t = 0; t < e.length; t += 1) {
+    var r = e[t];
+    if (Mr(r) && !Qa(r)) return !1;
+  }
+  return !0;
+}
+var ed = ps("5.3.11"), td = function() {
+  function e(t, r, n) {
+    this.rules = t, this.staticRulesId = "", this.isStatic = ye.env.NODE_ENV === "production" && (n === void 0 || n.isStatic) && ms(t), this.componentId = r, this.baseHash = Bt(ed, r), this.baseStyle = n, Nn.registerId(r);
+  }
+  return e.prototype.generateAndInjectStyles = function(t, r, n) {
+    var a = this.componentId, o = [];
+    if (this.baseStyle && o.push(this.baseStyle.generateAndInjectStyles(t, r, n)), this.isStatic && !n.hash) if (this.staticRulesId && r.hasNameForId(a, this.staticRulesId)) o.push(this.staticRulesId);
+    else {
+      var s = Xt(this.rules, t, r, n).join(""), c = Na(Bt(this.baseHash, s) >>> 0);
+      if (!r.hasNameForId(a, c)) {
+        var d = n(s, "." + c, void 0, a);
+        r.insertRules(a, c, d);
+      }
+      o.push(c), this.staticRulesId = c;
+    }
+    else {
+      for (var p = this.rules.length, g = Bt(this.baseHash, n.hash), m = "", f = 0; f < p; f++) {
+        var E = this.rules[f];
+        if (typeof E == "string") m += E, ye.env.NODE_ENV !== "production" && (g = Bt(g, E + f));
+        else if (E) {
+          var S = Xt(E, t, r, n), T = Array.isArray(S) ? S.join("") : S;
+          g = Bt(g, T + f), m += T;
+        }
+      }
+      if (m) {
+        var k = Na(g >>> 0);
+        if (!r.hasNameForId(a, k)) {
+          var N = n(m, "." + k, void 0, a);
+          r.insertRules(a, k, N);
+        }
+        o.push(k);
+      }
+    }
+    return o.join(" ");
+  }, e;
+}(), rd = /^\s*\/\/.*$/gm, nd = [":", "[", ".", "#"];
+function ad(e) {
+  var t, r, n, a, o = Lt, s = o.options, c = s === void 0 ? Lt : s, d = o.plugins, p = d === void 0 ? kn : d, g = new Eu(c), m = [], f = /* @__PURE__ */ function(T) {
+    function k(N) {
+      if (N) try {
+        T(N + "}");
+      } catch {
+      }
+    }
+    return function(N, A, D, I, v, _, j, z, ie, he) {
+      switch (N) {
+        case 1:
+          if (ie === 0 && A.charCodeAt(0) === 64) return T(A + ";"), "";
+          break;
+        case 2:
+          if (z === 0) return A + "/*|*/";
+          break;
+        case 3:
+          switch (z) {
+            case 102:
+            case 112:
+              return T(D[0] + A), "";
+            default:
+              return A + (he === 0 ? "/*|*/" : "");
+          }
+        case -2:
+          A.split("/*|*/}").forEach(k);
+      }
+    };
+  }(function(T) {
+    m.push(T);
+  }), E = function(T, k, N) {
+    return k === 0 && nd.indexOf(N[r.length]) !== -1 || N.match(a) ? T : "." + t;
+  };
+  function S(T, k, N, A) {
+    A === void 0 && (A = "&");
+    var D = T.replace(rd, ""), I = k && N ? N + " " + k + " { " + D + " }" : D;
+    return t = A, r = k, n = new RegExp("\\" + r + "\\b", "g"), a = new RegExp("(\\" + r + "\\b){2,}"), g(N || !k ? "" : k, I);
+  }
+  return g.use([].concat(p, [function(T, k, N) {
+    T === 2 && N.length && N[0].lastIndexOf(r) > 0 && (N[0] = N[0].replace(n, E));
+  }, f, function(T) {
+    if (T === -2) {
+      var k = m;
+      return m = [], k;
+    }
+  }])), S.hash = p.length ? p.reduce(function(T, k) {
+    return k.name || dr(15), Bt(T, k.name);
+  }, 5381).toString() : "", S;
+}
+var fs = ht.createContext();
+fs.Consumer;
+var hs = ht.createContext(), od = (hs.Consumer, new Nn()), Ca = ad();
+function gs() {
+  return kt(fs) || od;
+}
+function ys() {
+  return kt(hs) || Ca;
+}
+var id = function() {
+  function e(t, r) {
+    var n = this;
+    this.inject = function(a, o) {
+      o === void 0 && (o = Ca);
+      var s = n.name + o.hash;
+      a.hasNameForId(n.id, s) || a.insertRules(n.id, s, o(n.rules, s, "@keyframes"));
+    }, this.toString = function() {
+      return dr(12, String(n.name));
+    }, this.name = t, this.id = "sc-keyframes-" + t, this.rules = r;
+  }
+  return e.prototype.getName = function(t) {
+    return t === void 0 && (t = Ca), this.name + t.hash;
+  }, e;
+}(), sd = /([A-Z])/, ld = /([A-Z])/g, cd = /^ms-/, ud = function(e) {
+  return "-" + e.toLowerCase();
+};
+function ui(e) {
+  return sd.test(e) ? e.replace(ld, ud).replace(cd, "-ms-") : e;
+}
+var di = function(e) {
+  return e == null || e === !1 || e === "";
+};
+function Xt(e, t, r, n) {
+  if (Array.isArray(e)) {
+    for (var a, o = [], s = 0, c = e.length; s < c; s += 1) (a = Xt(e[s], t, r, n)) !== "" && (Array.isArray(a) ? o.push.apply(o, a) : o.push(a));
+    return o;
+  }
+  if (di(e)) return "";
+  if (Qa(e)) return "." + e.styledComponentId;
+  if (Mr(e)) {
+    if (typeof (p = e) != "function" || p.prototype && p.prototype.isReactComponent || !t) return e;
+    var d = e(t);
+    return ye.env.NODE_ENV !== "production" && Ln.isElement(d) && console.warn(Aa(e) + " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details."), Xt(d, t, r, n);
+  }
+  var p;
+  return e instanceof id ? r ? (e.inject(r, n), e.getName(n)) : e : ka(e) ? function g(m, f) {
+    var E, S, T = [];
+    for (var k in m) m.hasOwnProperty(k) && !di(m[k]) && (Array.isArray(m[k]) && m[k].isCss || Mr(m[k]) ? T.push(ui(k) + ":", m[k], ";") : ka(m[k]) ? T.push.apply(T, g(m[k], k)) : T.push(ui(k) + ": " + (E = k, (S = m[k]) == null || typeof S == "boolean" || S === "" ? "" : typeof S != "number" || S === 0 || E in ku || E.startsWith("--") ? String(S).trim() : S + "px") + ";"));
+    return f ? [f + " {"].concat(T, ["}"]) : T;
+  }(e) : e.toString();
+}
+var pi = function(e) {
+  return Array.isArray(e) && (e.isCss = !0), e;
+};
+function to(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  return Mr(e) || ka(e) ? pi(Xt(si(kn, [e].concat(r)))) : r.length === 0 && e.length === 1 && typeof e[0] == "string" ? e : pi(Xt(si(e, r)));
+}
+var mi = /invalid hook call/i, nn = /* @__PURE__ */ new Set(), bs = function(e, t) {
+  if (ye.env.NODE_ENV !== "production") {
+    var r = "The component " + e + (t ? ' with the id of "' + t + '"' : "") + ` has been created dynamically.
+You may see this warning because you've called styled inside another component.
+To resolve this only create new StyledComponents outside of any render method and function component.`, n = console.error;
+    try {
+      var a = !0;
+      console.error = function(o) {
+        if (mi.test(o)) a = !1, nn.delete(r);
+        else {
+          for (var s = arguments.length, c = new Array(s > 1 ? s - 1 : 0), d = 1; d < s; d++) c[d - 1] = arguments[d];
+          n.apply(void 0, [o].concat(c));
+        }
+      }, hn(), a && !nn.has(r) && (console.warn(r), nn.add(r));
+    } catch (o) {
+      mi.test(o.message) && nn.delete(r);
+    } finally {
+      console.error = n;
+    }
+  }
+}, vs = function(e, t, r) {
+  return r === void 0 && (r = Lt), e.theme !== r.theme && e.theme || t || r.theme;
+}, dd = /[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g, pd = /(^-|-$)/g;
+function Qn(e) {
+  return e.replace(dd, "-").replace(pd, "");
+}
+var xs = function(e) {
+  return Na(ps(e) >>> 0);
+};
+function an(e) {
+  return typeof e == "string" && (ye.env.NODE_ENV === "production" || e.charAt(0) === e.charAt(0).toLowerCase());
+}
+var Oa = function(e) {
+  return typeof e == "function" || typeof e == "object" && e !== null && !Array.isArray(e);
+}, md = function(e) {
+  return e !== "__proto__" && e !== "constructor" && e !== "prototype";
+};
+function fd(e, t, r) {
+  var n = e[r];
+  Oa(t) && Oa(n) ? ws(n, t) : e[r] = t;
+}
+function ws(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  for (var a = 0, o = r; a < o.length; a++) {
+    var s = o[a];
+    if (Oa(s)) for (var c in s) md(c) && fd(e, s[c], c);
+  }
+  return e;
+}
+var ro = ht.createContext();
+ro.Consumer;
+var ea = {};
+function Ss(e, t, r) {
+  var n = Qa(e), a = !an(e), o = t.attrs, s = o === void 0 ? kn : o, c = t.componentId, d = c === void 0 ? function(A, D) {
+    var I = typeof A != "string" ? "sc" : Qn(A);
+    ea[I] = (ea[I] || 0) + 1;
+    var v = I + "-" + xs("5.3.11" + I + ea[I]);
+    return D ? D + "-" + v : v;
+  }(t.displayName, t.parentComponentId) : c, p = t.displayName, g = p === void 0 ? function(A) {
+    return an(A) ? "styled." + A : "Styled(" + Aa(A) + ")";
+  }(e) : p, m = t.displayName && t.componentId ? Qn(t.displayName) + "-" + t.componentId : t.componentId || d, f = n && e.attrs ? Array.prototype.concat(e.attrs, s).filter(Boolean) : s, E = t.shouldForwardProp;
+  n && e.shouldForwardProp && (E = t.shouldForwardProp ? function(A, D, I) {
+    return e.shouldForwardProp(A, D, I) && t.shouldForwardProp(A, D, I);
+  } : e.shouldForwardProp);
+  var S, T = new td(r, m, n ? e.componentStyle : void 0), k = T.isStatic && s.length === 0, N = function(A, D) {
+    return function(I, v, _, j) {
+      var z = I.attrs, ie = I.componentStyle, he = I.defaultProps, ee = I.foldedComponentIds, Z = I.shouldForwardProp, ne = I.styledComponentId, G = I.target, ue = function(P, y, L) {
+        P === void 0 && (P = Lt);
+        var O = ft({}, y, { theme: P }), ae = {};
+        return L.forEach(function(re) {
+          var V, K, oe, fe = re;
+          for (V in Mr(fe) && (fe = fe(O)), fe) O[V] = ae[V] = V === "className" ? (K = ae[V], oe = fe[V], K && oe ? K + " " + oe : K || oe) : fe[V];
+        }), [O, ae];
+      }(vs(v, kt(ro), he) || Lt, v, z), Se = ue[0], se = ue[1], be = function(P, y, L, O) {
+        var ae = gs(), re = ys(), V = y ? P.generateAndInjectStyles(Lt, ae, re) : P.generateAndInjectStyles(L, ae, re);
+        return ye.env.NODE_ENV !== "production" && !y && O && O(V), V;
+      }(ie, j, Se, ye.env.NODE_ENV !== "production" ? I.warnTooManyClasses : void 0), Ee = _, J = se.$as || v.$as || se.as || v.as || G, H = an(J), R = se !== v ? ft({}, v, {}, se) : v, C = {};
+      for (var x in R) x[0] !== "$" && x !== "as" && (x === "forwardedAs" ? C.as = R[x] : (Z ? Z(x, ni, J) : !H || ni(x)) && (C[x] = R[x]));
+      return v.style && se.style !== v.style && (C.style = ft({}, v.style, {}, se.style)), C.className = Array.prototype.concat(ee, ne, be !== ne ? be : null, v.className, se.className).filter(Boolean).join(" "), C.ref = Ee, Pl(J, C);
+    }(S, A, D, k);
+  };
+  return N.displayName = g, (S = ht.forwardRef(N)).attrs = f, S.componentStyle = T, S.displayName = g, S.shouldForwardProp = E, S.foldedComponentIds = n ? Array.prototype.concat(e.foldedComponentIds, e.styledComponentId) : kn, S.styledComponentId = m, S.target = n ? e.target : e, S.withComponent = function(A) {
+    var D = t.componentId, I = function(_, j) {
+      if (_ == null) return {};
+      var z, ie, he = {}, ee = Object.keys(_);
+      for (ie = 0; ie < ee.length; ie++) z = ee[ie], j.indexOf(z) >= 0 || (he[z] = _[z]);
+      return he;
+    }(t, ["componentId"]), v = D && D + "-" + (an(A) ? A : Qn(Aa(A)));
+    return Ss(A, ft({}, I, { attrs: f, componentId: v }), r);
+  }, Object.defineProperty(S, "defaultProps", { get: function() {
+    return this._foldedDefaultProps;
+  }, set: function(A) {
+    this._foldedDefaultProps = n ? ws({}, e.defaultProps, A) : A;
+  } }), ye.env.NODE_ENV !== "production" && (bs(g, m), S.warnTooManyClasses = /* @__PURE__ */ function(A, D) {
+    var I = {}, v = !1;
+    return function(_) {
+      if (!v && (I[_] = !0, Object.keys(I).length >= 200)) {
+        var j = D ? ' with the id of "' + D + '"' : "";
+        console.warn("Over 200 classes were generated for component " + A + j + `.
+Consider using the attrs method, together with a style object for frequently changed styles.
+Example:
+  const Component = styled.div.attrs(props => ({
+    style: {
+      background: props.background,
+    },
+  }))\`width: 100%;\`
+
+  <Component />`), v = !0, I = {};
+      }
+    };
+  }(g, m)), Object.defineProperty(S, "toString", { value: function() {
+    return "." + S.styledComponentId;
+  } }), a && Du(S, e, { attrs: !0, componentStyle: !0, displayName: !0, foldedComponentIds: !0, shouldForwardProp: !0, styledComponentId: !0, target: !0, withComponent: !0 }), S;
+}
+var Te = function(e) {
+  return function t(r, n, a) {
+    if (a === void 0 && (a = Lt), !Ln.isValidElementType(n)) return dr(1, String(n));
+    var o = function() {
+      return r(n, a, to.apply(void 0, arguments));
+    };
+    return o.withConfig = function(s) {
+      return t(r, n, ft({}, a, {}, s));
+    }, o.attrs = function(s) {
+      return t(r, n, ft({}, a, { attrs: Array.prototype.concat(a.attrs, s).filter(Boolean) }));
+    }, o;
+  }(Ss, e);
+};
+["a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", "big", "blockquote", "body", "br", "button", "canvas", "caption", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "keygen", "label", "legend", "li", "link", "main", "map", "mark", "marquee", "menu", "menuitem", "meta", "meter", "nav", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr", "circle", "clipPath", "defs", "ellipse", "foreignObject", "g", "image", "line", "linearGradient", "marker", "mask", "path", "pattern", "polygon", "polyline", "radialGradient", "rect", "stop", "svg", "text", "textPath", "tspan"].forEach(function(e) {
+  Te[e] = Te(e);
+});
+var hd = function() {
+  function e(r, n) {
+    this.rules = r, this.componentId = n, this.isStatic = ms(r), Nn.registerId(this.componentId + 1);
+  }
+  var t = e.prototype;
+  return t.createStyles = function(r, n, a, o) {
+    var s = o(Xt(this.rules, n, a, o).join(""), ""), c = this.componentId + r;
+    a.insertRules(c, c, s);
+  }, t.removeStyles = function(r, n) {
+    n.clearRules(this.componentId + r);
+  }, t.renderStyles = function(r, n, a, o) {
+    r > 2 && Nn.registerId(this.componentId + r), this.removeStyles(r, a), this.createStyles(r, n, a, o);
+  }, e;
+}();
+function In(e) {
+  for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+  var a = to.apply(void 0, [e].concat(r)), o = "sc-global-" + xs(JSON.stringify(a)), s = new hd(a, o);
+  function c(p) {
+    var g = gs(), m = ys(), f = kt(ro), E = hn(g.allocateGSInstance(o)).current;
+    return ye.env.NODE_ENV !== "production" && ht.Children.count(p.children) && console.warn("The global style component " + o + " was given child JSX. createGlobalStyle does not render children."), ye.env.NODE_ENV !== "production" && a.some(function(S) {
+      return typeof S == "string" && S.indexOf("@import") !== -1;
+    }) && console.warn("Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well. Instead, we recommend using a library such as react-helmet to inject a typical <link> meta tag to the stylesheet, or simply embedding it manually in your index.html <head> section for a simpler app."), g.server && d(E, p, g, f, m), _l(function() {
+      if (!g.server) return d(E, p, g, f, m), function() {
+        return s.removeStyles(E, g);
+      };
+    }, [E, p, g, f, m]), null;
+  }
+  function d(p, g, m, f, E) {
+    if (s.isStatic) s.renderStyles(p, $u, m, E);
+    else {
+      var S = ft({}, g, { theme: vs(g, f, c.defaultProps) });
+      s.renderStyles(p, S, m, E);
+    }
+  }
+  return ye.env.NODE_ENV !== "production" && bs(o), ht.memo(c);
+}
+ye.env.NODE_ENV !== "production" && typeof navigator < "u" && navigator.product === "ReactNative" && console.warn(`It looks like you've imported 'styled-components' on React Native.
+Perhaps you're looking to import 'styled-components/native'?
+Read more about this at https://www.styled-components.com/docs/basics#react-native`), ye.env.NODE_ENV !== "production" && ye.env.NODE_ENV !== "test" && typeof window < "u" && (window["__styled-components-init__"] = window["__styled-components-init__"] || 0, window["__styled-components-init__"] === 1 && console.warn(`It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.
+
+See https://s-c.sh/2BAXzed for more info.`), window["__styled-components-init__"] += 1);
+const Ts = () => {
+  const [e, t] = Be(), [r, n] = Be(!1), [a, o] = Be(!1), [s, c] = Be("");
+  return mt(() => {
+    if (!s) return;
+    (() => {
+      o(null), n(!0);
+      try {
+        fetch(s).then((p) => p.json()).then((p) => {
+          t(p), n(!1);
+        }).catch((p) => {
+          o(p), n(!1);
+        });
+      } catch (p) {
+        o(p);
+      }
+    })();
+  }, [s]), [{ data: e, loading: r, error: a }, c];
+}, cr = (e) => (e || []).join(" ");
+function _t(e) {
+  "@babel/helpers - typeof";
+  return _t = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(t) {
+    return typeof t;
+  } : function(t) {
+    return t && typeof Symbol == "function" && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t;
+  }, _t(e);
+}
+function ja(e, t) {
+  return ja = Object.setPrototypeOf || function(n, a) {
+    return n.__proto__ = a, n;
+  }, ja(e, t);
+}
+function gd() {
+  if (typeof Reflect > "u" || !Reflect.construct || Reflect.construct.sham) return !1;
+  if (typeof Proxy == "function") return !0;
+  try {
+    return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+    })), !0;
+  } catch {
+    return !1;
+  }
+}
+function mn(e, t, r) {
+  return gd() ? mn = Reflect.construct : mn = function(a, o, s) {
+    var c = [null];
+    c.push.apply(c, o);
+    var d = Function.bind.apply(a, c), p = new d();
+    return s && ja(p, s.prototype), p;
+  }, mn.apply(null, arguments);
+}
+function pt(e) {
+  return yd(e) || bd(e) || vd(e) || xd();
+}
+function yd(e) {
+  if (Array.isArray(e)) return Ra(e);
+}
+function bd(e) {
+  if (typeof Symbol < "u" && e[Symbol.iterator] != null || e["@@iterator"] != null) return Array.from(e);
+}
+function vd(e, t) {
+  if (e) {
+    if (typeof e == "string") return Ra(e, t);
+    var r = Object.prototype.toString.call(e).slice(8, -1);
+    if (r === "Object" && e.constructor && (r = e.constructor.name), r === "Map" || r === "Set") return Array.from(e);
+    if (r === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return Ra(e, t);
+  }
+}
+function Ra(e, t) {
+  (t == null || t > e.length) && (t = e.length);
+  for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
+  return n;
+}
+function xd() {
+  throw new TypeError(`Invalid attempt to spread non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
+}
+var wd = Object.hasOwnProperty, fi = Object.setPrototypeOf, Sd = Object.isFrozen, Td = Object.getPrototypeOf, Ed = Object.getOwnPropertyDescriptor, Xe = Object.freeze, st = Object.seal, kd = Object.create, Es = typeof Reflect < "u" && Reflect, Cn = Es.apply, _a = Es.construct;
+Cn || (Cn = function(t, r, n) {
+  return t.apply(r, n);
+});
+Xe || (Xe = function(t) {
+  return t;
+});
+st || (st = function(t) {
+  return t;
+});
+_a || (_a = function(t, r) {
+  return mn(t, pt(r));
+});
+var Ad = lt(Array.prototype.forEach), hi = lt(Array.prototype.pop), Or = lt(Array.prototype.push), fn = lt(String.prototype.toLowerCase), ta = lt(String.prototype.toString), gi = lt(String.prototype.match), dt = lt(String.prototype.replace), Nd = lt(String.prototype.indexOf), Cd = lt(String.prototype.trim), Ge = lt(RegExp.prototype.test), ra = Od(TypeError);
+function lt(e) {
+  return function(t) {
+    for (var r = arguments.length, n = new Array(r > 1 ? r - 1 : 0), a = 1; a < r; a++)
+      n[a - 1] = arguments[a];
+    return Cn(e, t, n);
+  };
+}
+function Od(e) {
+  return function() {
+    for (var t = arguments.length, r = new Array(t), n = 0; n < t; n++)
+      r[n] = arguments[n];
+    return _a(e, r);
+  };
+}
+function me(e, t, r) {
+  var n;
+  r = (n = r) !== null && n !== void 0 ? n : fn, fi && fi(e, null);
+  for (var a = t.length; a--; ) {
+    var o = t[a];
+    if (typeof o == "string") {
+      var s = r(o);
+      s !== o && (Sd(t) || (t[a] = s), o = s);
+    }
+    e[o] = !0;
+  }
+  return e;
+}
+function Ht(e) {
+  var t = kd(null), r;
+  for (r in e)
+    Cn(wd, e, [r]) === !0 && (t[r] = e[r]);
+  return t;
+}
+function on(e, t) {
+  for (; e !== null; ) {
+    var r = Ed(e, t);
+    if (r) {
+      if (r.get)
+        return lt(r.get);
+      if (typeof r.value == "function")
+        return lt(r.value);
+    }
+    e = Td(e);
+  }
+  function n(a) {
+    return console.warn("fallback value for", a), null;
+  }
+  return n;
+}
+var yi = Xe(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "shadow", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]), na = Xe(["svg", "a", "altglyph", "altglyphdef", "altglyphitem", "animatecolor", "animatemotion", "animatetransform", "circle", "clippath", "defs", "desc", "ellipse", "filter", "font", "g", "glyph", "glyphref", "hkern", "image", "line", "lineargradient", "marker", "mask", "metadata", "mpath", "path", "pattern", "polygon", "polyline", "radialgradient", "rect", "stop", "style", "switch", "symbol", "text", "textpath", "title", "tref", "tspan", "view", "vkern"]), aa = Xe(["feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence"]), jd = Xe(["animate", "color-profile", "cursor", "discard", "fedropshadow", "font-face", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "foreignobject", "hatch", "hatchpath", "mesh", "meshgradient", "meshpatch", "meshrow", "missing-glyph", "script", "set", "solidcolor", "unknown", "use"]), oa = Xe(["math", "menclose", "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msup", "msubsup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover"]), Rd = Xe(["maction", "maligngroup", "malignmark", "mlongdiv", "mscarries", "mscarry", "msgroup", "mstack", "msline", "msrow", "semantics", "annotation", "annotation-xml", "mprescripts", "none"]), bi = Xe(["#text"]), vi = Xe(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "pattern", "placeholder", "playsinline", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "xmlns", "slot"]), ia = Xe(["accent-height", "accumulate", "additive", "alignment-baseline", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]), xi = Xe(["accent", "accentunder", "align", "bevelled", "close", "columnsalign", "columnlines", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lspace", "lquote", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]), sn = Xe(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]), _d = st(/\{\{[\w\W]*|[\w\W]*\}\}/gm), Pd = st(/<%[\w\W]*|[\w\W]*%>/gm), Ld = st(/\${[\w\W]*}/gm), Id = st(/^data-[\-\w.\u00B7-\uFFFF]/), Dd = st(/^aria-[\-\w]+$/), Md = st(
+  /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i
+  // eslint-disable-line no-useless-escape
+), $d = st(/^(?:\w+script|data):/i), Fd = st(
+  /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g
+  // eslint-disable-line no-control-regex
+), Ud = st(/^html$/i), zd = st(/^[a-z][.\w]*(-[.\w]+)+$/i), Hd = function() {
+  return typeof window > "u" ? null : window;
+}, qd = function(t, r) {
+  if (_t(t) !== "object" || typeof t.createPolicy != "function")
+    return null;
+  var n = null, a = "data-tt-policy-suffix";
+  r.currentScript && r.currentScript.hasAttribute(a) && (n = r.currentScript.getAttribute(a));
+  var o = "dompurify" + (n ? "#" + n : "");
+  try {
+    return t.createPolicy(o, {
+      createHTML: function(c) {
+        return c;
+      },
+      createScriptURL: function(c) {
+        return c;
+      }
+    });
+  } catch {
+    return console.warn("TrustedTypes policy " + o + " could not be created."), null;
+  }
+};
+function ks() {
+  var e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : Hd(), t = function(w) {
+    return ks(w);
+  };
+  if (t.version = "2.5.7", t.removed = [], !e || !e.document || e.document.nodeType !== 9)
+    return t.isSupported = !1, t;
+  var r = e.document, n = e.document, a = e.DocumentFragment, o = e.HTMLTemplateElement, s = e.Node, c = e.Element, d = e.NodeFilter, p = e.NamedNodeMap, g = p === void 0 ? e.NamedNodeMap || e.MozNamedAttrMap : p, m = e.HTMLFormElement, f = e.DOMParser, E = e.trustedTypes, S = c.prototype, T = on(S, "cloneNode"), k = on(S, "nextSibling"), N = on(S, "childNodes"), A = on(S, "parentNode");
+  if (typeof o == "function") {
+    var D = n.createElement("template");
+    D.content && D.content.ownerDocument && (n = D.content.ownerDocument);
+  }
+  var I = qd(E, r), v = I ? I.createHTML("") : "", _ = n, j = _.implementation, z = _.createNodeIterator, ie = _.createDocumentFragment, he = _.getElementsByTagName, ee = r.importNode, Z = {};
+  try {
+    Z = Ht(n).documentMode ? n.documentMode : {};
+  } catch {
+  }
+  var ne = {};
+  t.isSupported = typeof A == "function" && j && j.createHTMLDocument !== void 0 && Z !== 9;
+  var G = _d, ue = Pd, Se = Ld, se = Id, be = Dd, Ee = $d, J = Fd, H = zd, R = Md, C = null, x = me({}, [].concat(pt(yi), pt(na), pt(aa), pt(oa), pt(bi))), P = null, y = me({}, [].concat(pt(vi), pt(ia), pt(xi), pt(sn))), L = Object.seal(Object.create(null, {
+    tagNameCheck: {
+      writable: !0,
+      configurable: !1,
+      enumerable: !0,
+      value: null
+    },
+    attributeNameCheck: {
+      writable: !0,
+      configurable: !1,
+      enumerable: !0,
+      value: null
+    },
+    allowCustomizedBuiltInElements: {
+      writable: !0,
+      configurable: !1,
+      enumerable: !0,
+      value: !1
+    }
+  })), O = null, ae = null, re = !0, V = !0, K = !1, oe = !0, fe = !1, le = !0, ce = !1, Q = !1, pe = !1, $e = !1, q = !1, $ = !1, Y = !0, U = !1, F = "user-content-", de = !0, Ae = !1, qe = {}, He = null, Nt = me({}, ["annotation-xml", "audio", "colgroup", "desc", "foreignobject", "head", "iframe", "math", "mi", "mn", "mo", "ms", "mtext", "noembed", "noframes", "noscript", "plaintext", "script", "style", "svg", "template", "thead", "title", "video", "xmp"]), fr = null, Hr = me({}, ["audio", "video", "img", "source", "image", "track"]), hr = null, qr = me({}, ["alt", "class", "for", "id", "label", "name", "pattern", "placeholder", "role", "summary", "title", "value", "style", "xmlns"]), gt = "http://www.w3.org/1998/Math/MathML", yt = "http://www.w3.org/2000/svg", ut = "http://www.w3.org/1999/xhtml", Ct = ut, gr = !1, $t = null, yr = me({}, [gt, yt, ut], ta), Ue, br = ["application/xhtml+xml", "text/html"], Jt = "text/html", _e, Ot = null, Fn = n.createElement("form"), Wr = function(w) {
+    return w instanceof RegExp || w instanceof Function;
+  }, vr = function(w) {
+    Ot && Ot === w || ((!w || _t(w) !== "object") && (w = {}), w = Ht(w), Ue = // eslint-disable-next-line unicorn/prefer-includes
+    br.indexOf(w.PARSER_MEDIA_TYPE) === -1 ? Ue = Jt : Ue = w.PARSER_MEDIA_TYPE, _e = Ue === "application/xhtml+xml" ? ta : fn, C = "ALLOWED_TAGS" in w ? me({}, w.ALLOWED_TAGS, _e) : x, P = "ALLOWED_ATTR" in w ? me({}, w.ALLOWED_ATTR, _e) : y, $t = "ALLOWED_NAMESPACES" in w ? me({}, w.ALLOWED_NAMESPACES, ta) : yr, hr = "ADD_URI_SAFE_ATTR" in w ? me(
+      Ht(qr),
+      // eslint-disable-line indent
+      w.ADD_URI_SAFE_ATTR,
+      // eslint-disable-line indent
+      _e
+      // eslint-disable-line indent
+    ) : qr, fr = "ADD_DATA_URI_TAGS" in w ? me(
+      Ht(Hr),
+      // eslint-disable-line indent
+      w.ADD_DATA_URI_TAGS,
+      // eslint-disable-line indent
+      _e
+      // eslint-disable-line indent
+    ) : Hr, He = "FORBID_CONTENTS" in w ? me({}, w.FORBID_CONTENTS, _e) : Nt, O = "FORBID_TAGS" in w ? me({}, w.FORBID_TAGS, _e) : {}, ae = "FORBID_ATTR" in w ? me({}, w.FORBID_ATTR, _e) : {}, qe = "USE_PROFILES" in w ? w.USE_PROFILES : !1, re = w.ALLOW_ARIA_ATTR !== !1, V = w.ALLOW_DATA_ATTR !== !1, K = w.ALLOW_UNKNOWN_PROTOCOLS || !1, oe = w.ALLOW_SELF_CLOSE_IN_ATTR !== !1, fe = w.SAFE_FOR_TEMPLATES || !1, le = w.SAFE_FOR_XML !== !1, ce = w.WHOLE_DOCUMENT || !1, $e = w.RETURN_DOM || !1, q = w.RETURN_DOM_FRAGMENT || !1, $ = w.RETURN_TRUSTED_TYPE || !1, pe = w.FORCE_BODY || !1, Y = w.SANITIZE_DOM !== !1, U = w.SANITIZE_NAMED_PROPS || !1, de = w.KEEP_CONTENT !== !1, Ae = w.IN_PLACE || !1, R = w.ALLOWED_URI_REGEXP || R, Ct = w.NAMESPACE || ut, L = w.CUSTOM_ELEMENT_HANDLING || {}, w.CUSTOM_ELEMENT_HANDLING && Wr(w.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (L.tagNameCheck = w.CUSTOM_ELEMENT_HANDLING.tagNameCheck), w.CUSTOM_ELEMENT_HANDLING && Wr(w.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (L.attributeNameCheck = w.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), w.CUSTOM_ELEMENT_HANDLING && typeof w.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements == "boolean" && (L.allowCustomizedBuiltInElements = w.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), fe && (V = !1), q && ($e = !0), qe && (C = me({}, pt(bi)), P = [], qe.html === !0 && (me(C, yi), me(P, vi)), qe.svg === !0 && (me(C, na), me(P, ia), me(P, sn)), qe.svgFilters === !0 && (me(C, aa), me(P, ia), me(P, sn)), qe.mathMl === !0 && (me(C, oa), me(P, xi), me(P, sn))), w.ADD_TAGS && (C === x && (C = Ht(C)), me(C, w.ADD_TAGS, _e)), w.ADD_ATTR && (P === y && (P = Ht(P)), me(P, w.ADD_ATTR, _e)), w.ADD_URI_SAFE_ATTR && me(hr, w.ADD_URI_SAFE_ATTR, _e), w.FORBID_CONTENTS && (He === Nt && (He = Ht(He)), me(He, w.FORBID_CONTENTS, _e)), de && (C["#text"] = !0), ce && me(C, ["html", "head", "body"]), C.table && (me(C, ["tbody"]), delete O.tbody), Xe && Xe(w), Ot = w);
+  }, xr = me({}, ["mi", "mo", "mn", "ms", "mtext"]), Je = me({}, ["annotation-xml"]), jt = me({}, ["title", "style", "font", "a", "script"]), Ne = me({}, na);
+  me(Ne, aa), me(Ne, jd);
+  var Ft = me({}, oa);
+  me(Ft, Rd);
+  var wr = function(w) {
+    var M = A(w);
+    (!M || !M.tagName) && (M = {
+      namespaceURI: Ct,
+      tagName: "template"
+    });
+    var B = fn(w.tagName), ge = fn(M.tagName);
+    return $t[w.namespaceURI] ? w.namespaceURI === yt ? M.namespaceURI === ut ? B === "svg" : M.namespaceURI === gt ? B === "svg" && (ge === "annotation-xml" || xr[ge]) : !!Ne[B] : w.namespaceURI === gt ? M.namespaceURI === ut ? B === "math" : M.namespaceURI === yt ? B === "math" && Je[ge] : !!Ft[B] : w.namespaceURI === ut ? M.namespaceURI === yt && !Je[ge] || M.namespaceURI === gt && !xr[ge] ? !1 : !Ft[B] && (jt[B] || !Ne[B]) : !!(Ue === "application/xhtml+xml" && $t[w.namespaceURI]) : !1;
+  }, Ve = function(w) {
+    Or(t.removed, {
+      element: w
+    });
+    try {
+      w.parentNode.removeChild(w);
+    } catch {
+      try {
+        w.outerHTML = v;
+      } catch {
+        w.remove();
+      }
+    }
+  }, Qt = function(w, M) {
+    try {
+      Or(t.removed, {
+        attribute: M.getAttributeNode(w),
+        from: M
+      });
+    } catch {
+      Or(t.removed, {
+        attribute: null,
+        from: M
+      });
+    }
+    if (M.removeAttribute(w), w === "is" && !P[w])
+      if ($e || q)
+        try {
+          Ve(M);
+        } catch {
+        }
+      else
+        try {
+          M.setAttribute(w, "");
+        } catch {
+        }
+  }, Gr = function(w) {
+    var M, B;
+    if (pe)
+      w = "<remove></remove>" + w;
+    else {
+      var ge = gi(w, /^[\r\n\t ]+/);
+      B = ge && ge[0];
+    }
+    Ue === "application/xhtml+xml" && Ct === ut && (w = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + w + "</body></html>");
+    var We = I ? I.createHTML(w) : w;
+    if (Ct === ut)
+      try {
+        M = new f().parseFromString(We, Ue);
+      } catch {
+      }
+    if (!M || !M.documentElement) {
+      M = j.createDocument(Ct, "template", null);
+      try {
+        M.documentElement.innerHTML = gr ? v : We;
+      } catch {
+      }
+    }
+    var Oe = M.body || M.documentElement;
+    return w && B && Oe.insertBefore(n.createTextNode(B), Oe.childNodes[0] || null), Ct === ut ? he.call(M, ce ? "html" : "body")[0] : ce ? M.documentElement : Oe;
+  }, Br = function(w) {
+    return z.call(
+      w.ownerDocument || w,
+      w,
+      // eslint-disable-next-line no-bitwise
+      d.SHOW_ELEMENT | d.SHOW_COMMENT | d.SHOW_TEXT | d.SHOW_PROCESSING_INSTRUCTION | d.SHOW_CDATA_SECTION,
+      null,
+      !1
+    );
+  }, Sr = function(w) {
+    return w instanceof m && (typeof w.nodeName != "string" || typeof w.textContent != "string" || typeof w.removeChild != "function" || !(w.attributes instanceof g) || typeof w.removeAttribute != "function" || typeof w.setAttribute != "function" || typeof w.namespaceURI != "string" || typeof w.insertBefore != "function" || typeof w.hasChildNodes != "function");
+  }, Ut = function(w) {
+    return _t(s) === "object" ? w instanceof s : w && _t(w) === "object" && typeof w.nodeType == "number" && typeof w.nodeName == "string";
+  }, Qe = function(w, M, B) {
+    ne[w] && Ad(ne[w], function(ge) {
+      ge.call(t, M, B, Ot);
+    });
+  }, Le = function(w) {
+    var M;
+    if (Qe("beforeSanitizeElements", w, null), Sr(w) || Ge(/[\u0080-\uFFFF]/, w.nodeName))
+      return Ve(w), !0;
+    var B = _e(w.nodeName);
+    if (Qe("uponSanitizeElement", w, {
+      tagName: B,
+      allowedTags: C
+    }), w.hasChildNodes() && !Ut(w.firstElementChild) && (!Ut(w.content) || !Ut(w.content.firstElementChild)) && Ge(/<[/\w]/g, w.innerHTML) && Ge(/<[/\w]/g, w.textContent) || B === "select" && Ge(/<template/i, w.innerHTML) || w.nodeType === 7 || le && w.nodeType === 8 && Ge(/<[/\w]/g, w.data))
+      return Ve(w), !0;
+    if (!C[B] || O[B]) {
+      if (!O[B] && Ie(B) && (L.tagNameCheck instanceof RegExp && Ge(L.tagNameCheck, B) || L.tagNameCheck instanceof Function && L.tagNameCheck(B)))
+        return !1;
+      if (de && !He[B]) {
+        var ge = A(w) || w.parentNode, We = N(w) || w.childNodes;
+        if (We && ge)
+          for (var Oe = We.length, De = Oe - 1; De >= 0; --De) {
+            var Ye = T(We[De], !0);
+            Ye.__removalCount = (w.__removalCount || 0) + 1, ge.insertBefore(Ye, k(w));
+          }
+      }
+      return Ve(w), !0;
+    }
+    return w instanceof c && !wr(w) || (B === "noscript" || B === "noembed" || B === "noframes") && Ge(/<\/no(script|embed|frames)/i, w.innerHTML) ? (Ve(w), !0) : (fe && w.nodeType === 3 && (M = w.textContent, M = dt(M, G, " "), M = dt(M, ue, " "), M = dt(M, Se, " "), w.textContent !== M && (Or(t.removed, {
+      element: w.cloneNode()
+    }), w.textContent = M)), Qe("afterSanitizeElements", w, null), !1);
+  }, Tr = function(w, M, B) {
+    if (Y && (M === "id" || M === "name") && (B in n || B in Fn))
+      return !1;
+    if (!(V && !ae[M] && Ge(se, M))) {
+      if (!(re && Ge(be, M))) {
+        if (!P[M] || ae[M]) {
+          if (
+            // First condition does a very basic check if a) it's basically a valid custom element tagname AND
+            // b) if the tagName passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.tagNameCheck
+            // and c) if the attribute name passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.attributeNameCheck
+            !(Ie(w) && (L.tagNameCheck instanceof RegExp && Ge(L.tagNameCheck, w) || L.tagNameCheck instanceof Function && L.tagNameCheck(w)) && (L.attributeNameCheck instanceof RegExp && Ge(L.attributeNameCheck, M) || L.attributeNameCheck instanceof Function && L.attributeNameCheck(M)) || // Alternative, second condition checks if it's an `is`-attribute, AND
+            // the value passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.tagNameCheck
+            M === "is" && L.allowCustomizedBuiltInElements && (L.tagNameCheck instanceof RegExp && Ge(L.tagNameCheck, B) || L.tagNameCheck instanceof Function && L.tagNameCheck(B)))
+          ) return !1;
+        } else if (!hr[M]) {
+          if (!Ge(R, dt(B, J, ""))) {
+            if (!((M === "src" || M === "xlink:href" || M === "href") && w !== "script" && Nd(B, "data:") === 0 && fr[w])) {
+              if (!(K && !Ge(Ee, dt(B, J, "")))) {
+                if (B)
+                  return !1;
+              }
+            }
+          }
+        }
+      }
+    }
+    return !0;
+  }, Ie = function(w) {
+    return w !== "annotation-xml" && gi(w, H);
+  }, Er = function(w) {
+    var M, B, ge, We;
+    Qe("beforeSanitizeAttributes", w, null);
+    var Oe = w.attributes;
+    if (Oe) {
+      var De = {
+        attrName: "",
+        attrValue: "",
+        keepAttr: !0,
+        allowedAttributes: P
+      };
+      for (We = Oe.length; We--; ) {
+        M = Oe[We];
+        var Ye = M, je = Ye.name, zt = Ye.namespaceURI;
+        if (B = je === "value" ? M.value : Cd(M.value), ge = _e(je), De.attrName = ge, De.attrValue = B, De.keepAttr = !0, De.forceKeepAttr = void 0, Qe("uponSanitizeAttribute", w, De), B = De.attrValue, !De.forceKeepAttr && (Qt(je, w), !!De.keepAttr)) {
+          if (!oe && Ge(/\/>/i, B)) {
+            Qt(je, w);
+            continue;
+          }
+          fe && (B = dt(B, G, " "), B = dt(B, ue, " "), B = dt(B, Se, " "));
+          var bt = _e(w.nodeName);
+          if (Tr(bt, ge, B)) {
+            if (U && (ge === "id" || ge === "name") && (Qt(je, w), B = F + B), le && Ge(/((--!?|])>)|<\/(style|title)/i, B)) {
+              Qt(je, w);
+              continue;
+            }
+            if (I && _t(E) === "object" && typeof E.getAttributeType == "function" && !zt)
+              switch (E.getAttributeType(bt, ge)) {
+                case "TrustedHTML": {
+                  B = I.createHTML(B);
+                  break;
+                }
+                case "TrustedScriptURL": {
+                  B = I.createScriptURL(B);
+                  break;
+                }
+              }
+            try {
+              zt ? w.setAttributeNS(zt, je, B) : w.setAttribute(je, B), Sr(w) ? Ve(w) : hi(t.removed);
+            } catch {
+            }
+          }
+        }
+      }
+      Qe("afterSanitizeAttributes", w, null);
+    }
+  }, Ce = function te(w) {
+    var M, B = Br(w);
+    for (Qe("beforeSanitizeShadowDOM", w, null); M = B.nextNode(); )
+      Qe("uponSanitizeShadowNode", M, null), !Le(M) && (M.content instanceof a && te(M.content), Er(M));
+    Qe("afterSanitizeShadowDOM", w, null);
+  };
+  return t.sanitize = function(te) {
+    var w = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, M, B, ge, We, Oe;
+    if (gr = !te, gr && (te = "<!-->"), typeof te != "string" && !Ut(te))
+      if (typeof te.toString == "function") {
+        if (te = te.toString(), typeof te != "string")
+          throw ra("dirty is not a string, aborting");
+      } else
+        throw ra("toString is not a function");
+    if (!t.isSupported) {
+      if (_t(e.toStaticHTML) === "object" || typeof e.toStaticHTML == "function") {
+        if (typeof te == "string")
+          return e.toStaticHTML(te);
+        if (Ut(te))
+          return e.toStaticHTML(te.outerHTML);
+      }
+      return te;
+    }
+    if (Q || vr(w), t.removed = [], typeof te == "string" && (Ae = !1), Ae) {
+      if (te.nodeName) {
+        var De = _e(te.nodeName);
+        if (!C[De] || O[De])
+          throw ra("root node is forbidden and cannot be sanitized in-place");
+      }
+    } else if (te instanceof s)
+      M = Gr("<!---->"), B = M.ownerDocument.importNode(te, !0), B.nodeType === 1 && B.nodeName === "BODY" || B.nodeName === "HTML" ? M = B : M.appendChild(B);
+    else {
+      if (!$e && !fe && !ce && // eslint-disable-next-line unicorn/prefer-includes
+      te.indexOf("<") === -1)
+        return I && $ ? I.createHTML(te) : te;
+      if (M = Gr(te), !M)
+        return $e ? null : $ ? v : "";
+    }
+    M && pe && Ve(M.firstChild);
+    for (var Ye = Br(Ae ? te : M); ge = Ye.nextNode(); )
+      ge.nodeType === 3 && ge === We || Le(ge) || (ge.content instanceof a && Ce(ge.content), Er(ge), We = ge);
+    if (We = null, Ae)
+      return te;
+    if ($e) {
+      if (q)
+        for (Oe = ie.call(M.ownerDocument); M.firstChild; )
+          Oe.appendChild(M.firstChild);
+      else
+        Oe = M;
+      return (P.shadowroot || P.shadowrootmod) && (Oe = ee.call(r, Oe, !0)), Oe;
+    }
+    var je = ce ? M.outerHTML : M.innerHTML;
+    return ce && C["!doctype"] && M.ownerDocument && M.ownerDocument.doctype && M.ownerDocument.doctype.name && Ge(Ud, M.ownerDocument.doctype.name) && (je = "<!DOCTYPE " + M.ownerDocument.doctype.name + `>
+` + je), fe && (je = dt(je, G, " "), je = dt(je, ue, " "), je = dt(je, Se, " ")), I && $ ? I.createHTML(je) : je;
+  }, t.setConfig = function(te) {
+    vr(te), Q = !0;
+  }, t.clearConfig = function() {
+    Ot = null, Q = !1;
+  }, t.isValidAttribute = function(te, w, M) {
+    Ot || vr({});
+    var B = _e(te), ge = _e(w);
+    return Tr(B, ge, M);
+  }, t.addHook = function(te, w) {
+    typeof w == "function" && (ne[te] = ne[te] || [], Or(ne[te], w));
+  }, t.removeHook = function(te) {
+    if (ne[te])
+      return hi(ne[te]);
+  }, t.removeHooks = function(te) {
+    ne[te] && (ne[te] = []);
+  }, t.removeAllHooks = function() {
+    ne = {};
+  }, t;
+}
+var Wd = ks();
+const ct = (e) => ({ __html: Wd.sanitize(e) });
+function* Zt(e = "id-", t = 0) {
+  let r = t;
+  for (; ; )
+    r += 1, yield e + r;
+}
+function Gd() {
+  const e = (
+    // @ts-ignore
+    (document.currentScript && document.currentScript.src || "").match(/(.*\/)/)
+  );
+  return e && e.length > 0 ? e[0].substr(0, e[0].length - 1) : "/";
+}
+h.shape({
+  event: h.string,
+  action: h.string,
+  name: h.string,
+  region: h.string,
+  section: h.string,
+  component: h.string,
+  type: h.string,
+  text: h.string
+});
+function As({
+  packageName: e = "",
+  component: t = "",
+  type: r = "",
+  configuration: n = {}
+}) {
+  if (!e || !t) {
+    console.error("trackReactComponent: Missing required arguments.");
+    return;
+  }
+  window.uds = window.uds || {}, window.uds.package = window.uds.package || {}, window.uds.package[e] = {
+    component: t,
+    type: r,
+    configuration: n
+  };
+}
+const Ur = ({ href: e = null }) => (
+  // @ts-ignore
+  /* @__PURE__ */ i.jsx(Fr, { label: "Apply now", ariaLabel: "Apply now", href: e, color: "gold" })
+);
+Ur.propTypes = {
+  href: h.string
+};
+h.string;
+function no({ message: e, type: t }) {
+  const [r, n] = Be(""), o = {
+    error: {
+      className: "alert-danger",
+      icon: "fa-exclamation-triangle",
+      ariaLabel: "Error"
+    },
+    info: {
+      className: "alert-info",
+      icon: "fa-info-circle",
+      ariaLabel: "Information"
+    }
+  }[t];
+  return /* @__PURE__ */ i.jsxs(
+    "div",
+    {
+      "data-testid": "message-alert",
+      className: `alert ${o.className}`,
+      role: "alert",
+      style: {
+        display: r,
+        position: "sticky",
+        top: 0,
+        zIndex: 100
+      },
+      children: [
+        /* @__PURE__ */ i.jsx("div", { className: "alert-icon", children: /* @__PURE__ */ i.jsx(
+          "span",
+          {
+            "aria-label": o.ariaLabel,
+            className: `fa fa-icon ${o.icon}`
+          }
+        ) }),
+        /* @__PURE__ */ i.jsx("div", { className: "alert-content", children: e }),
+        /* @__PURE__ */ i.jsx("div", { className: "alert-close", children: /* @__PURE__ */ i.jsx(
+          "button",
+          {
+            type: "button",
+            className: "btn btn-circle btn-circle-alt-black close",
+            "aria-label": "Close",
+            onClick: () => n("none"),
+            children: /* @__PURE__ */ i.jsx("i", { className: "fas fa-times" })
+          }
+        ) })
+      ]
+    }
+  );
+}
+no.propTypes = {
+  type: h.oneOf(["error", "info"]).isRequired,
+  message: h.string.isRequired
+};
+function Ns({ message: e }) {
+  return /* @__PURE__ */ i.jsx(no, { message: e, type: "error" });
+}
+function Bd({ message: e }) {
+  return /* @__PURE__ */ i.jsx(no, { message: e, type: "info" });
+}
+const Vd = Te.div`
+  --width: 100px;
+  --color: red;
+
+  width: calc(var(--width) + 0px);
+  height: calc((var(--width) / 3) - 10px);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  .ball-loader-ball {
+    will-change: transform;
+
+    height: calc((var(--width) / 3) - 10px);
+    width: calc((var(--width) / 3) - 10px);
+
+    border-radius: 50%;
+    background-color: lightBlue;
+    position: absolute;
+    -webkit-animation: grow 1s ease-in-out infinite alternate;
+    animation: grow 1s ease-in-out infinite alternate;
+
+    &.ball1 {
+      left: 0;
+      transform-origin: 100% 50%;
+    }
+    &.ball2 {
+      left: 50%;
+      transform: translateX(-50%) scale(1);
+      animation-delay: 0.33s;
+    }
+    &.ball3 {
+      right: 0;
+      animation-delay: 0.66s;
+    }
+  }
+
+  @keyframes grow {
+    to {
+      transform: translateX(-50%) scale(0);
+    }
+  }
+`;
+function Cs() {
+  return /* @__PURE__ */ i.jsxs(Vd, { "data-testid": "loader", className: "container ball-loader mt-4", children: [
+    /* @__PURE__ */ i.jsx("div", { className: "ball-loader-ball ball1" }),
+    /* @__PURE__ */ i.jsx("div", { className: "ball-loader-ball ball2" }),
+    /* @__PURE__ */ i.jsx("div", { className: "ball-loader-ball ball3" })
+  ] });
+}
+h.shape({
+  color: h.oneOf(["gold", "maroon", "gray", "dark"]),
+  content: h.shape({
+    icon: h.string,
+    header: h.string,
+    body: h.string
+  })
+});
+const Os = h.shape({
+  ariaLabel: h.string,
+  color: h.oneOf(["gold", "maroon", "gray", "dark"]),
+  icon: h.string,
+  href: h.string,
+  label: h.string,
+  onClick: h.func,
+  size: h.oneOf(["default", "small", "xsmall"])
+}), ao = {
+  url: h.string,
+  altText: h.string,
+  cssClass: h.arrayOf(h.string)
+}, js = {
+  text: h.string,
+  cssClass: h.arrayOf(h.string)
+}, oo = {
+  type: h.oneOf(["video", "youtube"]),
+  url: h.string,
+  altText: h.string,
+  vttUrl: h.string,
+  title: h.string
+}, Yd = {
+  url: h.string,
+  text: h.string,
+  isActive: h.bool
+}, Tt = h.shape({
+  ...ao
+}), On = h.shape({
+  ...js
+}), Kd = h.shape({
+  ...oo
+}), Vt = h.shape({
+  ...Yd
+}), Rs = h.shape({
+  id: h.string,
+  sourceType: h.oneOf(["api", "shared-data-source", "static-json"]),
+  // default `api`
+  sharedDataSourceId: h.string,
+  // only if `dataSourceType == "shared-data-source"``
+  // eslint-disable-next-line react/forbid-prop-types
+  data: h.arrayOf(h.object),
+  // only if `dataSourceType == "static-json"``
+  apiUrl: h.string
+  // only if `dataSourceType == "api"``
+}), Pa = h.shape({
+  text: h.string,
+  url: h.string
+}), qt = h.shape({
+  icon: h.arrayOf(h.string),
+  title: h.string,
+  content: h.string,
+  buttonLink: Os
+}), La = h.arrayOf(
+  h.shape({
+    title: h.string,
+    url: h.string
+  })
+), _s = h.shape({
+  career: Vt,
+  growth: h.oneOfType([h.number, h.string]),
+  medianSalary: h.string,
+  brightOutlook: h.bool,
+  greenOccupation: h.bool
+}), Xd = {
+  hideCollegeSchool: h.bool,
+  defaultView: h.oneOf(["list-view", "grid-view"]),
+  cardDefaultImage: Tt
+}, Zd = h.shape({
+  ...Xd
+}), io = {
+  atAGlance: h.bool,
+  applicationRequirements: h.bool,
+  changeMajorRequirements: h.bool,
+  nextSteps: h.bool,
+  affordingCollege: h.bool,
+  flexibleDegreeOptions: h.bool,
+  careerOutlook: h.bool,
+  exampleCareers: h.bool,
+  customizeYourCollegeExperience: h.bool,
+  globalOpportunity: h.bool,
+  attendOnline: h.bool,
+  whyChooseAsu: h.bool,
+  programContactInfo: h.bool,
+  externalAnchors: h.arrayOf(
+    h.shape({
+      targetIdName: h.string,
+      text: h.string
+    })
+  )
+}, ar = h.shape({
+  image: Tt,
+  title: h.string,
+  text: h.string,
+  button: Os
+}), wi = h.shape({
+  faculty: ar,
+  programs: ar,
+  research: ar,
+  inclusion: ar,
+  mentors: ar,
+  honors: ar
+}), Ps = {
+  hide: h.bool,
+  sectionIntroText: h.string,
+  cards: wi,
+  defaultCards: wi
+};
+h.shape({
+  ...io
+});
+const sa = h.shape({
+  id: h.oneOfType([h.string, h.number]),
+  value: h.string
+}), Ls = h.shape({
+  locations: h.arrayOf(sa),
+  asuLocals: h.arrayOf(sa),
+  acceleratedConcurrent: sa
+}), Jd = {
+  h1: "h1",
+  h2: "h2",
+  h3: "h3",
+  h4: "h4",
+  h5: "h5",
+  h6: "h6"
+}, Is = Object.values(Jd), Si = {
+  offeredBy: { icon: "university", title: "Offered by" },
+  locations: { icon: "map-marker-alt", title: "Location" },
+  firstRequirementMathCourse: {
+    icon: "pencil-alt",
+    title: "First Required math Course"
+  },
+  mathIntensity: { icon: "calculator", title: "Math intensity" },
+  timeCommitment: { icon: "calendar-alt", title: "Time commitment" }
+}, Ds = "grid-view", Ia = "list-view", Ms = "degree-list-programs", $s = "Sorry, Something went wrong.", Qd = "STEM-OPT for international students on F-1 visas", ep = `This degree is not found.
+  This may be a temporary issue. Please try again in 5 minutes.
+  If the issue persists, the degree may no longer be available.`, tp = Gd(), rp = (e) => {
+  const t = e || tp, r = `${t}/assets/img/detail-page`, n = `${t}/assets/img/listing-page`, a = {
+    dataSource: void 0,
+    introContent: {
+      image: {
+        url: `${r}/intro.jpg`,
+        altText: "Detail Page Degree"
+      }
+    },
+    hero: {
+      image: {
+        url: `${r}/hero.jpg`,
+        altText: "Detail Page Degree",
+        size: "medium"
+      },
+      title: {
+        text: "Detail Page Degree",
+        color: "black",
+        highlightColor: "gold",
+        maxWidth: "100%"
+      }
+    },
+    nextSteps: {
+      cards: {
+        learnMore: {
+          icon: ["fas", "info-circle"],
+          title: "Learn more about our programs",
+          content: "Tell us what type of student you are and we'll get you the information you need.",
+          buttonLink: {
+            label: "Request information",
+            ariaLabel: "Request information",
+            color: "maroon",
+            href: "https://admission.asu.edu/contact/request-info"
+          }
+        },
+        apply: {
+          icon: ["fas", "file-alt"],
+          title: "Apply to program",
+          content: "Arizona State University invites first-year, transfer, international, graduate and online students to apply for admission using our online application.",
+          buttonLink: {
+            label: "Apply now",
+            ariaLabel: "Apply now",
+            color: "maroon",
+            href: "https://admission.asu.edu/apply"
+          }
+        },
+        visit: {
+          icon: ["fas", "map-marker-alt"],
+          title: "Visit our campus",
+          content: "An Experience ASU visit includes a presentation on admissions, scholarships and financial aid, student housing, getting involved on campus and much more.You will also go on a student-led walking tour of campus.",
+          buttonLink: {
+            label: "Schedule a visit",
+            ariaLabel: "Schedule a visit",
+            color: "maroon",
+            href: "https://visit.asu.edu/"
+          }
+        }
+      }
+    },
+    whyChooseAsu: {
+      sectionIntroText: "ASU offers students excellent academics and unique opportunities to customize your college experience and give you an edge, including undergraduate research, internships, access to state-of-the-art facilities, and opportunities to work with world-class faculty and scientists.",
+      cards: {
+        faculty: {
+          image: {
+            url: `${r}/customize-faculty-600.jpg`,
+            altText: "World-class faculty"
+          },
+          title: "World-class faculty",
+          text: "The ASU faculty is at the forefront nationally in advancing research and discovery. Our faculty members inspire new ways of thinking, innovating and solving problems socially, culturally and economically in our region and in the international community.",
+          button: {
+            label: "Faculty excellence",
+            color: "maroon",
+            href: "https://www.asu.edu/academics/faculty-excellence"
+          }
+        },
+        programs: {
+          image: {
+            url: `${r}/customize-programs-600.jpg`,
+            altText: "Highly ranked programs"
+          },
+          title: "Highly ranked programs",
+          text: "A leading service ranking the excellence and innovation of the nation’s top universities, U.S. News & World Report rates many ASU programs among the top 25 in the country, including more than thirty programs ranked in the nation's top 10.",
+          button: {
+            label: "ASU rankings",
+            color: "maroon",
+            href: "https://www.asu.edu/rankings"
+          }
+        },
+        research: {
+          image: {
+            url: `${r}/customize-research-600.jpg`,
+            altText: "Research opportunities"
+          },
+          title: "Research opportunities",
+          text: "Students have the opportunity to work with mentors who are experts in their fields and establish professional connections that may last a lifetime. Engage in meaningful research and gain experience that may make you more competitive in the job market.",
+          button: {
+            label: "Research opportunities",
+            color: "maroon",
+            href: "https://provost.asu.edu/uresearch"
+          }
+        },
+        inclusion: {
+          image: {
+            url: `${r}/customize-inclusion-600.jpg`,
+            altText: "An inclusive environment"
+          },
+          title: "An inclusive environment",
+          text: "ASU defines our success not by whom we exclude, but by whom we include and how our students succeed. Our educational programs are designed to broaden access to a quality education and support our students’ success.",
+          button: {
+            label: "ASU Charter",
+            color: "maroon",
+            href: "https://www.asu.edu/about/charter-mission"
+          }
+        },
+        mentors: {
+          image: {
+            url: `${r}/customize-mentor-600.jpg`,
+            altText: "Career Services"
+          },
+          title: "Career Services",
+          text: "All students have access to ASU’s full-service career resources center. Get help writing your cover letter and building your resume, learn job interview skills, land an internship, and connect with hundreds of employers who are actively recruiting ASU graduates.",
+          button: {
+            label: "ASU Career Services",
+            color: "maroon",
+            href: "https://career.eoss.asu.edu/"
+          }
+        },
+        honors: {
+          image: {
+            url: `${r}/customize-honors-600.jpg`,
+            altText: "Global education"
+          },
+          title: "Global education",
+          text: "ASU offers more than 300 Global Education programs in over 65 different countries. Whether you are interested in studying abroad, internships, research or service learning, there's a program for you!",
+          button: {
+            label: "Explore",
+            color: "maroon",
+            href: "https://goglobal.asu.edu"
+          }
+        }
+      }
+    },
+    globalOpportunity: {
+      image: {
+        url: `${r}/global-opportunity.jpg`,
+        altText: "Global opportunity"
+      }
+    },
+    careerOutlook: {
+      image: {
+        url: `${r}/career-outlook.jpg`,
+        altText: "Career Outlook"
+      }
+    },
+    attendOnline: {
+      image: {
+        url: `${r}/attend-online.jpg`,
+        altText: "Attend online"
+      }
+    }
+  }, o = {
+    actionUrls: {
+      applyNowUrl: "https://admission.asu.edu/apply"
+    },
+    hero: {
+      image: {
+        url: `${n}/hero.jpg`,
+        altText: "Listing Page Degree",
+        size: "medium"
+      }
+    },
+    programList: void 0
+  };
+  return {
+    detailPageDefault: a,
+    listingPageDefault: o
+  };
+}, np = (e) => {
+  if (typeof e == "string") return "Degrees";
+  const { program: t, cert: r } = e;
+  return t === "undergrad" && r === "true" ? "Undergraduate Minors and Certificates" : t === "undergrad" ? "Undergraduate Degrees" : t === "graduate" && r === "true" ? "Graduate Certificates" : t === "graduate" ? "Graduate Degrees" : "Degrees";
+}, so = [
+  { id: 0, value: "DTPHX", text: "Downtown Phoenix campus" },
+  { id: 1, value: "POLY", text: "Polytechnic campus" },
+  { id: 2, value: "TEMPE", text: "Tempe campus" },
+  { id: 3, value: "WEST", text: "West Valley campus" },
+  { id: 4, value: "ONLNE", text: "ASU Online" }
+], ap = so[4], Fs = [
+  { id: 0, value: "COCHS", text: "ASU at Cochise" },
+  { id: 1, value: "LOSAN", text: "ASU at Los Angeles" },
+  { id: 2, value: "NEAZ", text: "ASU at Northeastern Arizona" },
+  { id: 3, value: "PIMA", text: "ASU at Pima" },
+  { id: 4, value: "CAC", text: "ASU at Pinal" },
+  { id: 5, value: "EAC", text: "ASU at TheGilaValley" },
+  { id: 6, value: "TUCSN", text: "ASU at Tucson" },
+  { id: 7, value: "YAVAP", text: "ASU at Yavapai" },
+  { id: 8, value: "AWC", text: "ASU at Yuma" },
+  { id: 9, value: "MESACITYCR", text: "ASU at Mesa City Center" },
+  { id: 10, value: "CALHC", text: "Colleges at Lake Havasu City" }
+], lo = [
+  {
+    id: 0,
+    value: "all",
+    text: "All"
+  },
+  {
+    id: 1,
+    value: "acceleratedAcadPlanCodes",
+    text: "Accelerated"
+  },
+  {
+    id: 2,
+    value: "concurrentAcadPlanCodes",
+    text: "Concurrent"
+  }
+], op = lo[0], Da = (e) => (e == null ? void 0 : e.value) && (e == null ? void 0 : e.value) !== "all", ip = (e) => {
+  var t;
+  return ((t = [
+    ...so,
+    ...Fs,
+    ...lo
+  ].find(({ value: r }) => r === e)) == null ? void 0 : t.text) || e;
+}, Fe = {
+  atAGlance: {
+    targetIdName: "at-a-glange",
+    text: "At a glance"
+  },
+  applicationRequirements: {
+    targetIdName: "application-requirements",
+    text: "App. Requirements"
+  },
+  degreeRequirements: {
+    targetIdName: "degree-requirements",
+    text: "Degree Requirements"
+  },
+  changeMajorRequirements: {
+    targetIdName: "change-major-requirements",
+    text: "Change Major Requirement"
+  },
+  nextSteps: {
+    targetIdName: "next-steps",
+    text: "Next Steps"
+  },
+  affordingCollege: {
+    targetIdName: "affording-college",
+    text: "Affording College"
+  },
+  flexibleDegreeOptions: {
+    targetIdName: "flexible-degree-options",
+    text: "Flexible Degree Options",
+    acceleratedId: "flexible-accelerated-options",
+    concurrentId: "flexible-concurrent-options"
+  },
+  careerOutlook: {
+    targetIdName: "career-outlook",
+    text: "Career outlook"
+  },
+  exampleCareers: {
+    targetIdName: "example-careers",
+    text: "Example Careers"
+  },
+  // TODO: To be implemented
+  // customizeYourCollegeExperience?: CustomizeYourCollegeExperienceProps
+  globalOpportunity: {
+    targetIdName: "global-opportunity",
+    text: "Global opportunities"
+  },
+  attendOnline: {
+    targetIdName: "attend-online",
+    text: "Attend Online"
+  },
+  whyChooseAsu: {
+    targetIdName: "why-choose-asu",
+    text: "Why Choose ASU"
+  },
+  programContactInfo: {
+    targetIdName: "program-contact-info",
+    text: "Program Contact Information"
+  }
+}, sp = {
+  TEMPE: {
+    text: "Tempe campus",
+    url: "https://campus.asu.edu/tempe"
+  },
+  POLY: {
+    text: "Polytechnic campus",
+    url: "https://campus.asu.edu/polytechnic"
+  },
+  WEST: {
+    text: "West Valley campus",
+    url: "https://campus.asu.edu/west"
+  },
+  DTPHX: {
+    text: "Downtown Phoenix campus",
+    url: "https://campus.asu.edu/downtown-phoenix"
+  },
+  EAC: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/thegilavalley"
+  },
+  CAC: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/pinal"
+  },
+  ONLNE: {
+    text: "Online",
+    url: "https://asuonline.asu.edu"
+  },
+  CALHC: {
+    text: "Lake Havasu",
+    url: "https://havasu.asu.edu"
+  },
+  COCHS: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/asu-cochise"
+  },
+  WASHD: {
+    text: "",
+    url: "https://washingtondc.asu.edu"
+  },
+  YAVAP: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/asuyavapai"
+  },
+  PIMA: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/pima"
+  },
+  NEAZ: {
+    text: "",
+    url: "https://admission.asu.edu/transfer/asu-northeastern-arizona"
+  },
+  LOSAN: {
+    text: "ASU@Los Angeles",
+    url: "https://california.asu.edu"
+  },
+  "TUCSN-undergrad": {
+    text: "",
+    url: "https://transfer.asu.edu/tucson"
+  },
+  "TUCSN-graduate": {
+    text: "",
+    url: "https://admission.asu.edu/contact/graduate"
+  },
+  MXCTY: {
+    text: "",
+    url: "https://admission.asu.edu/contact/graduate"
+  },
+  "AWC-undergrad": {
+    text: "",
+    url: "https://admission.asu.edu/transfer/asu-yuma"
+  },
+  "AWC-graduate": {
+    text: "",
+    url: "https://admission.asu.edu/contact/graduate"
+  }
+}, Ti = (e, t) => {
+  const r = ["TUCSN", "AWC"], n = e.toUpperCase(), a = r.includes(n) ? `${n}-${t}` : n;
+  return sp[a];
+};
+function Us({ anchorMenu: e }) {
+  var n, a;
+  const t = (n = e == null ? void 0 : e.externalAnchors) == null ? void 0 : n.map((o) => {
+    const { targetIdName: s, text: c } = o;
+    return {
+      targetIdName: s.startsWith("#") ? s.substring(1) : s,
+      text: c,
+      icon: null
+    };
+  }), r = Object.keys(Fe).filter((o) => e[o]).map((o) => Fe[o]).concat(t || []);
+  return /* @__PURE__ */ i.jsx(
+    vu,
+    {
+      items: r,
+      firstElementId: (a = r[0]) == null ? void 0 : a.targetIdName,
+      focusFirstFocusableElement: !1
+    }
+  );
+}
+Us.propTypes = {
+  anchorMenu: h.shape(io)
+};
+function lp(e, t) {
+  const r = Math.floor(e / t), n = e % t;
+  return r + (n > 0 ? 1 : 0);
+}
+const cp = "https://degrees.apps.asu.edu", up = "https://api.myasuplat-dpl.asu.edu/api/codeset/acad-plan/", dp = {
+  endpoint: "https://api.myasuplat-dpl.asu.edu/api/codeset/acad-plans",
+  filter: "activeInDegreeSearch",
+  include: `applicationDeadlines,owners,acadPlanMarketingDescription,
+    acadPlanCode,degreeDescriptionShort,acadPlanDescription,
+    degreeDescriptionText,majorMapSubplans,majorMapOnline,majorMapGeneral,
+    acceleratedAcadPlanCodes,concurrentAcadPlanCodes,academicOfficeUrl,
+    academicOfficeLocation,marketingText,fullDescription,customText,
+    mathIntensityCode,mathIntensityDescription,firstMathCourseRequired,
+    mathRequired,emailAddr,campusesOffered,changeMajorRequirementsText,
+    additionalFee,firstMathCourseRequiredSupplementalText,degreeType`,
+  degreeType: "UG"
+}, pp = {
+  acadPlan: null,
+  endpoint: "https://api.myasuplat-dpl.asu.edu/api/codeset/acad-plan",
+  include: `applicationDeadlines,owners,acadPlanMarketingDescription,
+  acadPlanCode,degreeDescriptionShort,acadPlanDescription,
+  degreeDescriptionText,majorMapSubplans,majorMapOnline,majorMapGeneral,
+  acceleratedAcadPlanCodes,concurrentAcadPlanCodes,academicOfficeUrl,
+  academicOfficeLocation,marketingText,fullDescription,customText,
+  mathIntensityCode,mathIntensityDescription,firstMathCourseRequired,
+  mathRequired,emailAddr,campusesOffered,changeMajorRequirementsText,
+  careerData,careerOpportunities,globalExperienceText,
+  firstMathCourseRequiredSupplementalText,stemOptText,
+  admissionsRequirementsText,transferAdmissionRequirementsText,
+  asuOnlineAcadPlanUrl,degreeType,degreeRequirements,
+  graduateDegreeAdditionalRequirements,minorCourseRequirements,subplans,
+  professionalLicensureAdditionalText,professionalLicensureStandardText`
+}, Ei = (e) => e.map((t) => ({
+  title: t.acadPlanDescription,
+  url: t.academicOfficeUrl
+})).sort((t, r) => t.title.localeCompare(r.title)), mp = (e) => e == null ? void 0 : e.map((t) => ({
+  career: {
+    text: t.alternateTitle,
+    url: `${cp}/career-details/${t.onetCode}`
+  },
+  growth: t.growth,
+  medianSalary: t.salary.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0
+  }),
+  brightOutlook: !!t.brightOutlook,
+  greenOccupation: !!t.green
+}));
+function zs(e, t) {
+  const r = { ...t, ...e };
+  if (r.collegeAcadOrg && (r.collegeOrg = r.collegeAcadOrg, delete r.collegeAcadOrg), r.program) {
+    const { program: d } = r;
+    r.cert === "true" && d === "undergrad" ? r.degreeType = "UGCM" : d === "graduate" ? r.degreeType = "GR" : r.degreeType = "UG", delete r.program;
+  }
+  r.acadPlan && (r.endpoint += `/${r.acadPlan}`, delete r.acadPlan);
+  const { endpoint: n, include: a, ...o } = r, s = a.split(",").map((d) => `include=${d.trim()}`).join("&"), c = Object.keys(o).reduce(
+    (d, p) => `${d}&${p}=${r[p]}`,
+    ""
+  );
+  return `${n}?${c}&${s}`;
+}
+function Dn(e, t = "h2") {
+  return (
+    /** @type {keyof JSX.IntrinsicElements} */
+    Is.includes(e.component) ? e.component : t
+  );
+}
+function Ma(e) {
+  return typeof e != "string" ? console.error("Invalid string", e) : e == null ? void 0 : e.replace(
+    /\w\S*/g,
+    (t) => t.charAt(0).toUpperCase() + t.substr(1).toLowerCase()
+  );
+}
+function fp(e) {
+  return /<\/?[a-z][\s\S]*>/i.test(e);
+}
+const Hs = "AsuDevTools", hp = {
+  isDebug: !1
+};
+function gp() {
+  const e = JSON.parse(localStorage.getItem(Hs));
+  return e == null ? void 0 : e.isDebug;
+}
+window.__AsuDevTools = {
+  enableDebug(e) {
+    const t = JSON.stringify({
+      ...hp,
+      isDebug: e
+    });
+    localStorage.setItem(Hs, t);
+  }
+};
+async function la(e) {
+  return e != null && e.length ? (await Promise.all(
+    e.map(async (r) => {
+      try {
+        return await (await Promise.race([
+          fetch(
+            `${up}${r}?include=academicOfficeUrl&include=acadPlanDescription`
+          ),
+          // Timeout after 5 seconds
+          new Promise(
+            (o, s) => setTimeout(() => s(new Error("timeout")), 1e4)
+          )
+        ])).json();
+      } catch (n) {
+        return console.error(
+          `Error fetching academic plan for code ${r}:`,
+          n
+        ), null;
+      }
+    })
+  )).filter((r) => r !== null) : [];
+}
+function yp(e, t) {
+  Promise.all(e).then((r) => {
+    const n = r[0], a = r[1];
+    t({ accelerateData: n, concurrentData: a });
+  }).catch(() => {
+    t({ accelerateData: [], concurrentData: [] });
+  });
+}
+function zr({ contents: e = [] }) {
+  const t = Zt("paragrap-");
+  return /* @__PURE__ */ i.jsx(i.Fragment, { children: e.map(
+    (r) => fp(r.text) ? /* @__PURE__ */ i.jsx(
+      "div",
+      {
+        dangerouslySetInnerHTML: ct(r.text)
+      },
+      t.next().value
+    ) : /* @__PURE__ */ i.jsx(
+      "p",
+      {
+        className: `${cr(r.cssClass)}`,
+        children: r.text
+      },
+      t.next().value
+    )
+  ) });
+}
+zr.propTypes = {
+  contents: h.arrayOf(On)
+};
+const bp = In`
+  .uds-image-overlap {
+    padding-top: 0;
+    width: auto;
+    align-items: center;
+
+    &:after{
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      padding-top: 1.5rem !important;
+    }
+  }
+`, vp = Te.div`
+  .uds-image-overlap.content-right &.content-wrapper,
+  .uds-image-overlap.content-left &.content-wrapper {
+    height: fit-content;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .uds-image-overlap.content-left &.content-wrapper {
+      padding-left: 0;
+    }
+
+    .uds-image-overlap.content-right &.content-wrapper {
+      padding: 2.5rem;
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+`, xp = Te.img`
+  .uds-image-overlap & {
+    width: 100%;
+    height: 100%;
+    grid-row: 2/5;
+    object-fit: cover;
+  }
+
+  .uds-image-overlap.content-right & {
+    grid-row: 1 / span 3;
+  }
+`;
+function pr({
+  title: e,
+  image: t,
+  contentDirection: r = "left",
+  contents: n = [],
+  contentChildren: a = null,
+  headingTag: o = "H3"
+}) {
+  const s = hn(), c = hn(), d = Dn(o);
+  function p() {
+    const m = s.current.offsetHeight;
+    c.current.style.height = `${m * 1.2}px`;
+  }
+  return mt(() => {
+    p();
+    let g;
+    const m = () => {
+      clearTimeout(g), g = setTimeout(() => p(), 150);
+    };
+    return window.addEventListener("resize", m), () => window.removeEventListener("resize", m);
+  }, [c, s]), /* @__PURE__ */ i.jsxs("div", { className: `uds-image-overlap content-${r}`, children: [
+    /* @__PURE__ */ i.jsx(bp, {}),
+    /* @__PURE__ */ i.jsx(
+      xp,
+      {
+        ref: c,
+        className: "img-fluid",
+        src: t == null ? void 0 : t.url,
+        alt: t == null ? void 0 : t.altText,
+        onError: (g) => {
+          g.currentTarget.style.display = "none";
+        }
+      }
+    ),
+    /* @__PURE__ */ i.jsxs(vp, { ref: s, className: "content-wrapper", children: [
+      /* @__PURE__ */ i.jsx(d, { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: e }) }),
+      /* @__PURE__ */ i.jsx(zr, { contents: n }),
+      a
+    ] })
+  ] });
+}
+pr.propTypes = {
+  headingTag: h.string,
+  title: h.string,
+  contentDirection: h.oneOf(["left", "right"]),
+  contents: h.arrayOf(
+    h.shape({
+      text: h.string
+    })
+  ),
+  image: Tt,
+  contentChildren: h.element
+};
+const qs = In`
+  :root {
+    --uds-dp-section-margin: 96px;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --uds-dp-section-margin: 48px;
+    }
+  }
+
+  .element-focus:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #191919 !important;
+  }
+
+  div[class^=uds-hero] h1 {
+    margin-left: 0.15em;
+
+    span {
+      margin-left: 0;
+    }
+  }
+
+  h1 span.highlight-gold,
+  h2 span.highlight-gold{
+    margin-left: 0.15em;
+  }
+
+  .card > .card-buttons {
+    padding-bottom: 8px !important;
+  }
+`, Ws = Te.main`
+  &.dg-margin-top {
+    margin-top: var(--uds-dp-section-margin);
+  }
+
+  &.main-section > section:not(.no-space),
+  & > section section:not(.no-space) {
+    margin-bottom: var(--uds-dp-section-margin);
+
+    & > * {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    & h2 {
+      line-height: 1;
+    }
+  }
+`;
+function wp({
+  baseIconClassName1: e,
+  baseIconAriaLabel1: t,
+  baseIconStyle1: r,
+  baseIconAriaLabel2: n,
+  baseIconClassName2: a,
+  baseIconStyle2: o,
+  ariaLabel: s,
+  ariaControls: c,
+  dataId: d,
+  onClick: p = () => null
+}) {
+  const [g, m] = Be(!1), f = (T, k, N, A) => /* @__PURE__ */ i.jsx(
+    "span",
+    {
+      style: {
+        cursor: "pointer",
+        display: k
+      },
+      children: /* @__PURE__ */ i.jsx(
+        "i",
+        {
+          className: `${T}`,
+          "aria-label": N,
+          title: N,
+          style: A
+        }
+      )
+    }
+  ), E = () => {
+    m(!g), p(!g);
+  }, S = /* @__PURE__ */ i.jsxs(
+    "span",
+    {
+      "data-testid": d,
+      role: "button",
+      className: "element-focus",
+      tabIndex: 0,
+      onKeyDown: (T) => T.key === "Enter" && E(),
+      onClick: E,
+      "aria-label": s,
+      "aria-expanded": g,
+      "aria-controls": c,
+      children: [
+        f(
+          e,
+          g ? "" : "none",
+          t,
+          r
+        ),
+        f(
+          a,
+          g ? "none" : "",
+          n,
+          o
+        )
+      ]
+    }
+  );
+  return Ri(() => S, [g]);
+}
+Te.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1070;
+  display: block;
+  max-width: 276px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  display: none;
+
+  &[data-width-auto="true"] {
+    max-width: none;
+  }
+
+  &[data-show="true"] {
+    display: block;
+  }
+
+  & .popover-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d8d8d8;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+
+  & .popover-body {
+    padding: 1rem 1rem;
+    color: #212529;
+  }
+
+  #arrow,
+  #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #arrow::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  &[data-popper-placement^="top"] > #arrow {
+    bottom: -4px;
+  }
+
+  &[data-popper-placement^="bottom"] > #arrow {
+    top: -4px;
+  }
+
+  &[data-popper-placement^="left"] > #arrow {
+    right: -4px;
+  }
+
+  &[data-popper-placement^="right"] > #arrow {
+    left: -4px;
+  }
+`;
+const ca = (e) => /* @__PURE__ */ i.jsx("span", {}), Sp = ({
+  onClick: e = () => null,
+  ariaLabel: t,
+  ariaControls: r,
+  dataId: n
+}) => wp({
+  dataId: n,
+  baseIconClassName1: "fas fa-chevron-up",
+  baseIconClassName2: "fas fa-chevron-down",
+  onClick: e,
+  ariaLabel: t,
+  ariaControls: r
+}), mr = Ll(null), co = ({ listPageProps: e, detailPageProps: t, children: r }) => {
+  const { detailPageDefault: n, listingPageDefault: a } = Ri(
+    () => rp((e || t).appPathFolder),
+    []
+  ), o = {
+    detailPageDefault: n,
+    listingPageDefault: a
+  }, s = {
+    listPageProps: e,
+    detailPageProps: t
+  };
+  return /* @__PURE__ */ i.jsx(
+    mr.Provider,
+    {
+      value: {
+        state: s,
+        defaultState: o
+      },
+      children: r
+    }
+  );
+};
+co.propTypes = {
+  children: h.oneOfType([
+    h.arrayOf(h.element),
+    h.element
+  ]),
+  listPageProps: h.shape({}),
+  detailPageProps: h.shape({})
+};
+const Tp = ({
+  dataSource: e,
+  tableView: t = [],
+  programs: r,
+  stateFilters: n
+}) => {
+  const { collegeAcadOrg: a, departmentCode: o } = e;
+  mt(() => {
+    if (!r || !gp()) return;
+    const s = "background:#eee; -webkit-text-stroke: 1px black; color: tomato; padding-left: 0.5rem;", c = "font-size:30px;", d = "font-size:24px;", p = "font-size: 18px; margin-left: 0.5rem;";
+    console.group("<< ASU Degree Page >>"), console.log("%c🏫 Listing Page Programs 📚", s + c), console.log(
+      `%cTotal programs found: ${r.length}`,
+      s + p
+    ), console.log("%cPrograms found", s + p), console.log(r), console.log(
+      `%cTotal programs loaded: ${t.length}`,
+      s + p
+    ), console.log("%cPrograms loaded", s + p), console.log(t), console.log("%cPage Filters", s + d), console.log(
+      `%c- collegeAcadOrg:${a}`,
+      s + p
+    ), console.log(
+      `%c- departmentCode:${o}`,
+      s + p
+    ), console.log("%cSearch Filters", s + d), console.log(n), console.groupEnd();
+  });
+}, ki = (e) => e.degreeType === "UG", Gs = (e) => {
+  var t;
+  return ((t = e.applicationDeadlines) == null ? void 0 : t.length) > 0;
+}, Bs = (e) => {
+  var t;
+  return ((t = e.applicationDeadlines) == null ? void 0 : t.length) > 0;
+}, Ep = (e) => Object.keys(e).length > 0 ? Bs(e) || Gs(e) : !0, jr = (e) => {
+  const { owners: t } = e;
+  return t ? t.reduce(
+    (n, a) => n.percentOwned > a.percentOwned ? n : a
+  ) : null;
+};
+function ur(e = {}) {
+  return {
+    getMajorDesc: () => e.acadPlanMarketingDescription,
+    getInstitution: () => "ASU00",
+    getAcadPlan: () => e.acadPlanCode,
+    /** @returns {string} */
+    getDegree: () => {
+      let t = e.degreeDescriptionShort || e.acadPlanTypeDescription;
+      return t === "CERT" && (t = "Certificate"), t;
+    },
+    /** @returns {string} */
+    getGeneralDegreeMajorMap: () => {
+      const { majorMapGeneral: t } = e, r = t == null ? void 0 : t.find(
+        (n) => n.defaultFlag === !0
+      );
+      return (r == null ? void 0 : r.url) || "";
+    },
+    isUndergradProgram: () => ki(e),
+    isPhdOrMasters: () => e.degreeDescriptionShort !== "CERT",
+    // Only called in functions that already checked if its a grad program
+    isGradProgram: () => e.degreeType === "GR",
+    // GR is present for grad degrees and grad certificates
+    isMinorOrCertificate: () => e.degreeType === "UGCM" || e.degreeType === "GR" && e.acadPlanTypeDescription === "Certificate",
+    /** @returns {"undergrad" |  "graduate"} */
+    getProgramType: () => ki(e) ? "undergrad" : "graduate",
+    getDegreeDesc: () => e.degreeDescriptionLong,
+    getDegreeDescLong: () => e.degreeDescriptionText,
+    getFullDescription: () => e.fullDescription,
+    getCurriculumUrl: () => {
+      var t;
+      return (t = e.asuOnlineAcadPlanUrl) == null ? void 0 : t.trim();
+    },
+    getAdmissionsRequirementsText: () => e.admissionsRequirementsText,
+    getMinorCourseRequirements: () => e.minorCourseRequirements,
+    getTransferAdmission: () => e.transferAdmissionRequirementsText,
+    getGraduateRequirements: () => {
+      const t = e.graduateDegreeAdditionalRequirements;
+      let r = "";
+      if ((t == null ? void 0 : t.length) > 0) {
+        const a = t.join(", or<br />");
+        r = a ? `<p>${a}</p>` : "";
+      } else
+        return r = e.degreeMajorMap, `${r}`;
+      const n = e.degreeRequirements;
+      return `${r}${n}`;
+    },
+    isOnline: () => e.asuOnlineAcadPlanUrl,
+    // Returns null if online url is not available
+    // See getGeneralDegreeMajorMap for more info
+    getOnlineMajorMapURL: () => {
+      var n;
+      const t = e.majorMapOnline, r = t == null ? void 0 : t.find(
+        (a) => a.defaultFlag === !0
+      );
+      return r ? (r == null ? void 0 : r.url) || "" : (n = t == null ? void 0 : t[t.length - 1]) == null ? void 0 : n.url;
+    },
+    hasCareerData: () => {
+      var t;
+      return (t = e.careerData) == null ? void 0 : t.length;
+    },
+    getCareerData: () => e.careerData || [],
+    /** @return {Object[]} */
+    getCampusList: () => e.campusesOffered || [],
+    hasConcurrentOrAccelerateDegrees: () => {
+      var t, r;
+      return ((t = e.acceleratedAcadPlanCodes) == null ? void 0 : t.length) || ((r = e.concurrentAcadPlanCodes) == null ? void 0 : r.length);
+    },
+    hasAccelerateDegrees: () => {
+      var t;
+      return (t = e.acceleratedAcadPlanCodes) == null ? void 0 : t.length;
+    },
+    hasConcurrentDegrees: () => {
+      var t;
+      return (t = e.concurrentAcadPlanCodes) == null ? void 0 : t.length;
+    },
+    getAccelerateDegrees: async () => e.acceleratedAcadPlanCodes ? la(e.acceleratedAcadPlanCodes) : [],
+    getConcurrentDegrees: async () => e.concurrentAcadPlanCodes ? la(e.concurrentAcadPlanCodes) : [],
+    getCollegeDesc: () => {
+      var t;
+      return (t = jr(e)) == null ? void 0 : t.collegeDescription;
+    },
+    getCollegeUrl: () => {
+      var t;
+      return ((t = jr(e)) == null ? void 0 : t.collegeUrl) || "";
+    },
+    /** @return {string} */
+    getEmailAddress: () => e.emailAddr,
+    /** @return {string} */
+    getPhone: () => {
+      var t;
+      return (t = e.phoneNumber) == null ? void 0 : t.replace("/", "-");
+    },
+    /** @return {string} */
+    getProfessionalLicensureText() {
+      const t = e.professionalLicensureStandardText || "", r = e.professionalLicensureAdditionalText || "", n = `${t}${r}`;
+      try {
+        if (new DOMParser().parseFromString(n, "text/html").querySelector("parsererror"))
+          return "";
+      } catch (a) {
+        return console.error("Error parsing HTML: ", a.message), "";
+      }
+      return n;
+    },
+    /** @return {string} */
+    getDepartmentName: () => {
+      var t;
+      return (t = jr(e)) == null ? void 0 : t.departmentDescription;
+    },
+    /** @return {string} */
+    getPlanUrl: () => e.academicOfficeUrl,
+    // AsuProgramFee
+    hasAsuProgramFee: () => e.additionalFee,
+    // AsuLangReqFlag
+    getAsuLangReqFlag: () => e.languageRequired,
+    hasAsuLangReqFlag: () => e.languageRequired,
+    // asuMathReqFlag
+    hasMathReqFlag: () => e.mathRequired,
+    getOtherMathReqCourse: () => e.firstMathCourseRequiredSupplementalText,
+    getMathIntensity: () => e.mathIntensityDescription,
+    /** @return {string} */
+    getMinMathReq: () => {
+      const t = e.firstMathCourseRequired;
+      if (!t) return "";
+      const { subject: r, catalogNumber: n, description: a } = t;
+      return `${r} ${n} - ${a}`;
+    },
+    /** @return {string} */
+    getMarketText: () => {
+      var t;
+      return (t = e.marketingText) == null ? void 0 : t.trim();
+    },
+    /** @return {string} */
+    getAsuOfficeLoc: () => e.academicOfficeLocation || "",
+    /** @return {string} */
+    getCampusWue: () => {
+      var r;
+      const t = e.campusesOffered;
+      return t ? (r = t == null ? void 0 : t.find((n) => n.wue === !0)) == null ? void 0 : r.campusCode : null;
+    },
+    getConcurrentDegreeMajorMaps: () => la(e.concurrentAcadPlanCodes),
+    getChangeMajor: () => e.changeMajorRequirementsText,
+    getAsuCareerOpportunity: () => e.careerOpportunities,
+    getGlobalExp: () => {
+      var t;
+      return (t = e.globalExperienceText) == null ? void 0 : t.trim();
+    },
+    /** @return {string} */
+    getCollegeAcadOrg: () => {
+      var t;
+      return (t = jr(e)) == null ? void 0 : t.collegeAcadOrg;
+    },
+    /** @return {Array} */
+    getCollegeAcadOrgJoint: () => {
+      const { owners: t } = e;
+      return t ? t.map((n) => n.collegeAcadOrg) : [];
+    },
+    /** @return {string} */
+    getDepartmentCode: () => {
+      var t;
+      return (t = jr(e)) == null ? void 0 : t.departmentAcadOrg;
+    },
+    /** @return {Object.<string, string>} */
+    getGraduateApplyDates: () => e.applicationDeadlines,
+    hasGraduateApplyDates: () => Gs(e),
+    /** @return {Object.<string, string>} */
+    getPlanDeadlines: () => e.applicationDeadlines,
+    hasPlanDeadlines: () => Bs(e),
+    isValidActiveProgram: () => Ep(e),
+    /** @return {boolean} */
+    getAsuDegSrchFlg: () => e.activeInDegreeSearch,
+    getAsuCustomText: () => e.customText,
+    getRequiredCoursesLabel: () => e.acadPlanTypeDescription === "Minor" ? "Minor" : e.acadPlanTypeDescription === "Certificate" ? "Certificate" : "Major",
+    getStemOptText: () => e.stemOptText,
+    getSubPlnMajorMaps: () => {
+      if (!e.subplans || !e.majorMapSubplans) return [];
+      let t = [...e.subplans].filter(
+        (s) => s.campusesOffered
+      );
+      const r = [...e.majorMapSubplans], n = (s, c) => s.filter(
+        (d) => d.acadSubPlanCode !== c
+      ), a = (s, c) => s.some(
+        (d) => d.acadSubPlanCode !== c
+      ), o = [];
+      for (let s = r.length - 1; s >= 0 && t.length !== 0; s -= 1) {
+        const c = r[s];
+        (c.defaultFlag || a(
+          t,
+          c.acadSubPlanCode
+        )) && (t = n(
+          t,
+          c.acadSubPlanCode
+        ), o.push(c));
+      }
+      return o;
+    },
+    getSubPln: () => e.subplans
+  };
+}
+function kp(e) {
+  const t = e.getProgramType(), r = [], n = (c) => ({
+    text: c,
+    url: ""
+  }), a = (c) => ({
+    text: "Online",
+    url: c
+  }), o = e.getCampusList().map((c) => c.campusCode);
+  o.length > 0 && r.push(
+    ...o.map(
+      (c) => c === "ONLNE" && a(e.getCurriculumUrl()) || Ti(c, t) || n(c)
+    )
+  );
+  const s = e.getCampusWue();
+  return s && r.push(
+    Ti(s, t) || n(s)
+  ), r;
+}
+const Ap = (e, t) => {
+  const r = { ...e };
+  return r.globalOpportunity && !t.getGlobalExp() && (r.globalOpportunity = !1), r.careerOutlook && !t.getAsuCareerOpportunity() && (r.careerOutlook = !1), r.attendOnline && !t.getCurriculumUrl() && (r.attendOnline = !1), r;
+}, Np = (e) => {
+  var a;
+  const t = Object.values(e).filter(
+    (o) => o === !0
+  );
+  return ((a = e == null ? void 0 : e.externalAnchors) == null ? void 0 : a.length) > 0 || t.length > 0;
+};
+function Cp(e) {
+  return "";
+}
+function Op(e) {
+  return "";
+}
+function jp() {
+  return "";
+}
+function Mn(e, t) {
+  let r = t || "";
+  return r = r.replaceAll("{INSTITUTION_CODE}", e.getInstitution()).replaceAll("{ACAD_PLAN_CODE}", e.getAcadPlan()), r;
+}
+function Vs(e, t) {
+  return `${Mn(e, t)}#${Fe.flexibleDegreeOptions.acceleratedId}`;
+}
+function Ai({
+  programs: e = [],
+  filters: {
+    collegeAcadOrg: t,
+    departmentCode: r,
+    acceleratedConcurrent: n,
+    locations: a = [],
+    keyword: o,
+    blacklistAcadPlans: s,
+    program: c,
+    showCerts: d
+  }
+}) {
+  const p = (N) => !t || N.getCollegeAcadOrgJoint().includes(t), g = (N) => !r || N.getDepartmentCode().includes(r), m = (N) => {
+    var A;
+    return !a.length || ((A = N.getCampusList()) == null ? void 0 : A.some((D) => a.some((I) => I.value === D.campusCode)));
+  }, f = (N = {}) => {
+    var A;
+    return !Da(n) || ((A = N[n.value]) == null ? void 0 : A.length) > 0;
+  }, E = (N, A) => A ? new RegExp(A, "i").test(N.getFullDescription()) : !0, S = (N) => !(s != null && s.includes(N.getAcadPlan())), T = (N) => c === "undergrad" ? !0 : d === "true" && c === "graduate" ? N.isMinorOrCertificate() : N.isPhdOrMasters(), k = (N) => {
+    const A = ur(N);
+    return p(A) && g(A) && m(A) && f(N) && E(A, o) && S(A) && T(A);
+  };
+  return e.filter(k);
+}
+const Rp = (e) => e.sort(
+  (r, n) => r.acadPlanMarketingDescription.localeCompare(
+    n.acadPlanMarketingDescription
+  )
+), It = ({
+  event: e = "",
+  action: t = "",
+  name: r = "",
+  type: n = "",
+  section: a = "",
+  text: o = "",
+  region: s = "",
+  component: c = ""
+}) => {
+  const { dataLayer: d } = window, p = {
+    event: e.toLowerCase(),
+    action: t.toLowerCase(),
+    name: r.toLowerCase(),
+    type: n.toLowerCase(),
+    region: s.toLowerCase(),
+    section: a.toLowerCase(),
+    text: o.toLowerCase(),
+    component: c.toLowerCase()
+  };
+  d && d.push(p);
+};
+function uo({ breadcrumbs: e, section: t }) {
+  const r = Zt("breadcrumb-");
+  return e && /* @__PURE__ */ i.jsx("nav", { "aria-label": "breadcrumbs", "data-testid": "breadcrumbs", children: /* @__PURE__ */ i.jsx("ol", { className: "breadcrumb bg-white", children: e.map(
+    (n) => n != null && n.isActive ? /* @__PURE__ */ i.jsx(
+      "li",
+      {
+        className: "breadcrumb-item active",
+        "aria-current": "page",
+        children: /* @__PURE__ */ i.jsx(
+          "a",
+          {
+            href: n == null ? void 0 : n.url,
+            onClick: () => It({
+              event: "link",
+              action: "click",
+              name: "onclick",
+              type: "internal link",
+              region: "main content",
+              section: t,
+              text: n.text
+            }),
+            children: n.text
+          }
+        )
+      },
+      r.next().value
+    ) : /* @__PURE__ */ i.jsx("li", { className: "breadcrumb-item", children: /* @__PURE__ */ i.jsx(
+      "a",
+      {
+        href: n == null ? void 0 : n.url,
+        onClick: () => It({
+          event: "link",
+          action: "click",
+          name: "onclick",
+          type: "internal link",
+          region: "main content",
+          section: t,
+          text: n.text
+        }),
+        children: n.text
+      }
+    ) }, r.next().value)
+  ) }) });
+}
+uo.propTypes = {
+  breadcrumbs: h.arrayOf(Vt),
+  section: h.string
+};
+const _p = () => /* @__PURE__ */ i.jsx("div", { className: "container", "data-testid": "browse-title", children: /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Browse degrees" }) }) }), ua = ({
+  id: e,
+  label: t,
+  selected: r,
+  multiple: n,
+  options: a,
+  onChange: o
+}) => /* @__PURE__ */ i.jsxs("div", { className: "form-group", children: [
+  /* @__PURE__ */ i.jsx("label", { htmlFor: e, children: t }),
+  /* @__PURE__ */ i.jsx(
+    "select",
+    {
+      className: "form-select",
+      id: e,
+      "data-testid": e,
+      multiple: n,
+      onChange: (s) => o(e, s),
+      value: r,
+      children: a == null ? void 0 : a.map((s) => /* @__PURE__ */ i.jsx("option", { id: s.id, value: s.value, children: s.text }, s.id))
+    }
+  )
+] }), Pp = Te.div`
+  .hint-container {
+    margin-top: -1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .hint-container {
+      display: none;
+    }
+    .filter-action-buttons {
+      & {
+        * {
+          margin: 0;
+        }
+        .btn-link {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+`, Lp = Te.button`
+  font-weight: 400;
+  text-decoration: underline;
+`, Ip = {
+  event: "select",
+  action: "click",
+  name: "onclick"
+}, Dp = {
+  event: "link",
+  action: "click",
+  name: "onclick",
+  type: "internal link"
+}, Rr = {
+  isActive: !1,
+  locations: [],
+  asuLocals: [],
+  acceleratedConcurrent: { value: "all", text: "" },
+  keyword: null,
+  blacklistAcadPlans: []
+}, da = (e) => ({
+  id: e.id,
+  value: e.value,
+  text: e.text
+}), Mp = (e) => e.map((t) => t.text).join(", "), Ni = (e, t) => {
+  It({ ...Ip, type: e, text: t });
+}, Ci = (e) => {
+  It({ ...Dp, text: e });
+}, Ys = ({ value: e, onChange: t, onApply: r, onClean: n }) => {
+  const a = (
+    /**
+    * @param {string} targetId
+    * @param {{ target: HTMLSelectElement}} event
+    */
+    (d, { target: { selectedOptions: p } }) => {
+      let g = [], m = [];
+      const f = Array.from(p, da), { locations: E, asuLocals: S } = e;
+      ({
+        locationsRender: () => {
+          g = f, m = S;
+        },
+        asuLocalsRender: () => {
+          m = f, g = E;
+        }
+      })[`${d}Render`](), t({
+        ...e,
+        locations: g,
+        asuLocals: m
+      }), Ni({
+        locations: "location or online",
+        asuLocals: "as local"
+      }[d], Mp(f));
+    }
+  ), o = (
+    /**
+    * @param {string} targetId
+    * @param {{ target: HTMLSelectElement}} event
+    */
+    (d, { target: { selectedOptions: p } }) => {
+      t({ ...e, [d]: da(p[0]) }), Ni(
+        "accelerated/concurrent",
+        da(p[0]).text
+      );
+    }
+  ), s = () => {
+    r == null || r({
+      ...e,
+      isActive: !0
+    });
+  }, c = () => {
+    t(Rr), n == null || n();
+  };
+  return /* @__PURE__ */ i.jsxs(Pp, { className: "container", "data-testid": "filters", children: [
+    /* @__PURE__ */ i.jsx("h4", { children: "Filter your results" }),
+    /* @__PURE__ */ i.jsxs("form", { className: "mt-3 uds-form row", children: [
+      /* @__PURE__ */ i.jsx("div", { className: "col-lg-4 col-md-12", children: /* @__PURE__ */ i.jsx(
+        ua,
+        {
+          multiple: !0,
+          id: "locations",
+          label: "Campuses or online",
+          selected: e.locations.map((d) => d.value),
+          options: so,
+          onChange: a
+        }
+      ) }),
+      /* @__PURE__ */ i.jsx("div", { className: "col-lg-4 col-md-12", children: /* @__PURE__ */ i.jsx(
+        ua,
+        {
+          multiple: !0,
+          id: "asuLocals",
+          label: "ASU location, ASU Local",
+          selected: e.asuLocals.map((d) => d.value),
+          options: Fs,
+          onChange: a
+        }
+      ) }),
+      /* @__PURE__ */ i.jsx("div", { className: "col-lg-4 col-md-12", children: /* @__PURE__ */ i.jsx(
+        ua,
+        {
+          id: "acceleratedConcurrent",
+          label: "Accelerated, Concurrent",
+          selected: e.acceleratedConcurrent.value,
+          options: lo,
+          onChange: o
+        }
+      ) })
+    ] }),
+    /* @__PURE__ */ i.jsx("div", { className: "hint-container", children: /* @__PURE__ */ i.jsx("p", { children: /* @__PURE__ */ i.jsx("small", { children: "*CTRL + Click to select multiple" }) }) }),
+    /* @__PURE__ */ i.jsxs("div", { className: "filter-action-buttons", children: [
+      /* @__PURE__ */ i.jsx(
+        Fr,
+        {
+          "data-testid": "btn-apply-filter",
+          color: "maroon",
+          label: "Apply filters",
+          ariaLabel: "Apply filters",
+          size: "default",
+          onClick: () => {
+            s(), Ci("apply filters");
+          }
+        }
+      ),
+      /* @__PURE__ */ i.jsx(
+        Lp,
+        {
+          "data-testid": "btn-clear-filters",
+          className: "btn btn-link",
+          onClick: () => {
+            c(), Ci("clean filters");
+          },
+          children: "Clear filters"
+        }
+      )
+    ] })
+  ] });
+};
+Ys.propTypes = {
+  value: Ls,
+  onChange: h.func,
+  onApply: h.func,
+  onClean: h.func
+};
+function Ks({
+  value: { isActive: e, locations: t, asuLocals: r, acceleratedConcurrent: n } = {},
+  onRemove: a
+}) {
+  const o = Zt("filter-"), s = (t == null ? void 0 : t.length) + (r == null ? void 0 : r.length) + (Da(n) ? 1 : 0), c = (d, p) => {
+    const { text: g } = p;
+    return /* @__PURE__ */ i.jsxs(
+      "span",
+      {
+        tabIndex: -1,
+        role: "button",
+        "aria-label": `Remove filter ${g}`,
+        "data-filter-id": d,
+        onKeyDown: () => a(d, p),
+        onClick: () => a(d, p),
+        className: "btn btn-tag btn-tag-alt-white d-inline-flex align-items-center me-2",
+        children: [
+          /* @__PURE__ */ i.jsx("span", { className: "pe-1", children: g }),
+          /* @__PURE__ */ i.jsx("i", { className: "fas fa-times" })
+        ]
+      },
+      o.next().value
+    );
+  };
+  return /* @__PURE__ */ i.jsxs("div", { "data-testid": "filters-summary", children: [
+    /* @__PURE__ */ i.jsx("header", { children: /* @__PURE__ */ i.jsx("strong", { children: "Applied filters" }) }),
+    /* @__PURE__ */ i.jsx("div", { "data-testid": "summary-filter-tags", children: !e || s === 0 ? /* @__PURE__ */ i.jsx("span", { children: "No filters applied" }) : /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+      t.map((d) => c("locations", d)),
+      r.map((d) => c("asuLocals", d)),
+      (Da(n) ? [n] : []).map((d) => c("acceleratedConcurrent", d))
+    ] }) })
+  ] });
+}
+Ks.propTypes = {
+  value: Ls,
+  onRemove: h.func
+};
+const $p = Te.div`
+  .photo-item {
+    padding-bottom: 1.25rem;
+  }
+`, Fp = Te.section`
+  @media (max-width: 480px) {
+    .uds-img,
+    .uds-video-container {
+      margin: 0;
+    }
+  }
+`;
+function Up({
+  applyNowUrl: e,
+  title: t,
+  contents: r,
+  photoGrid: n
+}) {
+  const a = Dn(t);
+  return /* @__PURE__ */ i.jsx(
+    "section",
+    {
+      className: "container",
+      "data-type": "text-photo-grid",
+      "data-testid": "intro-content",
+      children: /* @__PURE__ */ i.jsxs("div", { className: "row", children: [
+        /* @__PURE__ */ i.jsxs("div", { className: "col-sm-12 col-md-5", children: [
+          /* @__PURE__ */ i.jsx(a, { className: "mt-0", children: /* @__PURE__ */ i.jsx("span", { className: `${cr(t.cssClass)}`, children: t.text }) }),
+          /* @__PURE__ */ i.jsx(zr, { contents: r }),
+          /* @__PURE__ */ i.jsx(Ur, { href: e })
+        ] }),
+        /* @__PURE__ */ i.jsx("div", { className: "col-sm-12 col-md-7 d-none d-sm-none d-md-block", children: /* @__PURE__ */ i.jsx($p, { className: "row", children: n.images.map((o, s) => /* @__PURE__ */ i.jsx(
+          "div",
+          {
+            className: "photo-item col-sm-12 col-md-6 col-lg-6",
+            children: /* @__PURE__ */ i.jsx(
+              "img",
+              {
+                className: `mg-fluid ${cr(o.cssClass)}`,
+                src: o.url,
+                alt: o.altText,
+                style: { maxWidth: "100%" }
+              }
+            )
+          },
+          `img-${s + 1}`
+        )) }) })
+      ] })
+    }
+  );
+}
+function zp({
+  applyNowUrl: e,
+  title: t,
+  contents: r,
+  image: n,
+  video: a
+}) {
+  const o = Dn(t);
+  return /* @__PURE__ */ i.jsx(
+    Fp,
+    {
+      className: "container",
+      "data-type": "text-media",
+      "data-testid": "intro-content",
+      children: /* @__PURE__ */ i.jsxs("div", { className: "row gy-3", children: [
+        /* @__PURE__ */ i.jsxs("div", { className: "col-sm-12 col-md-5", children: [
+          /* @__PURE__ */ i.jsx(o, { className: "mt-0", children: /* @__PURE__ */ i.jsx("span", { className: `${cr(t.cssClass)}`, children: t.text }) }),
+          /* @__PURE__ */ i.jsx(zr, { contents: r }),
+          /* @__PURE__ */ i.jsx(Ur, { href: e })
+        ] }),
+        /* @__PURE__ */ i.jsxs("div", { className: "col-sm-12 col-md-7 mt-2 mt-sm-0", children: [
+          a && /* @__PURE__ */ i.jsx(
+            is,
+            {
+              type: a.type,
+              url: a.url,
+              vttUrl: a.vttUrl,
+              title: a.title,
+              className: "mt-0"
+            }
+          ),
+          n && /* @__PURE__ */ i.jsx("div", { className: "uds-img", children: /* @__PURE__ */ i.jsx("img", { src: n.url, className: "img-fluid", alt: n.altText }) })
+        ] })
+      ] })
+    }
+  );
+}
+function Hp({
+  applyNowUrl: e,
+  title: t,
+  contents: r,
+  image: n
+}) {
+  return /* @__PURE__ */ i.jsx(
+    "section",
+    {
+      className: "container",
+      "data-type": "text-image-overlay",
+      "data-testid": "intro-content",
+      children: /* @__PURE__ */ i.jsx("div", { className: "row", children: /* @__PURE__ */ i.jsx("div", { className: "col-md-12", children: /* @__PURE__ */ i.jsx(
+        pr,
+        {
+          title: t.text,
+          contents: r,
+          image: n,
+          contentDirection: "right",
+          contentChildren: /* @__PURE__ */ i.jsx("div", { className: "mt-2", children: /* @__PURE__ */ i.jsx(Ur, { href: e }) })
+        }
+      ) }) })
+    }
+  );
+}
+const qp = ({ applyNowUrl: e, title: t, contents: r }) => {
+  const n = Dn(t);
+  return /* @__PURE__ */ i.jsx("section", { className: "container", "data-type": "text", "data-testid": "intro-content", children: /* @__PURE__ */ i.jsxs("div", { className: "row", children: [
+    /* @__PURE__ */ i.jsx("div", { className: "col-sm-12 col-md-5", children: /* @__PURE__ */ i.jsx(n, { className: "mt-0", children: /* @__PURE__ */ i.jsx("span", { className: `${cr(t.cssClass)}`, children: t.text }) }) }),
+    /* @__PURE__ */ i.jsxs("div", { className: "col-sm-12 col-md-7", children: [
+      /* @__PURE__ */ i.jsx(zr, { contents: r }),
+      /* @__PURE__ */ i.jsx(Ur, { href: e })
+    ] })
+  ] }) });
+}, po = ({
+  applyNowUrl: e,
+  type: t,
+  title: r,
+  contents: n,
+  image: a,
+  video: o,
+  photoGrid: s
+}) => ({
+  text: () => qp({ applyNowUrl: e, title: r, contents: n }),
+  "text-media": () => zp({
+    applyNowUrl: e,
+    title: r,
+    contents: n,
+    image: a,
+    video: o
+  }),
+  "text-image-overlay": () => Hp({ applyNowUrl: e, title: r, contents: n, image: a }),
+  "text-photo-grid": () => Up({
+    applyNowUrl: e,
+    title: r,
+    contents: n,
+    image: a,
+    photoGrid: s
+  }),
+  undefined: () => (console.error(
+    `the type '${t}' is not supported by the 'IntroContent' component.`
+  ), null)
+})[t]();
+po.propTypes = {
+  applyNowUrl: h.string,
+  type: h.oneOf([
+    "text",
+    "text-media",
+    "text-image-overlay",
+    "text-photo-grid"
+  ]).isRequired,
+  video: h.shape({ ...oo }),
+  image: h.shape({ ...ao }),
+  header: On,
+  title: h.shape({
+    ...js,
+    component: h.oneOf(Is)
+  }),
+  contents: h.arrayOf(On),
+  photoGrid: h.shape({
+    images: h.arrayOf(Tt)
+  })
+};
+const $n = {
+  programs: h.arrayOf(h.object),
+  totalRows: h.number,
+  loading: h.bool,
+  actionUrls: h.shape({
+    applyNowUrl: h.string,
+    majorInfoUrl: h.string,
+    majorInfoOnlineUrl: h.string
+  }),
+  degreesPerPage: h.number
+}, Wp = Te.div`
+  & {
+    ul {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      list-style: none;
+      padding: 0;
+
+      li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .accordion .card.card-foldable {
+    border-bottom: 1px solid #d0d0d0;
+  }
+`, Xs = ({ programs: e, actionUrls: t }) => {
+  var s, c, d, p, g;
+  const { state: r } = kt(mr), n = (c = (s = r == null ? void 0 : r.listPageProps) == null ? void 0 : s.programList) == null ? void 0 : c.settings, a = ((g = (p = (d = r == null ? void 0 : r.listPageProps) == null ? void 0 : d.programList) == null ? void 0 : p.dataSource) == null ? void 0 : g.program) === "graduate", o = e.map((m) => {
+    const f = ur(m), E = () => {
+      var A;
+      const k = f.isOnline() ? f.getOnlineMajorMapURL() : f.getGeneralDegreeMajorMap();
+      let N;
+      try {
+        N = `<a href=${(A = new URL(k)) == null ? void 0 : A.toString()}>${f.getRequiredCoursesLabel()} Map</a>`;
+      } catch {
+        return "";
+      }
+      return N;
+    }, S = () => `<div>
+        ${f.hasConcurrentDegrees() ? "<div className='cell-container'>concurrent</div>" : ""}
+        ${f.hasAccelerateDegrees() ? `<div className="cell-container">
+                <a href=${Vs(
+      f,
+      t.majorInfoUrl
+    )}>
+                  4+1 years
+                </a>
+              </div>` : ""}
+    </div>`;
+    return {
+      content: {
+        header: f.getMajorDesc(),
+        body: `<ul>
+        <li>
+          <strong>Major:</strong>
+          <br />
+            <a href=${Mn(f, t.majorInfoUrl)}>
+              ${f.getMajorDesc()}
+            </a>
+        </li>
+        <li>
+          <strong>Degree:</strong>
+          <br />${f.getDegree()}
+        </li>
+        ${a ? "" : `<li>
+              <strong>Required Courses:</strong>
+              <br />${E()}
+            </li>`}
+        <li>
+          <strong>Campus or location:</strong>
+          <br />${f.getCampusList().map((T) => Ma(T.campusCode)).join(", ")}
+        </li>
+        <li>
+          <strong>Accelerated/Concurrent:</strong>
+          <br />${S() || "-"}
+        </li>
+        ${n != null && n.hideCollegeSchool ? "" : ` <li>
+                  <strong>College/School:</strong>
+                  <br />
+                  <a href=${f.getCollegeUrl()}>
+                    ${f.getCollegeDesc()}
+                  </a>
+                </li>`}
+      </ul>`
+      }
+    };
+  });
+  return /* @__PURE__ */ i.jsx(Wp, { "data-testid": "accordion-view", children: /* @__PURE__ */ i.jsx(os, { cards: o }) });
+};
+Xs.propTypes = {
+  ...$n
+};
+const Gp = Te.section`
+  margin: auto;
+
+  .card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    order: 3;
+    margin: 0 1rem 1rem;
+
+    .card-button {
+      column-gap: 0;
+      padding: 0;
+      width: fit-content;
+    }
+    .card-button .btn {
+      margin: 0;
+    }
+  }
+`;
+function Zs({ programs: e, loading: t, actionUrls: r }) {
+  var d, p, g, m;
+  const { defaultState: n, state: a } = kt(mr), o = (m = (g = (p = (d = a == null ? void 0 : a.listPageProps) == null ? void 0 : d.programList) == null ? void 0 : p.settings) == null ? void 0 : g.cardDefaultImage) == null ? void 0 : m.url, s = n.detailPageDefault.hero.image.url, c = o || s;
+  return /* @__PURE__ */ i.jsx(
+    Gp,
+    {
+      id: Ms,
+      className: "container row",
+      "data-loading": t,
+      "data-testid": "grid-view",
+      children: e.map((f) => {
+        const E = ur(f);
+        return /* @__PURE__ */ i.jsx("div", { className: "col col-sm-12 col-md-4 col-lg-3 mb-2", children: /* @__PURE__ */ i.jsx(
+          tt,
+          {
+            type: "degree",
+            horizontal: !1,
+            clickable: !1,
+            image: c,
+            imageAltText: "An example image",
+            title: E.getMajorDesc(),
+            linkLabel: "View Program Details",
+            linkUrl: Mn(E, r.majorInfoUrl),
+            buttons: [
+              {
+                color: "maroon",
+                size: "small",
+                label: "Reqeuest Info",
+                href: jp()
+              },
+              {
+                color: "gold",
+                size: "small",
+                label: "Apply",
+                href: r.applyNowUrl
+              }
+            ]
+          }
+        ) });
+      })
+    }
+  );
+}
+Zs.propTypes = {
+  ...$n
+};
+const Bp = [
+  {
+    dataKey: "Major",
+    label: "Major",
+    className: "major",
+    sortable: !0,
+    contentTemplate: ({ resolver: e, rowIndex: t, actionUrls: r, onClick: n }) => /* @__PURE__ */ i.jsxs("div", { className: "cell-container", children: [
+      /* @__PURE__ */ i.jsx("a", { href: Mn(e, r == null ? void 0 : r.majorInfoUrl), children: e.getMajorDesc() }),
+      /* @__PURE__ */ i.jsx(
+        Sp,
+        {
+          dataId: "show-row-detail",
+          ariaLabel: `${e.getMajorDesc()} arrow`,
+          ariaControls: `row-info-${t}`,
+          onClick: (a) => n(t, a)
+        }
+      )
+    ] })
+  },
+  {
+    dataKey: "Degree",
+    label: "Degree",
+    className: "degree",
+    contentTemplate: ({ resolver: e }) => /* @__PURE__ */ i.jsxs("div", { className: "cell-container", children: [
+      /* @__PURE__ */ i.jsx("span", { children: e.getDegree() }),
+      /* @__PURE__ */ i.jsx(
+        ca,
+        {
+          popover: {
+            title: e.getDegreeDesc(),
+            body: e.getDegreeDescLong(),
+            withAuto: !1
+          }
+        }
+      )
+    ] })
+  },
+  {
+    dataKey: "RequiredCourses",
+    label: "Required Courses",
+    className: "required-course",
+    contentTemplate: ({ resolver: e }) => {
+      var a;
+      const r = e.isOnline() ? e.getOnlineMajorMapURL() : e.getGeneralDegreeMajorMap();
+      let n;
+      try {
+        const o = (a = new URL(r)) == null ? void 0 : a.toString();
+        n = /* @__PURE__ */ i.jsxs("a", { href: o, children: [
+          e.getRequiredCoursesLabel(),
+          " Map"
+        ] });
+      } catch {
+        return "";
+      }
+      return n;
+    }
+  },
+  {
+    dataKey: "Location",
+    label: "Campus or location",
+    className: "campus-location",
+    sortable: !0,
+    contentTemplate: ({ resolver: e }) => {
+      const t = Zt("campus-");
+      return /* @__PURE__ */ i.jsx("div", { children: e.getCampusList().map((r, n, a) => /* @__PURE__ */ i.jsxs("div", { className: "cell-container", children: [
+        /* @__PURE__ */ i.jsx("span", { children: `${Ma(
+          ip(r.campusCode)
+        )}${n < a.length - 1 ? ", " : ""}` }, r.campusCode),
+        /* @__PURE__ */ i.jsx("span", { children: /* @__PURE__ */ i.jsx(
+          ca,
+          {
+            popover: {
+              title: Ma(r.campusCode),
+              body: () => fetch(Cp(r.campusCode)),
+              withAuto: !0
+            }
+          }
+        ) })
+      ] }, t.next().value)) });
+    }
+  },
+  // TODO: THIS COMPONENT IS CURRENTLY DEFERRED
+  {
+    dataKey: "AcceleratedConcurrent",
+    label: "Accelerated/ Concurrent",
+    className: "accelerated-concurrent",
+    sortable: !0,
+    contentTemplate: ({ resolver: e, actionUrls: t }) => /* @__PURE__ */ i.jsxs("div", { children: [
+      e.getConcurrentDegrees().then((r) => r).length > 0 && /* @__PURE__ */ i.jsx("div", { className: "cell-container", children: "concurrent" }),
+      e.hasConcurrentOrAccelerateDegrees() && /* @__PURE__ */ i.jsxs("div", { className: "cell-container", children: [
+        /* @__PURE__ */ i.jsx("a", { href: Vs(e, t.majorInfoUrl), children: "4+1 years" }),
+        /* @__PURE__ */ i.jsx(
+          ca,
+          {
+            popover: {
+              title: "4+1 years",
+              body: () => fetch(Op(e.getAcadPlan())),
+              withAuto: !1
+            }
+          }
+        )
+      ] })
+    ] })
+  },
+  {
+    dataKey: "CollegeSchool",
+    label: "College/School",
+    className: "college",
+    sortable: !0,
+    contentTemplate: ({ resolver: e }) => /* @__PURE__ */ i.jsx("a", { href: e.getCollegeUrl(), children: e.getCollegeDesc() })
+  }
+  // TODO: THIS COMPONENT IS CURRENTLY DEFERRED
+  // {
+  //   dataKey: "compare-fav",
+  //   label: "Compare and favorite",
+  //   className: "compare-fav",
+  //   // todo: refactor this solution
+  //   headerTemplate: () => (
+  //     <div>
+  //       <InfoButtonIcon
+  //         onMouseOver={null}
+  //         onClick={() => alert("Compare and favorite: info....")}
+  //       />
+  //     </div>
+  //   ),
+  //   contentTemplate: ({ row, rowIndex }) => (
+  //     <form className="uds-form cell-container">
+  //       <div className="form-check m-0">
+  //         <input
+  //           className="form-check-input"
+  //           type="checkbox"
+  //           id={`fav-button-${rowIndex}`}
+  //           value="option1"
+  //         />
+  //         <label
+  //           className="form-check-label"
+  //           htmlFor={`fav-button-${rowIndex}`}
+  //         >
+  //           &nbsp;
+  //         </label>
+  //       </div>
+  //       <FavButton onClick={() => saveFav(row["AcadPlan"])} />
+  //     </form>
+  //   ),
+  // },
+  // TODO: THIS COMPONENT IS CURRENTLY DEFERRED
+  // {
+  //   dataKey: "compare-apply-info",
+  //   label: "",
+  //   hasInfo: true,
+  //   ariaLabel: "Apply Now or Request Info",
+  //   className: "apply-info",
+  //   contentTemplate: ({ resolver }) => (
+  //     <div className="row flex-column  align-items-end p-1">
+  //       <ApplyNow
+  //         onClick={() =>
+  //           // todo: refactor this solution
+  //           alert("APPLY NOW: TODO...")
+  //         }
+  //       />
+  //       <RequestInfo
+  //         href={requestInfoLink(
+  //           resolver.getAcadPlan(),
+  //           resolver.getMajorDesc(),
+  //           resolver.getEmailAddress()
+  //         )}
+  //       />
+  //     </div>
+  //   ),
+  // },
+], Vp = to`
+  @keyframes loading {
+    40% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+  &[data-loading="true"] {
+    td {
+      position: relative;
+
+      .bar {
+        background-color: #e7e7e7;
+        height: 14px;
+        border-radius: 7px;
+        width: 80%;
+      }
+
+      &:after {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 24px;
+        background-image: linear-gradient(
+          100deg,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.5) 60%,
+          rgba(255, 255, 255, 0) 80%
+        );
+        background-size: 200px 24px;
+        background-position: -100px 0;
+        background-repeat: no-repeat;
+        animation: loading 1s infinite;
+      }
+    }
+  }
+`, Yp = Te.table`
+  ${Vp}
+  --table-border-color: #e5e5e5;
+
+  background-color: #fafafa;
+  border: 1px solid var(--table-border-color);
+  border-collapse: collapse;
+  padding: 5px;
+
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-spacing: 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  thead {
+    background: #d0d0d0;
+    th {
+      outline: none;
+      :focus {
+        box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #191919 !important;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 8px 12px;
+    // display: inline-block;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    td {
+      vertical-align: top;
+    }
+
+    .major {
+      width: 250px;
+      a {
+        font-weight: 700;
+      }
+    }
+
+    .degree {
+      width: 75px;
+    }
+
+    .required-course {
+      width: 100px;
+    }
+
+    .campus-location {
+      width: 90px;
+      & > div {
+        width: fit-content;
+      }
+    }
+
+    .accelerated-concurrent {
+      width: 120px;
+    }
+
+    .college {
+      width: 210px;
+    }
+
+    .compare-fav {
+      // width: 180px;
+    }
+
+    .apply-info {
+      width: 168px;
+      & .btn {
+        width: fit-content;
+        :first-child {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border: 1px solid var(--table-border-color);
+      border-top: 0;
+
+      &:not(.row-info):hover {
+        background-color: #e8e8e8;
+      }
+
+      .info-apply .cell-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+      }
+
+      td .cell-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+    }
+
+    tr.row-info {
+      td > div {
+        position: relative;
+      }
+
+      input.togle-more-text {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+
+        &:checked + .desc-long {
+          max-height: fit-content;
+          overflow: auto;
+        }
+
+        &:not(:checked) + .desc-long::after {
+          content: " ";
+          height: 1rem;
+          background: rgba(250, 250, 250, 0.9);
+          box-shadow: -1px -2px 20px 15px #fafafa;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        &:checked + .desc-long + .label-more-less {
+          .label-more {
+            display: none;
+          }
+          .label-less {
+            display: inline;
+          }
+        }
+
+        &:not(:checked) + .desc-long + .label-more-less {
+          .label-more {
+            display: inline;
+          }
+          .label-less {
+            display: none;
+          }
+        }
+      }
+
+      .desc-long {
+        max-height: 200px;
+        overflow: hidden;
+        transform: max-width 0.6;
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      label.label-more-less {
+        cursor: pointer;
+        line-height: normal;
+        color: #8c1d40;
+        text-align: right;
+        border: 0;
+        margin: 0;
+        font-weight: 400;
+        display: inline;
+        position: absolute;
+        bottom: 0.2rem;
+        right: -2.5rem;
+      }
+    }
+
+    tr.row-info {
+      td:first-child {
+        flex-basis: 55%;
+      }
+
+      td:last-child {
+      }
+    }
+
+    tr:not([data-is-open="true"]) + tr.row-info {
+      overflow: hidden;
+      height: 0;
+    }
+
+    tr[data-is-open="true"] + tr.row-info {
+      height: auto;
+    }
+  }
+`, Kp = ({ resolver: e, id: t }) => {
+  const r = Il(), n = (a) => {
+    a.key === "Enter" && (r == null || r.current.click());
+  };
+  return /* @__PURE__ */ i.jsxs("div", { children: [
+    /* @__PURE__ */ i.jsx("header", { children: /* @__PURE__ */ i.jsx("strong", { children: "Program Description:" }) }),
+    /* @__PURE__ */ i.jsx("input", { className: "togle-more-text", type: "checkbox", id: `#${t}` }),
+    /* @__PURE__ */ i.jsx(
+      "div",
+      {
+        className: "desc-long",
+        id: t,
+        dangerouslySetInnerHTML: ct(
+          e.getFullDescription()
+        )
+      }
+    ),
+    /* @__PURE__ */ i.jsxs(
+      "label",
+      {
+        ref: r,
+        className: "label-more-less element-focus",
+        htmlFor: `#${t}`,
+        role: "button",
+        tabIndex: 0,
+        onKeyDown: n,
+        children: [
+          /* @__PURE__ */ i.jsx("span", { "data-testid": "more-text", className: "label-more", children: "[...more]" }),
+          /* @__PURE__ */ i.jsx("span", { "data-testid": "less-text", className: "label-less", children: "[...less]" })
+        ]
+      }
+    )
+  ] });
+}, Xp = ({ resolver: e }) => /* @__PURE__ */ i.jsxs("div", { children: [
+  /* @__PURE__ */ i.jsxs("div", { children: [
+    /* @__PURE__ */ i.jsx("strong", { children: "Additional Program Fee: " }),
+    e.hasAsuProgramFee() ? "Yes" : "No"
+  ] }),
+  /* @__PURE__ */ i.jsxs("div", { children: [
+    /* @__PURE__ */ i.jsx("strong", { children: "Second Language Requirement: " }),
+    e.hasAsuLangReqFlag() ? "Yes" : "No"
+  ] }),
+  e.hasMathReqFlag() && /* @__PURE__ */ i.jsx("div", { children: /* @__PURE__ */ i.jsxs("div", { children: [
+    /* @__PURE__ */ i.jsx("strong", { children: "First Required Math Course:" }),
+    /* @__PURE__ */ i.jsx("span", { children: e.getMinMathReq() }),
+    e.getOtherMathReqCourse() && /* @__PURE__ */ i.jsx(
+      "span",
+      {
+        dangerouslySetInnerHTML: ct(
+          e.getOtherMathReqCourse()
+        )
+      }
+    )
+  ] }) }),
+  e.getMathIntensity() && /* @__PURE__ */ i.jsxs("div", { children: [
+    /* @__PURE__ */ i.jsx("strong", { children: "Math Intensity:" }),
+    e.getMathIntensity()
+  ] })
+] }), Zp = Zt("row-"), Js = ({ programs: e, totalRows: t, loading: r, actionUrls: n }) => {
+  var g, m;
+  const a = ht.useRef(null), o = ht.useRef(null), { state: s } = kt(mr), c = (m = (g = s == null ? void 0 : s.listPageProps) == null ? void 0 : g.programList) == null ? void 0 : m.settings;
+  let d = Bp;
+  s.listPageProps.programList.dataSource.program === "graduate" && (d = d.filter((f) => f.dataKey !== "RequiredCourses")), c != null && c.hideCollegeSchool && (d = d.filter((f) => f.dataKey !== "CollegeSchool"));
+  const p = (f, E) => {
+    const S = o.current.children;
+    Array.prototype.forEach.call(
+      S,
+      (k, N) => N !== f && k.setAttribute("data-is-open", "false")
+    ), o.current.children[f].setAttribute("data-is-open", String(E));
+  };
+  return /* @__PURE__ */ i.jsx("section", { className: "container mb-4", "data-testid": "list-view", children: /* @__PURE__ */ i.jsxs(
+    Yp,
+    {
+      id: Ms,
+      ref: a,
+      "data-loading": r,
+      title: `${t} program found`,
+      children: [
+        /* @__PURE__ */ i.jsx("thead", { children: /* @__PURE__ */ i.jsx("tr", { role: "row", children: d.map((f) => {
+          var E;
+          return /* @__PURE__ */ i.jsx(
+            "th",
+            {
+              tabIndex: 0,
+              className: `${f.className}`,
+              scope: "col",
+              "aria-label": f.ariaLabel,
+              children: ((E = f.headerTemplate) == null ? void 0 : E.call(f)) || /* @__PURE__ */ i.jsx("span", { children: f.label })
+            },
+            f.dataKey
+          );
+        }) }) }),
+        /* @__PURE__ */ i.jsxs("tbody", { ref: o, "data-testid": "program-rows", children: [
+          e.length === 0 ? /* @__PURE__ */ i.jsx("tr", { role: "presentation", children: /* @__PURE__ */ i.jsx(
+            "td",
+            {
+              colSpan: d.length,
+              "aria-label": "No result found for the filters applied",
+              children: " "
+            }
+          ) }) : null,
+          // programs
+          e.map((f, E) => {
+            const S = Zp.next().value, T = E * 2, k = ur(f);
+            return /* @__PURE__ */ i.jsxs(_i, { children: [
+              /* @__PURE__ */ i.jsx("tr", { role: "row", children: d.map((N) => {
+                var A;
+                return /* @__PURE__ */ i.jsx(
+                  "td",
+                  {
+                    className: `${N.className}`,
+                    children: (A = N.contentTemplate) == null ? void 0 : A.call(N, {
+                      resolver: k,
+                      col: N,
+                      row: f,
+                      rowIndex: T,
+                      onClick: p,
+                      actionUrls: n
+                    })
+                  },
+                  `${S}-${N.dataKey}`
+                );
+              }) }, S),
+              /* @__PURE__ */ i.jsxs(
+                "tr",
+                {
+                  id: `row-info-${T}`,
+                  className: "row-info",
+                  children: [
+                    /* @__PURE__ */ i.jsx("td", { colSpan: 3, children: Kp({ resolver: k, id: `${S}-more-text` }) }, `${S}-info`),
+                    /* @__PURE__ */ i.jsx("td", { colSpan: 2, children: Xp({ resolver: k }) }, `${S}-extra-info`)
+                  ]
+                },
+                `${S}-row-info`
+              )
+            ] }, S);
+          })
+        ] })
+      ]
+    }
+  ) });
+};
+Js.propTypes = {
+  ...$n
+};
+const Jp = In`
+
+  .mobile-view {
+    display: none;
+  }
+  [data-view-type="list-view"] {
+    @media (max-width: 768px) {
+      .desktop-view {
+        display: none;
+      }
+      .mobile-view {
+        display: block;
+        .card-foldable .card-header h4 a {
+          color: #8c1d40;
+        }
+      }
+    }
+  }
+`, Qp = {
+  [Ds]: Zs,
+  [Ia]: Js
+};
+function Qs({
+  dataViewComponent: e,
+  loading: t,
+  programs: r,
+  actionUrls: n,
+  degreesPerPage: a
+}) {
+  let o;
+  a ? typeof a != "number" && (o = parseInt(a, 10)) : o = 8;
+  const s = a || o, c = lp(r.length, s), d = Qp[e], [p, g] = Be([]), m = (f, E) => {
+    const S = (E - 1) * s, T = S + s;
+    g(r.slice(S, T));
+  };
+  return mt(() => {
+    g(r.slice(0, s));
+  }, [r]), /* @__PURE__ */ i.jsxs("section", { "data-testid": "program-list", "data-view-type": e, children: [
+    /* @__PURE__ */ i.jsx(Jp, {}),
+    /* @__PURE__ */ i.jsx("div", { className: "desktop-view", children: /* @__PURE__ */ i.jsx(
+      d,
+      {
+        loading: t,
+        programs: p,
+        totalRows: r == null ? void 0 : r.length,
+        actionUrls: n,
+        degreesPerPage: a || o
+      }
+    ) }),
+    /* @__PURE__ */ i.jsx("div", { className: "mobile-view mb-2", children: /* @__PURE__ */ i.jsx(
+      Xs,
+      {
+        loading: t,
+        programs: p,
+        totalRows: r == null ? void 0 : r.length,
+        actionUrls: n,
+        degreesPerPage: a || o
+      }
+    ) }),
+    r.length > 0 ? /* @__PURE__ */ i.jsx(
+      xu,
+      {
+        totalNumbers: 7,
+        type: "default",
+        background: "white",
+        totalPages: c,
+        onChange: m,
+        showFirstButton: !0,
+        showLastButton: !0
+      }
+    ) : /* @__PURE__ */ i.jsx("section", { className: "container no-space", children: /* @__PURE__ */ i.jsx(Bd, { message: "No result found for the filters applied" }) })
+  ] });
+}
+Qs.propTypes = {
+  dataViewComponent: h.string,
+  ...$n,
+  degreesPerPage: h.number
+};
+const em = Te.div`
+  label[for="search-field"] {
+    margin-bottom: 0;
+  }
+
+  &[data-searching="true"] button {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #191919 !important;
+  }
+`, el = ({ value: e, onChange: t, onSearch: r }) => {
+  const [n, a] = Be(!1);
+  let o;
+  mt(() => () => clearTimeout(o), []);
+  const s = (c) => {
+    It({
+      event: "search",
+      action: "type",
+      name: "onenter",
+      type: "search degree programs",
+      text: c
+    });
+  };
+  return /* @__PURE__ */ i.jsx(
+    em,
+    {
+      className: "container mt-5",
+      "data-searching": n,
+      "data-testid": "search-bar",
+      children: /* @__PURE__ */ i.jsx(
+        "form",
+        {
+          "data-testid": "search-bar-form",
+          className: "uds-form p-0 col-md-6 col-sm-12",
+          onSubmit: (c) => {
+            c.preventDefault(), r(), a(!0), o = setTimeout(() => a(!1), 500), clearTimeout(o);
+          },
+          children: /* @__PURE__ */ i.jsxs("div", { className: "form-group mb-0 me-2", children: [
+            /* @__PURE__ */ i.jsx("label", { htmlFor: "search-field", children: "Search" }),
+            /* @__PURE__ */ i.jsxs("div", { className: "d-flex row align-items-baseline g-3", children: [
+              /* @__PURE__ */ i.jsx("div", { className: "col-sm-12 col-md-6 align-self-end", children: /* @__PURE__ */ i.jsx(
+                "input",
+                {
+                  "data-testid": "search-field",
+                  id: "search-field",
+                  value: e,
+                  type: "text",
+                  className: "form-control",
+                  placeholder: "Search degree programs",
+                  onChange: (c) => {
+                    t(c.target.value), s(c.target.value);
+                  }
+                }
+              ) }),
+              /* @__PURE__ */ i.jsx("div", { className: "col-sm-12 col-md-6 mt-2 mt-sm-0", children: /* @__PURE__ */ i.jsx(
+                Fr,
+                {
+                  "data-testid": "search-button",
+                  color: "maroon",
+                  label: "Search now",
+                  ariaLabel: "Search now",
+                  size: "default",
+                  onClick: r
+                }
+              ) })
+            ] })
+          ] })
+        }
+      )
+    }
+  );
+};
+el.propTypes = {
+  value: h.string,
+  onChange: h.func,
+  onSearch: h.func
+};
+const tm = Te(Ws)`
+  .filter-switch-container {
+    gap: 1rem;
+  }
+  @media (max-width: 768px) {
+    & {
+      font-size: 0.9rem;
+    }
+  }
+`, rm = In`
+  @media (max-width: 480px) {
+      div[class^=uds-hero] {
+        grid-template-rows: 1fr auto auto 1.5rem auto;
+    }
+  }
+`, nm = Te.div.attrs({ className: "container" })`
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: calc(var(--uds-dp-section-margin) / 2);
+  padding-bottom: calc(var(--uds-dp-section-margin) / 2);
+`, mo = ({
+  appPathFolder: e,
+  actionUrls: t,
+  hasSearchBar: r = !0,
+  hasFilters: n = !0,
+  hero: a,
+  introContent: o,
+  programList: s,
+  degreesPerPage: c
+}) => {
+  var L;
+  const [{ data: d, loading: p, error: g }, m] = Ts(), [f, E] = Be(!1), [S, T] = Be([]), [k, N] = Be([]), [A, D] = Be(""), I = (L = s.settings) == null ? void 0 : L.defaultView, v = [Ia, Ds].includes(I) ? I : Ia, [_, j] = Be(v), z = zs(s.dataSource, dp), { defaultState: ie } = kt(mr), { listingPageDefault: he } = ie, {
+    collegeAcadOrg: ee,
+    departmentCode: Z,
+    showInactivePrograms: ne,
+    blacklistAcadPlans: G,
+    program: ue,
+    cert: Se
+  } = s.dataSource, [se, be] = Be({
+    ...Rr
+  }), [Ee, J] = Be({
+    ...Rr
+  });
+  Tp({
+    dataSource: s.dataSource,
+    tableView: S,
+    programs: d,
+    stateFilters: se
+  }), mt(() => {
+    typeof window < "u" && As({
+      packageName: "app-degree-pages",
+      component: "ListingPage",
+      type: "NA",
+      configuration: {
+        programList: s,
+        degreesPerPage: c
+      }
+    });
+  }, []), mt(() => {
+    m(z);
+  }, [z]), mt(() => {
+    let O = Rp(d || []);
+    O = Ai({
+      programs: O,
+      filters: {
+        collegeAcadOrg: ee,
+        departmentCode: Z,
+        blacklistAcadPlans: G,
+        program: ue,
+        showCerts: Se
+      }
+    }), N(O), T(O);
+  }, [d, c]);
+  const H = async (O) => {
+    const { acceleratedConcurrent: ae, locations: re, asuLocals: V, keyword: K } = O;
+    E(!0), m(z);
+    const oe = Ai({
+      programs: k,
+      filters: {
+        collegeAcadOrg: ee,
+        departmentCode: Z,
+        acceleratedConcurrent: ae,
+        locations: V.length > 0 ? re.concat(ap) : re,
+        keyword: K,
+        showInactivePrograms: ne ?? !1,
+        blacklistAcadPlans: G,
+        program: ue
+      }
+    });
+    be({ ...O }), J({ ...O }), T(oe), E(!1);
+  }, R = async () => {
+    const O = {
+      ...Ee,
+      keyword: A
+    };
+    H(O);
+  }, C = (O) => {
+    p || f || H(O);
+  }, x = async (O) => {
+    be(O);
+  }, P = () => {
+    be(Rr), J(Rr), T(k), D("");
+  }, y = (O, { value: ae }) => {
+    const re = O === "acceleratedConcurrent" ? op : Ee[O].filter((K) => K.value !== ae), V = {
+      ...Ee,
+      [O]: re
+    };
+    H(V);
+  };
+  return /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+    /* @__PURE__ */ i.jsx(qs, {}),
+    /* @__PURE__ */ i.jsx(rm, {}),
+    g && /* @__PURE__ */ i.jsx(Ns, { message: $s }),
+    a != null && a.hide ? null : /* @__PURE__ */ i.jsx("section", { "data-testid": "hero", children: /* @__PURE__ */ i.jsx(
+      Pn,
+      {
+        image: (a == null ? void 0 : a.image) || he.hero.image,
+        title: {
+          text: np(s.dataSource),
+          highlightColor: "gold",
+          ...a == null ? void 0 : a.title,
+          maxWidth: "100%"
+        },
+        contents: a == null ? void 0 : a.contents
+      }
+    ) }),
+    /* @__PURE__ */ i.jsxs(tm, { "data-is-loading": p, className: "main-section dg-margin-top", children: [
+      (o == null ? void 0 : o.breadcrumbs) && /* @__PURE__ */ i.jsx("div", { className: "container mt-4 mb-0", children: /* @__PURE__ */ i.jsx(
+        uo,
+        {
+          breadcrumbs: o.breadcrumbs,
+          section: a ? a.title.text : ""
+        }
+      ) }),
+      o ? /* @__PURE__ */ i.jsx(
+        po,
+        {
+          applyNowUrl: (t == null ? void 0 : t.applyNowUrl) || he.actionUrls.applyNowUrl,
+          type: o.type,
+          header: o.header,
+          title: o.title,
+          contents: o.contents,
+          image: o.image,
+          video: o.video,
+          photoGrid: o.photoGrid
+        }
+      ) : null,
+      r || n ? /* @__PURE__ */ i.jsxs("section", { className: "no-space", children: [
+        /* @__PURE__ */ i.jsx(_p, {}),
+        r ? /* @__PURE__ */ i.jsx(
+          el,
+          {
+            value: A,
+            onChange: D,
+            onSearch: R
+          }
+        ) : null,
+        n ? /* @__PURE__ */ i.jsx(
+          Ys,
+          {
+            value: se,
+            onChange: x,
+            onApply: C,
+            onClean: P
+          }
+        ) : null,
+        /* @__PURE__ */ i.jsx(nm, {})
+      ] }) : null,
+      /* @__PURE__ */ i.jsx("section", { className: "container", children: /* @__PURE__ */ i.jsx("div", { className: "d-flex justify-content-between filter-switch-container", children: n ? /* @__PURE__ */ i.jsx(
+        Ks,
+        {
+          value: Ee,
+          onRemove: y
+        }
+      ) : null }) }),
+      p || f ? /* @__PURE__ */ i.jsx(Cs, {}) : /* @__PURE__ */ i.jsx(
+        Qs,
+        {
+          dataViewComponent: _,
+          loading: p || f,
+          programs: S,
+          actionUrls: t,
+          degreesPerPage: c
+        }
+      )
+    ] })
+  ] });
+};
+mo.propTypes = {
+  appPathFolder: h.string,
+  actionUrls: h.shape({
+    applyNowUrl: h.string
+  }),
+  hasSearchBar: h.bool,
+  hasFilters: h.bool,
+  hero: h.shape(Pn.propTypes),
+  introContent: h.shape(po.propTypes),
+  programList: h.shape({
+    dataSource: Rs,
+    settings: Zd
+  }),
+  degreesPerPage: h.number
+};
+const tl = (e) => /* @__PURE__ */ i.jsx(co, { listPageProps: e, children: /* @__PURE__ */ i.jsx(mo, { ...e }) });
+tl.propTypes = mo.propTypes;
+const am = Te.section`
+  position: relative;
+  padding-top: var(--uds-dp-section-margin);
+  padding-bottom: var(--uds-dp-section-margin);
+`, om = Te.div`
+  background-image: url("https://asu.github.io/asu-unity-stack/@asu/unity-bootstrap-theme/static/media/TopoPatternWhite.529b0b3d.png");
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1920px;
+  height: 100%;
+  z-index: -1;
+`;
+function im() {
+  return /* @__PURE__ */ i.jsxs(
+    am,
+    {
+      className: "container",
+      id: Fe.affordingCollege.targetIdName,
+      "data-testid": "affording-college",
+      children: [
+        /* @__PURE__ */ i.jsx(om, {}),
+        /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Affording college" }) }),
+        /* @__PURE__ */ i.jsxs("div", { className: "mt-2 row", children: [
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ["fas", "calculator"],
+              title: "Tuition estimator",
+              body: "The tuition estimator shows the tuition and fee breakdown for your particular major, campus and residency status without financial aid.",
+              buttons: [
+                {
+                  label: "Estimate tuition and fees",
+                  ariaLabel: "Estimate tuition and fees",
+                  color: "maroon",
+                  href: "https://tuition.asu.edu/cost-calculator/tuition"
+                }
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ["fas", "award"],
+              title: "Scholarships",
+              body: "Scholarships are a type of aid that does not need to be paid back. Some you apply for and some are automatic.",
+              buttons: [
+                {
+                  label: "Learn about scholarships",
+                  ariaLabel: "Learn about scholarships",
+                  color: "maroon",
+                  href: "https://scholarships.asu.edu/"
+                }
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ["fas", "hand-holding-usd"],
+              title: "Financial aid",
+              body: "There are many financial aid options available for students. In fact, more than 80 percent of all ASU students receive some form of financial assistance every year.",
+              buttons: [
+                {
+                  label: "Explore financial aid",
+                  ariaLabel: "Explore financial aid",
+                  color: "maroon",
+                  href: "https://tuition.asu.edu/financial-aid"
+                }
+              ]
+            }
+          ) })
+        ] })
+      ]
+    }
+  );
+}
+var rl = { exports: {} };
+(function(e) {
+  (function() {
+    var t = {}.hasOwnProperty;
+    function r() {
+      for (var o = "", s = 0; s < arguments.length; s++) {
+        var c = arguments[s];
+        c && (o = a(o, n(c)));
+      }
+      return o;
+    }
+    function n(o) {
+      if (typeof o == "string" || typeof o == "number")
+        return o;
+      if (typeof o != "object")
+        return "";
+      if (Array.isArray(o))
+        return r.apply(null, o);
+      if (o.toString !== Object.prototype.toString && !o.toString.toString().includes("[native code]"))
+        return o.toString();
+      var s = "";
+      for (var c in o)
+        t.call(o, c) && o[c] && (s = a(s, c));
+      return s;
+    }
+    function a(o, s) {
+      return s ? o ? o + " " + s : o + s : o;
+    }
+    e.exports ? (r.default = r, e.exports = r) : window.classNames = r;
+  })();
+})(rl);
+var sm = rl.exports;
+const lm = /* @__PURE__ */ Ua(sm), cm = Te.ul`
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .btn {
+      width: max-content;
+      margin-left: 0;
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+`, um = ({
+  transferRequirements: e = "",
+  additionalRequirements: t = ""
+}) => {
+  const r = [
+    {
+      label: "Freshman",
+      href: "https://admission.asu.edu/freshman/apply"
+    },
+    { label: "Transfer", href: "https://admission.asu.edu/transfer/apply" },
+    {
+      label: "International",
+      href: "https://admission.asu.edu/international/undergrad-apply"
+    },
+    {
+      label: "Readmission",
+      href: "https://admission.asu.edu/undergrad/readmission"
+    }
+  ], n = [];
+  return t != null && t.trim() && n.push({
+    content: {
+      header: "Additional Requirements",
+      body: t
+    }
+  }), e != null && e.trim() && n.push({
+    content: {
+      header: "Transfer Admission Requirements",
+      body: e
+    }
+  }), /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+    /* @__PURE__ */ i.jsx("p", { children: "All students are required to meet general university admission requirements" }),
+    /* @__PURE__ */ i.jsx(
+      cm,
+      {
+        className: lm("", {
+          "mb-0": n.length === 0
+        }),
+        children: r.map(({ label: a, href: o }) => /* @__PURE__ */ i.jsx("li", { children: /* @__PURE__ */ i.jsx(
+          Fr,
+          {
+            ariaLabel: a,
+            color: "maroon",
+            href: o,
+            label: a,
+            size: "small"
+          }
+        ) }, a))
+      }
+    ),
+    n.length > 0 && /* @__PURE__ */ i.jsx("div", { className: "mt-2 mb-4", children: /* @__PURE__ */ i.jsx(os, { cards: n, openedCard: 1 }) })
+  ] });
+};
+function nl({
+  graduateRequirements: e,
+  transferRequirements: t,
+  isMinorOrCertificate: r,
+  additionalRequirements: n,
+  minorRequirements: a
+}) {
+  let o;
+  return e || r ? o = r ? "Program requirements" : "Degree requirements" : o = r ? "Program requirements" : "Admission requirements", /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+    /* @__PURE__ */ i.jsxs(
+      "section",
+      {
+        id: Fe.applicationRequirements.targetIdName,
+        "data-testid": "application-requirements",
+        children: [
+          /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: o }) }),
+          e || r ? /* @__PURE__ */ i.jsx(
+            "div",
+            {
+              dangerouslySetInnerHTML: ct(
+                e || a
+              )
+            }
+          ) : um({
+            transferRequirements: t,
+            additionalRequirements: n
+          })
+        ]
+      }
+    ),
+    e || r ? /* @__PURE__ */ i.jsxs(
+      "section",
+      {
+        id: Fe.degreeRequirements.targetIdName,
+        "data-testid": "degree-requirements",
+        children: [
+          /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Admission requirements" }) }),
+          /* @__PURE__ */ i.jsx(
+            "div",
+            {
+              dangerouslySetInnerHTML: ct(
+                n
+              )
+            }
+          )
+        ]
+      }
+    ) : null
+  ] });
+}
+nl.propTypes = {
+  graduateRequirements: h.string,
+  transferRequirements: h.string,
+  isMinorOrCertificate: h.bool,
+  additionalRequirements: h.string,
+  minorRequirements: h.string
+};
+const or = ({ item: e, type: t }) => {
+  const r = Zt("glance-"), n = () => typeof e == "object" ? e.map((a, o) => {
+    const s = ["", "#"].includes(a.url) ? null : a.url;
+    let c = "";
+    return o > 0 && o < e.length - 1 && (c = ", "), o === e.length - 1 && e.length > 1 && (c = " or "), /* @__PURE__ */ i.jsxs(_i, { children: [
+      c,
+      /* @__PURE__ */ i.jsx("a", { href: s, rel: "noreferrer", target: "_blank", children: a.text })
+    ] }, r.next().value);
+  }) : e;
+  return /* @__PURE__ */ i.jsxs("li", { children: [
+    /* @__PURE__ */ i.jsx("i", { className: `fas fa-${Si[t].icon} fa-li` }),
+    /* @__PURE__ */ i.jsxs("strong", { children: [
+      Si[t].title,
+      ": "
+    ] }),
+    n()
+  ] });
+};
+or.propTypes = {
+  item: h.oneOfType([
+    h.arrayOf(Pa),
+    h.string
+  ]),
+  type: h.string
+};
+const al = ({
+  offeredBy: e,
+  locations: t,
+  firstRequirementMathCourse: r,
+  mathIntensity: n,
+  timeCommitment: a
+}) => /* @__PURE__ */ i.jsxs(
+  "section",
+  {
+    id: Fe.atAGlance.targetIdName,
+    "data-testid": "at-aglance",
+    children: [
+      /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "At a glance: program details" }) }),
+      /* @__PURE__ */ i.jsxs("ul", { className: "uds-list fa-ul maroon pt-2 pb-0 pe-0", children: [
+        e && /* @__PURE__ */ i.jsx(or, { item: [e], type: "offeredBy" }),
+        t && /* @__PURE__ */ i.jsx(or, { item: t, type: "locations" }),
+        r && /* @__PURE__ */ i.jsx(
+          or,
+          {
+            item: r,
+            type: "firstRequirementMathCourse"
+          }
+        ),
+        n && /* @__PURE__ */ i.jsx(or, { item: n, type: "mathIntensity" }),
+        a && /* @__PURE__ */ i.jsx(or, { item: a, type: "timeCommitment" })
+      ] })
+    ]
+  }
+);
+al.propTypes = {
+  offeredBy: Pa.isRequired,
+  locations: h.arrayOf(Pa).isRequired,
+  firstRequirementMathCourse: h.string.isRequired,
+  mathIntensity: h.string,
+  timeCommitment: h.string
+};
+const dm = `
+ASU offers this program in an online format
+ with multiple enrollment sessions throughout
+  the year. Applicants may view the program
+   description and request more information.`;
+function ol({ image: e, learnMoreLink: t, contents: r }) {
+  const n = `linear-gradient(180deg, #19191900 0%, #191919c9 100%),url('${e.url}')`, a = Zt("attend-online-");
+  return /* @__PURE__ */ i.jsx(
+    "section",
+    {
+      id: Fe.attendOnline.targetIdName,
+      className: "uds-card-and-image",
+      style: {
+        backgroundImage: n
+      },
+      "data-testid": "attend-online",
+      children: /* @__PURE__ */ i.jsx("div", { className: "uds-card-and-image-container", children: /* @__PURE__ */ i.jsxs("div", { className: "card card-centered", children: [
+        /* @__PURE__ */ i.jsx("i", { className: "fas fa-wifi fa-2x card-icon-top" }),
+        /* @__PURE__ */ i.jsx("div", { className: "card-header", children: /* @__PURE__ */ i.jsx("h3", { className: "card-title", children: "Attend online" }) }),
+        /* @__PURE__ */ i.jsx("div", { className: "card-body", children: r ? r.map((o) => /* @__PURE__ */ i.jsx("p", { children: o }, a.next().value)) : /* @__PURE__ */ i.jsx("p", { children: dm }) }),
+        /* @__PURE__ */ i.jsx("div", { className: "card-button", children: /* @__PURE__ */ i.jsx(
+          Fr,
+          {
+            label: "Learn about online options",
+            ariaLabel: "Learn about online options",
+            href: t,
+            color: "maroon",
+            size: "small"
+          }
+        ) })
+      ] }) })
+    }
+  );
+}
+ol.propTypes = {
+  learnMoreLink: h.string,
+  image: Tt,
+  contents: h.arrayOf(
+    h.shape({
+      text: h.string
+    })
+  )
+};
+const pm = Te.section`
+  width: 100%;
+  & a {
+    word-break: break-word;
+  }
+`, il = ({ contents: e, image: t }) => /* @__PURE__ */ i.jsx(
+  pm,
+  {
+    id: Fe.careerOutlook.targetIdName,
+    "data-testid": "career-outlook",
+    children: /* @__PURE__ */ i.jsx(
+      pr,
+      {
+        headingTag: "H2",
+        title: Fe.careerOutlook.text,
+        contents: e,
+        image: t
+      }
+    )
+  }
+);
+il.propTypes = pr.propTypes;
+const mm = Te.div`
+  & p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & a {
+    word-break: break-word;
+  }
+`;
+function sl({ content: e }) {
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      id: Fe.changeMajorRequirements.targetIdName,
+      className: "change-your-major",
+      "data-testid": "change-your-major",
+      children: [
+        /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Change your major requirements for current students" }) }),
+        /* @__PURE__ */ i.jsx(
+          mm,
+          {
+            dangerouslySetInnerHTML: ct(e)
+          }
+        )
+      ]
+    }
+  );
+}
+sl.propTypes = {
+  content: h.string
+};
+function ll({ content: e = "" }) {
+  return /* @__PURE__ */ i.jsx(
+    "div",
+    {
+      "data-testid": "custom-text",
+      className: "mt-3",
+      dangerouslySetInnerHTML: ct(e)
+    }
+  );
+}
+ll.propTypes = {
+  content: h.string
+};
+const cl = `
+  width: unset !important;
+  min-width: unset !important;
+`, ul = Te.i`
+  color: #fecc41;
+  font-size: 1.2rem;
+  ${cl}
+`, dl = Te.i`
+  color: #78be21;
+  ${cl}
+`;
+function pl({ data: e }) {
+  return /* @__PURE__ */ i.jsx("div", { className: "uds-table mb-1", children: /* @__PURE__ */ i.jsxs("table", { children: [
+    /* @__PURE__ */ i.jsx("thead", { children: /* @__PURE__ */ i.jsxs("tr", { children: [
+      /* @__PURE__ */ i.jsx("th", { scope: "col", children: "Career" }),
+      /* @__PURE__ */ i.jsx("th", { scope: "col", className: "text-end", children: "Growth*" }),
+      /* @__PURE__ */ i.jsx("th", { scope: "col", className: "text-end", children: "Median Salary*" })
+    ] }) }),
+    /* @__PURE__ */ i.jsx("tbody", { children: e == null ? void 0 : e.map((t) => /* @__PURE__ */ i.jsxs("tr", { children: [
+      /* @__PURE__ */ i.jsxs("th", { scope: "row", style: { fontWeight: "normal" }, children: [
+        /* @__PURE__ */ i.jsx("a", { href: t.career.url, target: "_blank", rel: "noreferrer", children: t.career.text }),
+        t.greenOccupation && /* @__PURE__ */ i.jsx(dl, { className: "fas fa-leaf ms-1" }),
+        t.brightOutlook && /* @__PURE__ */ i.jsx(ul, { className: "fas fa-sun ms-1" })
+      ] }),
+      /* @__PURE__ */ i.jsxs("td", { className: "text-end", children: [
+        +t.growth,
+        "%"
+      ] }),
+      /* @__PURE__ */ i.jsx("td", { className: "text-end", children: t.medianSalary || 0 })
+    ] }, t.career.url)) })
+  ] }) });
+}
+pl.propTypes = {
+  data: h.arrayOf(_s)
+};
+function ml({ tableData: e }) {
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      id: Fe.exampleCareers.targetIdName,
+      className: "container",
+      "data-testid": "example-careers",
+      children: [
+        /* @__PURE__ */ i.jsx("h3", { children: "Example careers" }),
+        /* @__PURE__ */ i.jsx("p", { children: "Example job titles and salaries listed below are not necessarily entry level, and students should take into consideration how years of experience and geographical location may affect pay scales. Some jobs also may require advanced degrees, certifications or state-specific licensure." }),
+        /* @__PURE__ */ i.jsxs("div", { className: "mt-4 mb-4", children: [
+          /* @__PURE__ */ i.jsx(pl, { data: e }),
+          /* @__PURE__ */ i.jsx("p", { children: /* @__PURE__ */ i.jsx("small", { children: "* Data obtained from the Occupational Information Network (O*NET) under sponsorship of the U.S. Department of Labor/Employment and Training Administration (USDOL/ETA)." }) })
+        ] }),
+        /* @__PURE__ */ i.jsxs("div", { className: "d-flex", children: [
+          /* @__PURE__ */ i.jsxs("p", { className: "me-3", children: [
+            /* @__PURE__ */ i.jsx(ul, { className: "fas fa-sun me-1" }),
+            "Bright outlook"
+          ] }),
+          /* @__PURE__ */ i.jsxs("p", { children: [
+            /* @__PURE__ */ i.jsx(dl, { className: "fas fa-leaf me-1" }),
+            "Green occupation"
+          ] })
+        ] })
+      ]
+    }
+  );
+}
+ml.propTypes = {
+  tableData: h.arrayOf(_s)
+};
+const fm = Te.ul`
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 320px;
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 767px) {
+    max-height: 100%;
+  }
+`, $a = ({ id: e, title: t, links: r }) => /* @__PURE__ */ i.jsxs("div", { id: e, className: "mt-4", children: [
+  /* @__PURE__ */ i.jsx("h3", { children: t }),
+  /* @__PURE__ */ i.jsx("p", { children: "This program allows students to obtain both a bachelor's and master's degree in as little as five years. It is offered as an accelerated bachelor's and master's degree with:" }),
+  /* @__PURE__ */ i.jsx(fm, { className: "mt-3 mb-3", children: r.map((n, a) => (
+    // eslint-disable-next-line react/no-array-index-key
+    /* @__PURE__ */ i.jsx("li", { children: /* @__PURE__ */ i.jsx("a", { href: n.url, target: "_blank", rel: "noreferrer", children: n.title }) }, `${n.title}-${a}`)
+  )) }),
+  /* @__PURE__ */ i.jsx("p", { className: "mb-0", children: "Acceptance to the graduate program requires a separate application. During their junior year, eligible students will be advised by their academic departments to apply." })
+] });
+$a.propTypes = {
+  id: h.string,
+  title: h.string,
+  links: La
+};
+function fl({ acceleratedLinks: e, concurrentLinks: t }) {
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      id: Fe.flexibleDegreeOptions.targetIdName,
+      className: "container",
+      "data-testid": "flexible-degree-options",
+      children: [
+        /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Flexible degree options" }) }),
+        !!e.length && /* @__PURE__ */ i.jsx(
+          $a,
+          {
+            id: Fe.flexibleDegreeOptions.acceleratedId,
+            title: "Accelerated program options",
+            links: e
+          }
+        ),
+        !!t.length && /* @__PURE__ */ i.jsx(
+          $a,
+          {
+            id: Fe.flexibleDegreeOptions.concurrentId,
+            title: "Concurrent degree program",
+            links: t
+          }
+        )
+      ]
+    }
+  );
+}
+fl.propTypes = {
+  acceleratedLinks: La,
+  concurrentLinks: La
+};
+const hm = Te.section`
+  width: 100%;
+  & a {
+    word-break: break-word;
+  }
+`, hl = ({ contents: e, image: t }) => /* @__PURE__ */ i.jsx(
+  hm,
+  {
+    id: Fe.globalOpportunity.targetIdName,
+    "data-testid": "global-opportunity",
+    children: /* @__PURE__ */ i.jsx(
+      pr,
+      {
+        headingTag: "H2",
+        title: Fe.globalOpportunity.text,
+        contents: e,
+        image: t
+      }
+    )
+  }
+);
+hl.propTypes = pr.propTypes;
+const gl = ({ url: e, altText: t }) => /* @__PURE__ */ i.jsx("div", { className: "uds-img pt-3 pb-3", "data-testid": "intro-image", children: /* @__PURE__ */ i.jsx("img", { src: e, className: "img-fluid", alt: t }) });
+gl.propTypes = { ...ao };
+const gm = (e, t) => {
+  if (e !== "youtube")
+    return t;
+  const r = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, n = t.match(r);
+  return n && n[7].length === 11 ? `https://www.youtube.com/embed/${n[7]}` : t;
+}, ym = Te.div`
+  .uds-video-container {
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+`, yl = ({ type: e, url: t, vttUrl: r, title: n }) => /* @__PURE__ */ i.jsx(ym, { "data-testid": "intro-video", children: /* @__PURE__ */ i.jsx(
+  is,
+  {
+    type: e,
+    url: gm(e, t),
+    vttUrl: r,
+    title: n,
+    controls: !0
+  }
+) });
+yl.propTypes = { ...oo };
+function bl({ contents: e = [] }) {
+  return /* @__PURE__ */ i.jsx("div", { "data-testid": "market-text", children: e.map((t, r) => /* @__PURE__ */ i.jsx(
+    "div",
+    {
+      className: `mt-3 ${cr(t.cssClass)}`,
+      dangerouslySetInnerHTML: ct(t.text)
+    },
+    `content-${r + 1}`
+  )) });
+}
+bl.propTypes = {
+  contents: h.arrayOf(On)
+};
+function vl({ cards: e, defaultCards: t }) {
+  var r, n, a, o, s, c, d, p, g, m, f, E;
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      className: "container",
+      id: Fe.nextSteps.targetIdName,
+      "data-testid": "next-steps",
+      children: [
+        /* @__PURE__ */ i.jsx("h2", { children: "Next steps to attend ASU" }),
+        /* @__PURE__ */ i.jsxs("div", { className: "mt-2 row", children: [
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ((r = e == null ? void 0 : e.learnMore) == null ? void 0 : r.icon) ?? t.learnMore.icon,
+              title: ((n = e == null ? void 0 : e.learnMore) == null ? void 0 : n.title) ?? t.learnMore.title,
+              body: ((a = e == null ? void 0 : e.learnMore) == null ? void 0 : a.content) ?? t.learnMore.content,
+              buttons: [
+                ((o = e == null ? void 0 : e.learnMore) == null ? void 0 : o.buttonLink) ?? t.learnMore.buttonLink
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ((s = e == null ? void 0 : e.apply) == null ? void 0 : s.icon) ?? t.apply.icon,
+              title: ((c = e == null ? void 0 : e.apply) == null ? void 0 : c.title) ?? t.apply.title,
+              body: ((d = e == null ? void 0 : e.apply) == null ? void 0 : d.content) ?? t.apply.content,
+              buttons: [
+                ((p = e == null ? void 0 : e.apply) == null ? void 0 : p.buttonLink) ?? t.apply.buttonLink
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              icon: ((g = e == null ? void 0 : e.visit) == null ? void 0 : g.icon) ?? t.visit.icon,
+              title: ((m = e == null ? void 0 : e.visit) == null ? void 0 : m.title) ?? t.visit.title,
+              body: ((f = e == null ? void 0 : e.visit) == null ? void 0 : f.content) ?? t.visit.content,
+              buttons: [
+                ((E = e == null ? void 0 : e.visit) == null ? void 0 : E.buttonLink) ?? t.visit.buttonLink
+              ]
+            }
+          ) })
+        ] })
+      ]
+    }
+  );
+}
+vl.propTypes = {
+  cards: h.shape({
+    learnMore: qt,
+    apply: qt,
+    visit: qt
+  }),
+  defaultCards: h.shape({
+    learnMore: qt,
+    apply: qt,
+    visit: qt
+  })
+};
+function xl({ content: e = "" }) {
+  return /* @__PURE__ */ i.jsxs("section", { className: "container", "data-testid": "professional-licensure", children: [
+    /* @__PURE__ */ i.jsx("h3", { children: "Professional licensure" }),
+    /* @__PURE__ */ i.jsx("p", { dangerouslySetInnerHTML: ct(e) })
+  ] });
+}
+xl.propTypes = {
+  content: h.node
+};
+const pa = {
+  event: "link",
+  action: "click",
+  name: "onclick",
+  type: "internal link",
+  region: "main content",
+  section: "Program contact information"
+}, bm = Te.ul`
+  list-style: none;
+  margin-left: 0rem;
+  padding-left: 0rem;
+
+  & li {
+    display: flex;
+    align-items: center;
+    :not(:first-child) {
+      display: flex;
+      padding-bottom: 0.5rem;
+    }
+
+    :first-child div {
+      display: flex;
+    }
+
+    :nth-of-type(2) {
+      padding-bottom: 2rem;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .c-icon,
+    i {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    .office-loc {
+      margin-left: 1.5rem;
+    }
+  }
+`;
+function wl({ department: e, asuOfficeLoc: t, email: r, phone: n }) {
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      id: Fe.programContactInfo.targetIdName,
+      "data-testid": "program-contact-info",
+      children: [
+        /* @__PURE__ */ i.jsx("h2", { children: /* @__PURE__ */ i.jsx("span", { className: "highlight-gold", children: "Program contact information" }) }),
+        /* @__PURE__ */ i.jsx("p", { children: "If you have questions related to admission, please fill out the request information form above and an admission specialist will contact you directly. For questions regarding faculty or courses, please use the contact information below." }),
+        /* @__PURE__ */ i.jsxs(bm, { className: "text-maroon", children: [
+          /* @__PURE__ */ i.jsx("li", { children: /* @__PURE__ */ i.jsxs("div", { children: [
+            /* @__PURE__ */ i.jsx(
+              "i",
+              {
+                className: "c-icon fas icon-small fa-map-marker-alt",
+                title: "Department  Address"
+              }
+            ),
+            /* @__PURE__ */ i.jsx(
+              "a",
+              {
+                href: e.url,
+                onClick: () => It({ ...pa, text: e.text }),
+                children: e.text
+              }
+            )
+          ] }) }),
+          /* @__PURE__ */ i.jsx("li", { children: /* @__PURE__ */ i.jsx("div", { className: "c-icon text-dark office-loc", children: t }) }),
+          /* @__PURE__ */ i.jsxs("li", { children: [
+            /* @__PURE__ */ i.jsx("i", { className: "c-icon fas icon-small fa-envelope", title: "Email" }),
+            /* @__PURE__ */ i.jsx(
+              "a",
+              {
+                href: `mailto:${r.url || r.text}`,
+                onClick: () => It({ ...pa, text: r.text }),
+                children: r.text
+              }
+            )
+          ] }),
+          /* @__PURE__ */ i.jsxs("li", { children: [
+            /* @__PURE__ */ i.jsx("i", { className: "c-icon fas icon-small fa-phone", title: "Phone" }),
+            /* @__PURE__ */ i.jsx(
+              "a",
+              {
+                href: `tel:${n}`,
+                onClick: () => It({ ...pa, text: n }),
+                children: n
+              }
+            )
+          ] })
+        ] })
+      ]
+    }
+  );
+}
+wl.propTypes = {
+  department: Vt,
+  asuOfficeLoc: h.string,
+  email: Vt,
+  phone: h.string
+};
+function Fa({ content: e, stemOptText: t, programNotFound: r }) {
+  return /* @__PURE__ */ i.jsxs("div", { "data-testid": "program-description", children: [
+    /* @__PURE__ */ i.jsx("h2", { children: r ? "Program not found" : "Program description" }),
+    /* @__PURE__ */ i.jsx(
+      "div",
+      {
+        "data-testid": "program-description-body",
+        dangerouslySetInnerHTML: ct(e)
+      }
+    ),
+    t && /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+      /* @__PURE__ */ i.jsx("p", { children: /* @__PURE__ */ i.jsx("strong", { children: Qd }) }),
+      /* @__PURE__ */ i.jsx(
+        "div",
+        {
+          "data-testid": "stem-opt-text",
+          dangerouslySetInnerHTML: ct(t)
+        }
+      )
+    ] })
+  ] });
+}
+Fa.propTypes = {
+  content: h.string,
+  stemOptText: h.string,
+  programNotFound: h.bool
+};
+const vm = "https://changemajor.apps.asu.edu/", xm = "On-campus students", wm = "Online students", Sm = "View major map -", Oi = "View major map";
+function Sl({
+  onlineMajorMapURL: e = "",
+  majorMapOnCampusURL: t = "",
+  subPlnMajorMaps: r = [],
+  subPlns: n = []
+}) {
+  const a = (g) => {
+    const m = n.find(
+      (f) => f.acadSubPlanCode === g
+    );
+    return m ? m.description : "";
+  }, o = (g, m, f) => {
+    g && f.push({
+      href: g,
+      text: m
+    });
+  }, s = [], c = [];
+  r.forEach((g) => {
+    const m = a(g.acadSubPlanCode), f = `${Sm} ${m}`;
+    o(g.url, f, s);
+  }), t && o(t, Oi, s), e && o(e, Oi, c);
+  const d = (g, m) => /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+    /* @__PURE__ */ i.jsx("h5", { children: g }),
+    /* @__PURE__ */ i.jsx("ul", { className: "mb-3", children: m.map((f) => /* @__PURE__ */ i.jsx("li", { children: /* @__PURE__ */ i.jsx("a", { href: f.href, children: f.text }) }, f.href)) })
+  ] }), p = () => /* @__PURE__ */ i.jsxs("section", { className: "container ps-0", "data-testid": "required-course", children: [
+    /* @__PURE__ */ i.jsx("h4", { children: "Required courses (major map)" }),
+    s.length > 0 && d(xm, s),
+    c.length > 0 && d(wm, c),
+    /* @__PURE__ */ i.jsxs("div", { className: "mt-3", children: [
+      /* @__PURE__ */ i.jsx("strong", { children: "What if:" }),
+      " See how your courses can be applied to another major and find out how to ",
+      /* @__PURE__ */ i.jsx("a", { href: vm, children: "change your major" })
+    ] })
+  ] });
+  return !(r != null && r.length) && !e && !t ? /* @__PURE__ */ i.jsx("div", {}) : p();
+}
+Sl.propTypes = {
+  onlineMajorMapURL: h.string,
+  majorMapOnCampusURL: h.string,
+  subPlnMajorMaps: h.arrayOf(
+    h.shape({
+      campus: h.string,
+      acadSubPlanCode: h.string,
+      defaultFlag: h.bool,
+      url: h.string
+    })
+  ),
+  subPlns: h.arrayOf(
+    h.shape({
+      acadSubPlanCode: h.string,
+      description: h.string
+    })
+  )
+};
+const Tl = ({ sectionIntroText: e, cards: t, defaultCards: r }) => {
+  var n, a, o, s, c, d, p, g, m, f, E, S, T, k, N, A, D, I, v, _, j, z, ie, he, ee, Z, ne, G, ue, Se, se, be, Ee, J, H, R, C, x, P, y, L, O;
+  return /* @__PURE__ */ i.jsxs(
+    "section",
+    {
+      id: Fe.whyChooseAsu.targetIdName,
+      className: "container",
+      "data-testid": "why-choose-asu",
+      children: [
+        /* @__PURE__ */ i.jsx("h2", { children: "Why choose ASU" }),
+        /* @__PURE__ */ i.jsx(
+          "div",
+          {
+            dangerouslySetInnerHTML: ct(e)
+          }
+        ),
+        /* @__PURE__ */ i.jsxs("div", { className: "mt-2 row", children: [
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((a = (n = t == null ? void 0 : t.faculty) == null ? void 0 : n.image) == null ? void 0 : a.url) ?? r.faculty.image.url,
+              imageAltText: ((s = (o = t == null ? void 0 : t.faculty) == null ? void 0 : o.image) == null ? void 0 : s.altText) ?? r.faculty.image.altText,
+              title: ((c = t == null ? void 0 : t.faculty) == null ? void 0 : c.title) ?? r.faculty.title,
+              body: ((d = t == null ? void 0 : t.faculty) == null ? void 0 : d.text) ?? r.faculty.text,
+              buttons: [((p = t == null ? void 0 : t.faculty) == null ? void 0 : p.button) ?? r.faculty.button]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((m = (g = t == null ? void 0 : t.programs) == null ? void 0 : g.image) == null ? void 0 : m.url) ?? r.programs.image.url,
+              imageAltText: ((E = (f = t == null ? void 0 : t.programs) == null ? void 0 : f.image) == null ? void 0 : E.altText) ?? r.programs.image.altText,
+              title: ((S = t == null ? void 0 : t.programs) == null ? void 0 : S.title) ?? r.programs.title,
+              body: ((T = t == null ? void 0 : t.programs) == null ? void 0 : T.text) ?? r.programs.text,
+              buttons: [((k = t == null ? void 0 : t.programs) == null ? void 0 : k.button) ?? r.programs.button]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((A = (N = t == null ? void 0 : t.research) == null ? void 0 : N.image) == null ? void 0 : A.url) ?? r.research.image.url,
+              imageAltText: ((I = (D = t == null ? void 0 : t.research) == null ? void 0 : D.image) == null ? void 0 : I.altText) ?? r.research.image.altText,
+              title: ((v = t == null ? void 0 : t.research) == null ? void 0 : v.title) ?? r.research.title,
+              body: ((_ = t == null ? void 0 : t.research) == null ? void 0 : _.text) ?? r.research.text,
+              buttons: [((j = t == null ? void 0 : t.research) == null ? void 0 : j.button) ?? r.research.button]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((ie = (z = t == null ? void 0 : t.inclusion) == null ? void 0 : z.image) == null ? void 0 : ie.url) ?? r.inclusion.image.url,
+              imageAltText: ((ee = (he = t == null ? void 0 : t.inclusion) == null ? void 0 : he.image) == null ? void 0 : ee.altText) ?? r.inclusion.image.altText,
+              title: ((Z = t == null ? void 0 : t.inclusion) == null ? void 0 : Z.title) ?? r.inclusion.title,
+              body: ((ne = t == null ? void 0 : t.inclusion) == null ? void 0 : ne.text) ?? r.inclusion.text,
+              buttons: [
+                ((G = t == null ? void 0 : t.inclusion) == null ? void 0 : G.button) ?? r.inclusion.button
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((Se = (ue = t == null ? void 0 : t.mentors) == null ? void 0 : ue.image) == null ? void 0 : Se.url) ?? r.mentors.image.url,
+              imageAltText: ((be = (se = t == null ? void 0 : t.mentors) == null ? void 0 : se.image) == null ? void 0 : be.altText) ?? r.mentors.image.altText,
+              title: ((Ee = t == null ? void 0 : t.mentors) == null ? void 0 : Ee.title) ?? r.mentors.title,
+              body: ((J = t == null ? void 0 : t.mentors) == null ? void 0 : J.text) ?? r.mentors.text,
+              buttons: [((H = t == null ? void 0 : t.mentors) == null ? void 0 : H.button) ?? r.mentors.button]
+            }
+          ) }),
+          /* @__PURE__ */ i.jsx("div", { className: "mt-2 col-12 col-md-6 col-lg-4", children: /* @__PURE__ */ i.jsx(
+            tt,
+            {
+              image: ((C = (R = t == null ? void 0 : t.honors) == null ? void 0 : R.image) == null ? void 0 : C.url) ?? r.honors.image.url,
+              imageAltText: ((P = (x = t == null ? void 0 : t.honors) == null ? void 0 : x.image) == null ? void 0 : P.altText) ?? r.honors.image.altText,
+              title: ((y = t == null ? void 0 : t.honors) == null ? void 0 : y.title) ?? r.honors.title,
+              body: ((L = t == null ? void 0 : t.honors) == null ? void 0 : L.text) ?? r.honors.text,
+              buttons: [((O = t == null ? void 0 : t.honors) == null ? void 0 : O.button) ?? r.honors.button]
+            }
+          ) })
+        ] })
+      ]
+    }
+  );
+};
+Tl.propTypes = Ps;
+const fo = ({
+  appPathFolder: e,
+  dataSource: t,
+  anchorMenu: r,
+  hero: n,
+  introContent: a,
+  atAGlance: o,
+  applicationRequirements: s,
+  changeMajorRequirements: c,
+  affordingCollege: d,
+  flexibleDegreeOptions: p,
+  careerOutlook: g,
+  exampleCareers: m,
+  globalOpportunity: f,
+  attendOnline: E,
+  programContactInfo: S,
+  nextSteps: T,
+  whyChooseAsu: k
+}) => {
+  var ne, G, ue, Se;
+  const [{ data: N, loading: A, error: D }, I] = Ts(), [v, _] = Be(ur({})), [j, z] = Be({ accelerateData: [], concurrentData: [] }), ie = zs(t, pp), { defaultState: he } = kt(mr), { detailPageDefault: ee } = he;
+  mt(() => {
+    typeof window < "u" && As({
+      packageName: "app-degree-pages",
+      component: "DetailPage",
+      type: "NA",
+      configuration: {
+        dataSource: t
+      }
+    });
+  }, []), mt(() => {
+    I(ie);
+  }, [ie]), mt(() => {
+    if (N) {
+      const se = ur(N);
+      _(se), se.hasConcurrentOrAccelerateDegrees() && yp(
+        [
+          se.getAccelerateDegrees(),
+          se.getConcurrentDegrees()
+        ],
+        z
+      );
+    }
+  }, [N]);
+  const Z = Ap(r, v);
+  return /* @__PURE__ */ i.jsxs(i.Fragment, { children: [
+    /* @__PURE__ */ i.jsx(qs, {}),
+    D && /* @__PURE__ */ i.jsx(Ns, { message: $s }),
+    !(n != null && n.hide) && /* @__PURE__ */ i.jsx("section", { children: /* @__PURE__ */ i.jsx(
+      Pn,
+      {
+        image: (n == null ? void 0 : n.image) || ee.hero.image,
+        title: {
+          ...ee.hero.title,
+          text: v.getMajorDesc(),
+          ...n == null ? void 0 : n.title
+        },
+        contents: n == null ? void 0 : n.contents
+      }
+    ) }),
+    !A && Np(Z) && /* @__PURE__ */ i.jsx(Us, { anchorMenu: Z }),
+    /* @__PURE__ */ i.jsxs(Ws, { as: "div", "data-is-loading": A, className: "main-section", children: [
+      A && /* @__PURE__ */ i.jsx(Cs, {}),
+      !A && (N != null && N.error ? /* @__PURE__ */ i.jsx("section", { className: "container mt-4 mb-0", children: /* @__PURE__ */ i.jsx(
+        Fa,
+        {
+          content: ep,
+          programNotFound: !0
+        }
+      ) }) : /* @__PURE__ */ i.jsxs("section", { className: "container mt-4 mb-0", children: [
+        (a == null ? void 0 : a.breadcrumbs) && /* @__PURE__ */ i.jsx("div", { className: "row col-12", children: /* @__PURE__ */ i.jsx(
+          uo,
+          {
+            breadcrumbs: a.breadcrumbs,
+            section: n ? n.title.text : v.getMajorDesc()
+          }
+        ) }),
+        /* @__PURE__ */ i.jsxs("div", { className: "row flex-column-reverse flex-sm-row", children: [
+          /* @__PURE__ */ i.jsxs("div", { className: "col col-sm-12 col-md-7 col-lg-7", children: [
+            /* @__PURE__ */ i.jsxs("section", { className: "intro", children: [
+              !v.isValidActiveProgram() && /* @__PURE__ */ i.jsx(ll, { content: v.getAsuCustomText() }),
+              !(a != null && a.hideMarketText) && ((a == null ? void 0 : a.contents) || v.getMarketText()) && /* @__PURE__ */ i.jsx(
+                bl,
+                {
+                  contents: (a == null ? void 0 : a.contents) || [
+                    { text: v.getMarketText() }
+                  ]
+                }
+              ),
+              !(a != null && a.hideProgramDesc) && /* @__PURE__ */ i.jsx(
+                Fa,
+                {
+                  content: v.getFullDescription(),
+                  stemOptText: v.getStemOptText()
+                }
+              )
+            ] }),
+            !(o != null && o.hide) && /* @__PURE__ */ i.jsx(
+              al,
+              {
+                offeredBy: (o == null ? void 0 : o.offeredBy) || {
+                  text: v.getCollegeDesc(),
+                  url: v.getCollegeUrl()
+                },
+                locations: (o == null ? void 0 : o.locations) || kp(v),
+                firstRequirementMathCourse: (o == null ? void 0 : o.firstRequirementMathCourse) || v.getMinMathReq(),
+                mathIntensity: (o == null ? void 0 : o.mathIntensity) || v.getMathIntensity()
+              }
+            ),
+            !(a != null && a.hideRequiredCourses) && !v.isMinorOrCertificate() && /* @__PURE__ */ i.jsx(
+              Sl,
+              {
+                onlineMajorMapURL: v.getOnlineMajorMapURL(),
+                majorMapOnCampusURL: v.getGeneralDegreeMajorMap(),
+                subPlnMajorMaps: v.getSubPlnMajorMaps(),
+                subPlns: v.getSubPln()
+              }
+            ),
+            !(s != null && s.hide) && /* @__PURE__ */ i.jsx(
+              nl,
+              {
+                graduateRequirements: v.isGradProgram() ? v.getGraduateRequirements() : null,
+                isMinorOrCertificate: v.isMinorOrCertificate(),
+                minorRequirements: v.getMinorCourseRequirements(),
+                additionalRequirements: v.getAdmissionsRequirementsText(),
+                transferRequirements: v.getTransferAdmission()
+              }
+            ),
+            !(c != null && c.hide) && !v.isMinorOrCertificate() && !v.isGradProgram() && /* @__PURE__ */ i.jsx(sl, { content: v.getChangeMajor() })
+          ] }),
+          /* @__PURE__ */ i.jsxs("div", { className: "col col-sm-12 col-md-5 col-lg-5", children: [
+            (a == null ? void 0 : a.video) && /* @__PURE__ */ i.jsx(
+              yl,
+              {
+                type: a.video.type,
+                url: a.video.url,
+                vttUrl: a.video.vttUrl,
+                title: a.video.title
+              }
+            ),
+            !(a != null && a.video) && /* @__PURE__ */ i.jsx(
+              gl,
+              {
+                url: ((ne = a == null ? void 0 : a.image) == null ? void 0 : ne.url) || ee.introContent.image.url,
+                altText: ((G = a == null ? void 0 : a.image) == null ? void 0 : G.altText) || ee.introContent.image.altText
+              }
+            )
+          ] })
+        ] }),
+        /* @__PURE__ */ i.jsxs("div", { className: "row", children: [
+          !(T != null && T.hide) && !v.isMinorOrCertificate() && /* @__PURE__ */ i.jsx(
+            vl,
+            {
+              cards: T == null ? void 0 : T.cards,
+              defaultCards: ee.nextSteps.cards
+            }
+          ),
+          !(d != null && d.hide) && /* @__PURE__ */ i.jsx(im, {}),
+          !(p != null && p.hide) && v.hasConcurrentOrAccelerateDegrees() && /* @__PURE__ */ i.jsx(
+            fl,
+            {
+              acceleratedLinks: Ei(
+                j.accelerateData
+              ),
+              concurrentLinks: Ei(
+                j.concurrentData
+              )
+            }
+          ),
+          !(g != null && g.hide) && v.getAsuCareerOpportunity() && /* @__PURE__ */ i.jsx(
+            il,
+            {
+              image: (g == null ? void 0 : g.image) || ee.careerOutlook.image,
+              contents: [{ text: v.getAsuCareerOpportunity() }]
+            }
+          ),
+          !(m != null && m.hide) && v.hasCareerData() && /* @__PURE__ */ i.jsx(
+            ml,
+            {
+              tableData: mp(v.getCareerData())
+            }
+          ),
+          v.getProfessionalLicensureText() && /* @__PURE__ */ i.jsx(
+            xl,
+            {
+              content: v.getProfessionalLicensureText()
+            }
+          ),
+          !(f != null && f.hide) && v.getGlobalExp() && /* @__PURE__ */ i.jsx(
+            hl,
+            {
+              contents: [{ text: v.getGlobalExp() }],
+              image: (f == null ? void 0 : f.image) || ee.globalOpportunity.image
+            }
+          ),
+          !(k != null && k.hide) && /* @__PURE__ */ i.jsx(
+            Tl,
+            {
+              sectionIntroText: (k == null ? void 0 : k.sectionIntroText) || ee.whyChooseAsu.sectionIntroText,
+              cards: k == null ? void 0 : k.cards,
+              defaultCards: ee.whyChooseAsu.cards
+            }
+          ),
+          !(E != null && E.hide) && v.isOnline() && /* @__PURE__ */ i.jsx(
+            ol,
+            {
+              learnMoreLink: v.getCurriculumUrl(),
+              image: (E == null ? void 0 : E.image) || ee.attendOnline.image
+            }
+          )
+        ] }),
+        !(S != null && S.hide) && /* @__PURE__ */ i.jsx("div", { className: "row", children: /* @__PURE__ */ i.jsx("div", { className: "col col-sm-12 col-md-6 col-lg-6 ", children: /* @__PURE__ */ i.jsx(
+          wl,
+          {
+            department: {
+              text: v.getDepartmentName(),
+              url: ((ue = S == null ? void 0 : S.department) == null ? void 0 : ue.url) || v.getPlanUrl()
+            },
+            email: {
+              text: v.getEmailAddress(),
+              url: ((Se = S == null ? void 0 : S.email) == null ? void 0 : Se.url) || v.getEmailAddress()
+            },
+            asuOfficeLoc: v.getAsuOfficeLoc(),
+            phone: v.getPhone()
+          }
+        ) }) })
+      ] }))
+    ] })
+  ] });
+};
+fo.propTypes = {
+  appPathFolder: h.string,
+  dataSource: Rs,
+  anchorMenu: h.shape(io),
+  hero: h.shape(Pn.propTypes),
+  introContent: h.shape({
+    hideMarketText: h.bool,
+    hideProgramDesc: h.bool,
+    hideRequiredCourses: h.bool,
+    breadcrumbs: dn.arrayOf(Vt),
+    // eslint-disable-next-line react/forbid-prop-types
+    contents: dn.arrayOf(h.object),
+    video: Kd,
+    image: Tt
+  }),
+  atAGlance: h.shape({
+    hide: h.bool,
+    offeredBy: Vt,
+    locations: dn.arrayOf(Vt),
+    firstRequirementMathCourse: h.string,
+    mathIntensity: h.string,
+    timeCommitment: h.string
+  }),
+  applicationRequirements: h.shape({ hide: h.bool }),
+  changeMajorRequirements: h.shape({ hide: h.bool }),
+  affordingCollege: h.shape({ hide: h.bool }),
+  flexibleDegreeOptions: h.shape({ hide: h.bool }),
+  careerOutlook: h.shape({
+    hide: h.bool,
+    image: Tt
+  }),
+  exampleCareers: h.shape({ hide: h.bool }),
+  globalOpportunity: h.shape({
+    hide: h.bool,
+    image: Tt
+  }),
+  attendOnline: h.shape({
+    hide: h.bool,
+    image: Tt
+  }),
+  programContactInfo: h.shape({
+    hide: h.bool,
+    department: h.string,
+    email: h.string
+  }),
+  nextSteps: h.shape({
+    hide: h.bool,
+    cards: h.arrayOf(qt)
+  }),
+  whyChooseAsu: h.shape(Ps)
+};
+const El = (e) => /* @__PURE__ */ i.jsx(co, { detailPageProps: e, children: /* @__PURE__ */ i.jsx(fo, { ...e }) });
+El.propTypes = fo.propTypes;
+var kl, ji = Ml;
+kl = ji.createRoot, ji.hydrateRoot;
+const Al = (e, t, r) => {
+  const n = document.querySelector(r);
+  kl(n).render(ht.createElement(e, t));
+}, Am = ({ targetSelector: e, props: t }) => {
+  Al(tl, t, e);
+}, Nm = ({ targetSelector: e, props: t }) => {
+  Al(El, t, e);
+};
+export {
+  El as DetailPage,
+  tl as ListingPage,
+  Am as initListingPage,
+  Nm as initProgramDetailPage
+};
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+/*! @license DOMPurify 2.5.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.5.7/LICENSE */
+/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/
