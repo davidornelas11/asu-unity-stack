@@ -2856,10 +2856,15 @@ function requireReactIs_production_min() {
   reactIs_production_min.typeOf = z2;
   return reactIs_production_min;
 }
-{
-  reactIs$1.exports = requireReactIs_production_min();
+var hasRequiredReactIs;
+function requireReactIs() {
+  if (hasRequiredReactIs) return reactIs$1.exports;
+  hasRequiredReactIs = 1;
+  {
+    reactIs$1.exports = requireReactIs_production_min();
+  }
+  return reactIs$1.exports;
 }
-var reactIsExports = reactIs$1.exports;
 var ReactPropTypesSecret_1;
 var hasRequiredReactPropTypesSecret;
 function requireReactPropTypesSecret() {
@@ -4345,6 +4350,7 @@ const useIsMobile = (breakpoint) => {
   }, []);
   return isMobile;
 };
+var reactIsExports = requireReactIs();
 function stylis_min(W2) {
   function M2(d, c2, e, h, a2) {
     for (var m2 = 0, b2 = 0, v2 = 0, n = 0, q2, g2, x2 = 0, K2 = 0, k2, u = k2 = q2 = 0, l = 0, r2 = 0, I2 = 0, t2 = 0, B3 = e.length, J2 = B3 - 1, y2, f = "", p = "", F3 = "", G3 = "", C2; l < B3; ) {
@@ -4867,7 +4873,7 @@ var isPropValid = /* @__PURE__ */ memoize(
   }
   /* Z+1 */
 );
-var reactIs = reactIsExports;
+var reactIs = requireReactIs();
 var REACT_STATICS = {
   childContextTypes: true,
   contextType: true,
