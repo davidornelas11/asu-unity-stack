@@ -2379,16 +2379,10 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
     return reactIs_production_min;
   }
   __name(requireReactIs_production_min, "requireReactIs_production_min");
-  var hasRequiredReactIs;
-  function requireReactIs() {
-    if (hasRequiredReactIs) return reactIs$1.exports;
-    hasRequiredReactIs = 1;
-    {
-      reactIs$1.exports = requireReactIs_production_min();
-    }
-    return reactIs$1.exports;
+  {
+    reactIs$1.exports = requireReactIs_production_min();
   }
-  __name(requireReactIs, "requireReactIs");
+  var reactIsExports = reactIs$1.exports;
   var ReactPropTypesSecret_1;
   var hasRequiredReactPropTypesSecret;
   function requireReactPropTypesSecret() {
@@ -2463,7 +2457,6 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
   }
   var propTypesExports = propTypes.exports;
   const PropTypes = /* @__PURE__ */ getDefaultExportFromCjs(propTypesExports);
-  var reactIsExports = requireReactIs();
   function stylis_min(W2) {
     function M2(d2, c2, e, h2, a2) {
       for (var m2 = 0, b2 = 0, v2 = 0, n2 = 0, q2, g2, x2 = 0, K2 = 0, k2, u2 = k2 = q2 = 0, l2 = 0, r2 = 0, I2 = 0, t2 = 0, B3 = e.length, J2 = B3 - 1, y2, f2 = "", p2 = "", F3 = "", G3 = "", C2; l2 < B3; ) {
@@ -2998,7 +2991,7 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
     }
     /* Z+1 */
   );
-  var reactIs = requireReactIs();
+  var reactIs = reactIsExports;
   var REACT_STATICS = {
     childContextTypes: true,
     contextType: true,
