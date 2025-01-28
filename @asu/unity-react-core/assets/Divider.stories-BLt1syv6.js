@@ -1,4 +1,4 @@
-import{j as c}from"./jsx-runtime-Dtp4yoXy.js";import{D as n,a as v}from"./Divider-ToplA7Ft.js";import"./index-iql2cimc.js";import"./_commonjsHelpers-uqKOVeGF.js";const x={title:"Components/Divider",component:n},p=m=>c.jsx(n,{...m}),e={render:p.bind({})},r={render:p.bind({}),args:{type:v.COPY}};var i,o,s;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`{
+import{j as c}from"./jsx-runtime-Dtp4yoXy.js";import{D as n,a as v}from"./Divider-BQ_Wo4vj.js";import"./index-iql2cimc.js";import"./_commonjsHelpers-uqKOVeGF.js";const x={title:"Components/Divider",component:n},p=m=>c.jsx(n,{...m}),e={render:p.bind({})},r={render:p.bind({}),args:{type:v.COPY}};var i,o,s;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`{
   render: dividerTemplate.bind({})
 }`,...(s=(o=e.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};var t,d,a;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: dividerTemplate.bind({}),

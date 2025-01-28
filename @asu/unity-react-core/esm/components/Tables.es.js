@@ -21,9 +21,9 @@ function _() {
     const t = ".uds-table-fixed-wrapper", r = ".uds-table.uds-table-fixed table", i = ".scroll-control.previous";
     document.querySelectorAll(t).forEach((a, s) => {
       const x = a.querySelector(r);
-      x.setAttribute("id", "uds-table-" + s);
+      x.setAttribute("id", `uds-table-${s}`);
       const l = x.querySelector("tbody tr > *"), d = a.querySelector(i);
-      d.style.left = l.offsetWidth + "px";
+      d.style.left = `${l.offsetWidth}px`;
     });
   }
   function o() {
