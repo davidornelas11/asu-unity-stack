@@ -97,6 +97,20 @@ export const useRfiState = props => {
   const handleBack = () => {
     // setSnapshot(values);
     setStepNumber(Math.max(stepNumber - 1, 0));
+    setTimeout(() => {
+      // Try to find the form with both 'uds-form' and 'uds-rfi' classes
+      const rfiForm = document.querySelector("form.uds-form.uds-rfi");
+
+      if (rfiForm) {
+        // Find the first input or select element inside the form
+        const firstField = rfiForm.querySelector("input, select");
+
+        if (firstField) {
+          // Set focus on the found input or select element
+          firstField.focus();
+        }
+      }
+    }, 0); // Execute after current call stack is cleared (non-blocking)
   };
 
   const handleStepValidate = values => {
@@ -141,7 +155,8 @@ export const useRfiState = props => {
           dataSourceDegreeSearch,
           dataSourceAsuOnline,
           CareerAndStudentType: formik.values.CareerAndStudentType,
-          Campus: formik.values.CampusProgramHasChoice || formik.values.Campus,
+          Campus: formik.values.Campus,
+          CampusProgramHasChoice: formik.values.CampusProgramHasChoice,
           Interest2,
         }).then(([response, data]) => {
           if (response === "Error") {
@@ -178,7 +193,8 @@ export const useRfiState = props => {
         filterByDepartmentCode,
         filterByCollegeCode,
         filterByCampusCode,
-        Campus: formik.values.CampusProgramHasChoice || formik.values.Campus,
+        Campus: formik.values.Campus,
+        CampusProgramHasChoice: formik.values.CampusProgramHasChoice,
         CareerAndStudentType: formik.values.CareerAndStudentType,
       }).then(([response, data]) => {
         if (response === "Error") {

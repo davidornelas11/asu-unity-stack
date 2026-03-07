@@ -11,13 +11,12 @@ import React, { useEffect, useState } from "react";
 
 import { Progress } from "reactstrap";
 
-import trackReactComponent from "../../../../../shared/services/componentDatalayer";
 import { betterPropNames, useRfiState } from "../../core/utils/appState";
 import { DATA_SOURCE } from "../../core/utils/constants";
 import { RfiContext } from "../../core/utils/rfiContext";
 import { RfiMainForm } from "../stepper/RfiMainForm";
 import "./index.css";
-import { getCurrentScriptPath } from "../../../../../shared";
+import { getCurrentScriptPath, trackReactComponent } from "@asu/shared";
 import { Debug } from "../../Debug";
 import { RfiStepperButtons } from "../stepper/RfiStepperButtons";
 
@@ -27,8 +26,30 @@ const currentScriptPath = getCurrentScriptPath();
  * @param {import("../../core/types/rfi-types").RFIProps} props
  * @return {JSX.Element}
  */
-const AsuRfi = props => {
-  const {
+const AsuRfi = ({
+  appPathFolder = "",
+  variant,
+  campus,
+  actualCampus,
+  college,
+  department,
+  studentType,
+  areaOfInterest,
+  areaOfInterestOptional = false,
+  programOfInterest,
+  programOfInterestOptional = false,
+  isCertMinor = false,
+  country,
+  stateProvince,
+  successMsg,
+  test = false,
+  dataSourceDegreeSearch = DATA_SOURCE.DEGREE_SEARCH,
+  dataSourceAsuOnline = DATA_SOURCE.ASU_ONLINE,
+  dataSourceCountriesStates = DATA_SOURCE.COUNTRIES_STATES,
+  submissionUrl,
+  ...restProps
+}) => {
+  const props = {
     appPathFolder,
     variant,
     campus,
@@ -49,7 +70,8 @@ const AsuRfi = props => {
     dataSourceAsuOnline,
     dataSourceCountriesStates,
     submissionUrl,
-  } = props;
+    ...restProps,
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -64,10 +86,6 @@ const AsuRfi = props => {
     }
   }, []);
 
-  if (typeof submissionUrl === "undefined") {
-    return <></>;
-  }
-
   const rfiState = useRfiState(betterPropNames(props));
 
   const noRfiAvailable = `RFI form not displayed. ${programOfInterest} has rfiDisplay set to false or does not exist`;
@@ -76,8 +94,13 @@ const AsuRfi = props => {
       console.log(noRfiAvailable);
     }
   }, [rfiState.showForm]);
+
+  if (typeof submissionUrl === "undefined") {
+    return <></>;
+  }
+
   if (!rfiState.showForm) {
-    return <div style={{display: "none"}}>{noRfiAvailable}</div>;
+    return <div style={{ display: "none" }}>{noRfiAvailable}</div>;
   }
 
   return (
@@ -133,28 +156,6 @@ const AsuRfi = props => {
 };
 
 export { AsuRfi };
-
-// Props
-AsuRfi.defaultProps = {
-  variant: undefined, // default set in appState
-  campus: undefined,
-  actualCampus: undefined,
-  college: undefined,
-  department: undefined,
-  studentType: undefined,
-  areaOfInterest: undefined,
-  areaOfInterestOptional: false,
-  programOfInterest: undefined,
-  programOfInterestOptional: false,
-  isCertMinor: false,
-  country: undefined,
-  stateProvince: undefined,
-  successMsg: undefined,
-  test: false,
-  dataSourceDegreeSearch: DATA_SOURCE.DEGREE_SEARCH,
-  dataSourceAsuOnline: DATA_SOURCE.ASU_ONLINE,
-  dataSourceCountriesStates: DATA_SOURCE.COUNTRIES_STATES,
-};
 
 AsuRfi.propTypes = {
   appPathFolder: PropTypes.string,

@@ -1,10 +1,11 @@
 import React from "react";
 
-import { gaEventPropTypes, trackGAEvent } from "../../../../../../shared";
+import { gaEventPropTypes, trackGAEvent } from "@asu/shared";
+import { PII_VALUE } from "../../../core/utils/constants";
 import { RfiTextInput } from "../../controls";
 
 /**
- * @param {{ gaData: import("../../../../../../shared/services/googleAnalytics").GAEventObject}} props
+ * @param {{ gaData: import("@asu/shared").GAEventObject}} props
  */
 export const FirstName = ({ gaData }) => {
   const label = "First name";
@@ -21,7 +22,7 @@ export const FirstName = ({ gaData }) => {
         trackGAEvent({
           ...gaData,
           type: label,
-          text: e.target.value,
+          text: PII_VALUE,
         })
       }
     />

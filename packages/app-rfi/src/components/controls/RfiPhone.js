@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
+
 import { Field, useFormikContext } from "formik";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
@@ -14,10 +14,10 @@ import { RfiLabel, RfiError } from "./controls-helpers";
 const RfiPhone = ({
   label,
   name,
-  id,
-  requiredIcon,
-  required,
-  helperText,
+  id = undefined,
+  requiredIcon = undefined,
+  required = undefined,
+  helperText = undefined,
   onBlur,
 }) => {
   // Surface values from Formik context
@@ -43,7 +43,7 @@ const RfiPhone = ({
               disableCountryGuess={disableCountryGuess}
               inputProps={{
                 name,
-                // eslint-disable-next-line object-shorthand
+
                 required: required,
               }}
               {...field}
@@ -84,13 +84,6 @@ const RfiPhone = ({
 // Note on requiredIcon. Yup required status is not readily available so we
 // duplicate the setting in our props got displaying the required icon until
 // Formik has a better way to do it.
-
-RfiPhone.defaultProps = {
-  id: undefined,
-  requiredIcon: undefined,
-  required: undefined,
-  helperText: undefined,
-};
 
 RfiPhone.propTypes = {
   label: PropTypes.string.isRequired,

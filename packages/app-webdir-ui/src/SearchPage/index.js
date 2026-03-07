@@ -1,4 +1,4 @@
-import { Button, TabbedPanels, Tab } from "@asu/components-core";
+import { Button, TabbedPanels, Tab } from "@asu/unity-react-core";
 import PropTypes from "prop-types";
 import React, { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
@@ -74,9 +74,8 @@ function SearchPage({
 
   const updateSearchParams = (param, newValue) => {
     const newParams = {};
-    // eslint-disable-next-line no-restricted-syntax
+
     for (const entry of searchParams.entries()) {
-      // eslint-disable-next-line prefer-destructuring
       newParams[entry[0]] = entry[1];
     }
     newParams[param] = newValue;

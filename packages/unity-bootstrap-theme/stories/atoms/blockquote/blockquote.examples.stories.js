@@ -1,11 +1,10 @@
 import React from "react";
-
-import { imageName } from "../../../../../shared/assets";
-import { defaultDecorator } from "../../../../../shared/components/Layout";
+import { imageName } from "@asu/shared";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Blockquotes and Testimonials/Examples",
-  decorators: [ defaultDecorator ],
+  decorators: [defaultDecorator],
   parameters: { controls: { disable: true } },
 };
 
@@ -31,7 +30,7 @@ export const BlockquoteNoImage = () => (
       </blockquote>
     </div>
 
-    <div className="bg-gray-7">
+    <div className="gray-dark-bg">
       <div className="uds-blockquote accent-gold text-white uds-content-align">
         <svg title="Open quote" role="presentation" viewBox="0 0 302.87 245.82">
           <path d="M113.61,245.82H0V164.56q0-49.34,8.69-77.83T40.84,35.58Q64.29,12.95,100.67,0l22.24,46.9q-34,11.33-48.72,31.54T58.63,132.21h55Zm180,0H180V164.56q0-49.74,8.7-78T221,35.58Q244.65,12.95,280.63,0l22.24,46.9q-34,11.33-48.72,31.54t-15.57,53.77h55Z" />
@@ -58,7 +57,7 @@ export const BlockquoteWithImage = () => (
   <>
     <div className="uds-blockquote with-image uds-content-align">
       <img
-        src={ imageName.anon }
+        src={imageName.anon}
         alt="Pretend this is Michael M. Crow, President of ASU"
         width="600"
         height="400"
@@ -82,10 +81,10 @@ export const BlockquoteWithImage = () => (
       </blockquote>
     </div>
 
-    <section className="bg-gray-2">
+    <section className="gray-light-bg">
       <div className="uds-blockquote with-image reversed uds-content-align">
         <img
-          src={ imageName.anon }
+          src={imageName.anon}
           alt="Pretend this is Michael M. Crow, President of ASU"
           width="300"
           height="300"
@@ -116,7 +115,7 @@ export const BlockquoteNoCitation = () => (
   <>
     <div className="uds-blockquote no-citation with-image uds-content-align">
       <img
-        src={ imageName.anon }
+        src={imageName.anon}
         alt="Image of Walt Disney"
         width="300"
         height="300"
@@ -132,10 +131,10 @@ export const BlockquoteNoCitation = () => (
       </blockquote>
     </div>
 
-    <div className="bg-gray-7">
+    <div className="gray-dark-bg">
       <div className="uds-blockquote no-citation with-image reversed uds-content-align">
         <img
-          src={ imageName.anon }
+          src={imageName.anon}
           alt="Image of Walt Disney"
           width="300"
           height="300"
@@ -177,7 +176,7 @@ export const BlockquoteAltCitation = () => (
       </blockquote>
     </div>
 
-    <section className="bg-gray-1">
+    <section className="gray-faint-bg">
       <div className="uds-blockquote alt-citation accent-maroon uds-content-align">
         <svg title="Open quote" role="presentation" viewBox="0 0 302.87 245.82">
           <path d="M113.61,245.82H0V164.56q0-49.34,8.69-77.83T40.84,35.58Q64.29,12.95,100.67,0l22.24,46.9q-34,11.33-48.72,31.54T58.63,132.21h55Zm180,0H180V164.56q0-49.74,8.7-78T221,35.58Q244.65,12.95,280.63,0l22.24,46.9q-34,11.33-48.72,31.54t-15.57,53.77h55Z" />
@@ -202,11 +201,14 @@ export const BlockquoteAnimated = () => (
   <>
     <div className="uds-blockquoteAnimated accent-maroon uds-content-align">
       <blockquote>
-        <h4><strong>The ASU difference:</strong></h4>
+        <h4>
+          <strong>The ASU difference:</strong>
+        </h4>
         <h2>
           <p>
-          We are measured not by whom we exclude, but by <mark className="pen-yellow">whom we include</mark> and
-          <mark className="pen-yellow"> how they succeed</mark>
+            We are measured not by whom we exclude, but by{" "}
+            <mark className="pen-yellow">whom we include</mark> and
+            <mark className="pen-yellow"> how they succeed</mark>
           </p>
         </h2>
         <div className="citation">
@@ -216,10 +218,13 @@ export const BlockquoteAnimated = () => (
         </div>
       </blockquote>
     </div>
-
   </>
 );
-
+BlockquoteAnimated.parameters = {
+  initFunc: {
+    disable: false,
+  },
+};
 export const TestimonialsNoImage = () => (
   <>
     <div className="uds-blockquote uds-testimonial accent-gold uds-content-align">
@@ -240,7 +245,7 @@ export const TestimonialsNoImage = () => (
       </blockquote>
     </div>
 
-    <div className="bg-gray-2">
+    <div className="gray-light-bg">
       <div className="uds-blockquote uds-testimonial accent-maroon uds-content-align">
         <svg title="Open quote" role="presentation" viewBox="0 0 302.87 245.82">
           <path d="M113.61,245.82H0V164.56q0-49.34,8.69-77.83T40.84,35.58Q64.29,12.95,100.67,0l22.24,46.9q-34,11.33-48.72,31.54T58.63,132.21h55Zm180,0H180V164.56q0-49.74,8.7-78T221,35.58Q244.65,12.95,280.63,0l22.24,46.9q-34,11.33-48.72,31.54t-15.57,53.77h55Z" />
@@ -267,7 +272,7 @@ export const TestimonialsWithImage = () => (
   <>
     <div className="uds-blockquote uds-testimonial with-image alt-citation accent-maroon uds-content-align">
       <img
-        src={ imageName.anon }
+        src={imageName.anon}
         alt="Pretend this is Han Solo"
         width="600"
         height="400"
@@ -291,10 +296,10 @@ export const TestimonialsWithImage = () => (
       </blockquote>
     </div>
 
-    <div className="bg-gray-7">
+    <div className="gray-dark-bg">
       <div className="uds-blockquote uds-testimonial with-image alt-citation accent-gold text-white uds-content-align">
         <img
-          src={ imageName.anon }
+          src={imageName.anon}
           alt="Pretend this is Han Solo"
           width="400"
           height="400"

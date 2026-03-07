@@ -1,23 +1,22 @@
 import React from "react";
-
-import { defaultDecorator } from "../../../../../shared/components/Layout";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Breadcrumbs/Templates",
-  args: {type: "bg-white"},
+  args: { type: "bg-white" },
   argTypes: {
     type: {
       name: "Type",
-      options: ["bg-white", "bg-gray-1", "bg-gray-2", "bg-gray-7"],
+      options: ["bg-white", "gray-faint-bg", "gray-light-bg", "gray-dark-bg"],
       control: {
         type: "radio",
       },
     },
   },
-  decorators: [ defaultDecorator ],
+  decorators: [defaultDecorator],
 };
 
-export const BreadcrumbsAgainstWhiteBackground = ({type}) => {
+export const BreadcrumbsAgainstWhiteBackground = ({ type }) => {
   return (
     <nav aria-label="breadcrumbs">
       <ol className={`breadcrumb ${type}`}>

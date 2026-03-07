@@ -1,25 +1,25 @@
 // @ts-check
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
+
 import { Field } from "formik";
 import PropTypes from "prop-types";
 import React from "react";
 
-import { RfiError, RfiLabel } from "./controls-helpers";
+import { RfiError, RfiLegend } from "./controls-helpers";
 
 const RfiRadioGroup = ({ name, id, options, label, onBlur }) => {
   return (
     <Field as="div" name={name}>
       {({
         field,
-        // eslint-disable-next-line no-unused-vars
+
         form: { touched, errors },
         meta,
       }) => {
         const isError = meta.error;
         return (
-          <fieldset>
-            <RfiLabel label={label} name={name} id={id} />
+          <fieldset role="group">
+            <RfiLegend label={label} />
             <RfiError isError={isError} metaError={meta.error} />
             {options.map(option => (
               <div

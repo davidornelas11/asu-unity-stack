@@ -1,34 +1,30 @@
 import React from "react";
-
-import { imageName } from "../../../../../shared/assets";
-import { htmlRootDecorator } from "../../../../../shared/components/Layout";
-import { initializeAnchorMenu as initFunc } from "./anchor-menu";
-
+import { imageName } from "@asu/shared";
+import { htmlRootDecorator } from "@asu/shared";
+import { getLoremSentences } from "@asu/shared";
 
 export default {
   title: "Atoms/Anchor Menu",
   parameters: {
     initFunc: {
       disable: false,
-      code: initFunc
     },
     header: {
       forced: true,
     },
     controls: { disable: true },
   },
-  decorators: [ htmlRootDecorator ],
+  decorators: [htmlRootDecorator],
 };
-
-
+let loremOffset = 0;
 export const AnchorMenu = () => {
-return (
+  return (
     <>
       <div className="container-fluid">
         <div className="uds-hero-lg has-btn-row">
           <img
             className="hero"
-            src={ imageName.hero02 }
+            src={imageName.hero02}
             alt="Sample placeholder image."
             width="1920"
             height="1000"
@@ -145,37 +141,48 @@ return (
       <div className="container">
         <div className="row">
           <div className="col-md-12 pb-5">
-            <div className="py-2" style={{ minHeight: "80vh"}}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <p>{getLoremSentences(40, loremOffset++ * 3)}</p>
+              <p>{getLoremSentences(30, loremOffset++ * 3)}</p>
+              <p>{getLoremSentences(20, loremOffset++ * 3)}</p>
+              <p>{getLoremSentences(40, loremOffset++ * 3)}</p>
             </div>
-            <div id="first"  className="py-2" style={{ minHeight: "80vh"}}>
-              First. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <h2 id="first"> first </h2>
+              <p>First. {getLoremSentences(40, loremOffset++ * 3)}</p>
+              <p>First. {getLoremSentences(50, loremOffset++ * 3)}</p>
+              <p>First. {getLoremSentences(10, loremOffset++ * 3)}</p>
             </div>
-            <div id="second" className="py-2" style={{ minHeight: "80vh"}}>
-              Second. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <h2 id="second"> second </h2>
+              <p>Second. {getLoremSentences(20, loremOffset++ * 3)}</p>
+              <p>Second. {getLoremSentences(50, loremOffset++ * 3)}</p>
+              <p>Second. {getLoremSentences(60, loremOffset++ * 3)}</p>
             </div>
-            <div id="third" className="py-2" style={{ minHeight: "80vh"}}>
-              Third. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <h2 id="third"> third </h2>
+              <p>Third. {getLoremSentences(20, loremOffset++ * 3)}</p>
+              <p>Third. {getLoremSentences(10, loremOffset++ * 3)}</p>
+              <p>Third. {getLoremSentences(40, loremOffset++ * 3)}</p>
+              <p>Third. {getLoremSentences(10, loremOffset++ * 3)}</p>
             </div>
-            <div id="fourth" className="py-2" style={{ minHeight: "80vh"}}>
-              Fourth. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <h2 id="fourth"> fourth </h2>
+              <p>Fourth. {getLoremSentences(70, loremOffset++ * 3)}</p>
+              <p>Fourth. {getLoremSentences(40, loremOffset++ * 3)}</p>
             </div>
-            <div id="fifth" className="py-2" style={{ minHeight: "80vh"}}>
-              Fifth. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat neque magna. Suspendisse potenti. Duis
-              dictum ac elit at elementum. In sit amet hendrerit lacus.
+            <div className="py-2">
+              <h2 id="fifth"> fifth </h2>
+              <p>Fifth. {getLoremSentences(40, loremOffset++ * 3)}</p>
+              <p>Fifth. {getLoremSentences(10, loremOffset++ * 3)}</p>
+              <p>Fifth. {getLoremSentences(30, loremOffset++ * 3)}</p>
+              <p>Fifth. {getLoremSentences(20, loremOffset++ * 3)}</p>
             </div>
           </div>
-          <div className="py-2">
-
-          </div>
+          <div className="py-2"></div>
         </div>
       </div>
       <div style={{ height: "1000px" }}></div>
     </>
-  )
+  );
 };

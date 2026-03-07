@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
+
 import { Field } from "formik";
 import PropTypes from "prop-types";
 import React from "react";
@@ -10,12 +10,12 @@ import { RfiLabel, RfiError } from "./controls-helpers";
 const RfiTextArea = ({
   label,
   name,
-  id,
-  requiredIcon,
-  required,
-  autoFocus,
-  disabled,
-  helperText,
+  id = undefined,
+  requiredIcon = undefined,
+  required = undefined,
+  autoFocus = undefined,
+  disabled = false,
+  helperText = undefined,
   onBlur,
 }) => (
   <Field name={name}>
@@ -51,15 +51,6 @@ const RfiTextArea = ({
 // Note on requiredIcon. Yup required status is not readily available so we
 // duplicate the setting in our props got displaying the required icon until
 // Formik has a better way to do it.
-
-RfiTextArea.defaultProps = {
-  id: undefined,
-  requiredIcon: undefined,
-  required: undefined,
-  autoFocus: undefined,
-  disabled: false,
-  helperText: undefined,
-};
 
 RfiTextArea.propTypes = {
   label: PropTypes.string.isRequired,

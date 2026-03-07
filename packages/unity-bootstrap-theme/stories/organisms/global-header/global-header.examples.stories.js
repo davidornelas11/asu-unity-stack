@@ -1,6 +1,5 @@
 import React from "react";
-
-import { htmlRootDecorator } from "../../../../../shared/components/Layout.js";
+import { htmlRootDecorator } from "@asu/shared";
 import {
   Basic,
   DropDownMenus,
@@ -8,39 +7,43 @@ import {
   NoNavigationAndWithButtons,
   ScrolledState,
   Partner,
-} from "./global-header.templates.js";
+} from "./global-header.templates.jsx";
 
 export default {
   title: "Organisms/Global Header/Examples",
-  decorators: [ htmlRootDecorator ],
+  decorators: [htmlRootDecorator],
   parameters: {
-    header: {
-      disable: true
+    initFunc: {
+      disable: false,
     },
-    controls: { disable: true }
-  }
+    header: {
+      disable: true,
+    },
+    controls: { disable: true },
+  },
 };
 
-
-const Template = ({children}) => <div id="html-root">{children}</div>
+const Template = ({ children }) => <div id="html-root">{children}</div>;
 
 export const BasicExample = Basic.bind({});
 
-
 export const DropDownMenusExample = DropDownMenus.bind({});
 export const NoNavigationExample = NoNavigation.bind({});
-export const NoNavigationAndWithButtonsExample = NoNavigationAndWithButtons.bind({});
-export const StickyNoNavigationExample = () => <>
-    <NoNavigationAndWithButtons/>
+export const NoNavigationAndWithButtonsExample =
+  NoNavigationAndWithButtons.bind({});
+export const StickyNoNavigationExample = () => (
+  <>
+    <NoNavigationAndWithButtons />
     <main>
       <div
         id="skip-to-content"
         className="visually-hidden"
         data-elastic-exclude="data-elastic-exclude"
       ></div>
-      <div className="bg-gray-3" style={{ height: "200vh" }}></div>
+      <div className="gray-light-bg" style={{ height: "200vh" }}></div>
     </main>
-  </>;
+  </>
+);
 
 export const ScrolledStateExample = ScrolledState.bind({});
 export const PartnerExample = Partner.bind({});

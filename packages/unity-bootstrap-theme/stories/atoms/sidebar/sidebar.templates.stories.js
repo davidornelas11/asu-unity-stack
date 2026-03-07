@@ -1,10 +1,9 @@
 import React from "react";
-
-import { defaultDecorator, htmlRootDecorator } from "../../../../../shared/components/Layout";
+import { defaultDecorator, htmlRootDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Sidebar/Templates",
-  decorators: [ defaultDecorator ],
+  decorators: [defaultDecorator],
   parameters: { controls: { disable: true } },
 };
 export const Sidebar = () => (
@@ -62,7 +61,6 @@ export const Sidebar = () => (
         <div
           id="cardBodyOne"
           className="collapse card-body"
-          aria-labelledby="cardOne"
           data-bs-parent=".sidebar"
         >
           <a href="#" className="nav-link">
@@ -102,7 +100,6 @@ export const Sidebar = () => (
         <div
           id="cardBodyTwo"
           className="collapse card-body"
-          aria-labelledby="cardTwo"
           data-bs-parent=".sidebar"
         >
           <a href="#" className="nav-link">
@@ -162,7 +159,6 @@ export const Sidebar = () => (
         <div
           id="cardBodyThree"
           className="collapse card-body"
-          aria-labelledby="cardThree"
           data-bs-parent=".sidebar"
         >
           <a href="#" className="nav-link">

@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
+
 import { Field } from "formik";
 import PropTypes from "prop-types";
 import React from "react";
@@ -10,10 +10,10 @@ import { RfiLabel, RfiError } from "./controls-helpers";
 const RfiEmailInput = ({
   name,
   label,
-  id,
-  requiredIcon,
-  required,
-  autoFocus,
+  id = undefined,
+  requiredIcon = undefined,
+  required = undefined,
+  autoFocus = undefined,
   onBlur,
 }) => (
   <Field name={name}>
@@ -44,13 +44,6 @@ const RfiEmailInput = ({
     }}
   </Field>
 );
-
-RfiEmailInput.defaultProps = {
-  id: undefined,
-  requiredIcon: undefined,
-  required: undefined,
-  autoFocus: undefined,
-};
 
 RfiEmailInput.propTypes = {
   id: PropTypes.string,

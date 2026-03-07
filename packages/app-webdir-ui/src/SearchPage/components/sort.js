@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useId } from "react";
 
-import { trackGAEvent } from "../../../../../shared";
+import { trackGAEvent } from "@asu/shared";
 import { SortLayout } from "./index.styles";
 
 /**
@@ -16,6 +16,9 @@ import { SortLayout } from "./index.styles";
 
 const SortPicker = ({ sort, onChange, customSortOptions }) => {
   const [defaultSortValue, setDefaultSortValue] = useState(sort);
+
+  const rawSortLabelId = useId();
+  const sortLabelId = `sortBy-${rawSortLabelId.replace(/[^a-zA-Z0-9-_]/g, "")}`;
 
   const sortOptions = customSortOptions || [
     { value: "_score_desc", label: "Relevancy" },
@@ -76,10 +79,10 @@ const SortPicker = ({ sort, onChange, customSortOptions }) => {
     <SortLayout>
       <form className="uds-form sort-form faculty-sort">
         <div className="form-group">
-          <label htmlFor="sortBySelect">Sort by</label>
+          <label htmlFor={sortLabelId}>Sort by</label>
           <select
             className="form-select"
-            id="sortBySelect"
+            id={sortLabelId}
             onChange={event => {
               updateSort(event.target.value);
               setDefaultSortValue(event.target.value);

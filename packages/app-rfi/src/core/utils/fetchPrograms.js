@@ -1,4 +1,4 @@
-import { KEY } from "./constants";
+import { DATA_SOURCE, KEY } from "./constants";
 import { normalizeDegreeData } from "./datasource-helper";
 import { filterDataByProps } from "./filterPrograms";
 
@@ -10,6 +10,7 @@ import { filterDataByProps } from "./filterPrograms";
  * @prop {string} [filterByCollegeCode]
  * @prop {string} [filterByCampusCode] Campus Code
  * @prop {string} [Campus] Campus type
+ * @prop {string} [CampusProgramHasChoice] Campus program has choice
  * @prop {string} [CareerAndStudentType]
  * @prop {string} [Interest2]
  */
@@ -24,6 +25,7 @@ function getServiceUrl({
   filterByDepartmentCode,
   filterByCollegeCode,
   Campus,
+  CampusProgramHasChoice,
   CareerAndStudentType,
   Interest2,
 }) {
@@ -38,7 +40,9 @@ function getServiceUrl({
     "rfiDisplay",
     "degreeType",
     // "applicationDeadlines", // This can double the response size
-  ].map(term => `include=${term}`).join("&");
+  ]
+    .map(term => `include=${term}`)
+    .join("&");
 
   // ASUOnline API
   if (Campus === KEY.ONLINE) {
@@ -50,10 +54,16 @@ function getServiceUrl({
     return serviceUrl;
   }
 
+  // ASUOnline API - CampusProgramHasChoice is true, but Campus is not ONLINE Search all ONLINE programs
+  if (CampusProgramHasChoice === KEY.ONLINE) {
+    serviceUrl = `${dataSourceAsuOnline}`;
+    return serviceUrl;
+  }
+
   if (Interest2) {
     serviceUrl =
       `${dataSourceDegreeSearch}/acad-plan/${Interest2}?` +
-      `include=applicationDeadlines${includeFields}`
+      `include=applicationDeadlines&${includeFields}`;
     return serviceUrl;
   }
 
@@ -95,7 +105,14 @@ function getServiceUrl({
 export async function fetchDegreesData(params) {
   const serviceUrl = getServiceUrl(params);
   let options = {};
-  if (params.Campus === KEY.ONLINE) {
+
+  // DATA_SOURCE.ASU_ONLINE requires an Accept header to return JSON
+  // This api endpoint also is sent via params.dataSourceAsuOnline, however,
+  // this endpoint can be changed by props and is not guaranteed to be the same
+  // as DATA_SOURCE.ASU_ONLINE, so we check the URL instead of the prop value.
+  // Comparing the URL ensures we add the header and do not have to match
+  // conditions in 2 places
+  if (serviceUrl.indexOf(DATA_SOURCE.ASU_ONLINE) > -1) {
     // ASUOnline API
     options = {
       headers: {

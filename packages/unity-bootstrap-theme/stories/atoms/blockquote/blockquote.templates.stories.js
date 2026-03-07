@@ -1,17 +1,10 @@
 import React from "react";
-
-import { imageName } from "../../../../../shared/assets";
-import { defaultDecorator } from "../../../../../shared/components/Layout.js";
-import { initializeBlockquoteAnimation as doAnimate } from "./blockquote-animated";
+import { imageName } from "@asu/shared";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Blockquotes and Testimonials/Templates",
-  parameters: {
-    initFunc: {
-      disable: false,
-      code: doAnimate,
-    },
-  },
+  parameters: {},
   args: {
     type: "On White",
     reversed: false,
@@ -22,8 +15,8 @@ export default {
       options: ["On White", "On Gray", "On Black"],
       mapping: {
         "On White": null,
-        "On Gray": "bg-gray-2",
-        "On Black": "bg-gray-7",
+        "On Gray": "gray-light-bg",
+        "On Black": "gray-dark-bg",
       },
       control: {
         type: "radio",
@@ -34,15 +27,15 @@ export default {
       control: { type: "boolean" },
     },
   },
-  decorators: [ defaultDecorator ],
+  decorators: [defaultDecorator],
 };
 
-export const BasicBlockquote = ({type}) => {
+export const BasicBlockquote = ({ type }) => {
   return (
     <div className={type}>
       <div
         className={`uds-blockquote ${
-          type === "bg-gray-7" ? "accent-gold text-white" : "accent-maroon"
+          type === "gray-dark-bg" ? "accent-gold text-white" : "accent-maroon"
         } uds-content-align`}
       >
         <svg title="Open quote" role="presentation" viewBox="0 0 302.87 245.82">
@@ -58,7 +51,9 @@ export const BasicBlockquote = ({type}) => {
           <div className="citation">
             <div className="citation-content">
               <cite className="name">Thomas Jefferson</cite>
-              <cite className="description">The Declaration of Independence</cite>
+              <cite className="description">
+                The Declaration of Independence
+              </cite>
             </div>
           </div>
         </blockquote>
@@ -67,16 +62,16 @@ export const BasicBlockquote = ({type}) => {
   );
 };
 
-export const BlockquoteWithImage = ({type, reversed}) => {
+export const BlockquoteWithImage = ({ type, reversed }) => {
   return (
     <div className={type}>
       <div
         className={`uds-blockquote ${
-          type === "bg-gray-7" ? "accent-gold text-white" : "accent-maroon"
+          type === "gray-dark-bg" ? "accent-gold text-white" : "accent-maroon"
         } with-image ${reversed ? "reversed" : ""} uds-content-align`}
       >
         <img
-          src={ imageName.anon }
+          src={imageName.anon}
           alt="Pretend this is Michael M. Crow, President of ASU"
           width="600"
           height="400"
@@ -104,20 +99,23 @@ export const BlockquoteWithImage = ({type, reversed}) => {
   );
 };
 
-export const BlockquoteAnimated = ({type}) => {
+export const BlockquoteAnimated = ({ type }) => {
   return (
     <div className={type}>
       <div
         className={`uds-blockquoteAnimated ${
-          type === "bg-gray-7" ? "accent-gold text-white" : "accent-maroon"
+          type === "gray-dark-bg" ? "accent-gold text-white" : "accent-maroon"
         } uds-content-align`}
       >
         <blockquote>
-          <h4><strong>The ASU difference:</strong></h4>
+          <h4>
+            <strong>The ASU difference:</strong>
+          </h4>
           <h2>
             <p>
-            We are measured not by whom we exclude, but by <mark className="pen-yellow">whom we include</mark> and
-            <mark className="pen-yellow"> how they succeed</mark>
+              We are measured not by whom we exclude, but by{" "}
+              <mark className="pen-yellow">whom we include</mark> and
+              <mark className="pen-yellow"> how they succeed</mark>
             </p>
           </h2>
           <div className="citation">

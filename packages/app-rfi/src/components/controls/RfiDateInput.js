@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
+
 import { Field, useFormikContext } from "formik";
 import PropTypes from "prop-types";
 import React from "react";
@@ -10,11 +10,11 @@ import { RfiLabel, RfiError } from "./controls-helpers";
 const RfiDateInput = ({
   label,
   name,
-  id,
-  requiredIcon,
-  required,
-  helperText,
-  autoFocus,
+  id = undefined,
+  requiredIcon = undefined,
+  required = undefined,
+  helperText = undefined,
+  autoFocus = undefined,
   onBlur,
 }) => {
   // Surface values from Formik context
@@ -74,14 +74,6 @@ const RfiDateInput = ({
 // Note on requiredIcon. Yup required status is not readily available so we
 // duplicate the setting in our props got displaying the required icon until
 // Formik has a better way to do it.
-
-RfiDateInput.defaultProps = {
-  id: undefined,
-  requiredIcon: undefined,
-  required: undefined,
-  autoFocus: undefined,
-  helperText: undefined,
-};
 
 RfiDateInput.propTypes = {
   label: PropTypes.string.isRequired,

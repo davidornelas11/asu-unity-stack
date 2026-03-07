@@ -1,13 +1,19 @@
 import React from "react";
-
-import { defaultDecorator } from "../../../../../shared/components/Layout";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Form Fields/Examples",
-  decorators: [ defaultDecorator ],
-  parameters: { controls: { disable: true } },
+  decorators: [defaultDecorator],
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      description: {
+        component:
+          "Please take note that gray color classes have been updated according to brand guidelines. The following classes have been deprecated and should no longer be used: .uds-form.uds-form-gray1, .uds-form.uds-form-gray2, .uds-form.uds-form-gray7. Please use the updated classes instead: .uds-form.uds-form-faint-bg, .uds-form.uds-form-light-bg, .uds-form.uds-form-dark-bg.",
+      },
+    },
+  },
 };
-import { googleAnalytics as initFunc } from "@asu/unity-bootstrap-theme/js/data-layer.js";
 
 export const TextInputs = () => (
   <form className="uds-form">
@@ -87,7 +93,10 @@ export const TextInputs = () => (
         data-ga-input-section="text label"
       />
       <small id="errorHelp" className="form-text invalid-feedback">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
     </div>
@@ -109,8 +118,8 @@ export const TextInputs = () => (
         data-ga-input-section="text label"
       />
       <small id="successHelp" className="form-text valid-feedback">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
     </div>
 
@@ -239,7 +248,7 @@ export const TextInputsVariousBackgrounds = () => (
 
     <div style={{ backgroundColor: "#fafafa" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray1">
+      <form className="uds-form uds-form-faint-bg">
         <div className="form-group">
           <label for="exampleDefaultInputGray1">Default text input label</label>
           <input
@@ -330,7 +339,7 @@ export const TextInputsVariousBackgrounds = () => (
 
     <div style={{ backgroundColor: "#e8e8e8" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray2">
+      <form className="uds-form uds-form-light-bg">
         <div className="form-group">
           <label for="exampleDefaultInputGray2">Default text input label</label>
           <input
@@ -421,7 +430,7 @@ export const TextInputsVariousBackgrounds = () => (
 
     <div style={{ backgroundColor: "#191919" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray7">
+      <form className="uds-form uds-form-dark-bg">
         <div className="form-group">
           <label for="exampleDefaultInputGray7">Default text input label</label>
           <input
@@ -584,7 +593,10 @@ export const Textareas = () => (
         data-ga-input-section="text label"
       ></textarea>
       <small id="errorTextareaHelp" className="form-textarea invalid-feedback">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
     </div>
@@ -606,8 +618,8 @@ export const Textareas = () => (
         Agreeable content was entered.
       </textarea>
       <small id="successTextareaHelp" className="form-textarea valid-feedback">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
     </div>
   </form>
@@ -706,7 +718,7 @@ export const TextareasMultipleBackgrounds = () => (
 
     <div style={{ backgroundColor: "#fafafa" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray1">
+      <form className="uds-form uds-form-faint-bg">
         <div className="form-group">
           <label for="exampleFormControlTextareaDefaultGray1">
             Default textarea
@@ -795,7 +807,7 @@ export const TextareasMultipleBackgrounds = () => (
 
     <div style={{ backgroundColor: "#e8e8e8" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray2">
+      <form className="uds-form uds-form-light-bg">
         <div className="form-group">
           <label for="exampleFormControlTextareaDefaultGray2">
             Default textarea
@@ -884,7 +896,7 @@ export const TextareasMultipleBackgrounds = () => (
 
     <div style={{ backgroundColor: "#191919" }}>
       {/* This div for Storybook display only. */}
-      <form className="uds-form uds-form-gray7">
+      <form className="uds-form uds-form-dark-bg">
         <div className="form-group">
           <label for="exampleFormControlTextareaDefaultGray7">
             Default textarea
@@ -1042,8 +1054,8 @@ export const Checkboxes = () => (
         I accept
       </label>
       <small id="myValidCheckMsg" className="valid-feedback is-valid">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
     </div>
 
@@ -1065,7 +1077,10 @@ export const Checkboxes = () => (
         I also accept
       </label>
       <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
     </div>
@@ -1130,8 +1145,8 @@ export const Checkboxes = () => (
     <fieldset>
       <legend>A Group of Valid Checkboxes</legend>
       <small id="myValidCheckboxMsg" className="valid-feedback is-valid">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
       <div className="form-check">
         <input
@@ -1194,7 +1209,10 @@ export const Checkboxes = () => (
     <fieldset>
       <legend>A Group of Invalid Checkboxes</legend>
       <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
       <div className="form-check">
@@ -1340,7 +1358,10 @@ export const Radios = () => (
     <fieldset>
       <legend>A Group of Invalid Radios</legend>
       <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
       <div className="form-check">
@@ -1426,8 +1447,8 @@ export const Radios = () => (
     <fieldset>
       <legend>A Group of Valid Radios</legend>
       <small id="myValidRadiosMsg" className="valid-feedback is-valid">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
       <div className="form-check">
         <input
@@ -1540,8 +1561,8 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
           I accept
         </label>
         <small id="myValidCheckMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
       </div>
 
@@ -1557,7 +1578,10 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
           I also accept
         </label>
         <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
       </div>
@@ -1604,8 +1628,8 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
       <fieldset>
         <legend>A Group of Valid Checkboxes</legend>
         <small id="myValidCheckboxMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -1649,8 +1673,14 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
 
       <fieldset>
         <legend>A Group of Invalid Checkboxes</legend>
-        <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <small
+          id="myInvalidCheckboxMsg"
+          className="invalid-feedback is-invalid"
+        >
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -1750,7 +1780,10 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
       <fieldset>
         <legend>A Group of Invalid Radios</legend>
         <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -1812,8 +1845,8 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
       <fieldset>
         <legend>A Group of Valid Radios</legend>
         <small id="myValidRadiosMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -1877,7 +1910,7 @@ export const CheckboxesAndRadiosWhiteBackground = () => (
 export const CheckboxesAndRadiosGray1Background = () => (
   <div style={{ backgroundColor: "#fafafa" }}>
     {/* This div for Storybook display only. */}
-    <form className="uds-form uds-form-gray1">
+    <form className="uds-form uds-form-faint-bg">
       <div className="form-check">
         <input
           className="form-check-input"
@@ -1903,8 +1936,8 @@ export const CheckboxesAndRadiosGray1Background = () => (
           I accept
         </label>
         <small id="myValidCheckMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
       </div>
 
@@ -1920,7 +1953,10 @@ export const CheckboxesAndRadiosGray1Background = () => (
           I also accept
         </label>
         <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
       </div>
@@ -1967,8 +2003,8 @@ export const CheckboxesAndRadiosGray1Background = () => (
       <fieldset>
         <legend>A Group of Valid Checkboxes</legend>
         <small id="myValidCheckboxMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -2012,8 +2048,14 @@ export const CheckboxesAndRadiosGray1Background = () => (
 
       <fieldset>
         <legend>A Group of Invalid Checkboxes</legend>
-        <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <small
+          id="myInvalidCheckboxMsg"
+          className="invalid-feedback is-invalid"
+        >
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2113,7 +2155,10 @@ export const CheckboxesAndRadiosGray1Background = () => (
       <fieldset>
         <legend>A Group of Invalid Radios</legend>
         <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2175,8 +2220,8 @@ export const CheckboxesAndRadiosGray1Background = () => (
       <fieldset>
         <legend>A Group of Valid Radios</legend>
         <small id="myValidRadiosMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -2240,7 +2285,7 @@ export const CheckboxesAndRadiosGray1Background = () => (
 export const CheckboxesAndRadiosGray2Background = () => (
   <div style={{ backgroundColor: "#e8e8e8" }}>
     {/* This div for Storybook display only. */}
-    <form className="uds-form uds-form-gray2">
+    <form className="uds-form uds-form-light-bg">
       <div className="form-check">
         <input
           className="form-check-input"
@@ -2266,8 +2311,8 @@ export const CheckboxesAndRadiosGray2Background = () => (
           I accept
         </label>
         <small id="myValidCheckMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
       </div>
 
@@ -2283,7 +2328,10 @@ export const CheckboxesAndRadiosGray2Background = () => (
           I also accept
         </label>
         <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
       </div>
@@ -2330,8 +2378,8 @@ export const CheckboxesAndRadiosGray2Background = () => (
       <fieldset>
         <legend>A Group of Valid Checkboxes</legend>
         <small id="myValidCheckboxMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -2375,8 +2423,14 @@ export const CheckboxesAndRadiosGray2Background = () => (
 
       <fieldset>
         <legend>A Group of Invalid Checkboxes</legend>
-        <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <small
+          id="myInvalidCheckboxMsg"
+          className="invalid-feedback is-invalid"
+        >
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2476,7 +2530,10 @@ export const CheckboxesAndRadiosGray2Background = () => (
       <fieldset>
         <legend>A Group of Invalid Radios</legend>
         <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2538,8 +2595,8 @@ export const CheckboxesAndRadiosGray2Background = () => (
       <fieldset>
         <legend>A Group of Valid Radios</legend>
         <small id="myValidRadiosMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -2603,7 +2660,7 @@ export const CheckboxesAndRadiosGray2Background = () => (
 export const CheckboxesAndRadiosGray7Background = () => (
   <div style={{ backgroundColor: "#191919" }}>
     {/* This div for Storybook display only. */}
-    <form className="uds-form uds-form-gray7">
+    <form className="uds-form uds-form-dark-bg">
       <div className="form-check">
         <input
           className="form-check-input"
@@ -2629,8 +2686,8 @@ export const CheckboxesAndRadiosGray7Background = () => (
           I accept
         </label>
         <small id="myValidCheckMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
       </div>
 
@@ -2646,7 +2703,10 @@ export const CheckboxesAndRadiosGray7Background = () => (
           I also accept
         </label>
         <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
       </div>
@@ -2693,8 +2753,8 @@ export const CheckboxesAndRadiosGray7Background = () => (
       <fieldset>
         <legend>A Group of Valid Checkboxes</legend>
         <small id="myValidCheckboxMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -2738,8 +2798,14 @@ export const CheckboxesAndRadiosGray7Background = () => (
 
       <fieldset>
         <legend>A Group of Invalid Checkboxes</legend>
-        <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <small
+          id="myInvalidCheckboxMsg"
+          className="invalid-feedback is-invalid"
+        >
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2839,7 +2905,10 @@ export const CheckboxesAndRadiosGray7Background = () => (
       <fieldset>
         <legend>A Group of Invalid Radios</legend>
         <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
-          <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+          <span
+            title="Alert"
+            className="fa fa-icon fa-exclamation-triangle"
+          ></span>
           Form error message
         </small>
         <div className="form-check">
@@ -2901,8 +2970,8 @@ export const CheckboxesAndRadiosGray7Background = () => (
       <fieldset>
         <legend>A Group of Valid Radios</legend>
         <small id="myValidRadiosMsg" className="valid-feedback is-valid">
-          <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-          message
+          <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+          Success message
         </small>
         <div className="form-check">
           <input
@@ -3005,8 +3074,8 @@ export const Selects = () => (
         <option>5</option>
       </select>
       <small id="myValidSelectMsg" className="valid-feedback is-valid">
-        <span title="Alert" className="fa fa-icon fa-check-circle"></span>Success
-        message
+        <span title="Alert" className="fa fa-icon fa-check-circle"></span>
+        Success message
       </small>
     </div>
 
@@ -3084,7 +3153,10 @@ export const Selects = () => (
         <option>5</option>
       </select>
       <small id="myInvalidSelectMsg" className="invalid-feedback is-invalid">
-        <span title="Alert" className="fa fa-icon fa-exclamation-triangle"></span>
+        <span
+          title="Alert"
+          className="fa fa-icon fa-exclamation-triangle"
+        ></span>
         Form error message
       </small>
     </div>
@@ -3349,7 +3421,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
             rows="3"
             required
           ></textarea>
-          <small id="errorTextareaHelp" className="form-textarea invalid-feedback">
+          <small
+            id="errorTextareaHelp"
+            className="form-textarea invalid-feedback"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -3370,7 +3445,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
           >
             Agreeable content was entered.
           </textarea>
-          <small id="successTextareaHelp" className="form-textarea valid-feedback">
+          <small
+            id="successTextareaHelp"
+            className="form-textarea valid-feedback"
+          >
             <span title="Alert" className="fa fa-icon fa-check-circle"></span>
             Success message
           </small>
@@ -3496,7 +3574,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
             ></span>
             A Group of Invalid Checkboxes - required
           </legend>
-          <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
+          <small
+            id="myInvalidCheckboxMsg"
+            className="invalid-feedback is-invalid"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -3554,7 +3635,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
             ></span>
             A Group of Invalid Radios - required
           </legend>
-          <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
+          <small
+            id="myInvalidRadiosMsg"
+            className="invalid-feedback is-invalid"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -3696,7 +3780,11 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
         </div>
         <div className="form-group">
           <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple className="form-select" id="exampleFormControlSelect2">
+          <select
+            multiple
+            className="form-select"
+            id="exampleFormControlSelect2"
+          >
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -3809,7 +3897,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
             rows="3"
             required
           ></textarea>
-          <small id="errorTextareaHelp" className="form-textarea invalid-feedback">
+          <small
+            id="errorTextareaHelp"
+            className="form-textarea invalid-feedback"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -3830,7 +3921,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
           >
             Agreeable content was entered.
           </textarea>
-          <small id="successTextareaHelp" className="form-textarea valid-feedback">
+          <small
+            id="successTextareaHelp"
+            className="form-textarea valid-feedback"
+          >
             <span title="Alert" className="fa fa-icon fa-check-circle"></span>
             Success message
           </small>
@@ -3956,7 +4050,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
             ></span>
             A Group of Invalid Checkboxes - required
           </legend>
-          <small id="myInvalidCheckboxMsg" className="invalid-feedback is-invalid">
+          <small
+            id="myInvalidCheckboxMsg"
+            className="invalid-feedback is-invalid"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -4014,7 +4111,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
             ></span>
             A Group of Invalid Radios - required
           </legend>
-          <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
+          <small
+            id="myInvalidRadiosMsg"
+            className="invalid-feedback is-invalid"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -4184,7 +4284,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
             <option>4</option>
             <option>5</option>
           </select>
-          <small id="myInvalidSelectMsg" className="invalid-feedback is-invalid">
+          <small
+            id="myInvalidSelectMsg"
+            className="invalid-feedback is-invalid"
+          >
             <span
               title="Alert"
               className="fa fa-icon fa-exclamation-triangle"
@@ -4213,7 +4316,7 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
 
       <div style={{ backgroundColor: "#191919" }}>
         {/* This div for Storybook display only. */}
-        <form className="uds-form needs-validation uds-form-gray7">
+        <form className="uds-form needs-validation uds-form-dark-bg">
           <div className="form-group">
             <label for="myTextInput">
               <span
@@ -4393,7 +4496,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
               ></span>
               I also accept (required field)
             </label>
-            <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
+            <small
+              id="myInvalidCheckMsg"
+              className="invalid-feedback is-invalid"
+            >
               <span
                 title="Alert"
                 className="fa fa-icon fa-exclamation-triangle"
@@ -4517,7 +4623,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidNotYetValidat
               ></span>
               A Group of Invalid Radios - required
             </legend>
-            <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
+            <small
+              id="myInvalidRadiosMsg"
+              className="invalid-feedback is-invalid"
+            >
               <span
                 title="Alert"
                 className="fa fa-icon fa-exclamation-triangle"
@@ -4695,7 +4804,7 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
 
       <div style={{ backgroundColor: "#191919" }}>
         {/* This div for Storybook display only. */}
-        <form className="uds-form was-validated uds-form-gray7">
+        <form className="uds-form was-validated uds-form-dark-bg">
           <div className="form-group">
             <label for="myTextInput">
               <span
@@ -4871,7 +4980,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
               ></span>
               I also accept (required)
             </label>
-            <small id="myInvalidCheckMsg" className="invalid-feedback is-invalid">
+            <small
+              id="myInvalidCheckMsg"
+              className="invalid-feedback is-invalid"
+            >
               <span
                 title="Alert"
                 className="fa fa-icon fa-exclamation-triangle"
@@ -4995,7 +5107,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
               ></span>
               A Group of Invalid Radios - required
             </legend>
-            <small id="myInvalidRadiosMsg" className="invalid-feedback is-invalid">
+            <small
+              id="myInvalidRadiosMsg"
+              className="invalid-feedback is-invalid"
+            >
               <span
                 title="Alert"
                 className="fa fa-icon fa-exclamation-triangle"
@@ -5165,7 +5280,10 @@ export const KitchenSinkFormClientSideValidationWithInvalidAndValidValidatedForm
               <option>4</option>
               <option>5</option>
             </select>
-            <small id="myInvalidSelectMsg" className="invalid-feedback is-invalid">
+            <small
+              id="myInvalidSelectMsg"
+              className="invalid-feedback is-invalid"
+            >
               <span
                 title="Alert"
                 className="fa fa-icon fa-exclamation-triangle"

@@ -1,3 +1,32 @@
+# [@asu/component-header-v2.5.2](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.5.1...@asu/component-header-v2.5.2) (2025-12-30)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** refactor defaultProps to use JS default params ([d6ac389](https://github.com/asu/asu-unity-stack/commit/d6ac389ab932f0def44c84b33c5bd5fcf7fb2b4d))
+
+# [@asu/component-header-v2.5.1](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.5.0...@asu/component-header-v2.5.1) (2025-03-31)
+
+
+### Bug Fixes
+
+* **component-header-footer:** fixing variable name ([499e391](https://github.com/asu/asu-unity-stack/commit/499e39106e5584522c5feab466ab33a31c20c5a4))
+* **component-header-footer:** updated logo alt and title from brand header ([f952066](https://github.com/asu/asu-unity-stack/commit/f95206680c29589a536a8c8739fa3bde8f4d95d1))
+
+# [@asu/component-header-v2.5.0](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.4.0...@asu/component-header-v2.5.0) (2025-02-18)
+
+
+### Features
+
+* **component-header:** add Deprecation ([f404aa1](https://github.com/asu/asu-unity-stack/commit/f404aa1e24911395430dfbe91ffaa28bdc6790af))
+
+# [@asu/component-header-v2.4.0](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.3.3...@asu/component-header-v2.4.0) (2025-02-11)
+
+
+### Features
+
+* **components-core:** added component-carousel to components-core ([8677db8](https://github.com/asu/asu-unity-stack/commit/8677db8f92c15f768c35951fbbd85f254f437de0))
+
 # [@asu/component-header-v2.3.3](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.3.2...@asu/component-header-v2.3.3) (2024-10-03)
 
 
@@ -120,6 +149,13 @@
 * **component-header:** added prop to conditionally render header as div instead of header element ([5cc9d90](https://github.com/asu/asu-unity-stack/commit/5cc9d907481de814659da62c06e2ad5f11bfe60e))
 
 # [@asu/component-header-v2.0.8](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.0.7...@asu/component-header-v2.0.8) (2023-11-17)
+
+
+### Bug Fixes
+
+* **component-header:** update Peer Dependency Components-core to allow version 2 or 3 ([bb3eb07](https://github.com/asu/asu-unity-stack/commit/bb3eb07e50f4811d3a78d38c4304a3a45b3568c7))
+
+# [@asu/component-header-v2.0.8-testing.1](https://github.com/asu/asu-unity-stack/compare/@asu/component-header-v2.0.7...@asu/component-header-v2.0.8-testing.1) (2023-10-20)
 
 
 ### Bug Fixes

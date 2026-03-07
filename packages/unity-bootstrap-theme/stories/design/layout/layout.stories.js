@@ -1,6 +1,5 @@
 import React from "react";
-
-import { htmlRootDecorator } from "../../../../../shared/components/Layout.js";
+import { htmlRootDecorator } from "@asu/shared";
 export default {
   title: "Design/Layout",
   decorators: [htmlRootDecorator],
@@ -17,12 +16,12 @@ export const ColumnSizingComponent = () => (
 
     <div className="row row-cols-5">
       <div className="col-6">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Halves</h3>
         </div>
       </div>
       <div className="col-6">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Halves</h3>
         </div>
       </div>
@@ -44,22 +43,22 @@ export const ColumnSizingComponent = () => (
       </div>
 
       <div className="col-3">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Quarters</h3>
         </div>
       </div>
       <div className="col-3">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Quarters</h3>
         </div>
       </div>
       <div className="col-3">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Quarters</h3>
         </div>
       </div>
       <div className="col-3">
-        <div className="bg-gray-2">
+        <div className="gray-light-bg">
           <h3>Quarters</h3>
         </div>
       </div>
@@ -126,27 +125,27 @@ export const ColumnSizingComponent = () => (
       </div>
 
       <div className="col">
-        <div className="bg-gray-7 text-white">
+        <div className="gray-dark-bg text-white">
           <h3>Auto</h3>
         </div>
       </div>
       <div className="col">
-        <div className="bg-gray-7 text-white">
+        <div className="gray-dark-bg text-white">
           <h3>Columns</h3>
         </div>
       </div>
       <div className="col">
-        <div className="bg-gray-7 text-white">
+        <div className="gray-dark-bg text-white">
           <h3>Can</h3>
         </div>
       </div>
       <div className="col">
-        <div className="bg-gray-7 text-white">
+        <div className="gray-dark-bg text-white">
           <h3>Divide by</h3>
         </div>
       </div>
       <div className="col">
-        <div className="bg-gray-7 text-white">
+        <div className="gray-dark-bg text-white">
           <h3>Five</h3>
         </div>
       </div>
@@ -160,12 +159,12 @@ export const ColumnSizingComponent = () => (
 
     <div className="row row-cols-2 mb-6">
       <div className="col-8">
-        <div className="bg-gray-2" style={{ height: "20rem" }}>
+        <div className="gray-light-bg" style={{ height: "20rem" }}>
           <h3>Content Left</h3>
         </div>
       </div>
       <div className="col-4">
-        <div className="bg-gray-2" style={{ height: "20rem" }}>
+        <div className="gray-light-bg" style={{ height: "20rem" }}>
           <h3>Sidebar</h3>
         </div>
       </div>

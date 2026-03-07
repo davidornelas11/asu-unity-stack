@@ -1,6 +1,5 @@
 import React from "react";
-
-import { htmlRootDecorator } from "../../../../../shared/components/Layout.js";
+import { htmlRootDecorator } from "@asu/shared";
 export default {
   title: "Design/Typography",
   decorators: [htmlRootDecorator],
@@ -69,7 +68,7 @@ export const ComponentbodyCopyWhite = () => (
 );
 
 export const ComponentbodyCopyGray1 = () => (
-  <div className="container bg-gray-1">
+  <div className="container gray-faint-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <p>
@@ -102,7 +101,7 @@ export const ComponentbodyCopyGray1 = () => (
 );
 
 export const ComponentbodyCopyGray2 = () => (
-  <div className="container bg-gray-2">
+  <div className="container gray-light-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <p>
@@ -135,7 +134,7 @@ export const ComponentbodyCopyGray2 = () => (
 );
 
 export const ComponentbodyCopyGray7 = () => (
-  <div className="container bg-gray-7 text-white">
+  <div className="container gray-dark-bg text-white">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <p>
@@ -175,7 +174,9 @@ export const ComponentASUHeadingsWhite = () => (
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h1>Heading 1</h1>
-        <h1 className="article">Heading 1 - Long Headlines and Article Titles</h1>
+        <h1 className="article">
+          Heading 1 - Long Headlines and Article Titles
+        </h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -186,11 +187,13 @@ export const ComponentASUHeadingsWhite = () => (
 );
 
 export const ComponentASUHeadingsGray1 = () => (
-  <div className="container bg-gray-1">
+  <div className="container gray-faint-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h1>Heading 1</h1>
-        <h1 className="article">Heading 1 - Long Headlines and Article Titles</h1>
+        <h1 className="article">
+          Heading 1 - Long Headlines and Article Titles
+        </h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -201,11 +204,13 @@ export const ComponentASUHeadingsGray1 = () => (
 );
 
 export const ComponentASUHeadingsGray2 = () => (
-  <div className="container bg-gray-2">
+  <div className="container gray-light-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h1>Heading 1</h1>
-        <h1 className="article">Heading 1 - Long Headlines and Article Titles</h1>
+        <h1 className="article">
+          Heading 1 - Long Headlines and Article Titles
+        </h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -216,11 +221,13 @@ export const ComponentASUHeadingsGray2 = () => (
 );
 
 export const ComponentASUHeadingsGray7 = () => (
-  <div className="container bg-gray-7 text-gray-1">
+  <div className="container gray-dark-bg text-gray-1">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h1>Heading 1</h1>
-        <h1 className="article">Heading 1 - Long Headlines and Article Titles</h1>
+        <h1 className="article">
+          Heading 1 - Long Headlines and Article Titles
+        </h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -246,7 +253,7 @@ export const ComponentHighlightsWhite = () => (
 );
 
 export const ComponentHighlightsGray1 = () => (
-  <div className="container bg-gray-1">
+  <div className="container gray-faint-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h3>
@@ -261,7 +268,7 @@ export const ComponentHighlightsGray1 = () => (
 );
 
 export const ComponentHighlightsGray2 = () => (
-  <div className="container bg-gray-2">
+  <div className="container gray-light-bg">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h3>
@@ -279,7 +286,7 @@ export const ComponentHighlightsGray2 = () => (
 );
 
 export const ComponentHighlightsGray7 = () => (
-  <div className="container bg-gray-7 text-gray-1">
+  <div className="container gray-dark-bg text-gray-1">
     <div className="row">
       <div className="col col-sm-12 p-3">
         <h3>

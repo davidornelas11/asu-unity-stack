@@ -1,19 +1,22 @@
 // @ts-check
 
 /**
- * @typedef {import("@asu/components-core").HeroProps} HeroProps
+ * @typedef {import("@asu/unity-react-core").HeroProps} HeroProps
  */
 
 /**
- * @typedef {import("@asu/components-core").ImageProps} ImageItem
+ * @typedef {import("@asu/unity-react-core").ImageComponentProps} ImageItem
  */
 
 /**
- * @typedef {import("@asu/components-core").VideoProps} VideoItem
+ * @typedef {import("@asu/unity-react-core").VideoProps} VideoItem
  */
 
 /**
- * @typedef {import("@asu/components-core").AnchorMenuItem} AnchorMenuItem
+ * @typedef {Object} AnchorMenuItem
+ * @property {string} text
+ * @property {string} targetIdName
+ * @property {string[]} [icon]
  */
 
 /**
@@ -107,6 +110,7 @@
  * @property {string} [firstRequirementMathCourse]
  * @property {string} [mathIntensity]
  * @property {string} [timeCommitment]
+ * @property {string} [stemOptText]
  */
 
 /**
@@ -116,6 +120,7 @@
  * @property {string} additionalRequirements
  * @property {string} transferRequirements
  * @property {string} minorRequirements
+ * @property {string} majorMapURL
  */
 
 /**

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List component - Example page</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="../../unity-bootstrap-theme/dist/unity-bootstrap-theme2.css" />
+
+  <!-- Load FontAwesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script
+src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- *************************************************************** -->
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+  <!-- *************************************************************** -->
+  <!-- include bundled scripts from packages -->
+  <script src="../dist/unityReactCore.umd.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="border p-4">
+      <div id="unorderedList"></div>
+      <div id="orderedList"></div>
+      <div id="iconList"></div>
+      <div id="stepList"></div>
+      <div id="displayList"></div>
+    </div>
+  </div>
+
+  <script>
+    var item = {content: "Lorem ipsum dolor sit amet, adipiscing elit."}
+    var item2 = {content: ["Title", "Lorem ipsum dolor sit amet, adipiscing elit."]}
+    var props1 = {
+      listType: "unordered",
+      items: [
+        item,
+        {
+          ...item,
+          nestedItems: [
+            item,
+            item,
+          ]
+        },
+        item,
+      ]
+    };
+    var props2 = {
+      listType: "step",
+      items: [item2,item2,item2,item2]
+    };
+
+    // Setup and initialize list options.
+    unityReactCore.initList({
+      targetSelector: "#unorderedList",
+      props: {...props1},
+    });
+
+unityReactCore.initList({
+  targetSelector: "#orderedList",
+  props: {
+    ...props1,
+    backgroundColor: "light",
+    listType: "ordered",
+  },
+});
+
+unityReactCore.initList({
+  targetSelector: "#iconList",
+  props: {
+    backgroundColor: "medium",
+    "listType": "icon",
+    "items": [
+        {
+            "content": "Lorem ipsum dolor sit amet, adipiscing elit.",
+            "icon": [
+                "fas",
+                "rocket"
+            ]
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet, adipiscing elit.",
+            "icon": [
+                "fas",
+                "bus"
+            ]
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet, adipiscing elit.",
+            "icon": [
+                "fas",
+                "car"
+            ]
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet, adipiscing elit.",
+            "icon": [
+                "fas",
+                "bicycle"
+            ]
+        }
+    ]
+},
+});
+
+unityReactCore.initList({
+  targetSelector: "#stepList",
+  props: {
+    ...props2,
+    listItemStyleColor: "primary",
+    backgroundColor: "dark",
+  },
+});
+
+unityReactCore.initList({
+  targetSelector: "#displayList",
+  props: {
+    ...props2,
+    listType: "display",
+  },
+});
+  </script>
+  <script src="./js/example-helper.js"></script>
+</body>
+
+</html>

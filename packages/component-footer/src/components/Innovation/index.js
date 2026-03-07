@@ -1,10 +1,10 @@
 // @ts-check
+import { trackGAEvent } from "@asu/shared";
 import React from "react";
 
-import { trackGAEvent } from "../../../../../shared";
+import innovationLogo from "../../assets/images/innovationLogo.png";
 import { FOOTER_URLS } from "../../core/constants";
 // @ts-ignore
-import innovationLogo from "../../assets/images/innovationLogo.png";
 
 const DEFAULT_GA_EVENT = {
   type: "internal link",

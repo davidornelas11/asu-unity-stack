@@ -5,13 +5,13 @@ import React from "react";
 import { ColumnSection } from "../ColumnSection";
 
 /**
- * @typedef {import("../../core/models/types").Contact} Contact
+ * @typedef {import("../../core/models/types").Contact} ContactProps
  *
- * @param {{contact: Contact}} props
+ * @param {{contact: ContactProps}} props
  */
 
 const Contact = ({
-  contact: { title, contactLink, contributionLink, columns },
+  contact: { title = "", contactLink = "", contributionLink = "", columns = []},
 }) => {
   return (
     <div className="wrapper" id="wrapper-footer-columns" data-testid="contact">
@@ -70,14 +70,6 @@ Contact.propTypes = {
       })
     ),
   }),
-};
-
-Contact.defaultProps = {
-  contact: {
-    title: "",
-    contactLink: "",
-    contributionLink: "",
-  },
 };
 
 export { Contact };

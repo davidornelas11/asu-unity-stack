@@ -1,15 +1,15 @@
 // @ts-check
 
 /**
- * @typedef {import("@asu/components-core").HeroProps} HeroProps
+ * @typedef {import("@asu/unity-react-core").HeroProps} HeroProps
  */
 
 /**
- * @typedef {import("@asu/components-core").ImageProps} ImageItem
+ * @typedef {import("@asu/unity-react-core").ImageProps} ImageItem
  */
 
 /**
- * @typedef {import("@asu/components-core").VideoProps} VideoItem
+ * @typedef {import("@asu/unity-react-core").VideoProps} VideoItem
  */
 
 /**
@@ -52,7 +52,7 @@
  * @property {"true" | "false"} [init]
  * @property {"true" | "false"} [cert]
  * @property {string} [fields]
- * @property {"undergrad" | "graduate"} [program]
+ * @property {"undergrad" | "graduate" | "all"} [program]
  * @property {string} [collegeAcadOrg]
  * @property {string} [acadPlan]
  * @property {string} [departmentCode]

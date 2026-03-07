@@ -1,3 +1,383 @@
+# [@asu/unity-bootstrap-theme-v1.36.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.36.1...@asu/unity-bootstrap-theme-v1.36.2) (2026-02-27)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update to allow uds-field-required style for p tags for the correct display of fa-circle icons ([b9d86c3](https://github.com/ASU/asu-unity-stack/commit/b9d86c31dd707c49bf55893563e8253e5ba1d863))
+
+# [@asu/unity-bootstrap-theme-v1.36.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.36.0...@asu/unity-bootstrap-theme-v1.36.1) (2026-02-24)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** adjust hero small grid template rows ([b8892df](https://github.com/ASU/asu-unity-stack/commit/b8892dfd84d89cf440f7caea495afdcebd5edb32))
+* **unity-bootstrap-theme:** improve hero small button positioning ([f694423](https://github.com/ASU/asu-unity-stack/commit/f6944232dd46c6306877a9806c5a83dbc30e4048))
+
+# [@asu/unity-bootstrap-theme-v1.36.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.35.0...@asu/unity-bootstrap-theme-v1.36.0) (2026-02-19)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update highly ranked card styles ([e18137f](https://github.com/ASU/asu-unity-stack/commit/e18137f666441e2b5419d4142ebd3686119a139f))
+* **unity-bootstrap-theme:** update highly ranked class names ([3da8fd0](https://github.com/ASU/asu-unity-stack/commit/3da8fd0eb80de9dcdb7256b29b4b2ea79d464891))
+* **unity-bootstrap-theme:** update highly ranked styles ([460d7b3](https://github.com/ASU/asu-unity-stack/commit/460d7b364598cb101cf0bc9e507b78c41115c813))
+* **unity-bootstrap-theme:** update to allow uds-field-required style for p tags for the correct display of fa-circle icons ([97c8330](https://github.com/ASU/asu-unity-stack/commit/97c8330d6e3562708512574944cc8b2e8d9fe8be))
+* **unity-bootstrap-theme:** updated highly ranked grid heading styles ([ae1964b](https://github.com/ASU/asu-unity-stack/commit/ae1964b5d8ccd203ca58bae39dee1890f4b98e3c))
+
+
+### Features
+
+* **unity-bootstrap-theme:** add new ranking card styles ([703a717](https://github.com/ASU/asu-unity-stack/commit/703a71750c0360662ef57fd5355671f0f0eb540c))
+* **unity-react-core:** add new ranking card component ([0908bfe](https://github.com/ASU/asu-unity-stack/commit/0908bfeeda1c9d7343dc3375b1dfae111cc22145))
+
+# [@asu/unity-bootstrap-theme-v1.35.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.34.0...@asu/unity-bootstrap-theme-v1.35.0) (2026-02-10)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** fix content spotlight styles ([3662019](https://github.com/ASU/asu-unity-stack/commit/36620193e4e9afa166a6711d34f9d06ed01b022f))
+
+
+### Features
+
+* **unity-bootstrap-theme:** add new styles for content spotlight ([e4864ac](https://github.com/ASU/asu-unity-stack/commit/e4864ac015d91fcb461fce5b47a1a381b458b489))
+
+# [@asu/unity-bootstrap-theme-v1.34.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.33.1...@asu/unity-bootstrap-theme-v1.34.0) (2026-02-10)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update legacy button styles ([15c4e14](https://github.com/ASU/asu-unity-stack/commit/15c4e14ffcf1ac403f022d880f2ecdaf1bc1c75a))
+
+
+### Features
+
+* **unity-bootstrap-theme:** add new button styles ([a0918e4](https://github.com/ASU/asu-unity-stack/commit/a0918e4fd74fb26d75ed071591b6eeae984a0c10))
+
+# [@asu/unity-bootstrap-theme-v1.33.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.33.0...@asu/unity-bootstrap-theme-v1.33.1) (2026-02-09)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** prevent video script conflict ([cc37757](https://github.com/ASU/asu-unity-stack/commit/cc37757e93b96c042e4e7d0dfab17372544e28ef))
+
+# [@asu/unity-bootstrap-theme-v1.33.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.32.1...@asu/unity-bootstrap-theme-v1.33.0) (2026-01-27)
+
+
+### Features
+
+* **unity-bootstrap-theme:** apply dark maroon to visited links ([bdcf8c9](https://github.com/ASU/asu-unity-stack/commit/bdcf8c9c35eca3140dfb0a1109b4683d7b66dec0)), closes [#440e22](https://github.com/ASU/asu-unity-stack/issues/440e22)
+
+# [@asu/unity-bootstrap-theme-v1.32.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.32.0...@asu/unity-bootstrap-theme-v1.32.1) (2026-01-27)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update anchor menu logic and add docs ([af07de9](https://github.com/ASU/asu-unity-stack/commit/af07de9628343e4ec1528b8728b8cbfafa4192bc))
+
+# [@asu/unity-bootstrap-theme-v1.32.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.31.0...@asu/unity-bootstrap-theme-v1.32.0) (2026-01-15)
+
+
+### Features
+
+* **unity-bootstrap-theme:** added siteimprove feedback ([6cb527f](https://github.com/ASU/asu-unity-stack/commit/6cb527f74138a13a4aaa7594520af82ccbf929d9))
+
+# [@asu/unity-bootstrap-theme-v1.31.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.30.3...@asu/unity-bootstrap-theme-v1.31.0) (2025-12-30)
+
+
+### Features
+
+* **unity-bootstrap-theme:** update card arrangement styles for new card arrangement component ([d9088d5](https://github.com/ASU/asu-unity-stack/commit/d9088d5da5d167ded7482d167a419c0c32fb1605))
+
+# [@asu/unity-bootstrap-theme-v1.30.3](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.30.2...@asu/unity-bootstrap-theme-v1.30.3) (2025-10-24)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** removed max-width from btn-row into heroes ([a3e2958](https://github.com/ASU/asu-unity-stack/commit/a3e2958755bc09d35352e755f666cbcf48944c3d))
+
+# [@asu/unity-bootstrap-theme-v1.30.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.30.1...@asu/unity-bootstrap-theme-v1.30.2) (2025-10-15)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** fix typo ([d66b84d](https://github.com/ASU/asu-unity-stack/commit/d66b84dd62b45c0cc50a4bdd4bde13f3f24fdb2b))
+* **unity-bootstrap-theme:** replace custom throttle with @asu/shared ([e2ba8fe](https://github.com/ASU/asu-unity-stack/commit/e2ba8fe119a7fd3f9e70fa81158a1c9c3b2738e5))
+* **unity-bootstrap-theme:** update anchor menu logic to be more universal ([9629c31](https://github.com/ASU/asu-unity-stack/commit/9629c31c33a240da3681d08f89899d70ca6f0356))
+
+# [@asu/unity-bootstrap-theme-v1.30.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.30.0...@asu/unity-bootstrap-theme-v1.30.1) (2025-10-14)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update alt on footer ranking image stories ([b982d61](https://github.com/ASU/asu-unity-stack/commit/b982d61fb835bbe08f22405d7c3db005006ea558))
+* **unity-bootstrap-theme:** update footer ranking styles and image assets ([97812df](https://github.com/ASU/asu-unity-stack/commit/97812df7f9373d53d0da3cacc98e4860f5f46f32))
+* **unity-bootstrap-theme:** updated footer innovation logo ([0dd006f](https://github.com/ASU/asu-unity-stack/commit/0dd006f2bb5b1a9ef7510ed5f3ec93a77e649334))
+
+# [@asu/unity-bootstrap-theme-v1.30.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.29.0...@asu/unity-bootstrap-theme-v1.30.0) (2025-10-02)
+
+
+### Features
+
+* **unity-bootstrap-theme:** added mixin to expand clickable area for btn ([641eb4e](https://github.com/ASU/asu-unity-stack/commit/641eb4e3a293e73c50586c7bed9b06fce1cc6f50))
+* **unity-bootstrap-theme:** applied some feedback changes ([6b791b5](https://github.com/ASU/asu-unity-stack/commit/6b791b57d4411eaa2aa71c91824e746c36367e5c))
+
+# [@asu/unity-bootstrap-theme-v1.29.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.28.3...@asu/unity-bootstrap-theme-v1.29.0) (2025-09-18)
+
+
+### Features
+
+* **unity-bootstrap-theme:** improve accessibility by increasing text contrast (WCAG AAA compliance) ([5c8f243](https://github.com/ASU/asu-unity-stack/commit/5c8f243f0f3fcba28599f85205b4daf7a07fd089)), closes [#747474](https://github.com/ASU/asu-unity-stack/issues/747474) [#484848](https://github.com/ASU/asu-unity-stack/issues/484848)
+
+# [@asu/unity-bootstrap-theme-v1.28.3](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.28.2...@asu/unity-bootstrap-theme-v1.28.3) (2025-09-09)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** fix long accordion scroll issue ([d824790](https://github.com/ASU/asu-unity-stack/commit/d824790188a50c9e9c6c0cea4c701c51b14fa97a))
+
+# [@asu/unity-bootstrap-theme-v1.28.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.28.1...@asu/unity-bootstrap-theme-v1.28.2) (2025-09-08)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** add process.env to vite build ([ee82a85](https://github.com/ASU/asu-unity-stack/commit/ee82a85acd059c56955f62e40ba5aae7e40b875c))
+
+# [@asu/unity-bootstrap-theme-v1.28.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.28.0...@asu/unity-bootstrap-theme-v1.28.1) (2025-08-04)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** added scss selector for a.btn disabled ([b58ee6a](https://github.com/ASU/asu-unity-stack/commit/b58ee6ac6d8fdaa73648e72ff5478510d0efdbc2))
+
+# [@asu/unity-bootstrap-theme-v1.28.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.27.0...@asu/unity-bootstrap-theme-v1.28.0) (2025-08-04)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** add retry logic to initCardBoodies to for .card-body elemtns ([9310021](https://github.com/ASU/asu-unity-stack/commit/9310021b3c86f0e365fe37ec5b764c4778f8f546))
+* **unity-bootstrap-theme:** initialized retryCount var ([b0656ed](https://github.com/ASU/asu-unity-stack/commit/b0656ed394a25c591e39d19e919a69ba75c8628f))
+
+
+### Features
+
+* **unity-bootstrap-theme:** changed margin and padding for List ([4fc2fcd](https://github.com/ASU/asu-unity-stack/commit/4fc2fcd8f97b3662f888efcc1b07fbdf9127ec1b))
+
+# [@asu/unity-bootstrap-theme-v1.27.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.5...@asu/unity-bootstrap-theme-v1.27.0) (2025-07-24)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** focus state centered ([00fce2c](https://github.com/ASU/asu-unity-stack/commit/00fce2cf45780d9e6f38b404f88c04a98481f2ef))
+
+
+### Features
+
+* **unity-bootstrap-theme:** increase font size from 12px up to 16px in uds-figure-caption ([6d80be8](https://github.com/ASU/asu-unity-stack/commit/6d80be86e5653f78f7b2375566907a13bff9f1bb))
+
+# [@asu/unity-bootstrap-theme-v1.26.5](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.4...@asu/unity-bootstrap-theme-v1.26.5) (2025-07-14)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** fix school image styles in global footer ([e31f753](https://github.com/ASU/asu-unity-stack/commit/e31f75336f71a2f51a5e03d1d13069c38891688b))
+
+# [@asu/unity-bootstrap-theme-v1.26.4](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.3...@asu/unity-bootstrap-theme-v1.26.4) (2025-07-14)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** cSS Padding added to images without header ([5d3a4f2](https://github.com/ASU/asu-unity-stack/commit/5d3a4f2170346ca5f5b4a8a17fcbcb1c9a4f863c))
+
+# [@asu/unity-bootstrap-theme-v1.26.3](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.2...@asu/unity-bootstrap-theme-v1.26.3) (2025-07-11)
+
+
+### Bug Fixes
+
+* **component-header-footer:** updating footer to included privacy button ([fd022c4](https://github.com/ASU/asu-unity-stack/commit/fd022c45ca846c1fa1e2213e951fa431e2b483a6))
+* styles for manual consent opt out ([b028c9f](https://github.com/ASU/asu-unity-stack/commit/b028c9fb6ba32aeaa6dd1dbfb1cdf572e2356740))
+* styles for manual consent opt out version 2 ([35f4452](https://github.com/ASU/asu-unity-stack/commit/35f4452c3c32ff13c71dbbac5c9386774b3bf001))
+* **unity-bootstrap-theme:** blockquotes in mobile view too compressed, need to stack ([84cb73f](https://github.com/ASU/asu-unity-stack/commit/84cb73f260ded56e088555da91debc999f872889))
+
+# [@asu/unity-bootstrap-theme-v1.26.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.1...@asu/unity-bootstrap-theme-v1.26.2) (2025-07-07)
+
+
+### Bug Fixes
+
+* **components-core:** added tabindex and focus css for accordion wrapper ([b6b3046](https://github.com/ASU/asu-unity-stack/commit/b6b304691f5f11fde1e4e14304e4909ffb0cae03))
+* **unity-bootstrap-theme:** split padding value to margin and padding ([a55da8a](https://github.com/ASU/asu-unity-stack/commit/a55da8a5157d3a6e6e4be1aeda89ed443c749270))
+
+# [@asu/unity-bootstrap-theme-v1.26.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.26.0...@asu/unity-bootstrap-theme-v1.26.1) (2025-06-30)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update line clamp for ranking card ([25506a2](https://github.com/ASU/asu-unity-stack/commit/25506a2dde022c9f23e7c664c285487c05725c2f))
+* **unity-bootstrap-theme:** update ranking card styles ([f6e6ea9](https://github.com/ASU/asu-unity-stack/commit/f6e6ea90160ed8b46fe8e2d4785092e8975e2998))
+* **unity-bootstrap-theme:** update ranking card styles ([1492e29](https://github.com/ASU/asu-unity-stack/commit/1492e295c87344b42482947d002fdb779a39e5c5))
+* **unity-bootstrap-theme:** update ranking card styles ([bbe3272](https://github.com/ASU/asu-unity-stack/commit/bbe32720cec059a2b8d8a52fd05413b942b592a2))
+
+# [@asu/unity-bootstrap-theme-v1.26.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.25.2...@asu/unity-bootstrap-theme-v1.26.0) (2025-06-09)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** added styles to hidden box ([0524735](https://github.com/ASU/asu-unity-stack/commit/05247354f7dd56b3ca9de676b025f8b644a2304c))
+* **unity-bootstrap-theme:** fixing visible text paragraph ([3e023c2](https://github.com/ASU/asu-unity-stack/commit/3e023c236b3c64b41432e260083fb2df05a2dea2))
+* **unity-bootstrap-theme:** removed aria-hidden ([d4dc1a2](https://github.com/ASU/asu-unity-stack/commit/d4dc1a2d8f354ef39f80034818ecc72830c44618))
+
+
+### Features
+
+* **unity-bootstrap-theme:** added js for trucate aria-describedby on card-body ([971d134](https://github.com/ASU/asu-unity-stack/commit/971d134800f91d64f463c7ba7de878cd55e71757))
+* **unity-bootstrap-theme:** setup aria-label for p ([486628e](https://github.com/ASU/asu-unity-stack/commit/486628eb81c50553f75de4940e35b0112a0b3468))
+
+# [@asu/unity-bootstrap-theme-v1.25.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.25.1...@asu/unity-bootstrap-theme-v1.25.2) (2025-05-30)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** standardize all list types  margins ([345dc84](https://github.com/ASU/asu-unity-stack/commit/345dc8465b93b21838778269c7020577afafa8de))
+* **unity-bootstrap-theme:** steplist adjust circle to be more rounded ([9cccf5e](https://github.com/ASU/asu-unity-stack/commit/9cccf5eb25a481156bf2c74912ee049ac5110992))
+
+# [@asu/unity-bootstrap-theme-v1.25.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.25.0...@asu/unity-bootstrap-theme-v1.25.1) (2025-05-28)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** removed display none style on mobile for the Breadcrumb ([1223d32](https://github.com/ASU/asu-unity-stack/commit/1223d32afa2f913a63057f97c3fefbcf38069dca))
+
+# [@asu/unity-bootstrap-theme-v1.25.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.24.1...@asu/unity-bootstrap-theme-v1.25.0) (2025-05-01)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** changed margin-top to padding-top on uds-anchor-menu-wrapper ([f14c513](https://github.com/ASU/asu-unity-stack/commit/f14c513c09b50a2d8bda5fbfe0221a1b096cfb34))
+
+
+### Features
+
+* **unity-bootstrap-theme:** added margin-top on uds-anchor-menu-wrapper ([08ac674](https://github.com/ASU/asu-unity-stack/commit/08ac674b9516a8b0ac221606a0af7f3d82ca9d3a))
+
+# [@asu/unity-bootstrap-theme-v1.24.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.24.0...@asu/unity-bootstrap-theme-v1.24.1) (2025-04-29)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** added style only for a tags into Images ([61c9ad7](https://github.com/ASU/asu-unity-stack/commit/61c9ad7e8aa9d530959e8ff79a8d81d35d0d5bfc))
+* **unity-bootstrap-theme:** removed unnecesary z-index ([a130196](https://github.com/ASU/asu-unity-stack/commit/a1301963fff6fd208250eff2284741d4e025ae64))
+
+# [@asu/unity-bootstrap-theme-v1.24.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.23.2...@asu/unity-bootstrap-theme-v1.24.0) (2025-04-24)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** update build to include js ([804ce9a](https://github.com/ASU/asu-unity-stack/commit/804ce9acc756acb6031012b9cf9b6fb2aeb5a2ff))
+
+
+### Features
+
+* **unity-bootstrap-theme:** update dist files and README docs for usage ([0900210](https://github.com/ASU/asu-unity-stack/commit/090021037959d12925a9551ef3235b483a774b68))
+
+# [@asu/unity-bootstrap-theme-v1.23.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.23.1...@asu/unity-bootstrap-theme-v1.23.2) (2025-04-21)
+
+
+### Bug Fixes
+
+* **component-events:** added style to fix a:focus ([de0e708](https://github.com/ASU/asu-unity-stack/commit/de0e70889ffae0770538d993c8a13d1cc346ba89))
+* **component-news:** removed margin from focus and added to a tag into card-title ([9629f6f](https://github.com/ASU/asu-unity-stack/commit/9629f6fb7203a2fcf2d28e7d2e453efe1ddb15d0))
+* **unity-bootstrap-theme:** fix focus styles for card titles ([ffa430d](https://github.com/ASU/asu-unity-stack/commit/ffa430de81b8cd345b431a48c693308ff9b1b43b))
+
+# [@asu/unity-bootstrap-theme-v1.23.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.23.0...@asu/unity-bootstrap-theme-v1.23.1) (2025-04-18)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** notification Banner button enlarged and gap between buttons reduced ([439ad1d](https://github.com/ASU/asu-unity-stack/commit/439ad1d09de5cb64e6d02d472e47b0268244fd4c))
+* **unity-bootstrap-theme:** notification Banner size enlarged and gap reduced ([30c71f1](https://github.com/ASU/asu-unity-stack/commit/30c71f181a699f1105747cbda7e1d3a0f0791ac2))
+
+# [@asu/unity-bootstrap-theme-v1.23.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.22.0...@asu/unity-bootstrap-theme-v1.23.0) (2025-04-16)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** added style for small and medium hero ([64002b9](https://github.com/ASU/asu-unity-stack/commit/64002b904d50c4ae9aee7377327fc9b58425b0cd))
+* **unity-bootstrap-theme:** changed height to min-height on hero-overlay classes ([f1b2991](https://github.com/ASU/asu-unity-stack/commit/f1b299190c384c97793d1aecbf690b7737dcaf15))
+
+
+### Features
+
+* **unity-bootstrap-theme:** changed heigth to min-heigth on div.uds-hero-lg ([0e0c04b](https://github.com/ASU/asu-unity-stack/commit/0e0c04b558758836963fdffc526dbdbe7e793445))
+
+# [@asu/unity-bootstrap-theme-v1.22.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.6...@asu/unity-bootstrap-theme-v1.22.0) (2025-04-09)
+
+
+### Features
+
+* **unity-bootstrap-theme:** added visually-hidden text for Tags ([a5f4d37](https://github.com/ASU/asu-unity-stack/commit/a5f4d379e269a04fa17c8cc79c748d065e321876))
+
+# [@asu/unity-bootstrap-theme-v1.21.6](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.5...@asu/unity-bootstrap-theme-v1.21.6) (2025-04-03)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** spacing changed between Radio button and text ([b1ddd21](https://github.com/ASU/asu-unity-stack/commit/b1ddd21ef1bdd2a5f5d996e9d856fc0847f3e6cf))
+
+# [@asu/unity-bootstrap-theme-v1.21.5](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.4...@asu/unity-bootstrap-theme-v1.21.5) (2025-04-01)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** added hover white to footer's social icon ([d855ea1](https://github.com/ASU/asu-unity-stack/commit/d855ea156ccf0be0dbe1f9fac437ca9902f117e4))
+
+# [@asu/unity-bootstrap-theme-v1.21.4](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.3...@asu/unity-bootstrap-theme-v1.21.4) (2025-03-21)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** add bundled UMD bootstrap file to package dist ([75be0fc](https://github.com/ASU/asu-unity-stack/commit/75be0fc08fc418401a8acb52ae76783811b2f446))
+
+# [@asu/unity-bootstrap-theme-v1.21.3](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.2...@asu/unity-bootstrap-theme-v1.21.3) (2025-03-07)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** bring back css dir ([949367c](https://github.com/ASU/asu-unity-stack/commit/949367c279b72e678a8bfc6000a1d334dd267aa7))
+* **unity-bootstrap-theme:** relative css assets ([27db1a7](https://github.com/ASU/asu-unity-stack/commit/27db1a723e051761593da7530b890d305a9cfb1a))
+
+# [@asu/unity-bootstrap-theme-v1.21.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.1...@asu/unity-bootstrap-theme-v1.21.2) (2025-02-28)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** accessibility: Dark Background Hyperlink Color Not Accessible ([87aa9fd](https://github.com/ASU/asu-unity-stack/commit/87aa9fd674141c9163909273e4b9bf8e33427643))
+
+# [@asu/unity-bootstrap-theme-v1.21.1](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.21.0...@asu/unity-bootstrap-theme-v1.21.1) (2025-02-12)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** pagination active state page changed to a perfect circle ([4eb253f](https://github.com/ASU/asu-unity-stack/commit/4eb253f9b6d3b48a38ac869ea14230628a30e092))
+
+# [@asu/unity-bootstrap-theme-v1.21.0](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.20.2...@asu/unity-bootstrap-theme-v1.21.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **unity-bootstrap-theme:** allow span,i alert-icon tags ([3a7b4ad](https://github.com/ASU/asu-unity-stack/commit/3a7b4ad8ecc676ec4526d36a7f0e31ccb39e178c))
+* **unity-bootstrap-theme:** apply a11y breadcrumbs min size ([fbd32cc](https://github.com/ASU/asu-unity-stack/commit/fbd32cc8f419bc97ea794553e7158a92af3ca215))
+* **unity-bootstrap-theme:** breadcrumbs ([73180a5](https://github.com/ASU/asu-unity-stack/commit/73180a52d8a193d409c368d4109e2072819c8f11))
+* **unity-bootstrap-theme:** style tweak to support rendering non-svg icons ([6010c42](https://github.com/ASU/asu-unity-stack/commit/6010c4233d9cf01fd6260fc9ae2cb2a14dffb0e0))
+* **unity-react-core:** update package.json ([7eabcca](https://github.com/ASU/asu-unity-stack/commit/7eabcca01058eb26a1954fd26831b7ebbf1ea161))
+
+
+### Features
+
+* **components-core:** added component-carousel to components-core ([8677db8](https://github.com/ASU/asu-unity-stack/commit/8677db8f92c15f768c35951fbbd85f254f437de0))
+* **unity-bootstrap-theme:** banner icon styles ([3304cf4](https://github.com/ASU/asu-unity-stack/commit/3304cf4d818a6f6ab85652afcde346d5e5fa6ccf))
+* **unity-bootstrap-theme:** rank cards native BS ([f799b7c](https://github.com/ASU/asu-unity-stack/commit/f799b7cbb693005ce4783b878c498bfe1d10535f))
+* **unity-react-core:** form elements ([bf2d04b](https://github.com/ASU/asu-unity-stack/commit/bf2d04b64439e2bbe433d9a8c68271a09dafe29c))
+
 # [@asu/unity-bootstrap-theme-v1.20.2](https://github.com/ASU/asu-unity-stack/compare/@asu/unity-bootstrap-theme-v1.20.1...@asu/unity-bootstrap-theme-v1.20.2) (2025-01-17)
 
 

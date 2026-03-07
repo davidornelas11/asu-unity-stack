@@ -1,6 +1,5 @@
 import React from "react";
-
-import { htmlRootDecorator } from "../../../../../shared/components/Layout.js";
+import { htmlRootDecorator } from "@asu/shared";
 
 export default {
   title: "Atoms/Navigation Link/Examples",
@@ -67,10 +66,7 @@ const DropdownLink = () => (
           >
             Link option 1<span className="fa fa-chevron-down" alt=""></span>
           </a>
-          <div
-            className="dropdown-menu dropdown-columns"
-            aria-labelledby="dropdown-one-col"
-          >
+          <div className="dropdown-menu dropdown-columns">
             <div className="dropdown-col">
               <a
                 className="dropdown-item"

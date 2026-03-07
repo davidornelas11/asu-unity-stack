@@ -1,6 +1,8 @@
 /* eslint no-use-before-define: ["warn", {"variables": true}] */
 // ^^^ Set to "warn" instead of default "error" as we're not throwing any
 // ReferenceError's and attempts to resolve resulted in other problems.
+import axios from "axios";
+
 import {
   staffConverter,
   studentsConverter,
@@ -8,8 +10,6 @@ import {
   anonConverter,
 } from "./dataConverter";
 import { validateAndCleanURL } from "./validateUrl";
-
-const axios = require("axios");
 
 export const engineNames = {
   FACULTY: "web_dir_faculty_staff",
@@ -181,9 +181,8 @@ const webDirDeptsFormatter = ({
   let localPage = 1;
   if (engines[engineName].name === engineNames.WEB_DIRECTORY_PEOPLE_AND_DEPS) {
     localResults = results.map(datum => {
-      // eslint-disable-next-line camelcase
       const { full_record, ...basicFields } = datum;
-      // eslint-disable-next-line camelcase
+
       return { ...basicFields, ...full_record };
     });
   } else {

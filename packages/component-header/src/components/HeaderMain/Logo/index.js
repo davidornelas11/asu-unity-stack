@@ -1,7 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
+import { getCurrentScriptPath, trackGAEvent } from "@asu/shared";
 import React from "react";
 
-import { getCurrentScriptPath, trackGAEvent } from "../../../../../../shared";
 import { useAppContext } from "../../../core/context/app-context";
 import { LogoWrapper } from "./index.styles";
 
@@ -32,23 +31,21 @@ const Logo = () => {
       <img
         className="vert"
         src={logo?.src ?? vertLogo}
-        alt={logo?.alt ?? "Arizona State University"}
-        title={logo?.title ?? "ASU home page"}
+        alt={logo?.alt ?? "Arizona State University logo"}
+        title={logo?.title ?? "ASU homepage"}
         width="303"
         height="234"
         decoding="async"
-        // eslint-disable-next-line
         fetchpriority="high"
       />
       <img
         className="horiz"
         src={logo?.mobileSrc ?? horizLogo}
-        alt={logo?.alt ?? "Arizona State University"}
-        title={logo?.title ?? "ASU home page"}
+        alt={logo?.alt ?? "Arizona State University logo"}
+        title={logo?.title ?? "ASU homepage"}
         width="400"
         height="72"
         decoding="async"
-        // eslint-disable-next-line
         fetchpriority="high"
       />
     </LogoWrapper>

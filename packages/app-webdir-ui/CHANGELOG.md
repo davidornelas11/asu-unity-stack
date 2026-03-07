@@ -1,3 +1,86 @@
+# [@asu/app-webdir-ui-v5.0.9](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.8...@asu/app-webdir-ui-v5.0.9) (2026-01-27)
+
+
+### Bug Fixes
+
+* app-webdir-ui ([1abc96c](https://github.com/asu/asu-unity-stack/commit/1abc96cb29ae5ba9a7c33c1a9021f91cd093ebaf))
+* **app-webdir-ui:** replace catalog URL ([bfaa58f](https://github.com/asu/asu-unity-stack/commit/bfaa58fb88cc8410ad83a0dfe74d946c71eebf75))
+* **app-webdir-ui:** update catalog URL to new domain ([2591fa6](https://github.com/asu/asu-unity-stack/commit/2591fa68407f88f3f7e4c37a3610e79c54a12f28))
+
+# [@asu/app-webdir-ui-v5.0.8](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.7...@asu/app-webdir-ui-v5.0.8) (2026-01-05)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** adding siteImprove to webdir-ui ([d55307b](https://github.com/asu/asu-unity-stack/commit/d55307bb88138a7a8911682cf02aeebadd19b719))
+
+# [@asu/app-webdir-ui-v5.0.7](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.6...@asu/app-webdir-ui-v5.0.7) (2025-11-19)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** fix short bio not appearing in web directory ([78bd800](https://github.com/asu/asu-unity-stack/commit/78bd800d1932dc73e78d1f59cfb420485a78d299))
+
+# [@asu/app-webdir-ui-v5.0.6](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.5...@asu/app-webdir-ui-v5.0.6) (2025-10-14)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** sanitize useId to generate accessible form field IDs ([4c30f84](https://github.com/asu/asu-unity-stack/commit/4c30f84a1144a1731d29cc0d5b1a0159f4676186))
+
+# [@asu/app-webdir-ui-v5.0.5](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.4...@asu/app-webdir-ui-v5.0.5) (2025-09-18)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** fixed axios security vulnerability ([fd78c96](https://github.com/asu/asu-unity-stack/commit/fd78c968aa1a21fd54888640a2899f3b176f5172))
+
+# [@asu/app-webdir-ui-v5.0.4](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.3...@asu/app-webdir-ui-v5.0.4) (2025-07-24)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** add @asu/shared to dependencies ([b41a445](https://github.com/asu/asu-unity-stack/commit/b41a44540c5b2a28e070cebcc93413b0b7b63160))
+
+# [@asu/app-webdir-ui-v5.0.3](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.2...@asu/app-webdir-ui-v5.0.3) (2025-03-12)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** moved react router dom to dependencies ([c89d5c4](https://github.com/asu/asu-unity-stack/commit/c89d5c4f4fe21f4334d66ce46945b0246205626a))
+
+# [@asu/app-webdir-ui-v5.0.2](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.1...@asu/app-webdir-ui-v5.0.2) (2025-03-03)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** changed aria-label for All option on alphaFilter ([f26a7fb](https://github.com/asu/asu-unity-stack/commit/f26a7fb47312c5082a94b364b0279317c40467e2))
+
+# [@asu/app-webdir-ui-v5.0.1](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v5.0.0...@asu/app-webdir-ui-v5.0.1) (2025-02-18)
+
+
+### Bug Fixes
+
+* **app-webdir-ui:** duplicate Aria labels in "Sort by" dropdown menu ([a159396](https://github.com/asu/asu-unity-stack/commit/a1593966a38affefb8e2d9dfb5baea21043d25bc))
+
+# [@asu/app-webdir-ui-v5.0.0](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v4.1.2...@asu/app-webdir-ui-v5.0.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **unity-react-core:** update package json ([414cd0f](https://github.com/asu/asu-unity-stack/commit/414cd0f6bf60a07275b80088e3475c96fb1bcc7c))
+
+
+### Features
+
+* **app-webdir-ui:** updated to new unity-react-core ([b192bcb](https://github.com/asu/asu-unity-stack/commit/b192bcb07a01fc5c648c320265bced760f5ab4fb))
+* **components-core:** added component-carousel to components-core ([8677db8](https://github.com/asu/asu-unity-stack/commit/8677db8f92c15f768c35951fbbd85f254f437de0))
+
+
+### BREAKING CHANGES
+
+* **app-webdir-ui:** Replaced components-core with unity-react-core in dependencies
+
 # [@asu/app-webdir-ui-v4.1.2](https://github.com/asu/asu-unity-stack/compare/@asu/app-webdir-ui-v4.1.1...@asu/app-webdir-ui-v4.1.2) (2025-01-17)
 
 

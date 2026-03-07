@@ -1,6 +1,5 @@
 import React from "react";
-
-import innovationLockup from "./../../../src/img/innovation-lockup/on-gold/footer-rank.png";
+import innovationLockup from "./../../../public/img/innovation-lockup/on-gold/footer-rank.png";
 import endorsedLogo from "./ASU_UniversityTechOffice_2_Horiz_RGB_White_150ppi.png";
 
 export const GlobalElementsOnly = () => (
@@ -70,7 +69,7 @@ export const GlobalElementsOnly = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -111,15 +110,6 @@ export const GlobalElementsOnly = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -136,7 +126,18 @@ export const GlobalElementsOnly = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -301,7 +302,7 @@ export const ZeroColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -342,15 +343,6 @@ export const ZeroColumns = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -367,7 +359,18 @@ export const ZeroColumns = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -552,7 +555,7 @@ export const OneColumn = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -593,15 +596,6 @@ export const OneColumn = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -618,7 +612,18 @@ export const OneColumn = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -714,7 +719,7 @@ export const OneColumnNoLogoOrSocial = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -755,15 +760,6 @@ export const OneColumnNoLogoOrSocial = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -780,7 +776,18 @@ export const OneColumnNoLogoOrSocial = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -920,11 +927,7 @@ export const TwoColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-two"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-two"
-                >
+                <div id="footlink-two" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Biological and Health Systems Computing
                   </a>
@@ -1010,7 +1013,7 @@ export const TwoColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -1051,15 +1054,6 @@ export const TwoColumns = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -1076,7 +1070,18 @@ export const TwoColumns = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -1216,11 +1221,7 @@ export const ThreeColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-two"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-two"
-                >
+                <div id="footlink-two" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Biological and Health Systems Computing
                   </a>
@@ -1259,11 +1260,7 @@ export const ThreeColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-three"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-three"
-                >
+                <div id="footlink-three" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -1354,7 +1351,7 @@ export const ThreeColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -1395,15 +1392,6 @@ export const ThreeColumns = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -1420,7 +1408,18 @@ export const ThreeColumns = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -1560,11 +1559,7 @@ export const FourColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-two"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-two"
-                >
+                <div id="footlink-two" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Biological and Health Systems Computing
                   </a>
@@ -1603,11 +1598,7 @@ export const FourColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-three"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-three"
-                >
+                <div id="footlink-three" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -1651,11 +1642,7 @@ export const FourColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-four"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-four"
-                >
+                <div id="footlink-four" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -1746,7 +1733,7 @@ export const FourColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -1787,15 +1774,6 @@ export const FourColumns = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -1812,7 +1790,18 @@ export const FourColumns = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -1952,11 +1941,7 @@ export const FiveColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-two"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-two"
-                >
+                <div id="footlink-two" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Biological and Health Systems Computing
                   </a>
@@ -1995,11 +1980,7 @@ export const FiveColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-three"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-three"
-                >
+                <div id="footlink-three" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2043,11 +2024,7 @@ export const FiveColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-four"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-four"
-                >
+                <div id="footlink-four" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2091,11 +2068,7 @@ export const FiveColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-five"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-five"
-                >
+                <div id="footlink-five" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2186,7 +2159,7 @@ export const FiveColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -2227,15 +2200,6 @@ export const FiveColumns = () => (
               </a>
               <a
                 className="nav-link"
-                href="https://www.asu.edu/about/privacy"
-                data-ga-footer-type="internal link"
-                data-ga-footer-section="tertiary footer"
-                data-ga-footer="privacy"
-              >
-                Privacy
-              </a>
-              <a
-                className="nav-link"
                 href="https://www.asu.edu/about/terms-of-use"
                 data-ga-footer-type="internal link"
                 data-ga-footer-section="tertiary footer"
@@ -2252,7 +2216,18 @@ export const FiveColumns = () => (
               >
                 Emergency
               </a>
-
+              <a
+                className="nav-link"
+                href="https://www.asu.edu/about/privacy"
+                data-ga-footer-type="internal link"
+                data-ga-footer-section="tertiary footer"
+                data-ga-footer="privacy"
+              >
+                Privacy
+              </a>
+              <button type="button" id="manualConsentoptout">
+                Manage my privacy settings
+              </button>
             </nav>
           </div>
         </div>
@@ -2392,11 +2367,7 @@ export const SixColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-two"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-two"
-                >
+                <div id="footlink-two" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Biological and Health Systems Computing
                   </a>
@@ -2435,11 +2406,7 @@ export const SixColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-three"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-three"
-                >
+                <div id="footlink-three" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2483,11 +2450,7 @@ export const SixColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-four"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-four"
-                >
+                <div id="footlink-four" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2531,11 +2494,7 @@ export const SixColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-five"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-five"
-                >
+                <div id="footlink-five" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     Student Organization
                   </a>
@@ -2579,11 +2538,7 @@ export const SixColumns = () => (
                     </a>
                   </div>
                 </div>
-                <div
-                  id="footlink-six"
-                  className="collapse accordion-body"
-                  aria-labelledby="footlink-header-six"
-                >
+                <div id="footlink-six" className="collapse accordion-body">
                   <a className="nav-link" href="#" title="link">
                     A Zen master
                   </a>
@@ -2668,7 +2623,7 @@ export const SixColumns = () => (
               >
                 <img
                   src={innovationLockup}
-                  alt="Repeatedly ranked #1 in innovation (ASU ahead of MIT and Stanford), sustainability (ASU ahead of Stanford and UC Berkeley), and global impact (ASU ahead of MIT and Penn State)"
+                  alt="Repeatedly ranked #1 on 30+ lists in the last 3 years"
                   width="459"
                   height="100"
                   loading="lazy"
@@ -2710,15 +2665,6 @@ export const SixColumns = () => (
                 </a>
                 <a
                   className="nav-link"
-                  href="https://www.asu.edu/about/privacy"
-                  data-ga-footer-type="internal link"
-                  data-ga-footer-section="tertiary footer"
-                  data-ga-footer="privacy"
-                >
-                  Privacy
-                </a>
-                <a
-                  className="nav-link"
                   href="https://www.asu.edu/about/terms-of-use"
                   data-ga-footer-type="internal link"
                   data-ga-footer-section="tertiary footer"
@@ -2735,6 +2681,18 @@ export const SixColumns = () => (
                 >
                   Emergency
                 </a>
+                <a
+                  className="nav-link"
+                  href="https://www.asu.edu/about/privacy"
+                  data-ga-footer-type="internal link"
+                  data-ga-footer-section="tertiary footer"
+                  data-ga-footer="privacy"
+                >
+                  Privacy
+                </a>
+                <button type="button" id="manualConsentoptout">
+                  Manage my privacy settings
+                </button>
               </nav>
             </div>
           </div>

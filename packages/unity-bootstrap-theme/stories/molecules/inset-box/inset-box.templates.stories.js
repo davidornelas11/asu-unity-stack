@@ -1,19 +1,18 @@
 import React from "react";
-
-import { defaultDecorator } from "../../../../../shared/components/Layout";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Molecules/Content Sections/Inset Box/Templates",
-  decorators: [ defaultDecorator ],
+  decorators: [defaultDecorator],
   argTypes: {
     background: {
       name: "Background",
       options: ["White", "Gray 1", "Gray 2", "Gray 7"],
       mapping: {
         "White": "white-bg",
-        "Gray 1": "gray-1-bg",
-        "Gray 2": "gray-2-bg",
-        "Gray 7": "gray-7-bg",
+        "Gray 1": "gray-faint-bg",
+        "Gray 2": "gray-light-bg",
+        "Gray 7": "gray-dark-bg",
       },
       control: {
         type: "radio",

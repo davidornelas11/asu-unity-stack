@@ -1,6 +1,5 @@
 import React from "react";
-
-import { defaultDecorator } from "../../../../../shared/components/Layout";
+import { defaultDecorator } from "@asu/shared";
 
 export default {
   title: "Organisms/Grid Links/Templates",
@@ -19,11 +18,11 @@ export default {
     },
     bgColor: {
       name: "BackGround Color",
-      options: ["None", "bg-gray-1", "bg-gray-7"],
+      options: ["None", "gray-faint-bg", "gray-dark-bg"],
       mapping: {
-        None: null,
-        "bg-gray-1": "bg-gray-1",
-        "bg-gray-7": "bg-gray-7",
+        "None": null,
+        "gray-faint-bg": "gray-faint-bg",
+        "gray-dark-bg": "gray-dark-bg",
       },
       control: {
         type: "radio",
@@ -33,7 +32,7 @@ export default {
       name: "Text color",
       options: ["None", "text-gold", "text-white"],
       mapping: {
-        None: null,
+        "None": null,
         "text-gold": "text-gold",
         "text-white": "text-white",
       },
@@ -45,10 +44,10 @@ export default {
   decorators: [defaultDecorator],
 };
 
-export const BackgroundWhiteStory = ({bgColor, numColumns, textColor}) => {
+export const BackgroundWhiteStory = ({ bgColor, numColumns, textColor }) => {
   return (
     <section className={bgColor}>
-      <div className={['uds-grid-links', numColumns, textColor].join(' ')}>
+      <div className={["uds-grid-links", numColumns, textColor].join(" ")}>
         <a href="#">
           <span className="fa fa-fw fa-university"></span>First-year student
         </a>
@@ -68,7 +67,8 @@ export const BackgroundWhiteStory = ({bgColor, numColumns, textColor}) => {
           <span className="fa fa-fw fa-rocket"></span>Universal Learner
         </a>
         <a href="#">
-          <span className="fa fa-fw fa-globe-americas"></span>International student
+          <span className="fa fa-fw fa-globe-americas"></span>International
+          student
         </a>
         <a href="#">
           <span className="fa fa-fw fa-users"></span>Non-degree student

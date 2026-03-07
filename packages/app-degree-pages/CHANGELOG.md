@@ -1,3 +1,91 @@
+# [@asu/app-degree-pages-v3.1.3](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.1.2...@asu/app-degree-pages-v3.1.3) (2026-01-22)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** fix urlResolver error when no csv string provided ([866dbaa](https://github.com/asu/asu-unity-stack/commit/866dbaab3e3bee7674d9bfe0fd24f3a15db6d0c1))
+
+# [@asu/app-degree-pages-v3.1.2](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.1.1...@asu/app-degree-pages-v3.1.2) (2025-12-05)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** update majot map filtering to include all current year maps ([68cd0c7](https://github.com/asu/asu-unity-stack/commit/68cd0c72988b881e0af597f7973308802bc991b7))
+
+# [@asu/app-degree-pages-v3.1.1](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.1.0...@asu/app-degree-pages-v3.1.1) (2025-11-07)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** fix react dom error when anchor menu mounts during drupal render ([3dd3543](https://github.com/asu/asu-unity-stack/commit/3dd35436080984ab0d87989e4666b2b38592027b))
+
+# [@asu/app-degree-pages-v3.1.0](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.5...@asu/app-degree-pages-v3.1.0) (2025-07-14)
+
+
+### Features
+
+* **app-degree-pages:** allow list view including both  GR and UGCM certs ([8dd70c4](https://github.com/asu/asu-unity-stack/commit/8dd70c41c0993d3e9f5d4c1c8bb518a2086e944f))
+
+# [@asu/app-degree-pages-v3.0.5](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.4...@asu/app-degree-pages-v3.0.5) (2025-06-27)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** fix accessibility with options ID listing page ([0833f25](https://github.com/asu/asu-unity-stack/commit/0833f2517131661c5d15b14b7e7e6e047abde4f9))
+
+# [@asu/app-degree-pages-v3.0.4](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.3...@asu/app-degree-pages-v3.0.4) (2025-04-22)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** show major map link if application-requirements are null ([9b7618b](https://github.com/asu/asu-unity-stack/commit/9b7618b4d7e35ea931771de48af5402aba71db5a))
+* **app-degree-pages:** update view majormap to use same style as undergraduateTemplate ([6954dc5](https://github.com/asu/asu-unity-stack/commit/6954dc51f0eb2866deb5590d9f9c524795105a52))
+
+# [@asu/app-degree-pages-v3.0.3](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.2...@asu/app-degree-pages-v3.0.3) (2025-04-08)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** changes ([43046a8](https://github.com/asu/asu-unity-stack/commit/43046a8f36984a5cfaf583051697ac546291ca50))
+* **app-degree-pages:** improve the search relevancy by displaying title matches first ([ad9b0bc](https://github.com/asu/asu-unity-stack/commit/ad9b0bc4f0f9373905e72f22f46697fe29be656c))
+* **app-degree-pages:** improving search relevancy ([20e4e20](https://github.com/asu/asu-unity-stack/commit/20e4e20f31c609be24cd8a4f97957c797c2b38ce))
+
+# [@asu/app-degree-pages-v3.0.2](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.1...@asu/app-degree-pages-v3.0.2) (2025-03-03)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** added new description in campus-definitions.js ([6337dc5](https://github.com/asu/asu-unity-stack/commit/6337dc5ed2bf9a8705102ef189bf4bceafdd7aed))
+
+# [@asu/app-degree-pages-v3.0.1](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v3.0.0...@asu/app-degree-pages-v3.0.1) (2025-02-18)
+
+
+### Bug Fixes
+
+* **app-degree-pages:** at A Glance-STEM-OPT Update ([15c920a](https://github.com/asu/asu-unity-stack/commit/15c920ae8102cb8988d160a7848c4fd1936d7023))
+* **app-degree-pages:** degreeRequirements failing to display ([b91aabf](https://github.com/asu/asu-unity-stack/commit/b91aabfec984954971eb5716c33ce42f812812e1))
+* **app-degree-pages:** logic error in getGraduateRequirements ([a17daf4](https://github.com/asu/asu-unity-stack/commit/a17daf4a8fa646c1e169110a0c0ea710542473af))
+* **app-degree-pages:** sTEM-OPT Update+ ([fab8906](https://github.com/asu/asu-unity-stack/commit/fab8906d3445efb4662acdee3831e1cc723d031d))
+* **app-degree-pages:** sTEMP-OPT update ([ab0d13e](https://github.com/asu/asu-unity-stack/commit/ab0d13e687bc4318a32ab1d70fa5923f0e4b5f16))
+
+# [@asu/app-degree-pages-v3.0.0](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v2.6.2...@asu/app-degree-pages-v3.0.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **unity-react-core:** update package json ([414cd0f](https://github.com/asu/asu-unity-stack/commit/414cd0f6bf60a07275b80088e3475c96fb1bcc7c))
+
+
+### Features
+
+* **app-degree-pages:** updated dependecies to new unity-react-core package ([20d6e6a](https://github.com/asu/asu-unity-stack/commit/20d6e6a48d1c8c28d6ca2afefd2eef81a37ffe6e))
+* **components-core:** added component-carousel to components-core ([8677db8](https://github.com/asu/asu-unity-stack/commit/8677db8f92c15f768c35951fbbd85f254f437de0))
+
+
+### BREAKING CHANGES
+
+* **app-degree-pages:** Replaced dependency
+
 # [@asu/app-degree-pages-v2.6.2](https://github.com/asu/asu-unity-stack/compare/@asu/app-degree-pages-v2.6.1...@asu/app-degree-pages-v2.6.2) (2024-08-14)
 
 
