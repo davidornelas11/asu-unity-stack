@@ -420,4 +420,6 @@ Read contribution guide here: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ### See [here](https://docs.github.com/en/actions/guides/publishing-nodejs-packages) for more information about publishing packages
 
-### See [the top answer on this stackoverflow question](https://stackoverflow.com/questions/62819489/github-actions-why-build-with-different-node-versions) for why you may want to build against multiple node versions. Probably unnecessary for this workflow.
+### See [the top answer on this stackoverflow question](https://stackoverflow.com/questions/62819489/github-actions-why-build-with-different-node-versions-probably-unnecessary-for-this-workflow)
+
+**Edited by AI agent at 2025-08-25**
