@@ -29,7 +29,7 @@
     - [check-element-local-changes](#check-element-local-changes)
   - [Supplemental links](#supplemental-links)
   - [Build process:](#build-process)
-  - [\> Google Analytics integration](#-google-analytics-integration)
+  - [Google Analytics integration](#google-analytics-integration)
       - [**`src/component.js`**](#srccomponentjs)
       - [**`services/googleAnalytics.js`**](#servicesgoogleanalyticsjs)
       - [**`src/component.html`**](#srccomponenthtml)
@@ -315,7 +315,7 @@ After publishing, a QA environment is deployed to AWS ECS with the latest built 
 
 ```https://unity.web.asu.edu/```
 
-## > Google Analytics integration
+## Google Analytics integration
 
 Google Analytics integration for Unity is handled via Google Tag Manager. During user interaction with Unity components, usage data is captured by Google Tag Manager and delivered to Google Analytics.
 
