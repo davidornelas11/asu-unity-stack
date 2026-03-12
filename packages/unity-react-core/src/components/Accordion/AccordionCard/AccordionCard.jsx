@@ -50,7 +50,7 @@ export const AccordionCard = forwardRef(
         })}
       >
         <div className="accordion-header">
-          <h4>
+          <h3> {/* Changed from h4 to h3 to fix accessibility issue */}
             <GaEventWrapper
               gaData={{
                 ...gaData,
@@ -82,7 +82,7 @@ export const AccordionCard = forwardRef(
                 <i className="fas fa-chevron-up" />
               </button>
             </GaEventWrapper>
-          </h4>
+          </h3> {/* Changed from h4 to h3 to fix accessibility issue */}
         </div>
         {item.content?.body && (
           <div
