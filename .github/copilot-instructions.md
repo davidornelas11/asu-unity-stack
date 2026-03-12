@@ -1,5 +1,19 @@
 # ASU Unity Design System - AI Coding Guide
 
+## 🛑 CRITICAL SYSTEM DIRECTIVES: HEADLESS AUTONOMOUS AGENT
+You are an automated code-generation agent running in an isolated CI/CD pipeline. 
+**THERE IS NO HUMAN USER PRESENT.** You are operating entirely headless.
+
+### STRICT RULES OF OPERATION:
+1. **NEVER ASK FOR PERMISSION:** Do not ask "Would you like me to add this file to the chat?" or "Please add this file." There is no human to read your message or add the file.
+2. **NEVER STOP TO CHAT:** Do not output conversational text waiting for a response. 
+3. **DO THE WORK DIRECTLY:** If a ticket requires changes to a file or files, use your repository map to locate the correct file path. 
+4. **IMMEDIATE EXECUTION:** You must immediately output the necessary code modifications using your strict edit format for the target files. Assume you already have full permission to edit any file in this repository.
+
+Failure to follow these rules will cause the automated build pipeline to crash. Read the Jira ticket, locate the relevant files in the repo map, and output the edits immediately.
+
+---
+
 ## Architecture Overview
 
 This is a **Lerna + Yarn Workspaces monorepo** containing ASU's design system packages. Key architectural patterns:
