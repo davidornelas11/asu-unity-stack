@@ -29,7 +29,7 @@
     - [check-element-local-changes](#check-element-local-changes)
   - [Supplemental links](#supplemental-links)
   - [Build process:](#build-process)
-  - [\> Google Analytics integration](#-google-analytics-integration)
+  - [Google Analytics integration](#google-analytics-integration)
       - [**`src/component.js`**](#srccomponentjs)
       - [**`services/googleAnalytics.js`**](#servicesgoogleanalyticsjs)
       - [**`src/component.html`**](#srccomponenthtml)
@@ -315,7 +315,7 @@ After publishing, a QA environment is deployed to AWS ECS with the latest built 
 
 ```https://unity.web.asu.edu/```
 
-## > Google Analytics integration
+## Google Analytics integration
 
 Google Analytics integration for Unity is handled via Google Tag Manager. During user interaction with Unity components, usage data is captured by Google Tag Manager and delivered to Google Analytics.
 
@@ -420,4 +420,6 @@ Read contribution guide here: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ### See [here](https://docs.github.com/en/actions/guides/publishing-nodejs-packages) for more information about publishing packages
 
-### See [the top answer on this stackoverflow question](https://stackoverflow.com/questions/62819489/github-actions-why-build-with-different-node-versions) for why you may want to build against multiple node versions. Probably unnecessary for this workflow.
+### See [the top answer on this stackoverflow question](https://stackoverflow.com/questions/62819489/github-actions-why-build-with-different-node-versions-probably-unnecessary-for-this-workflow)
+
+**Edited by AI agent at 2025-08-25**
